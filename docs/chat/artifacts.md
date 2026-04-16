@@ -14,26 +14,38 @@ When the AI creates a file, it shows up in the message stream with:
 - File name and size
 - File type label
 
+Artifacts are also detected automatically when the AI writes a file to the artifacts directory or produces a file via a shell command.
+
+## Auto-Preview
+
+When an artifact is created, the right panel automatically switches to the **Artifacts tab** and renders the file. You don't need to click anything -- the preview appears as soon as the file is ready.
 
 ## HTML Artifacts
 
-HTML files get special treatment. Starfish renders them in a live browser panel within the app, so you can preview landing pages, reports, and interactive content without leaving the conversation.
+HTML files get special treatment. Starfish renders them in a sandboxed iframe within the Artifacts tab, so you can preview landing pages, reports, dashboards, and interactive content without leaving the conversation.
+
+The sandbox allows scripts and same-origin access, so JavaScript within the artifact runs normally.
 
 ## Previewing Artifacts
 
-Click an artifact to open a preview. The preview method depends on the file type:
+Click an artifact in the chat to open a preview. The preview method depends on the file type:
 
-- **HTML** -- renders in the built-in browser panel
+- **HTML** -- renders live in the Artifacts tab with full JavaScript support
 - **Code files** -- syntax-highlighted preview
 - **Other files** -- opens in your system's default application
 
 ## Saving Artifacts
 
-Click **Save** on any artifact to download it to a folder of your choice. The file saves with its original name and extension.
+Click **Save** on any artifact. In the desktop app, a native save dialog opens so you can choose the destination folder and file name. In the web version, the file downloads directly.
+
+## Element Selector on Artifacts
+
+You can use the [Element Selector](/tools/browser#element-selector) on artifact previews. Click the selector button, hover over elements in the rendered HTML, and click to capture an element's details into the chat. This is useful for pointing at a specific part of a generated page and asking the AI to change it.
 
 ## Common Use Cases
 
 - **Reports** -- ask the AI to generate an HTML report from your data
+- **Dashboards** -- interactive HTML dashboards with charts and tables
 - **Data exports** -- CSV or JSON files extracted from conversations or integrations
 - **Landing pages** -- full HTML/CSS pages ready to deploy
 - **Code files** -- scripts, configs, or templates generated during a task

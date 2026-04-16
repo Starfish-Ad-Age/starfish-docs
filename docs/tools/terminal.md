@@ -6,19 +6,33 @@ outline: deep
 
 Starfish includes a full terminal emulator built into the workspace. Run shell commands, manage servers, and execute builds without switching windows.
 
-
 ## How It Works
 
-The terminal spawns real shell processes (bash or zsh) using xterm.js and node-pty. It behaves identically to your system terminal -- same shell config, same PATH, same environment variables.
+The terminal spawns real shell processes (zsh login shell) using xterm.js and node-pty. It behaves identically to your system terminal -- same shell config, same PATH, same environment variables.
+
+The terminal lives in the right-side panel alongside the browser, artifacts, and plan tabs. It persists across tab switches -- switching to the browser tab and back does not kill your shell session.
 
 ## Multi-Tab Support
 
-Open multiple terminal sessions side by side:
+Open multiple terminal sessions in parallel:
 
 - **New tab**: `Cmd + T`
 - **Close tab**: `Cmd + W`
-- Switch between tabs by clicking or using the tab bar
+- Switch between tabs by clicking the tab bar (appears when more than one tab is open)
 
+Each tab spawns an independent shell process. Closing a tab kills its associated PTY process.
+
+## Font Size
+
+Zoom the terminal text independently of the rest of the app:
+
+| Shortcut | Action |
+|----------|--------|
+| `Cmd + +` | Increase font size |
+| `Cmd + -` | Decrease font size |
+| `Cmd + 0` | Reset to default |
+
+Font size range is 9px to 24px.
 
 ## Keyboard Shortcuts
 
@@ -26,16 +40,19 @@ Open multiple terminal sessions side by side:
 |----------|--------|
 | `Cmd + T` | New tab |
 | `Cmd + W` | Close tab |
-| `Cmd + K` | Clear terminal |
-| `Cmd + C` | Copy selection |
-| `Cmd + V` | Paste |
-| `Cmd + +` | Zoom in |
-| `Cmd + -` | Zoom out |
+| `Cmd + K` | Clear scrollback |
+| `Cmd + L` | Clear scrollback (alternative) |
+| `Cmd + C` | Copy selection (or send SIGINT if nothing selected) |
+| `Cmd + V` | Paste from clipboard |
+| `Cmd + A` | Select all |
+
+## Responsive Resize
+
+The terminal automatically resizes when you resize the panel (drag the left edge) or the app window. The PTY dimensions update to match, so full-screen programs like `vim` or `htop` render correctly.
 
 ## AI Command Execution
 
 The AI agent can execute terminal commands on your behalf. Every command triggers a permission prompt before running -- you always approve or deny before anything executes.
-
 
 This enables workflows like:
 

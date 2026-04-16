@@ -36,6 +36,8 @@ export default defineConfig({
         items: [
           { text: "Using Chat", link: "/chat/using-chat" },
           { text: "Models & Providers", link: "/chat/models" },
+          { text: "Auto Model Routing", link: "/chat/auto-routing" },
+          { text: "Plan Mode", link: "/chat/plan-mode" },
           { text: "Prompt Builder", link: "/chat/prompt-builder" },
           { text: "Permissions & Safety", link: "/chat/permissions" },
           { text: "Artifacts", link: "/chat/artifacts" },
