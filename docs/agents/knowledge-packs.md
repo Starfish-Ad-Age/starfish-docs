@@ -76,3 +76,47 @@ zip -r my-agents.zip agents/
 ### 3. Import
 
 Upload the `.zip` through the setup wizard or the Agent Panel upload button.
+
+## Generate a Knowledge Pack with Any LLM
+
+You can use any LLM (ChatGPT, Gemini, Claude, etc.) to automatically build a Knowledge Pack from a source document about a person, company, or topic. Paste the following prompt into your LLM of choice, attach your source material, and it will produce a ready-to-import ZIP file.
+
+### The Prompt
+
+```
+I'm going to give you a source document about a person. Read it carefully,
+then build Obsidian flavored markdowns and zip them and save it to ~/Downloads/.
+
+Structure rules:
+* Zip is named [person].zip and contains a root folder [person]/
+* index.md at the root = vault overview only (person's name, what the vault
+  is for, how many agents, their names — nothing else)
+* Decide which agents make sense for this person based on what you read
+  about them
+* Each agent gets a root-level .md file (e.g. knowledge-base-agent.md) —
+  this file describes what the agent does and points to which subfolder to
+  go to for the specific task
+* Each agent also gets a subfolder with the actual detailed content and
+  notes pulled from the source
+* The root .md is a router — it tells you where to go, the subfolder has
+  the actual content
+
+Agent rules:
+* Always include a knowledge-base-agent — this holds core facts, background,
+  and institutional memory about the person
+* Add other agents only if the source gives you enough material to justify
+  them (e.g. lead research, communication style, objection handling, etc.)
+* Don't invent content — everything in the subfolders must come from the source
+* Use ~ not full paths
+
+Source: [paste source here]
+```
+
+### How It Works
+
+1. Copy the prompt above into any LLM that can create files (Claude with artifacts, ChatGPT with Code Interpreter, etc.).
+2. Replace `[paste source here]` with your source material -- a bio, CRM export, meeting notes, company wiki page, or any document with enough detail.
+3. The LLM will analyze the source, decide which agents are appropriate, and generate a ZIP file saved to your Downloads folder.
+4. Open Starfish and import the ZIP through **Settings** or the **Agent Panel upload button**.
+
+The generated pack will always include a **knowledge-base-agent** with core facts. Depending on the source material, it may also create agents for communication style, lead research, objection handling, project context, or other specialized roles.
