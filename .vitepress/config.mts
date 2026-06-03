@@ -1,6 +1,10 @@
-import { defineConfig } from "vitepress";
+// withMermaid wraps the standard VitePress config and enables ```mermaid code
+// blocks to render as diagrams. Added for the (temporary) /starfish-training book.
+// To fully remove later: revert this wrapper back to defineConfig and run
+//   npm uninstall mermaid vitepress-plugin-mermaid
+import { withMermaid } from "vitepress-plugin-mermaid";
 
-export default defineConfig({
+export default withMermaid({
   title: "Starfish",
   description: "The AI workspace for teams — documentation and guides",
   srcDir: "docs",

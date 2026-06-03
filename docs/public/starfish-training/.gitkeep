@@ -1,0 +1,13 @@
+# Drop training screenshots and recordings in this folder.
+#
+# Each media slot in the training pages tells you the exact filename to use,
+# e.g. `website-w2-edit-headline.mp4`. Save the file here with that name, then
+# uncomment the matching embed line in the page.
+#
+# A file saved here as `foo.png` is referenced in the docs as `/starfish-training/foo.png`.
+#
+# To remove the whole training book after the session:
+#   1. delete docs/starfish-training/
+#   2. delete docs/public/starfish-training/
+#   3. (optional) revert the withMermaid wrapper in .vitepress/config.mts back to
+#      defineConfig, then: npm uninstall mermaid vitepress-plugin-mermaid
