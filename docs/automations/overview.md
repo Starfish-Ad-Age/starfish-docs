@@ -16,11 +16,11 @@ An automation is a saved configuration with:
 - **Schedule** — cron, interval (e.g. "every 30 minutes"), or one-shot at a specific date/time.
 - **Prompt** — the instruction text the agent runs every fire.
 - **Model** — pick a specific model or leave on Auto.
-- **Agents** — sub-agents the automation can delegate to via the Task tool.
+- **Agents** — the agent this automation runs as (optional; leave empty for the generic assistant).
 - **Tools (integrations)** — which apps the automation can use (Google Workspace, ClickUp, etc.).
 - **Media tools** — optional toggle for `generate_image` and `generate_video` chat tools.
 - **Workspace scope** — optionally attach the run to a project (and folder) so it inherits project instructions and knowledge.
-- **Permission mode** — fixed to **Full Access** for unattended runs (no human to approve each tool call).
+- **Permission mode** — runs in **Auto** for unattended use (no human to approve each step); genuinely destructive actions are still hard-blocked.
 - **Catch-up on launch** — when on, missed runs (Mac was asleep, app was closed) fire once on launch.
 
 Each fire creates a real chat session you can open and inspect. Sessions are labeled with the automation's name in the sidebar so they're easy to tell apart from regular chats.
@@ -43,12 +43,11 @@ Anything you'd type into chat and want to fire on a clock.
    - **Simple** — "every 1 hour", "daily at 09:00", "weekly on Monday at 09:00", "once at \[datetime\]".
    - **Advanced cron** — a raw 5-field cron expression. Croner syntax.
 5. Pick a model (or leave on Auto).
-6. *(Optional)* Pick agents to delegate to.
+6. *(Optional)* Pick the agent it runs as.
 7. *(Optional)* Pick integrations. Use the minimum needed — every extra tool burns tokens.
 8. *(Optional)* Enable Image and/or Video generation under "Media tools".
 9. *(Optional)* Attach to a project (and folder) so the run inherits workspace context.
-10. Confirm the Full Access permission warning.
-11. Save.
+10. Save. The automation runs unattended in **Auto** mode, with destructive actions hard-blocked.
 
 The automation starts firing on its schedule. The Automations page lists every saved automation with its next-fire time.
 

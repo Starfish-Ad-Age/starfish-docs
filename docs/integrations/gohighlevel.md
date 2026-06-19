@@ -16,8 +16,11 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
    - Log in to your GoHighLevel account.
    - Go to **Settings > Integrations > Private Integrations**.
    - Create a new private integration and copy the token.
-5. Paste the token into Starfish and click **Save**.
-6. The integration status will show **Connected**.
+5. Paste the token into Starfish.
+6. Choose an **access level**:
+   - **Read** -- look things up only; the assistant can't change anything.
+   - **Read + Write** -- full access; create and update records and send messages. Destructive actions (like deleting a contact) always ask you to confirm first.
+7. Click **Save**. The integration status will show **Connected**.
 
 ## What You Can Do
 
@@ -29,6 +32,8 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
 - **Email Templates** -- Create and fetch email templates
 - **Social Media** -- Create and edit social media posts, view account stats
 - **Payments** -- View orders and list transactions
+- **Invoices & Products** -- Create and manage invoices, estimates, products, and pricing
+- **Calendars & Appointments** -- View, create, and manage events and appointments
 - **Custom Fields** -- Read location-level custom fields
 - **Tasks** -- List and manage contact tasks
 

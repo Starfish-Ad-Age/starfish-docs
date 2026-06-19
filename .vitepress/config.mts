@@ -24,6 +24,7 @@ export default withMermaid({
       { text: "Workspace", link: "/workspace/overview" },
       { text: "Integrations", link: "/integrations/overview" },
       { text: "Tools", link: "/tools/terminal" },
+      { text: "Changelog", link: "/changelog" },
       { text: "Legal", link: "/legal/terms" },
     ],
 

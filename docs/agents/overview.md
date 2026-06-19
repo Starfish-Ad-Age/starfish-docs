@@ -39,37 +39,13 @@ Every agent is defined by:
 
 ![Agent panel showing available agents](/images/agent-panel.png)
 
-## How Agents Work
+## How agents work
 
-1. Open the **Agent Selector** dropdown in the composer area.
-2. Select one or more agents to activate. Active agents appear as pills above the composer.
-3. Start chatting -- the agent's instructions and tool set are automatically applied.
-4. Click an active agent pill to deactivate it.
+1. Open the **Agent selector** dropdown in the composer area.
+2. Pick the agent you want. It becomes the agent this chat runs as -- its instructions, knowledge, and tools apply to every message.
+3. Start chatting. That agent stays in control of the conversation.
+4. Need a different specialist? Just pick another agent. It takes over from that point and sees everything said so far.
 
-You can activate multiple agents at once. When multiple agents are active, the main AI can delegate subtasks to them.
+You talk to **one agent at a time** -- the one you've selected. To combine strengths, work through part of a task with one agent, then switch to another and keep going; the new agent inherits the conversation, so handing off (for example, research with one agent and visuals with another) is just a click.
 
-## Execution Modes
-
-When multiple agents are active, Starfish supports three execution modes:
-
-### Direct (Default)
-
-The main AI decides when and whether to delegate tasks to active agents. It routes subtasks based on each agent's capabilities and the current request.
-
-### Pipeline
-
-Agents run sequentially in order. Each agent receives the output of the previous one. Useful for multi-step workflows like: research -> draft -> review.
-
-### Parallel
-
-All active agents run simultaneously on the same task. Their results are collected and presented together. Useful when you want multiple perspectives or need to gather information from several sources at once.
-
-## Delegation and Task Tracking
-
-When the main AI delegates to an agent, a **running task** appears in the chat. Each task shows:
-
-- Agent name and status
-- Activity log (tool calls, thinking steps)
-- Real-time progress as the agent works
-
-You can monitor all running agent tasks during a multi-agent session.
+There's no hidden background delegation. You're always talking to the agent you picked, and you can see exactly what it's doing -- which keeps things predictable and easy to follow.

@@ -122,7 +122,7 @@ Below the composer, quick action pills provide one-click access to common workfl
 
 The composer toolbar has three dropdowns that control what the agent can do this turn:
 
-- **Agents** — pick one or more sub-agents to delegate to via the Task tool. See [Agents](/agents/overview).
+- **Agents** — pick the agent this chat runs as. Switch anytime and the new agent picks up the conversation. See [Agents](/agents/overview).
 - **Apps** — pick which connected integrations (Google Workspace, ClickUp, etc.) the agent can use.
 - **Media** — toggle in-chat **Image generation** and **Video generation**. Off by default — generation has a real per-image/per-clip cost so we don't enable it without your say-so. See [Image Generation](/media/image-generation) and [Video Generation](/media/video-generation) for the chat-tool flow.
 
