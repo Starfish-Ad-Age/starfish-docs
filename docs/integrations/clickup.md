@@ -18,7 +18,7 @@ ClickUp connects your project management workspace to Starfish. Create and manag
 ## What You Can Do
 
 - **Tasks** -- Create, update, delete, search, and filter tasks across your workspace
-- **Projects** -- Browse your workspace hierarchy (spaces, folders, lists)
+- **Projects** -- Browse your workspace hierarchy and create new Spaces, folders, and lists
 - **Docs** -- Create documents and pages, read and update content
 - **Time Tracking** -- Start/stop timers, log time entries, view time reports
 - **Comments** -- Add comments to tasks, read threaded discussions
@@ -35,6 +35,7 @@ ClickUp connects your project management workspace to Starfish. Create and manag
 - "Log 2 hours of time on task #abc123 for today"
 - "Show me all tasks tagged 'urgent' that are overdue"
 - "Create a doc in the Product space with our meeting notes from today"
+- "Create a new Space called 'Q3 Marketing'"
 
 ## Notes
 

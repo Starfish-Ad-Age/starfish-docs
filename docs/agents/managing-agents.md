@@ -44,6 +44,15 @@ This gives you fine-grained control over what each agent can access.
 
 Set a preferred model for each agent from the model dropdown in the Agent Panel. The model persists per session and can be overridden at any time.
 
+## Editing and deleting your agents
+
+Agents you've built live on the **Agents** page, where you can change or remove them.
+
+- **Edit** — open an agent to update its name, description, instructions, model, tool access, and uploaded resources. Its **memory** (what it has learned about how you like to work) opens in a roomy pop-up editor, so you can read and tidy it comfortably instead of squinting at a small box.
+- **Delete** — remove an agent you built using the trash button on its card; it asks you to confirm first, since deleting also removes the agent's memory and any files you uploaded to it, and can't be undone. Installed templates can't be deleted here — they're managed with their pack.
+
+A chat that was using an agent you delete simply falls back to the generic assistant.
+
 ## Persistence
 
 Agent selections, tool toggles, and favorites persist across sessions and app restarts. Your configuration is always waiting when you come back.

@@ -114,6 +114,7 @@ export default withMermaid({
         text: "Settings",
         items: [
           { text: "General Settings", link: "/settings/general" },
+          { text: "Storage", link: "/settings/storage" },
           { text: "Keyboard Shortcuts", link: "/settings/keyboard-shortcuts" },
         ],
       },
