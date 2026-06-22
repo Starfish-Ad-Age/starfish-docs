@@ -20,6 +20,10 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 
 **Create ClickUp Spaces.** The assistant can now create Spaces in ClickUp, not just folders, lists, and tasks.
 
+**Convert videos in chat.** Point the assistant at a folder of videos and ask it to convert them (for example .mov → .mp4). It uses the built-in converter to write the results into a brand-new folder — your originals are never modified, renamed, or deleted — and shows a live progress bar in the chat with each file's name as it finishes.
+
+**Edit images from chat.** Generated images in a normal chat now have an edit button (hover the image), just like on the Image Gen page. Click it to load the image as a reference and type a follow-up prompt to tweak it.
+
 ## 0.6.9-beta.17
 
 The largest release so far, bundling several rounds of work.
