@@ -41,14 +41,14 @@ It's told NOT to capture casual chit-chat, model meta-commentary, or tool noise.
 
 ## How the rebuild works
 
-After every successful chat turn, Starfish schedules a rebuild **30 seconds after the chat goes idle** — so quick follow-up messages don't trigger redundant rebuilds.
+After each successful chat turn, Starfish updates the knowledge document in the background, so it never holds up your conversation.
 
-When the rebuild fires:
+When the rebuild runs:
 
 1. Starfish loads the existing knowledge document.
 2. Sends the document AND the latest chat transcript to Claude Haiku 4.5.
 3. The model is instructed to **merge** new information into the document — *never overwrite, never lose prior facts*.
-4. The result is saved back to the project (and folder, if applicable).
+4. The result is saved back to the workspace. When the chat is in a folder, each new fact is routed to where it belongs: details specific to that folder stay in the folder, while information useful across the whole project is saved at the project level — so the same fact is never duplicated in both.
 
 If the rebuilder fails (network issue, model timeout), the document stays unchanged and the next turn re-triggers it. You never lose data on a failed rebuild — worst case the document is one chat behind.
 

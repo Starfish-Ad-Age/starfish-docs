@@ -11,16 +11,13 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
 
 1. Open **Settings > Integrations** in Starfish.
 2. Find **GoHighLevel** and click **Connect**.
-3. You will be prompted for a **Private Integration Token (PIT)**.
-4. To generate a PIT:
-   - Log in to your GoHighLevel account.
-   - Go to **Settings > Integrations > Private Integrations**.
-   - Create a new private integration and copy the token.
-5. Paste the token into Starfish.
-6. Choose an **access level**:
+3. Choose how to connect:
+   - **Private Integration Token (PIT)** -- connects a single sub-account. Generate a token in GoHighLevel under **Settings > Integrations > Private Integrations**, then paste it into Starfish.
+   - **Agency OAuth** -- connects at the agency level and reaches every sub-account from one connection. You authorize it once in your browser, and the assistant requests access to each sub-account as needed. (Requires a GoHighLevel Marketplace app -- see Notes.)
+4. Choose an **access level**:
    - **Read** -- look things up only; the assistant can't change anything.
    - **Read + Write** -- full access; create and update records and send messages. Destructive actions (like deleting a contact) always ask you to confirm first.
-7. Click **Save**. The integration status will show **Connected**.
+5. Save the token (PIT) or complete the browser authorization (Agency OAuth). The integration status will show **Connected**.
 
 ## What You Can Do
 
@@ -29,7 +26,7 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
 - **Conversations** -- Search conversations, read messages, send new messages
 - **Calendars** -- View calendar events and appointment notes
 - **Blogs** -- Create and update blog posts, manage authors and categories
-- **Email Templates** -- Create and fetch email templates
+- **Email** -- Create and manage email templates, and create, update, and schedule email campaigns
 - **Social Media** -- Create and edit social media posts, view account stats
 - **Payments** -- View orders and list transactions
 - **Invoices & Products** -- Create and manage invoices, estimates, products, and pricing
@@ -47,6 +44,7 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
 
 ## Notes
 
-- GoHighLevel uses a Personal Access Token (PIT) for authentication. You generate this token in your GoHighLevel account settings.
-- The AI has access to the location (sub-account) associated with your PIT. To work with multiple locations, you will need separate tokens.
+- The integration covers both the v2 and v3 GoHighLevel APIs, so newer capabilities (such as email campaigns) are available alongside the established ones.
+- With a **Private Integration Token**, the assistant works with the single sub-account that token belongs to; to cover several sub-accounts this way you need a separate token for each.
+- **Agency OAuth** reaches every sub-account from one connection. It requires a GoHighLevel Marketplace app configured with the redirect URL `http://localhost:8094/oauth/callback`, which you authorize once in your browser.
 - Social media posting requires that your GoHighLevel account has connected social accounts.

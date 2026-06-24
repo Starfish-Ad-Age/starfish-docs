@@ -20,6 +20,7 @@ The project page is a two-column layout. The left column is *navigation* (folder
 
 - **Project name** with its colour swatch.
 - **+ New chat in project** — starts a fresh chat already attached to this project at root level.
+- **Export** (download icon) — saves this workspace to a portable file. See [Exporting and importing a workspace](#exporting-and-importing-a-workspace).
 - **Delete project** (trash icon) — removes the project and its folders. Chats keep existing but lose their workspace link. Knowledge files attached to the project (bytes on disk) are cleaned up.
 
 ### Left column — folders and chats
@@ -49,6 +50,15 @@ The picker is **sticky** — once you pick a project, follow-up new-chats defaul
 In the left sidebar, hover any chat row and click the three-dot menu. **Move to… → \<Project Name\>** assigns the chat to the project at root level. **Move to… → \<Project\> → \<Folder\>** assigns it to a specific folder. **Move to… → No project** removes the assignment.
 
 The chat keeps all its history; only its workspace membership changes. The next turn in that chat will pick up the project's instructions and knowledge.
+
+## Exporting and importing a workspace
+
+A workspace can be moved between devices as a single file.
+
+- **Export** — on the project page, click the **download** icon in the header. Starfish saves a `.starfishworkspace` file containing the project and its folders, their custom instructions and knowledge documents, and the project's knowledge files.
+- **Import** — on the workspace overview, click **Import**, choose a `.starfishworkspace` file, and Starfish recreates it as a new project and opens it.
+
+What travels: instructions, knowledge documents, and knowledge files. What does not: chats, agents, and automations. Importing always creates a **new** workspace, so importing the same file twice never overwrites or merges into an existing one.
 
 ## Deleting a project
 
