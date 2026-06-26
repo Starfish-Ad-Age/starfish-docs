@@ -6,7 +6,13 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.19 — current
+## 0.6.9-beta.20 — current
+
+**Import large workspaces.** Importing a workspace that holds a lot of images — which can make its export file very large — used to fail with a confusing "couldn't read the file" error. Large workspaces now import correctly. (Under the hood, the import was being cut off at a 10 MB ceiling on how much of the uploaded file the app would read; that limit is now far above any realistic workspace.)
+
+**Arrange your workspace your way.** You can now drag to reorder the projects on your Workspace screen, and the folders inside a project, into whatever order you prefer. Click **Reorder**, drag things into place, then click **Done** to save. The arrangement is a personal view stored on this device — it doesn't change anything for anyone else, and newly added projects or folders simply appear at the end.
+
+## 0.6.9-beta.19
 
 **GoHighLevel v3 and Agency OAuth.** The GoHighLevel integration now covers the v3 API in addition to v2 — most notably, the assistant can create, update, and schedule email campaigns. You can also connect using **Agency OAuth**: authorize once at the agency level and the assistant reaches every sub-account from a single connection, requesting per-location access as needed. The existing Private Integration Token option remains for connecting a single sub-account, and you still choose Read or Read + Write access when you connect.
 
