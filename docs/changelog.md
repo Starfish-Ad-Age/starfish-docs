@@ -6,7 +6,47 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.20 — current
+## 0.6.9-beta.24 — current
+
+**Big chats cost far less to run.** Long, tool-heavy conversations — like asking the assistant to pull and review every campaign in a Google Ads account — were quietly re-sending and re-caching the entire conversation on every message, which ran cost up fast. The app now caps how much a single turn can pull in, stops a runaway tool loop from ballooning the conversation, and keeps cached context warm for an hour so it's reused instead of rebuilt each time. Long chats stay responsive and much cheaper.
+
+**Fewer interrupted messages.** The intermittent "Gateway request timed out" / "the model returned an error" that could cut off a reply mid-chat is fixed. The app now keeps its connection to the AI warm between messages and quietly retries a dropped connection instead of failing your message.
+
+**The assistant knows exactly what it's connected to.** It now reports the precise Google services you've connected and at what access level, instead of sometimes claiming only Gmail is available. And when you've granted read-only access, it won't offer to create or edit files and then fail — it only promises what it can actually do.
+
+## 0.6.9-beta.23
+
+**Google Ads runs your whole account.** Beyond Search campaigns, the assistant can now build Performance Max campaigns, set up conversion tracking (leads, purchases, calls), add ad extensions (sitelinks, callouts, structured snippets, call assets), and create remarketing and Customer Match audience lists.
+
+**Google Analytics can create, not just read.** GA4 can now create audiences, plus custom dimensions, custom metrics, key events, and data streams, and update property settings. Reconnect Google Marketing Suite and allow the new edit permission so these changes save.
+
+**Connect Google Workspace read-only.** Connect Drive, Calendar, and Chat — not just Gmail — and choose Off / Read-only / Read & Write for each service, so you can connect a client's account for reference without granting the ability to edit or delete.
+
+**Claude Sonnet 5 fixed.** Sonnet 5 was erroring on every message because it uses a new "thinking" mode; the app now sends the correct format.
+
+## 0.6.9-beta.22
+
+**Google Ads campaign creation works end-to-end.** Google's latest API quietly added a required field — an EU political-advertising declaration — that was blocking every new campaign behind an unhelpful generic error. The app now fills it in automatically.
+
+**Clearer Google Ads errors.** When Google rejects an action, the app now shows the exact field and reason instead of a generic "invalid argument," so problems are obvious instead of guesswork.
+
+**Manager (MCC) accounts.** Google Ads manager accounts can now create and manage campaigns on any sub-account — connect with your manager account ID and operate across every account it manages.
+
+## 0.6.9-beta.21
+
+**Complete Google Ads campaigns.** The assistant can now build a full campaign end-to-end — researching keywords (search volume and competition), setting locations and language, targeting the right audience (age, gender, household income, parental status), and tuning bids by device and time of day — instead of just a bare-bones ad. (Campaign creation, which had briefly stopped working against Google's latest API, is also fixed.)
+
+**Analytics, Search Console and Tag Manager upgrade.** Much more of each is now available to the assistant: richer GA4 reports and account details, Search Console site and sitemap management, and full create/edit/delete for Tag Manager tags, triggers, variables, and versions.
+
+**Dictation.** Tap the mic and the message box becomes a live waveform that moves as you speak; tap the checkmark and the transcription is added to whatever you'd already typed (never replaced).
+
+**Long chats stay fast and affordable.** Older messages are automatically summarized before a conversation gets expensive, with a clear notice when it happens — nothing important is lost.
+
+**All your chats are back in the sidebar.** It previously showed only the most recent ~50.
+
+**Polish.** Sidebar icons animate on hover and menus open with smoother motion.
+
+## 0.6.9-beta.20
 
 **Import large workspaces.** Importing a workspace that holds a lot of images — which can make its export file very large — used to fail with a confusing "couldn't read the file" error. Large workspaces now import correctly. (Under the hood, the import was being cut off at a 10 MB ceiling on how much of the uploaded file the app would read; that limit is now far above any realistic workspace.)
 
