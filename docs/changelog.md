@@ -6,7 +6,27 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.24 — current
+## 0.6.9-beta.25 — current
+
+**Voice typing runs on your device now.** Dictation is powered by NVIDIA's Parakeet speech model running locally instead of a cloud transcription service — your audio never leaves your Mac. Words stream in live as you speak and drop into the message when you finish. The model isn't bundled with the app (it's a few hundred MB); the one-time download starts the first time you click the microphone, or from **Settings → Voice**, where you can also choose which input device to use. The microphone is released the moment you stop.
+
+**Apify connects again.** The Apify integration was pointing at a connection endpoint that Apify retired, so it silently failed to load its tools. It now uses Apify's current endpoint, and connections made before the fix heal automatically the next time the app starts — no need to reconnect.
+
+**Rearrange your agents.** On the Agents tab you can drag your agents into whatever order you like, and the agent picker in the chat composer follows the same order.
+
+**Google Workspace Chat: message people and manage spaces.** Listing your Chat spaces and their members is fixed (it was failing on an incorrect request), and the assistant can now send direct messages and add, update or remove members of a space. Sending and deleting are an explicit opt-in on a Read & Write connection, and before sending the assistant confirms exactly who and where with you first.
+
+**Google Ads: upload images to your asset library.** You can now upload image assets straight into a Google Ads account's library for use in campaigns.
+
+**Long chats can't trigger premium pricing anymore.** Very long, tool-heavy conversations could grow large enough to cross the point where the AI provider doubles its rates — which quietly ran up cost on big sessions. Every message is now hard-capped below that line: a long chat condenses its oldest raw tool data (the conversation itself is never rewritten), and if it needs those details again the assistant simply re-fetches them. Everyday chats are unaffected — this only ever kicks in on unusually long sessions.
+
+**The token badge now shows how full the chat is.** Instead of a large, alarming lifetime token count, the badge shows the chat's context as a percentage of its working memory — which is what actually determines when older messages get summarized. Hover it for the full detail, including the lifetime total.
+
+**"Best" is now Claude Sonnet 5.** The Best model tier is sharper than before and costs less than the previous Best. "Balanced" remains Claude Sonnet 4.6.
+
+**Google Ads: remove assets from campaigns.** The assistant can now detach assets — for example, disapproved images or logos — so they stop serving on a campaign. (Google Ads never allows permanently deleting an asset from the account library; detaching is how you take it out of a campaign, and it's exactly what the Google Ads interface's "remove" does too.)
+
+## 0.6.9-beta.24
 
 **Big chats cost far less to run.** Long, tool-heavy conversations — like asking the assistant to pull and review every campaign in a Google Ads account — were quietly re-sending and re-caching the entire conversation on every message, which ran cost up fast. The app now caps how much a single turn can pull in, stops a runaway tool loop from ballooning the conversation, and keeps cached context warm for an hour so it's reused instead of rebuilt each time. Long chats stay responsive and much cheaper.
 
