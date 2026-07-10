@@ -6,7 +6,31 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.25 — current
+## 0.6.9-beta.26 — current
+
+**Branch a chat to keep it focused.** Start a brand-new conversation from any reply — it carries everything up to that point as context, so you can chase a tangent, or give a long thread a clean restart, without losing the thread or letting it balloon. Look for **Branch** under any assistant response; branched chats are marked in the sidebar and link back to the conversation they came from.
+
+**Copy any table the assistant makes.** Hover a table and a **Copy** button appears — it pastes as a real, formatted table into Google Docs, Sheets, Word, or email, so you never rebuild one by hand. Tables also picked up a subtle rounded frame.
+
+**Much better slide decks, dashboards, and designs.** Visual and creative requests now render as a polished, self-contained page you can preview live, tweak with fast in-place edits (instead of regenerating the whole thing each time), and open full-screen — with a Preview/Code toggle and one-click copy. Logos and images embed directly into the page. If a request is ambiguous, the assistant confirms what you want before building.
+
+**Hover tooltips across the app.** Hover almost any control — the message actions (Branch, Rewrite, Copy), the composer's Agents / Apps / Media, sidebar items like Marketplace and Open Workspace — and a short note explains what it does.
+
+**Tool activity is easier to follow.** Instead of raw function names, the assistant shows what it's doing grouped by app — e.g. "Calling ClickUp · 5×" — which you can expand for the step-by-step detail.
+
+**Automations are more reliable and smarter.** Runs that got stuck now self-heal, every run has a time limit so it can't hang, and completion is reported honestly — a run that was blocked or only partly finished no longer reports "done." Each run remembers the last one, and a quick readiness check verifies your connections and the task before you switch an automation on. A new **Improve task** button rewrites a rough instruction to be clearer and tool-aware, and asks you to confirm before applying it.
+
+**ClickUp comments mention the right people, formatted.** When the assistant comments on a ClickUp task it now resolves real @mentions and posts with proper Markdown formatting — and tells you if a name couldn't be matched.
+
+**Chats name themselves.** New chats get a title automatically from your first message.
+
+**Model lineup.** Added xAI's **Grok 4.5** and OpenAI's **GPT-5.6 Luna** as selectable models in Advanced mode. The everyday **Balanced** model stays **Claude Sonnet 4.6** — its reliable one-hour prompt caching keeps it the cheapest in real use, even against models with a lower sticker price — and **Gemini 3.1 Pro** was removed.
+
+**Cheaper video generation.** The default video model is now **Kling v2.6**, and models that couldn't actually generate video through the app were removed.
+
+**Fixes and polish.** Fixed a rare error that could interrupt a chat right after it condensed a long conversation. The interface is friendlier throughout — softer rounded corners and shorter wording — with a small reminder that Starfish is AI and can make mistakes.
+
+## 0.6.9-beta.25
 
 **Voice typing runs on your device now.** Dictation is powered by NVIDIA's Parakeet speech model running locally instead of a cloud transcription service — your audio never leaves your Mac. Words stream in live as you speak and drop into the message when you finish. The model isn't bundled with the app (it's a few hundred MB); the one-time download starts the first time you click the microphone, or from **Settings → Voice**, where you can also choose which input device to use. The microphone is released the moment you stop.
 
