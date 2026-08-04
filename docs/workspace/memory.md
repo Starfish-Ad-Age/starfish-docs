@@ -6,6 +6,10 @@ outline: deep
 
 Each project and each folder owns a **knowledge document** — a structured markdown file that the AI maintains automatically as conversations happen. It's the part that makes a workspace feel persistent: facts, decisions, and preferences accumulate across chats without you having to restate them.
 
+::: tip Not the same as personal memory
+This page is about what Starfish knows about **a project**. For what it knows about **you** — how you like replies written, tools you use — see [Memory in Settings](/settings/memory).
+:::
+
 ## Two layers of context
 
 When you chat in a project- or folder-scoped session, the AI receives:

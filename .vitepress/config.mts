@@ -21,6 +21,7 @@ export default withMermaid({
 
     nav: [
       { text: "Guide", link: "/getting-started/introduction" },
+      { text: "Meetings", link: "/meetings/overview" },
       { text: "Workspace", link: "/workspace/overview" },
       { text: "Integrations", link: "/integrations/overview" },
       { text: "Tools", link: "/tools/terminal" },
@@ -48,6 +49,12 @@ export default withMermaid({
           { text: "Prompt Builder", link: "/chat/prompt-builder" },
           { text: "Permissions & Safety", link: "/chat/permissions" },
           { text: "Artifacts", link: "/chat/artifacts" },
+        ],
+      },
+      {
+        text: "Meetings",
+        items: [
+          { text: "Overview", link: "/meetings/overview" },
         ],
       },
       {
@@ -114,6 +121,7 @@ export default withMermaid({
         text: "Settings",
         items: [
           { text: "General Settings", link: "/settings/general" },
+          { text: "Memory", link: "/settings/memory" },
           { text: "Storage", link: "/settings/storage" },
           { text: "Keyboard Shortcuts", link: "/settings/keyboard-shortcuts" },
         ],

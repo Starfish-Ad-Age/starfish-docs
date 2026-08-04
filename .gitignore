@@ -1,6 +1,8 @@
 node_modules/
-.vitepress/cache/
-.vitepress/dist/
+# Anchored patterns miss the real output dir: srcDir is docs/, so VitePress
+# writes to docs/.vitepress/dist. Match at any depth.
+**/.vitepress/cache/
+**/.vitepress/dist/
 .DS_Store
 ._*
 .vercel
