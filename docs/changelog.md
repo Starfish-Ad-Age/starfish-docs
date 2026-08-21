@@ -6,7 +6,41 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.34 — 2026-08-04 — current
+## 0.6.9-beta.35 — 2026-08-20 — current
+
+Two halves. In front, **Simple mode's composer is down to one bar** — Starfish picks the engine, and the row of controls has moved to Technical mode. Underneath, the things that quietly gave up have stopped giving up: a chat you look away from keeps working, a big request runs to the end, and an app that is busy is no longer mistaken for a missing one.
+
+### Changed
+
+**Simple mode has one composer bar.** The row of buttons under the message box is gone. Starfish chooses the model for each request on **Smart Auto**, and you can still say **Quick**, **Balanced** or **Best** from the model menu whenever you want to decide yourself — a choice you make always wins. **Plan Together**, **Prompt Builder**, the **browser panel** and the **permission switch** now live in Technical mode, which you reach in one click from that same model menu. Nothing was removed from the product; it moved.
+
+**Approval happens at the moment it matters, not up front.** Simple mode no longer asks you to choose a permission mode before you start. Starfish reviews an action as it is about to leave the app — sending, posting, publishing, changing something outside Starfish — and asks then. Reading your own email, tasks or documents never interrupts you. The question you get is one you can answer: yes, or not now.
+
+**When Starfish needs to know something, it asks with the real options.** If it is missing a fact it cannot guess — which client, which list, which of three files you meant — it stops and shows a card with the actual choices rather than picking one and hoping. Answer with a tap, choose several where that makes sense, or write your own answer. Questions arrive one at a time on a single card.
+
+### Fixed
+
+**A chat you navigate away from keeps working, and says so.** The animated bars in the sidebar used to disappear a few seconds after you left a working chat, and a restart wiped them from every chat at once. The app now asks the server what is genuinely running, several times a minute, so the indicator survives switching chats, opening new ones, and restarting Starfish. Nothing is ever marked finished because a timer ran out.
+
+**Returning to a running chat shows the work, not a spinner.** Re-entering a chat mid-answer used to show "Thinking…" with no progress card until the next tool happened to finish — for a long research run, minutes later. It now restores the step the task has actually reached and the answer written so far, immediately. The elapsed label reflects how long the task has really been going rather than restarting each time you look.
+
+**Big requests run to the end.** Asking for everything across your email, tasks and documents could stop partway and present that as a finished answer, because a task was capped at a fixed number of steps whatever it was doing. A task now keeps going while it is still finding things it has not already seen. One that goes in circles still stops, exactly as before.
+
+**A slow connector is no longer cut off for being slow.** Any tool that is genuinely running is now given room to finish. Previously only a hand-written list of tools was allowed to take a long time, so a wide Drive listing or a large ClickUp query was ended for taking too long — which read as the app choking on anything big.
+
+**Reading many emails costs one step instead of one each.** Going through a mailbox used to spend one round trip per message, so a hundred emails exhausted a task's budget on its own.
+
+**Very long tasks no longer run out of room mid-answer.** A single task that gathered a great deal of material could exceed the model's limit partway through and fail. Older results within the task are now trimmed as it goes, newest kept in full.
+
+**An app that is busy is no longer reported as disconnected.** One chat using ClickUp heavily could make another chat state, plainly and wrongly, that ClickUp was not connected. An app a chat has actually used now stays trusted, and Starfish no longer interrupts a working connector to ask whether it is alive. Disconnecting an app in the Marketplace still takes effect as normal.
+
+**Apify stops dropping out.** Apify retired the endpoint older connections were saved against, so its tools silently failed to load and it vanished from the connected list. Existing connections are corrected automatically — there is nothing to reconnect.
+
+**Reset no longer signs you out.** Reset now clears only caches. Your chats, connections, settings and meetings stay exactly as they were.
+
+**Retry tells the truth about missing audio.** Retrying a meeting whose recording is no longer on this Mac now says so, instead of appearing to work and quietly producing nothing.
+
+## 0.6.9-beta.34 — 2026-08-04
 
 The largest release so far. **Meetings** arrives: Starfish can sit in on a call, write the transcript as people speak, and turn it into notes when you stop. Speech is transcribed on your Mac rather than by a cloud service; the notes themselves are written by an AI model, so the transcript text is sent for summarising. It ships as a **Preview**, which means recording, transcription and notes are ready for everyday use, while speaker grouping is still being proven on real recordings.
 
