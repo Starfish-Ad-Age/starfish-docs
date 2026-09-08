@@ -8,77 +8,90 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 
 ## 0.6.9-beta.36 — 2026-09-08 — current
 
-Starfish can **read a reply out loud**, in one steady voice, at the pace you choose. **Scheduled work** became its own engine that does only what you allowed and reports what actually happened. The **built-in browser** grew into a real browser. And across the rest of the app the honesty gaps closed: nothing is changed in a connected app unless you asked for it, an app that is connected says so, a question waits for you instead of being answered by a clock, and a finished piece of work is finished.
+Starfish can **read a reply out loud** in a voice you choose. **Scheduled work** is now set up by talking to it rather than filling in a form. You can connect **more than one GoHighLevel account**, the browser panel has grown into **a full browser**, and **the files on your Mac** can be browsed, opened and attached from inside a chat. The rest of the release is fixes.
 
 ### New
 
-**Starfish reads replies aloud.** Press the speaker on any reply and it is read out loud. The first word arrives in about two seconds however long the answer is, because the reply is spoken in pieces as they become ready rather than in one lump at the end — a 3,900-character answer used to mean the better part of a minute of silence. It reads the words rather than the formatting: no "asterisk asterisk" for bold, no spelling out a sixty-character link, code blocks announced once, and a long table described by its shape instead of read cell by cell. Stop it early and the rest is never spoken. Nothing is read aloud unless you press the button.
+**Read replies aloud.** Press the speaker on any reply and Starfish reads it out. Pick a voice in **Settings → Voice** — Sarah, Polo, Selene, Adrian or Ethan — and press **Preview** to hear it before you choose. Set the pace to **Slower**, **Normal** or **Faster**. The voice you pick is used for the whole reply, first sentence to last. It reads the words rather than the formatting: no "asterisk asterisk" for bold, no spelling out a long link, code blocks announced once, and a table described by its shape rather than read cell by cell. Stop it early and the rest is never spoken. Nothing is read aloud unless you press the button.
 
-**A voice you choose, and it stays that voice.** **Settings → Voice** has a Read-aloud voice card: pick from Sarah, Polo, Selene, Adrian and Ethan, and press Preview to hear one before you commit. Previously no voice was requested at all, so a long reply could shift pitch between sentences; the voice is now settled once and used for the whole readout. Set the pace to **Slower**, **Normal** or **Faster** — Faster is the default and is about 18 percent quicker at the same pitch, because the speed is applied as the speech is made rather than by playing it back fast. No chipmunk, and no gap where one sentence joins the next.
+**Your Mac's files in chat.** Type `@`, open the **Files** tab and pick **Choose from this Mac** to browse your Mac the way you would in Finder — places, drives, cloud folders and search, scoped to a folder or to the whole machine. Attach a file to a message, open one in a viewer inside Starfish, edit and save a text file there, and **Reveal in Finder** from the viewer, the browser's context menu or a file chip in a reply. Files Starfish saves for you appear as the same chips.
 
-**A real browser inside Starfish.** Every tab now keeps its own live page, so a sign-in and your scroll position survive switching tabs. Back and Forward follow the page's real history, links that open in a new tab actually do, and the toolbar carries Find, Print, Zoom, Screenshot, Downloads, History, Clear Data and Browser Settings, with a favicon per tab and a site-information shield that turns green on HTTPS. A download never overwrites a file you already have; camera, microphone and location are asked for per site and default to asking. Pages inside the browser cannot reach your cookies, your saved passwords or Starfish's own internals. When Starfish drives it, a sign-in, a form or a multi-page flow is carried through to the end instead of stalling partway and being reported as finished.
+Local file access is **off until you switch it on** in **Settings → Local File Access**. You choose **Full Access**, meaning your home directory, or **Scoped Access**, where you add the folders Starfish may use and it can reach nothing else. Reading and listing happen without interruption; writing, editing or running a command asks you first. Some paths are never reachable in either mode, including `/System`, `/Applications`, `node_modules`, `.ssh`, `.aws` and `.gnupg`. Preview and in-app editing are limited to text-like files under about a megabyte.
 
-**More than one GoHighLevel account.** Connect several GoHighLevel accounts and Starfish keeps them apart. Name the one you mean — "in the Acme account, list my pipelines" — instead of pasting an identifier, and every result says which account it came from. If the account is unclear it asks you, with the accounts listed, rather than picking one quietly, and moving to a different account asks you to confirm first. "All accounts" runs a read across every one of them; changes are never fanned out that way. **Manage accounts** on the connected GoHighLevel card opens the account editor with everything you saved prefilled, so you can add, rename, re-point or remove an account without disconnecting first — leave a token field blank to keep the token you already had.
+**Scheduled work you set up by talking.** The long setup form is gone. You describe the job in conversation, against your real connected data, and Starfish reads the schedule back to you in plain English. A job **reads and reports by default**; one tick box governs everything it may change, and the exact actions it proposes are listed beside it, so unticking tells you plainly what the job will then not do. You can save a job without running it, look back at what past runs actually did, and reach the whole thing from the main navigation, between **Marketplace** and **Media**.
 
-**You can see what it worked out on the way.** While Starfish works it writes short notes about what it is doing and what it found — "Apify isn't connected, I'll research this on the web and carry on". Those notes used to be erased the moment the final answer arrived. They now stay in the transcript, through a reload, set lighter than the answer itself so the two are never confused. Copy, Read aloud, Rewrite, Branch and Feedback still act on the answer only.
+**More than one GoHighLevel account.** Connect several GoHighLevel accounts and Starfish keeps them apart, each with its own token. Name the account you mean in the message — "in the Acme account, list my pipelines" — instead of pasting an identifier, and every result says which account it came from. If the account is unclear it asks you, with the accounts listed. **Manage accounts** on the connected GoHighLevel card opens the editor with what you saved already filled in, so you can add, rename, re-point or remove an account without disconnecting first.
 
-**Very large PDFs open properly.** A long PDF is indexed as it arrives and is not re-read from scratch on every question. Ask about "section 2" and you get the section 2 you meant — the first one in document order — while a later, identically numbered section in an appended document is still reachable when you name it. Starfish is given the document's outline with page numbers, so it can tell two sections with the same number apart.
+**A real browser inside Starfish.** Each tab keeps its own live page, so a sign-in and your place on the page survive switching tabs. Back and Forward follow the page's real history, and the toolbar carries **Find**, **Print**, **Zoom**, **Screenshot**, **Downloads**, **History** and browser settings, with a favicon per tab and a site shield that turns green on HTTPS. Downloads are listed and never silently overwrite a file you already have; camera, microphone and location are asked for per site. Pages opened in it cannot reach your cookies, your saved passwords or Starfish's own internals. Starfish can open a page and work in it from a cold start, without you opening the panel first.
 
-**Meetings play back on any device.** A meeting recorded on one Mac now plays on any device signed in to your account. The recording, the transcript and the notes travel together instead of staying on the machine that captured them.
-
-**72 more things it can do.** Considerably more of Google Workspace, ClickUp and Meta is now reachable — 72 further operations across the three.
-
-**Your work follows you, and a team can be removed.** Chats, files, meetings and settings now sync across 28 kinds of record, so a second Mac shows the same workspace rather than a partial copy of it. A team you no longer need can be deleted.
-
-### Changed
-
-**Scheduled work is its own engine.** Setting one up is a conversation that uses your real connected data rather than a long form, and every warning it gives you is grounded in what your apps can actually do. The schedule is always read back to you in plain English, and you can save a job without running it. Setup refuses to build on a detail it cannot trace back to something you actually said, and the long setup form it replaces is gone.
-
-**Read-only unless you say otherwise.** A scheduled job reads by default, and a job that only reads is described that way: "It reads and reports only. It changes nothing outside Starfish." One checkbox governs everything it may change, the exact actions it proposes are listed beside it, and unticking it says plainly what the job will then not do. Those permissions are the only authority a run has: permission is matched to the precise operation and to the concrete target you named — this recipient, this list — so it can never stretch to cover a neighbouring action, and an off-target attempt is refused and recorded. A run can never stop halfway to ask you a question, since nobody is there to answer, so anything it needed and did not have is written down as a decision you can read afterwards.
-
-**A scheduled job can just show you the result.** Every delivery question now offers "Show it in Starfish run history", listed first when you have not named somewhere else to send it, and lets you type your own answer instead. A read-only job is no longer nagged to nominate an email address or a chat to send to.
-
-**Runs report what happened, not what they intended.** A run that performed everything it was allowed to reports finished. A run that produced the result but ended without confirming it now reads **"Delivered, but did not confirm the details"** in amber rather than a flat red failure — the same for a clean end, a timeout, a dropped stream or a crash. A run that produced nothing still says so honestly. Evidence can improve a verdict; the model's own claim cannot.
-
-**No thinking ceiling on a scheduled run.** The cheapest possible job measured well past the old limit, so almost everything was being cut off and marked failed for length. The ceiling is gone; a runaway job is still bounded by its time and step limits. Old runs in the history that hit it now say so and invite you to run them again.
-
-**Scheduled work moved up into the main navigation**, between Marketplace and Media, instead of sitting in a strip below every chat.
-
-**A long list of tool calls scrolls after six rows** rather than pushing the answer off the screen, with a soft fade when there is more below. It follows new rows as they arrive unless you have scrolled up to read, and it can be reached and scrolled by keyboard. Six rows or fewer look exactly as they did.
-
-**When Starfish saves a file for you, the reply names it.** "Saved test_120p.mp4 in /Users/you/Desktop", with the file name as a chip that reveals it in Finder. File links Starfish writes itself, which used to render as dead text, are now the same working chip.
+**More Google Workspace, ClickUp and QuickBooks operations.** A large batch of further operations across the three is now available in chat.
 
 ### Fixed
 
-**Nothing is changed in a connected app unless you asked for it.** Sending, posting, publishing, updating a record — anything leaving Starfish stops and shows a card naming the connector, the exact operation, how many records it touches and where they are going, with the message or the field values you are approving shown in full. Asking Starfish to read, organise, prioritise, summarise or plan can no longer quietly create or change records along the way, and a bare "yes" approves only the one action in front of you, never anything queued behind it. The bundled connectors used to ask the model to confirm its own writes and then call again saying yes, which unattended it simply did; that handshake is gone from every one of them.
+**Connected apps**
 
-**Your "no" is respected, and is not retried.** Declining now reads as your decision — "You declined this, so I have not made the change" — never as the connected app refusing or failing, and with no suggestion that you change your settings. The step shows as an amber **Not approved** rather than a red error, and the same action is not quietly raised or attempted a second time.
+- Apify showed as disconnected after you re-authorised it.
+- An app whose sign-in had expired could still show as connected instead of reading "Needs reconnecting".
+- A sign-in that could be renewed in the background was not, so apps you connected dropped out from one day to the next.
+- A single rejected call could destroy a saved sign-in; a rate limit, timeout or server error is now treated as temporary.
+- Credentials saved just after connecting left an app looking not connected for several minutes.
+- Reconnecting an app left the previous helper process running.
+- A missing app produced a workaround instead of naming the app to connect.
+- An app that was merely busy could be reported as disconnected in another chat.
 
-**A question is never answered by a clock.** A request for approval used to be silently refused if you did not answer within ten minutes. It now waits until you answer, until you stop the task, or until the session ends — and it is handed back to you if you leave the chat and come back. The status line reads "Waiting for your answer…" rather than warning that something is stuck, and the chat lights up as **Needs input** in the sidebar. Nothing you asked for is refused because you stepped away from the desk.
+**Chat**
 
-**A connected app cannot report a problem on your behalf.** One connector offered a "report a problem" tool, and when Starfish's own video generation failed it used it — sending a report about this app to that company while the screen said "Problem reported" and the owner assumed it had reached him. That tool is withheld everywhere. The same company's other tools are unaffected, and reporting tools belonging to other apps still work.
+- A permission card did not always name the exact action and the exact record it would change.
+- A request to read, sort, prioritise or summarise could make a change in a connected app along the way.
+- Approving one action could be taken as approval for a different one.
+- A step you declined could be raised again or attempted again.
+- A step you declined showed as a red error rather than as **Not approved**, and read as though the app had refused.
+- A permission card was refused automatically if you did not answer within ten minutes; it now waits for you.
+- A closing courtesy question ended the turn as though it were waiting for your answer.
+- A long list of tool calls pushed the answer off the screen; it now scrolls after six rows, and follows new rows unless you have scrolled up to read.
+- The tool list showed internal names instead of the app being used.
+- A tool result was marked failed because the word "error" appeared somewhere inside a document.
+- A reply that saved a file did not name the file or link to it in Finder.
+- Work in progress was lost when you refreshed the app or the connection dropped.
+- A draft you had typed was not kept when you switched chats.
+- A turn could report a result it had not actually checked.
+- A closed work panel could still be reached by keyboard.
 
-**An app that cannot be reached says "Needs reconnecting".** A connector whose sign-in has died used to show no status at all, or quietly drop out of the list. It now carries a badge, and asking "which apps am I connected to?" gets you a plain sentence — "Canva needs to be reconnected in the Marketplace" — rather than silence. A sign-in that can be renewed in the background is renewed there, and one rejected call no longer destroys a saved sign-in, so an app you connected on Monday is still connected on Friday. A rate limit, a timeout or a server error is treated as temporary, not as a dead sign-in.
+**Documents and artifacts**
 
-**Apify connects and stays connected.** Finishing the sign-in in the Marketplace now leaves the card reading Connected and Apify usable in chat, with no restart, and a fresh start reuses the sign-in you already gave instead of asking again.
+- One request for a document could produce the same document two or three times.
+- A build that stopped part-way was left unfinished instead of repaired, and a build you closed the panel on did not complete.
+- A design was saved without the styling it had been given.
+- Finishing a document could rebuild it from scratch and lose edits.
+- A PDF that would not compile did not say where the problem was; it now names the line and column and shows the offending line.
+- A long PDF was re-read from scratch on every question, which could stall the chat.
+- Asking about "section 2" of a long PDF could return a different section.
+- An uploaded document was not always attached to the message Starfish read.
 
-**A credential that arrives late no longer leaves an app looking disconnected.** Setting or clearing a connector's credentials re-checks what is connected immediately, rather than leaving a stale "not connected" verdict in place for several minutes. The Marketplace, the connected-apps notice and Starfish itself now agree.
+**Media**
 
-**A busy app is no longer called a broken one.** A connection warning is withdrawn as soon as that app succeeds, and it no longer follows you into a different chat. A healthy app is also no longer torn down and rebuilt every turn because of a harmless background hiccup.
+- A video engine that cannot start from a reference image or video failed after the upload instead of saying so first and offering you the choice.
+- The video model list could offer a name the service rejects.
+- Uploaded videos and images were staged differently in chat and in generation.
+- A meeting recorded on one Mac did not play back on another device.
 
-**Reconnecting no longer leaves processes behind.** Each reconnect used to strand the previous connector's helper process, so a long day accumulated them — 316 idle processes in under three hours, in one measured case. They are now shut down with the connection they belong to: four connected apps, four processes, holding steady.
+**Scheduled work**
 
-**One request now produces one file.** "Convert this into a PDF" made three files over several minutes, with failures in between, because a turn that had saved what you asked for kept going, re-reading its sources and rebuilding. It now recognises the deliverable exists, says what is in it, and stops. A plain build request no longer sets off correction rounds or reads from your connected apps that nobody asked for.
+- A run that had done its job was reported as failed.
+- A run could stop half-way to ask for an approval that nobody was there to give.
+- A run could be cut off for length and marked failed.
+- Setting a job up could loop and never finish.
+- The delivery question left out simply showing the result in Starfish, and a read-only job was still asked where to send its output.
+- A job that only reads described changes it would not make.
+- Overlapping runs were not blocked, and old run rows were never cleared.
+- A named agent you picked did not actually run the job.
+- The scheduler did not recover after a crash or a change of local port.
+- A job was not checked against real data before its first run, so a broken one failed in the middle of the night rather than at setup.
 
-**Documents that fail to build are repaired, not abandoned.** A build that closes its document too early is now fixed and finished rather than looping or being handed to you as a failure, and a build you close the panel on still completes. A page or a deck is not treated as finished until it genuinely carries real styling — a bare handful of structural rules does not count — so a three-section page can no longer arrive with no styling at all while the reply describes navy headings and striped tables. The closing message is checked against the file that was actually saved.
+**Syncing between machines**
 
-**A PDF that will not compile points at the line.** The error now names the line and column, shows the offending line with a marker under the exact spot and a line of context either side, instead of a general complaint about syntax. Starfish also no longer writes a throwaway test PDF to find out whether the engine is working, and a PDF being read is no longer labelled as one being created.
-
-**Video generation says what it cannot do.** Ask for a video built from an earlier video or image and, if the engine you picked cannot use one, Starfish stops before generating anything and offers you the choice: switch to an engine that can (MiniMax H3), use the still image instead, or stop. It never quietly substitutes a different source and then claims it used yours.
-
-**Long work survives being left alone.** A long job keeps running, can be looked at while it runs, and picks up where it left off after a restart.
-
-**Other fixes.** The permission card's deny button reads "Don't allow" rather than showing the raw punctuation code. A reply that corrects itself no longer repeats its closing paragraph. Ordinary words in your request — "reviewed", "description", "first" — are no longer chased as though they were records that must exist, and "add this to the task" is understood as an edit rather than as creating something new. A closing courtesy question no longer ends a turn as though it were waiting for your answer. A task can see a document it produced earlier in the same run. A tool result is no longer marked failed for containing the word "error" somewhere inside a document — 163 results that had been wrongly marked were corrected. A closed work panel is no longer reachable by keyboard. A batch of reads that failed no longer takes the whole turn down with it, and the summary above a group of calls names the app rather than the machinery. A part-applied database change no longer stops the app from starting.
+- A scheduled job's permission to make changes could be re-enabled by a sync from another machine.
+- Values containing accented or non-English characters were rejected.
 
 ## 0.6.9-beta.35 — 2026-08-20
 
