@@ -10,9 +10,8 @@ Starfish is currently available for macOS on Apple Silicon.
 
 | Requirement | Minimum |
 | --- | --- |
-| OS | macOS 13 (Ventura) or later |
-| Chip | Apple Silicon (M1, M2, M3, M4) |
-| RAM | 4 GB |
+| OS | macOS |
+| Chip | Apple Silicon (M-series) |
 
 ## Download
 
@@ -43,4 +42,4 @@ You only need to do this once. Subsequent launches work normally from the Dock o
 
 ## What's next
 
-After launching for the first time, the [Setup Wizard](/getting-started/setup-wizard) walks you through account creation, plan selection, and connecting your first integration.
+After launching for the first time, the [Setup Wizard](/getting-started/setup-wizard) walks you through signing in, connecting your AI Gateway key, a little personalization, and adding your first app.

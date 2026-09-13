@@ -19,16 +19,14 @@ Vercel connects your deployment platform to Starfish. Deploy projects, monitor b
 
 - **Deployments** -- Trigger new deployments, list recent deploys, and check deployment status
 - **Build Logs** -- Read build output and diagnose build failures
-- **Domains** -- List, add, and configure custom domains
-- **Projects** -- Browse and manage your Vercel projects
-- **Environment Variables** -- View and manage env vars across environments
+- **Projects** -- Browse and inspect your Vercel projects
 - **Runtime Logs** -- Check serverless function logs and errors
 
 ## Example Prompts
 
-- "Deploy the main branch of the marketing-site project"
+- "Deploy the marketing-site project to production"
 - "Show me the build logs for the latest failed deployment"
-- "What domains are configured for the dashboard project?"
+- "Which projects haven't deployed in the last 30 days?"
 - "List all deployments from the last 7 days"
 - "Check the runtime logs for any 500 errors in production"
 

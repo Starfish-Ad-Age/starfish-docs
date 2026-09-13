@@ -36,7 +36,7 @@ If you are not a Starfish team member, you will need to provide a System User to
 - **Campaigns** -- Create, read, update, and pause ad campaigns
 - **Ad Sets** -- Manage targeting, budgets, schedules, and bid strategies
 - **Ads** -- Create and manage individual ads and creatives
-- **Audiences** -- Build and manage custom and lookalike audiences
+- **Audiences** -- Build and manage custom audiences
 - **Insights** -- Pull performance metrics (spend, impressions, clicks, conversions, ROAS) at the account, campaign, ad set, or ad level
 - **Automation Rules** -- Configure rules that automatically adjust budgets, bids, or pause underperforming ads
 - **Creatives** -- View and manage ad creative assets

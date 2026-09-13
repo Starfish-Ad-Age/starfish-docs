@@ -4,55 +4,65 @@ outline: deep
 
 # Managing Agents
 
-The Agent Panel is your control center for activating, configuring, and organizing agents.
+The **Agents** page is your library for creating, installing, arranging, and removing agents. It's in the sidebar in Developer mode; Simple mode hides the page and picks agents by name in the message instead.
 
-## Agent Panel
+## The Agents page
 
-The Agent Panel opens as a side panel showing all available agents. Each agent displays its name, icon, color, and active status.
+Open **Agents** in the sidebar. The page shows your whole library with two tabs:
 
+- **All agents** — everything you have, both templates and your own.
+- **Built by me** — only the agents you created or uploaded.
 
-## Selecting an Agent
+Each card shows the agent's name, avatar or icon, color, description, and the apps it expects.
 
-Tap an agent card to activate it. The agent's name appears in the composer area, confirming it's active. Tap again to deactivate.
+The header actions are **Create agent**, **Browse templates**, and **Upload agent**. With more than one agent, **Reorder** lets you drag the cards into the order you want; the saved order is mirrored in the in-chat agent picker.
+
+## Selecting an agent
+
+In Developer mode, use the **Agents** dropdown in the composer. **Main agent** is single-select:
+
+- Pick an agent to make it the one this chat runs as.
+- **None (generic assistant)** clears the selection.
+- Picking the selected agent again turns it off.
 
 When an agent is active:
 
 - Its system instructions are included in every message you send.
-- Only its enabled tools are available to the AI.
-- Its preferred model is used (if set).
+- Its tool access applies.
+- Its preferred model is used, unless it's set to Auto.
 
-A toast notification confirms activation and deactivation.
+In Simple mode there is no picker. Name the agent in your message — `@marketing`, or a phrase like "use the marketing agent" — and it sticks for that chat; a chip above the composer shows the active agent, with an **×** to stop using it.
 
-## Searching Agents
+## Choosing connected apps
 
-Use the search bar at the top of the Agent Panel to filter agents by name. Useful when you have many agents imported.
+The coverage of a chat (or an agent) also depends on which apps are switched on. Use the **Apps** dropdown beside the composer to turn connected apps on or off for the current chat. An agent's own tool access is set when you build or edit it.
 
-## Favoriting Tools
+## Creating an agent
 
-Star specific MCP tools for quick access. Favorited tools persist across sessions and can be bulk-activated with one click.
+Click **Create agent** and describe the role you want. Starfish drafts the agent, then opens it in the builder where you can set:
 
-## Agent Tool Control
+- Name and description
+- Avatar, icon, and color
+- Model — **Auto** to match the chat, or a specific model
+- System prompt
+- Tool access — which integrations it may use
 
-Each agent defines which integrations it can use. In the Agent Panel:
+Click **Save** to add it to your library. Newly saved agents appear under **Built by me**.
 
-- Toggle individual MCP tools on or off.
-- Use the master toggle to enable or disable all tools at once.
+In Simple mode the builder keeps the essentials and hides the model, system prompt, and tool controls.
 
-This gives you fine-grained control over what each agent can access.
+## Installing and uploading
 
-## Per-Agent Model Selection
+- **Browse templates** opens the template directory. Installing one adds a ready-made agent to your library; it's marked **Template**.
+- **Upload agent** accepts a single `.md` file. Its body becomes the agent's instructions, and optional frontmatter can set the name, description, tools, color, icon, and model. You review everything in the builder before saving.
 
-Set a preferred model for each agent from the model dropdown in the Agent Panel. The model persists per session and can be overridden at any time.
+## Editing and deleting
 
-## Editing and deleting your agents
+- **Edit** — hover a card and click the pencil. Only agents you built can be edited in place; editing a pristine template forks it first. Once an agent is saved, the builder also carries its **memory** (what it has learned about how you like to work) and its uploaded resources. Memory opens in a roomy pop-up editor, so you can read and tidy it comfortably.
+- **Delete** — hover a card and click the trash button, then confirm. Deleting an agent you built also removes its memory and uploaded files, and can't be undone. Removing a template simply uninstalls it — you can re-install it from **Browse templates** at any time.
 
-Agents you've built live on the **Agents** page, where you can change or remove them.
-
-- **Edit** — open an agent to update its name, description, instructions, model, tool access, and uploaded resources. Its **memory** (what it has learned about how you like to work) opens in a roomy pop-up editor, so you can read and tidy it comfortably instead of squinting at a small box.
-- **Delete** — remove an agent you built using the trash button on its card; it asks you to confirm first, since deleting also removes the agent's memory and any files you uploaded to it, and can't be undone. Installed templates can't be deleted here — they're managed with their pack.
-
-A chat that was using an agent you delete simply falls back to the generic assistant.
+A chat that was using an agent you delete falls back to the generic assistant.
 
 ## Persistence
 
-Agent selections, tool toggles, and favorites persist across sessions and app restarts. Your configuration is always waiting when you come back.
+Agent selections, tool access, memory, and your saved order persist across sessions and app restarts. Your configuration is always waiting when you come back.

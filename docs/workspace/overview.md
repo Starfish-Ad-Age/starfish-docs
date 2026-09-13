@@ -29,7 +29,7 @@ Three concrete wins:
 
 ## Opening the workspace
 
-The bottom of the left sidebar has an **Open Workspace** link. It takes you to a grid of all your projects.
+The left sidebar's primary navigation has a **Workspace** link. It takes you to a grid of all your projects.
 
 From there you can:
 

@@ -4,84 +4,58 @@ outline: deep
 
 # Setup Wizard
 
-The setup wizard runs the first time you launch Starfish. It walks you through six steps: account creation, plan selection, API key entry, knowledge pack import, integration setup, and launch.
+The setup wizard runs the first time you launch Starfish. It walks you through five steps: Account, AI access, Make it yours, Apps, and Ready.
 
-You can navigate back to any previous step using the progress bar at the top.
+The progress bar at the top shows where you are. Use the **Back** button on each step to return to an earlier one.
 
 ## Step 1 — Account
 
 Create your Starfish account or sign in to an existing one.
 
-**Email sign-up:** Enter your email and a password. If you're creating a new account, check your inbox for a confirmation email before signing in.
+**Google sign-in:** Click **Continue with Google**. A browser popup opens for OAuth authentication. After you authorize, the wizard advances automatically.
 
-**Google sign-in:** Click the Google button. A browser popup opens for OAuth authentication. After you authorize, the wizard advances automatically.
+**Email:** Enter your email and a password. If you're creating a new account, check your inbox for a confirmation email before signing in. Use the "New to Starfish? Create an account" / "Already have an account? Sign in" link to switch between signing up and signing in.
 
 If you already have an active session, this step is skipped.
 
 ![Setup wizard account step](/images/setup-wizard-auth.png)
 
-## Step 2 — Plan Selection
+## Step 2 — AI access
 
-Choose the plan that fits your usage.
-
-| | Starter | Pro | Team |
-| --- | --- | --- | --- |
-| Sessions | 50 / month | Unlimited | Unlimited |
-| Tokens | 100K / month | Unlimited | Unlimited |
-| Image generations | 10 / month | Unlimited | Unlimited |
-| Integrations | 3 | Unlimited | Unlimited |
-| Agents | 1 | Unlimited | Unlimited |
-| Priority support | — | Yes | Yes |
-| Team sharing | — | — | Yes |
-| Admin dashboard | — | — | Yes |
-| SSO | — | — | Yes |
-
-You can also select **Test mode** to explore the app without committing to a plan. Your plan is saved to your account and can be changed later.
-
-![Setup wizard plan selection](/images/setup-wizard-tier.png)
-
-::: tip Note
-The plans shown above are placeholders. Final pricing and tier details will be announced when the app launches.
-:::
-
-## Step 3 — API Key
-
-Starfish connects to language models (Claude, GPT-4, Gemini, and others) through [Vercel AI Gateway](https://vercel.com/docs/ai-gateway). The gateway provides unified routing across all supported models — you only need one API key.
+Starfish connects to language models (Claude, GPT, Gemini, and others) through [Vercel AI Gateway](https://vercel.com/docs/ai-gateway). The gateway provides unified routing across all supported models — you only need one key.
 
 **To get your key:**
 
 1. Create an account at [vercel.com](https://vercel.com/).
-2. Navigate to your project's AI Gateway settings.
+2. Navigate to your AI Gateway settings.
 3. Generate an API key.
 4. Copy the key and paste it into the input field.
 
-The key is stored locally on your machine and is never sent to Starfish servers.
+Your key is stored securely on your Mac — protected by the Keychain when available, with encrypted local storage as the fallback — and is never shown again.
 
 ![Setup wizard API key step](/images/setup-wizard-api-key.png)
 
-## Step 4 — Knowledge Pack
+## Step 3 — Make it yours
 
-A Knowledge Pack is a `.zip` file containing pre-configured agents, system prompts, and contextual documents. Teams can distribute these to ensure every member starts with the same setup.
+This optional step takes about a minute. Enter your company or organization and your role, and choose how replies should feel:
 
-**To import:**
+- **Brief** — just the answer
+- **Balanced** — clear and useful
+- **Detailed** — more context
 
-1. Click the upload area or drag your `.zip` file onto it.
-2. The wizard processes the archive and displays progress in a live terminal output.
-3. Wait for the process to complete before continuing.
+Starfish saves these as preferences it remembers from your first conversation. You can edit or turn them off later in **Settings → Personalization**. Click **Skip** to continue without answering.
 
-This step is optional. If you don't have a Knowledge Pack, click **Skip** to continue. You can import one later from **Settings**.
+## Step 4 — Apps
 
-![Setup wizard knowledge pack step](/images/setup-wizard-vault.png)
-
-## Step 5 — Integrations
-
-Connect the external services your assistant will use. Each integration uses the MCP (Model Context Protocol) to communicate with its respective API.
+Connect the external services your assistant will use. Each integration uses MCP (Model Context Protocol) to communicate with its respective API.
 
 Available integrations include:
 
 - **Google Workspace** — Gmail, Calendar, Drive, Docs, Sheets, Slides, Tasks
 - **Google Marketing Suite** — GA4, Search Console, Tag Manager
+- **Google Ads** — campaigns, ad groups, keywords, reporting
 - **ClickUp** — Tasks, projects, docs, team workflows
+- **QuickBooks Online** — invoices, customers, items, accounts
 - **GitHub** — Repositories, pull requests, issues, code reviews
 - **Figma** — Design inspection, component reading, code generation
 - **Vercel** — Deployments, builds, runtime logs
@@ -90,18 +64,20 @@ Available integrations include:
 - **Apify** — Web scraping and data extraction
 - **GoHighLevel** — CRM, pipelines, campaigns
 - **Facebook Ads** — Campaigns, audiences, performance analytics
+- **TikTok Ads** — Campaigns, audiences, performance analytics
+- **Playwright** — Browse, screenshot, and automate web pages
+- **Stitch** — Generate UI screens, design systems, and prototypes
 
-You don't need to connect everything now. Integrations can be added or removed at any time from **Settings > Integrations**.
+You don't need to connect everything now. Apps can be added or removed at any time from the **Marketplace**.
 
 ![Setup wizard integrations step](/images/setup-wizard-integrations.png)
 
-## Step 6 — Ready
+## Step 5 — Ready
 
-Setup is complete. Click **Launch** to enter the main workspace.
+Setup is complete. Click **Start working** to enter the main workspace. Starfish starts in Simple mode; switch to Developer mode from the model menu whenever you want the fuller layout.
 
 **What to do next:**
 
 - Start a conversation — try asking about your calendar or unread emails.
 - Explore the [Quick Start](/getting-started/quick-start) guide for example prompts.
-- Open **Settings** to fine-tune your integrations and agent configuration.
-
+- Open **Settings** to fine-tune your apps and agent configuration.

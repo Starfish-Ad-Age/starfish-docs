@@ -14,7 +14,7 @@ Starfish includes a built-in web browser directly in the workspace. Browse the w
 - **AI-generated HTML preview** -- artifacts render instantly in the browser
 - **Element selector** -- point-and-click tool to capture any element's details
 - **Link dialog** -- open links from AI responses directly in the browser
-- **Playwright integration** -- the AI can control the browser programmatically
+- **Agent control** -- when Browser Use is enabled, the AI can drive the embedded browser on your behalf
 - **Localhost support** -- test your running local dev server without leaving Starfish
 
 ## Navigation
@@ -45,9 +45,9 @@ The element selector is a visual point-and-click tool that captures details abou
 ### How to use it
 
 1. Click the **element selector button** in the browser toolbar (available on both the Browser tab and the Artifacts tab).
-2. The page gets a crosshair overlay. Hover over elements to see them highlighted with a blue outline.
-3. Click an element to capture it.
-4. The captured element's tag, CSS classes, CSS selector path (up to 5 levels deep), and outer HTML are inserted into the chat composer.
+2. The page gets a crosshair overlay. Hover over elements to see them highlighted.
+3. Click an element to capture it. In **comment** mode you can also leave a short note pinned to the element.
+4. The captured element's tag, id, CSS classes, CSS selector path (up to 5 levels deep), and outer HTML are inserted into the chat as a chip you can send with your next message.
 5. Press **Escape** to cancel without selecting.
 
 ### When to use it
@@ -58,20 +58,20 @@ The element selector is a visual point-and-click tool that captures details abou
 
 ## AI Browser Control
 
-Through Playwright integration, the AI agent can interact with web pages:
+When **Browser Use** is enabled in Settings, the agent can drive the embedded browser to research, read, and fill in pages — using whatever you're already signed into, because it operates the browser panel rather than a separate automated browser. It never handles your credentials.
 
 | Action | Description |
 |--------|-------------|
-| Navigate | Open any URL in the browser |
-| Click | Click buttons, links, and interactive elements |
-| Fill forms | Enter text into input fields and forms |
+| Navigate | Open a URL in the browser panel |
+| Read | Take a numbered snapshot of the page's interactive elements and text |
+| Wait | Wait for the page to settle, or for a condition |
+| Click | Click an element from the most recent snapshot |
+| Type | Enter text into an input from the most recent snapshot |
+| Scroll | Scroll the page |
+| Press a key | Send a keyboard key to the page |
 | Screenshot | Capture the current page state |
-| Extract content | Read text and data from the page |
-| Run JavaScript | Execute custom scripts in the page context |
-| Monitor network | Inspect requests and console messages |
-| Handle dialogs | Accept or dismiss browser alerts |
 
-All browser actions initiated by the AI require your approval through permission prompts.
+Read-only actions (navigate, read, wait, scroll, screenshot) run without a prompt. Clicking and typing follow the app's permission mode, and any click whose visible label reads as publishing, sending, paying, or deleting is escalated so it needs your explicit approval. Page content is always treated as untrusted data — the agent ignores any instructions it finds on a page.
 
 ## HTML Artifact Preview
 

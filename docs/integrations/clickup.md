@@ -20,11 +20,10 @@ ClickUp connects your project management workspace to Starfish. Create and manag
 - **Tasks** -- Create, update, delete, search, and filter tasks across your workspace
 - **Projects** -- Browse your workspace hierarchy and create new Spaces, folders, and lists
 - **Docs** -- Create documents and pages, read and update content
-- **Time Tracking** -- Start/stop timers, log time entries, view time reports
+- **Time Tracking** -- Start/stop timers, log time entries, view time entries
 - **Comments** -- Add comments to tasks, read threaded discussions
-- **Tags** -- Add and remove tags on tasks
+- **Tags** -- Set and clear tags on tasks
 - **Dependencies** -- Set task dependencies and linked relationships
-- **Reminders** -- Create, update, and search reminders
 - **Members** -- Look up workspace members by name
 - **Chat** -- Read and send messages in ClickUp Chat channels
 

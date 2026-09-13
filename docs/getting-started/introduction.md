@@ -17,6 +17,7 @@ Starfish is not a chatbot. It is a full working environment. From a single conve
 - Analyze ad performance and SEO data
 - Generate images and video
 - Run terminal commands and browse the web
+- Dictate messages and check your spelling and grammar as you type
 
 All of this happens through natural language. You describe what you want, and the assistant executes it using your connected tools.
 
@@ -30,9 +31,9 @@ Starfish is built for anyone who uses multiple SaaS tools daily:
 
 ## What makes it different
 
-Most AI tools are chat-only. Starfish ships with an embedded terminal, a built-in browser, image and video generation, and 13+ integrations that take real actions — not just talk about them.
+Most AI tools are chat-only. Starfish ships with an embedded terminal, a built-in browser, image and video generation, and a growing set of integrations that take real actions — not just talk about them.
 
-Supported integrations include Google Workspace, Google Marketing Suite, ClickUp, GitHub, Figma, Vercel, Canva, Zapier, Apify, GoHighLevel, Facebook Ads, and more.
+Supported integrations include Google Workspace, Google Marketing Suite, Google Ads, ClickUp, QuickBooks Online, GitHub, Figma, Vercel, Canva, Zapier, Apify, GoHighLevel, Facebook Ads, TikTok Ads, Playwright, and Stitch.
 
 ## Architecture
 
@@ -40,7 +41,7 @@ Starfish is a desktop application for macOS. Under the hood:
 
 - **Electron** provides the native shell and system-level access.
 - **Next.js** runs locally to power the UI.
-- **Vercel AI Gateway** connects to LLMs (Claude, GPT-4, Gemini) through a unified routing layer.
+- **Vercel AI Gateway** connects to LLMs (Claude, GPT, Gemini, and other models) through a unified routing layer.
 - **MCP (Model Context Protocol)** servers handle communication with each integration.
 
-Everything runs on your machine. Your data stays local unless you explicitly connect an external service.
+The app runs on your machine. Your work is stored locally and leaves only through the services you connect — the AI Gateway you configure, and any integrations you add.

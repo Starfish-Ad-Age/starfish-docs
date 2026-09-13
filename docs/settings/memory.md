@@ -4,7 +4,7 @@ outline: deep
 
 # Memory
 
-Starfish keeps a short list of durable facts about how you like to work, and uses them across every chat. You can read the whole list, change any of it, and delete any of it, in **Settings → Memory**.
+Starfish keeps a short list of durable facts about how you like to work, and uses them across every chat. You can read the whole list, change any of it, and delete any of it, in **Settings → Personalization**.
 
 This is deliberately a small, visible list rather than an invisible profile. A memory you cannot see is one you cannot correct, and a wrong one steers every future answer without ever explaining itself.
 
@@ -24,7 +24,7 @@ Standing preferences, not task details. The test Starfish applies before saving 
 
 A memory that expires is worse than no memory, because it keeps steering long after it stopped being true.
 
-Entries are grouped into **Style** (how you want replies written), **Tools** (what you work with), **Clients**, **Avoid** (things you never want), and **Other**.
+Entries are grouped under **How you like things written** (tone, length, and format of replies), **Things to avoid** (what you never want), **Tools and platforms** (what you work with), **Clients and brands** (who you work for), and **Everything else**.
 
 ## Where memories come from
 
@@ -39,7 +39,9 @@ Saying the same thing twice does not create a second entry. Repeating a preferen
 
 ## Managing your memories
 
-Everything on the page is editable:
+A **Memory** switch at the top of the page turns the whole feature on or off. Switching it off stops Starfish using these memories and learning new ones, but deletes nothing — you can turn it back on later.
+
+Everything else on the page is editable:
 
 - **Tell Starfish something** — write a memory yourself, in your own words.
 - **Edit** any entry inline. Correcting a badly-worded learned memory is usually better than deleting it.

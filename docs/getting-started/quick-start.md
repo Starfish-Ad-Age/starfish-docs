@@ -12,31 +12,29 @@ Download and install Starfish following the [Installation](/getting-started/inst
 
 ## 2. Create your account
 
-Launch Starfish. The setup wizard opens automatically. Sign up with your email or use Google sign-in.
+Launch Starfish. The setup wizard opens automatically. Continue with Google, or create an account with your email and a password and confirm it from your inbox.
 
-## 3. Choose your plan
+## 3. Connect your AI access
 
-Select a plan tier — Starter, Pro, or Team. You can change this later.
-
-## 4. Enter your API key
-
-Starfish uses [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) to connect to LLMs like Claude, GPT-4, and Gemini through a unified routing layer.
+Starfish uses [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) to connect to LLMs like Claude, GPT, Gemini, and other models through a unified routing layer.
 
 1. Go to [vercel.com](https://vercel.com/) and create an account if you don't have one.
 2. Generate an API key from your AI Gateway settings.
 3. Paste it into the setup wizard.
 
-## 5. Import a Knowledge Pack (optional)
+Your key is stored on your Mac — in the Keychain when available, with encrypted local storage as the fallback.
 
-If your team provided a Knowledge Pack (a `.zip` file containing pre-configured agents and context), upload it now. You can skip this step and import one later from Settings.
+## 4. Make it yours (optional)
 
-## 6. Connect your first integration
+Tell Starfish your company and role, and how brief or detailed you like replies. These become preferences it remembers; you can edit or turn them off later in **Settings → Personalization**. You can skip this step.
 
-The wizard shows available integrations. We recommend starting with **Google Workspace** or **ClickUp** — they cover email, calendar, docs, and task management out of the box.
+## 5. Connect your first app
 
-You can connect more integrations at any time from **Settings > Integrations**.
+The wizard shows the apps you can connect. We recommend starting with **Google Workspace** or **ClickUp** — they cover email, calendar, docs, and task management out of the box.
 
-## 7. Start chatting
+You can connect more apps at any time from the **Marketplace** in the sidebar.
+
+## 6. Start chatting
 
 You're in. Type a message in the chat and your assistant will respond using the tools you've connected.
 

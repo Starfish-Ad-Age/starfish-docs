@@ -18,13 +18,13 @@ Artifacts are also detected automatically when the AI writes a file to the artif
 
 ## Auto-Preview
 
-When an artifact is created, the right panel automatically switches to the **Artifacts tab** and renders the file. You don't need to click anything -- the preview appears as soon as the file is ready.
+When an artifact is created, the right panel automatically switches to the **Artifacts tab** and renders the file. You don't need to click anything -- the preview appears as soon as the file is ready. You can turn this off in **Settings → Appearance → Designs → Auto-open preview**.
 
 ## HTML Artifacts
 
 HTML files get special treatment. Starfish renders them in a sandboxed iframe within the Artifacts tab, so you can preview landing pages, reports, dashboards, and interactive content without leaving the conversation.
 
-The sandbox allows scripts and same-origin access, so JavaScript within the artifact runs normally.
+The sandbox allows scripts, so JavaScript within the artifact runs normally, but it deliberately does **not** allow same-origin access: the frame has an opaque origin, so artifact code cannot reach the Starfish app or call its API. Element selection, comment pins, and fit-to-width still work -- the frame and the app talk by message rather than direct access.
 
 ## Previewing Artifacts
 

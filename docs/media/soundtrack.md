@@ -4,9 +4,9 @@ outline: deep
 
 # Soundtrack Library
 
-A built-in catalogue of background music tracks for the [Starcut video editor](/media/starcut). Two sources — a cloud-hosted library of curated Creative Commons tracks, and any audio file you drop in from your own disk.
+A built-in catalogue of background music tracks for the [Video Editor](/media/starcut). Two sources — a cloud-hosted library of curated Creative Commons tracks, and any audio file you drop in from your own disk.
 
-The library is only visible inside Starcut. There's no top-level "Music" page — by design.
+The library is only visible inside the Video Editor. There's no top-level "Music" page — by design.
 
 ## Where the music comes from
 
@@ -21,7 +21,7 @@ User uploads live entirely on your machine (`<userData>/music-uploads/<id>.<ext>
 
 ## Using a track
 
-In the Starcut Soundtrack panel:
+In the Video Editor's Soundtrack panel:
 
 1. **Preview** — click the play button next to any track to listen. First click for a library track downloads it (you'll see a spinner); subsequent clicks play instantly.
 2. **Pick** — click the track title to select it for the next render. The selected track shows a green "Picked" badge.
@@ -47,9 +47,9 @@ The seed manifest favours commercial-friendly licenses (CC-BY, CC-BY-SA), but yo
 
 User uploads carry no license metadata — Starfish assumes you have the rights to use what you uploaded.
 
-## "Smart pick" via the agent
+## Why the metadata is rich
 
-When you set up an [Automation](/automations/overview) that produces a Starcut clip, the agent can read each library track's AI-readable description and pick one to match the brief ("upbeat acoustic for a product reveal", "ambient calm for the intro card"). This works because the metadata lives next to the catalog row — no audio decoding required.
+Every library track carries AI-readable metadata — mood, genre, energy, BPM, description, and "useful for" tags (e.g. *"upbeat acoustic for a product reveal"*, *"ambient calm for the intro card"*). The panel shows it next to each row so a track can be matched to a brief without decoding the audio; the metadata travels with the row wherever the catalogue is read.
 
 ## Where things live
 

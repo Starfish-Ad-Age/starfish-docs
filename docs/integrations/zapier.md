@@ -4,7 +4,7 @@ outline: deep
 
 # Zapier
 
-Zapier connects Starfish to thousands of apps through Zaps -- automated workflows that move data between services. Trigger Zaps, manage automations, and orchestrate cross-app workflows from your AI workspace.
+Zapier connects Starfish to thousands of apps through Zaps -- automated workflows that move data between services. Run Zapier actions, manage automations, and orchestrate cross-app workflows from your AI workspace.
 
 
 ## How to Connect
@@ -17,21 +17,21 @@ Zapier connects Starfish to thousands of apps through Zaps -- automated workflow
 
 ## What You Can Do
 
-- **Trigger Zaps** -- Run your existing Zaps on demand from Starfish
+- **Run Actions** -- Take actions in thousands of apps through Zapier, on demand from Starfish
 - **Cross-App Automation** -- Connect actions across thousands of supported apps (Slack, HubSpot, Mailchimp, Airtable, etc.)
-- **LinkedIn Integration** -- Create LinkedIn posts and company updates directly
-- **Workflow Management** -- List and manage your connected Zaps and automations
+- **App Coverage** -- Use the specific actions you have enabled in Zapier, for example posting to LinkedIn or sending a Slack message
+- **Action Management** -- Discover, enable, and disable the actions your assistant is allowed to run
 - **Data Passing** -- Send structured data between Starfish and any Zapier-connected app
 
 ## Example Prompts
 
 - "Send a Slack message to #marketing that says 'Campaign assets are ready for review'"
 - "Post a LinkedIn company update about our new product launch"
-- "Trigger the 'New Lead to CRM' Zap with name 'Jane Doe' and email 'jane@example.com'"
-- "What Zaps do I have connected?"
+- "Create a HubSpot contact named 'Jane Doe' with email 'jane@example.com'"
+- "What actions do I have enabled in Zapier?"
 
 ## Notes
 
 - Zapier uses OAuth PKCE for authentication. The connection is handled through a secure browser popup.
-- The Zaps and automations available depend on what you have configured in your Zapier account.
-- You may need to set up Zaps in Zapier first before triggering them from Starfish. Starfish can trigger existing workflows but does not create Zap definitions.
+- The actions available depend on what you have enabled in your Zapier account.
+- Starfish runs the actions you have enabled in Zapier (Zapier calls these tools); it does not create or edit Zaps.

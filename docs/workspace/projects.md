@@ -10,7 +10,7 @@ A project is the primary unit of grouping in your workspace. It owns a set of ch
 
 From the workspace overview, click **+ New Project**. Give it a name and an optional description. The project is created immediately and you're taken to its page.
 
-You can also create projects on the fly from the chat input's **Workspace picker** chip — it has a "create new project" affordance.
+You can also reach the workspace from the chat input's **Workspace picker** chip — its footer has a **New workspace project** action that opens the workspace page.
 
 ## The project page
 
@@ -58,7 +58,7 @@ A workspace can be moved between devices as a single file.
 - **Export** — on the project page, click the **download** icon in the header. Starfish saves a `.starfishworkspace` file containing the project and its folders, their custom instructions and knowledge documents, and the project's knowledge files.
 - **Import** — on the workspace overview, click **Import**, choose a `.starfishworkspace` file, and Starfish recreates it as a new project and opens it.
 
-What travels: instructions, knowledge documents, and knowledge files. What does not: chats, agents, and automations. Importing always creates a **new** workspace, so importing the same file twice never overwrites or merges into an existing one.
+What travels: instructions, knowledge documents, and knowledge files. What does not: chats, agents, automations, and generated images. Importing always creates a **new** workspace, so importing the same file twice never overwrites or merges into an existing one.
 
 ## Deleting a project
 
@@ -79,7 +79,7 @@ When you send a message in a project-scoped chat, the system prompt includes a *
 WORKSPACE CONTEXT
 This conversation belongs to the project "Acme Inc".
 Project description: …
-Project instructions (always follow these): …
+Project instructions (lower-priority workspace instructions): …
 Project knowledge — facts, decisions, and history accumulated…
 AVAILABLE WORKSPACE FILES — use the readWorkspaceFile tool…
 ```

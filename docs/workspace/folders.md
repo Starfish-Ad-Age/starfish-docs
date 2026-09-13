@@ -22,7 +22,7 @@ If a project has folders but a chat doesn't fit any of them, leave the chat at p
 
 From a project page, click **+ New folder**. Type a name and press Enter. The folder appears in the project's left column.
 
-You can also create folders directly inside the chat input's **Workspace picker** by selecting a project and then choosing the new-folder option.
+The chat input's **Workspace picker** only lets you choose an existing project or folder (or jump to the workspace page) — folders themselves are created from the project page.
 
 ## The folder page
 

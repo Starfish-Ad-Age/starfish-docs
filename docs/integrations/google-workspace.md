@@ -4,7 +4,7 @@ outline: deep
 
 # Google Workspace
 
-Google Workspace connects Starfish to your Gmail, Calendar, Drive, Docs, Sheets, Slides, Tasks, Chat, and Contacts. Ask the AI to read, create, and manage content across all nine Google services from a single integration.
+Google Workspace connects Starfish to your Gmail, Calendar, Drive, Docs, Sheets, Slides, and Chat. Ask the AI to read, create, and manage content across all seven services from a single integration.
 
 ::: warning Do this setup once per user
 Google Workspace requires a **one-time setup** in your own Google Cloud account. It takes about 15 minutes. Once done, your connection stays active for life — you will never have to redo it.
@@ -33,9 +33,7 @@ You need a Google account (personal or Workspace). No paid plan or billing is re
    - **Google Docs API**
    - **Google Sheets API**
    - **Google Slides API**
-   - **Google Tasks API**
    - **Google Chat API**
-   - **People API**
 3. For each one, click the API, then click **Enable**.
 
 ::: tip
@@ -102,7 +100,7 @@ When you connect later, Google will show a screen saying "Google hasn't verified
 ### Calendar
 
 - List upcoming events across calendars
-- Create, update, and delete events
+- Create and update events
 - Check availability and schedule meetings
 
 ### Drive
@@ -110,7 +108,7 @@ When you connect later, Google will show a screen saying "Google hasn't verified
 - List, search, and browse files and folders
 - Create new files and folders
 - Share files and manage permissions
-- Copy, move, and delete files
+- Copy, move, and trash files
 
 ### Docs
 
@@ -129,22 +127,10 @@ When you connect later, Google will show a screen saying "Google hasn't verified
 - Create new presentations
 - Read slide content and layout
 
-### Tasks
-
-- List task lists and individual tasks
-- Create, update, and delete tasks
-- Mark tasks as complete
-
 ### Chat
 
 - List Chat spaces and members
-- Read and send messages
-- Delete messages
-
-### Contacts
-
-- Search contacts by name, email, or phone
-- List all connections
+- Read, send, and edit messages
 
 ## Example Prompts
 

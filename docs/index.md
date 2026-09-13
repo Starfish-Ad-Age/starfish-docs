@@ -18,8 +18,8 @@ features:
       src: /icons/bot.svg
       width: 28
       height: 28
-    title: 15+ language models
-    details: Claude, GPT, Gemini, Grok, Kimi — all routed through one Gateway with a single key. Auto mode picks the best one for each message.
+    title: 25+ language models
+    details: Claude, GPT, Gemini, Grok, Kimi, DeepSeek, GLM and Qwen — all routed through one Gateway with a single key. Auto mode picks the best one for each message.
   - icon:
       src: /icons/cable.svg
       width: 28
@@ -48,7 +48,7 @@ features:
       src: /icons/scissors.svg
       width: 28
       height: 28
-    title: Starcut video editor
+    title: Video editor
     details: Trim, reframe for vertical, burn captions, mix background music. Smart-pan lets AI follow the subject through the shot. ffmpeg bundled, runs on-device.
   - icon:
       src: /icons/terminal.svg

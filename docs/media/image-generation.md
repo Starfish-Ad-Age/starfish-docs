@@ -4,34 +4,53 @@ outline: deep
 
 # Image Generation
 
-Create images from text descriptions directly within Starfish. There are two ways to generate: the dedicated **Image Gen studio** for quick one-off images, and the **in-chat image tool** for images that need conversation context (reference an earlier idea, iterate with the agent, etc.).
+Create images from text descriptions directly within Starfish. The fastest path is the **in-chat image tool** — ask for an image in a conversation and it renders inline — and each generation is also kept in the **Media** library alongside your other work.
 
 ## Available Models
 
-| Model | Backend | Strengths | Best For |
-|-------|---------|-----------|----------|
-| **Nano Banana 2** | Google `gemini-3-pro-image` | Fast, follows instructions well | Default — quick iterations, marketing creative |
-| **Nano Banana** | Google `gemini-2.5-flash-image` | Cheaper and faster than NB2 | High-volume drafts, exploring ideas |
-| **Seedream 4.5** | ByteDance `seedream-4.5` | Photorealism, fine detail | Final assets, product shots |
-| **GPT Image 2** | OpenAI `gpt-image-2` | Strong typography & illustration | Logos, posters, illustrative graphics |
+| Model | Backend | Notes |
+|-------|---------|-------|
+| **Nano Banana 2** | Google `gemini-3.1-flash-image` | The default — best balance of quality, speed, and cost |
+| **Nano Banana 2 Lite** | Google `gemini-3.1-flash-lite-image` | Fastest for drafts, variations, and quick edits |
+| **Nano Banana Pro** | Google `gemini-3-pro-image` | Highest-detail Gemini option for polished assets |
+| **GPT Image 2.5 Flare** | OpenAI `gpt-image-2.5-flare` | Fast everyday images with sharp detail and typography |
+| **GPT Image 2.5 Sunburst** | OpenAI `gpt-image-2.5-sunburst` | Highest fidelity for polished work and precise edits |
+| **GPT Image 2** | OpenAI `gpt-image-2` | Strong for typography, layouts, and illustrations |
+| **Seedream 4.5** | ByteDance `seedream-4.5` | Realistic marketing visuals |
+| **Nano Banana** | Google `gemini-2.5-flash-image` | Legacy fast option for familiar results |
 
-All four route through the Vercel AI Gateway with a single key — no per-provider account needed.
+All models route through the Vercel AI Gateway with a single key — no per-provider account needed.
 
-## Image Gen Studio
+### Capabilities
 
-The dedicated studio lives at **Image Gen** in the sidebar. It's the fastest path for a one-off image with optional reference inputs.
+- **Reference images** — up to **14** on Nano Banana 2 / 2 Lite / Pro, and up to **4** on the legacy Nano Banana, the GPT Image models, and Seedream.
+- **Multiple images per request** — the GPT Image 2 family can return up to **10** images in a single call. Every other model returns one.
+- **Extra controls** — size, quality, background, and output format are exposed by the GPT Image 2 family only. The in-chat tool can pass them; the studio uses the model's defaults.
+- **Aspect ratios** — the Gemini models and Nano Banana cover 1:1, 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, and 21:9. GPT Image and Seedream 4.5 support 1:1, 9:16, and 16:9.
 
-1. Click **Image Gen** in the sidebar to open or resume a session.
-2. Type a natural language description of what you want.
-3. *(Optional)* Drag in one or more reference images for editing or style matching — up to 4 per turn.
-4. Pick a model from the dropdown.
-5. Click **Generate**.
+## Generating in Chat
 
-Each prompt becomes a turn in the session. Sessions are listed in the sidebar like chat sessions and persist across launches.
+The agent can generate images directly in a conversation. This is useful when image creation is part of a bigger task — "summarize this email thread, then design a banner for the campaign" works in one chat.
+
+### Enabling it
+
+Open the **+** menu in the chat composer (the same menu you use to add files or apps) and choose **Create an image**. The composer switches into image-creation mode for that message; leave the model on **Automatic** or open the submenu to pick a specific one. Nothing is generated without this — images have a real per-image cost.
+
+Once armed, the agent has access to a `generate_image` tool it can call when your message clearly asks for an image.
+
+### How it shows up
+
+While the agent works, the reply shows a **grid-reveal placeholder** — a mosaic that fills in as the picture arrives, resolving into the real image in the same slot. Ask for several images (on a model that supports multiple per request) and they render as one grid, with a placeholder cell for each image still in flight. If a job runs long, the frame shows a note that it can take a few minutes and that you can switch away and come back.
+
+The image is also saved as an **Artifact**, so it shows up in the **Media** library (`/designs`) under the **Images** tab. HTML/PDF/CSV artifacts the agent produces live alongside it under the **Designs** tab.
+
+## Image Sessions
+
+Each image generation is a conversational turn. Open a session from the **Images** tab of the Media library to view it full-size and continue from there:
 
 ### Multi-Turn Refinement
 
-Image Gen sessions are conversational. After generating, you can:
+Image sessions are conversational. After generating, you can:
 
 - Describe specific changes ("make the background darker")
 - Request variations ("same composition but in watercolor style")
@@ -41,32 +60,18 @@ The model sees the prior turns' images and prompts as context, so you refine wit
 
 ### Save to a Folder
 
-Click **Save to folder** on a session to pick a destination on your disk (uses the macOS File System Access API). Every subsequent generation in that session is auto-saved to that folder, plus any reference images you uploaded.
+Click **Save folder** in the composer toolbar to pick a destination on your disk (uses the macOS File System Access API). Every subsequent generation in that session is auto-saved to a `generated/` subfolder, and uploaded references to a `references/` subfolder.
 
 ### Continue in Chat
 
-Hover any generated image and click **Continue in chat**. Starfish opens a fresh chat session with the image pre-attached as a multimodal input — the chat agent can see the image and reason about it (suggest edits, write copy that pairs with it, etc.).
-
-## In-Chat Image Generation
-
-The chat agent can also generate images directly in a conversation. Useful when image creation is part of a bigger task — "summarize this email thread, then design a banner for the campaign" works in one chat.
-
-### Enabling it
-
-Click the **Media** dropdown in the chat composer's bottom toolbar (next to **Agents** and **Apps**) and toggle **Image** on. Off by default — generation has a real per-image cost, so we don't enable it without your say-so.
-
-Once on, the agent has access to a `generate_image` tool it can call when your message clearly asks for an image.
-
-### How it shows up
-
-When the agent generates an image, you'll see it inline in the chat — same renderer as image-attached messages. The image is also saved as an **Artifact** so it shows up in the **Media** (`/designs`) library alongside HTML/PDF/CSV artifacts the agent has produced.
+Hover any generated image and click **Continue in chat**. Starfish opens a fresh chat session with the image pre-attached as a multimodal input — the chat agent can see the image and reason about it (suggest edits, write copy that pairs with it, etc.). A **Continue in chat** image can also be reused as a reference for the next prompt via **Edit this**.
 
 ## Automations
 
-If you've added the image toggle to an [Automation](/automations/overview), the scheduled agent run can generate images on its own (e.g. "every Monday, draft a social card for this week's announcement").
+If you've added image creation to an [Automation](/automations/overview), the scheduled agent run can generate images on its own (e.g. "every Monday, draft a social card for this week's announcement").
 
 ## Storage
 
 - Generated bytes are saved to a local IndexedDB store keyed by session — survives reloads, no network round-trip on re-view.
-- When the agent generates an image in chat, the bytes are written to the local artifacts table (SQLite) and the image is reachable from `/designs`.
+- When the agent generates an image in chat, the bytes are written to the local artifacts table (SQLite) and the image is reachable from the Media library at `/designs`.
 - Nothing leaves your machine after generation except the round-trip to the Gateway during creation.

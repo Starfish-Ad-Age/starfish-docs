@@ -20,7 +20,7 @@ Apify connects web scraping and data extraction to Starfish. Run scraping actors
 - **Run Actors** -- Launch any Apify actor (pre-built scraper) from the Apify Store
 - **Web Scraping** -- Extract data from websites, e-commerce platforms, social media, and more
 - **Data Extraction** -- Pull structured data (JSON, CSV) from web pages
-- **Automation** -- Schedule and manage recurring scraping tasks
+- **Actor Tasks** -- Create, inspect, and run saved Actor tasks (reusable scraper configurations)
 - **Actor Store** -- Browse and use thousands of community and official actors
 - **Results** -- Retrieve and analyze scraping results directly in Starfish
 

@@ -41,7 +41,7 @@ flowchart LR
 ```
 
 ::: tip Stuck on a tricky change? Switch models.
-Most edits land first try. If one model keeps misreading a fiddly layout request, switch the **model dropdown** at the bottom of the chat (Claude / GPT / Gemini) and ask again — same conversation, no new tab. Different models are strong at different things.
+Most edits land first try. If one model keeps misreading a fiddly layout request, switch the **model** and ask again — same conversation, no new tab. (In **Chat** mode pick **Quick**, **Balanced**, or **Best**; flip to **Developer** mode to choose an exact model like Claude or GPT.) Different models are strong at different things.
 :::
 
 ---
@@ -127,7 +127,7 @@ Make it two columns on desktop, and use our brand's accent color for the names.
 
 
 
-**Tip:** for bigger requests like this, you can use **Plan New Idea** (a pill below the chat box) to have the assistant outline what it'll do *before* it does it. ([Plan Mode](/chat/plan-mode).)
+**Tip:** for bigger requests like this, add **"show me your plan first"** to your prompt so the assistant outlines what it will do *before* it does it. ([Plan Mode](/chat/plan-mode).)
 
 ---
 

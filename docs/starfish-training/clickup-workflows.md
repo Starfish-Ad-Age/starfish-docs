@@ -26,7 +26,7 @@ Reading your tasks is instant. Anything that **changes** ClickUp — posting a c
 ## Turn ClickUp on for the chat
 
 1. Confirm ClickUp is **Connected** under **Settings → Integrations** (see [Before You Start](./before-you-start)).
-2. In the chat box, open the **Apps** dropdown and switch **ClickUp** on for this conversation. (This tells the assistant it's allowed to use ClickUp.)
+2. In the chat box, open the **+** menu and use the **Apps** tab to switch **ClickUp** on for this conversation. (This tells the assistant it's allowed to use ClickUp.)
 
 ---
 
@@ -139,7 +139,7 @@ For anything that touches several tasks at once, add "show me your plan before y
 
 Use your own real tasks (these are safe, reversible actions):
 
-- [ ] Turn ClickUp on via the **Apps** dropdown
+- [ ] Turn ClickUp on via the **+ → Apps** tab
 - [ ] Ask for your tasks due this week
 - [ ] Post a comment update on one real task
 - [ ] Log time on a task (timer or after-the-fact)
@@ -152,6 +152,6 @@ Use your own real tasks (these are safe, reversible actions):
 - **Read the prompt before allowing.** Especially for batch updates — confirm the plan first.
 - **It only sees what you see.** Your ClickUp permissions still apply.
 - **Bundle your day.** One message can fetch, comment, and log time across several tasks — much faster than doing each by hand.
-- **Tone too stiff?** Different AI models word updates differently. If a status comment reads too formal or too casual, switch the **model dropdown** (Claude / GPT / Gemini) and regenerate it before posting.
+- **Tone too stiff?** Different AI models word updates differently. If a status comment reads too formal or too casual, switch the **model** and regenerate it before posting. (Exact models: **Developer** mode; outcomes: **Quick / Balanced / Best** in **Chat** mode.)
 
 **See also:** [ClickUp integration](/integrations/clickup) · [Permissions & Safety](/chat/permissions) · [Using Chat](/chat/using-chat)

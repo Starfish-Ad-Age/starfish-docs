@@ -10,7 +10,7 @@ Knowledge files are uploads attached to a project or folder that the AI can read
 
 | Type | What happens on upload |
 |------|------------------------|
-| PDF | Text extracted with PDF.js. Available verbatim via `readWorkspaceFile`. |
+| PDF | Text extracted with unpdf (a serverless PDF.js build). Available verbatim via `readWorkspaceFile`. |
 | DOCX (`.docx`) | Text extracted with Mammoth. Available verbatim. |
 | XLSX (`.xlsx`, `.xls`) | Cell contents flattened with ExcelJS, sheet by sheet. |
 | Images (PNG, JPG, GIF, WebP, SVG, etc.) | Stored as bytes. Read multimodally by vision models when the AI calls `readWorkspaceFile`. |

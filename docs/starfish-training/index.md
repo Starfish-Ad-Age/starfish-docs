@@ -54,7 +54,7 @@ flowchart LR
     dd --> gpt["GPT"]
     dd --> gemini["Gemini"]
     dd --> deepseek["DeepSeek V4 Pro"]
-    dd --> others["Grok · Kimi · GLM-5 · MiMo"]
+    dd --> others["Grok · Kimi · GLM-5 · Qwen"]
     dd --> auto[["Auto — Starfish picks the best one for you"]]
 ```
 
@@ -62,13 +62,13 @@ Quick guide to who's good at what:
 
 | Provider | In Starfish | Reach for it when… |
 |----------|-------------|--------------------|
-| **Claude** (Anthropic) | Sonnet 4.6 · Haiku 4.5 | Writing, tone, careful reasoning |
-| **GPT** (OpenAI) | 5.5 · 5.4 · Mini | General tasks, structured output |
-| **Gemini** (Google) | 3.1 Pro · 3 Flash | Fast answers, big documents, images |
+| **Claude** (Anthropic) | Sonnet 5 · Haiku 4.5 | Writing, tone, careful reasoning |
+| **GPT** (OpenAI) | 5.6 Luna · Sol · Terra | General tasks, structured output |
+| **Gemini** (Google) | 3.8 Flash · 3.5 Flash Lite | Fast answers, big documents, images |
 | **DeepSeek** | V4 Pro | A strong all-rounder — a solid default for most tasks |
-| **Others** | Grok · Kimi · GLM-5 · MiMo | A second opinion / specialty takes |
+| **Others** | Grok · Kimi · GLM-5 · Qwen | A second opinion / specialty takes |
 
-You'll find the **model dropdown** at the bottom of the chat box. It remembers your choice per conversation. *(Full lineup: [Models & Providers](/chat/models) · how Auto chooses: [Auto Model Routing](/chat/auto-routing).)*
+You'll find the **model dropdown** at the bottom of the chat box. It remembers your choice per conversation. In **Chat** mode the dropdown offers **Smart Auto** plus **Quick / Balanced / Best**; flip the **Chat / Developer** toggle near the top of the left sidebar to pick exact models. *(Full lineup: [Models & Providers](/chat/models) · how Auto chooses: [Auto Model Routing](/chat/auto-routing).)*
 
 ::: tip This shows up in every track
 Any time an answer isn't quite right, your first move is: **switch the model and try again** — right there, no new tab. We'll point this out as you go.

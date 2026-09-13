@@ -27,7 +27,6 @@ Stitch connects AI-powered UI generation to Starfish. Generate complete UI scree
 - **Projects** -- Create and manage Stitch projects, list and browse existing ones
 - **Screen Variants** -- Generate multiple variants of a screen for comparison
 - **Edit Screens** -- Modify existing screens with natural language instructions
-- **Prototypes** -- Build multi-screen app prototypes with linked navigation
 
 ## Example Prompts
 
@@ -35,7 +34,7 @@ Stitch connects AI-powered UI generation to Starfish. Generate complete UI scree
 - "Create a design system with our brand colors (#1a1a2e, #16213e, #0f3460) and Inter font"
 - "Show me 3 variants of a pricing page with toggle between monthly and annual plans"
 - "Edit the dashboard screen to add a sidebar navigation with icons"
-- "Create a mobile app prototype with onboarding, home, and profile screens"
+- "Create a mobile app flow with onboarding, home, and profile screens"
 
 ## Notes
 

@@ -36,7 +36,7 @@ Notice how generic the answer is. Now imagine an assistant that first searched "
 
 **Goal:** create a "Social Trend Ideator" agent.
 
-1. Click **Agents** in the left sidebar to open the Agents page.
+1. Switch to **Developer** mode (the **Chat / Developer** toggle near the top of the left sidebar), then click **Agents** to open the Agents page.
 2. Click **Create agent** (the button on the big colored card at the top).
 3. The **Build a custom agent** box opens. In the description, paste something like this — edit it for how *you* work:
 
@@ -82,7 +82,7 @@ Then click **Save agent**. You'll see a "Created Social Trend Ideator" confirmat
 **Goal:** get trend-grounded ideas.
 
 1. Start a **New Chat**.
-2. In the chat box, open the **Agents** dropdown and select your **Social Trend Ideator**. It appears as a pill above the box.
+2. In the chat box, name your agent in the message (for example: “Social Trend Ideator — Client: Northwind Coffee…”). Once it's active it appears as a pill above the box. *(In **Developer** mode you can also pick it from the **Agents** dropdown or with the `/agents <name>` command.)*
 3. Ask for ideas:
 
    ```
@@ -105,12 +105,12 @@ The agent is reading the live web, which is great — but the web is messy. If i
 
 This is the part people love. Different AIs *think* differently: **Claude** tends to be thoughtful and on-brand, **GPT** punchy and structured, **Gemini** fast and often very current. Normally you'd open three apps to compare. Here you run the **same brief through each, right in this chat**, and cherry-pick the best.
 
-Because we left the agent's model on **Auto**, it uses whatever your **chat's model** is set to. So:
+Because we left the agent's model on **Auto**, it uses whatever your **chat's model** is set to. Exact model names (Claude, GPT, Gemini…) live in **Developer** mode — flip the **Chat / Developer** toggle near the top of the left sidebar, then:
 
 1. Run your brief once (you just did in Walkthrough 4).
 2. Open the **model dropdown** at the bottom of the chat and switch to a different model — e.g. **Claude → GPT**.
 3. Send the *exact same brief* again.
-4. Repeat for **Gemini**, then compare.
+4. Repeat for **Gemini**, then compare. *(In **Chat** mode you compare outcomes instead: **Quick**, **Balanced**, or **Best**.)*
 
 A simple way to capture the comparison:
 
@@ -153,7 +153,7 @@ Build a real ideation agent for one of your actual clients:
 
 - [ ] Create an agent and describe it in your own words (must research trends first)
 - [ ] Tune the system prompt so it never gives generic ideas
-- [ ] Save it, then activate it in a New Chat via the **Agents** dropdown
+- [ ] Save it, then activate it in a New Chat by naming it in your message
 - [ ] Run it for a real client and watch it search the web before answering
 - [ ] Ask it "show me where you saw that trend" to verify one idea
 - [ ] Edit the agent to output ideas in a clean table, then re-run
@@ -165,6 +165,6 @@ Build a real ideation agent for one of your actual clients:
 - **Give it context.** Tell it the client, the audience, the goal, and the platform. Vague in = vague out.
 - **Verify trends.** Live web research can surface noise. Always gut-check before pitching.
 - **One agent per job.** A trend ideator, a caption writer, a hashtag researcher — small focused agents beat one do-everything agent.
-- **Reuse it.** Once saved, your agent is one click away in every chat, forever.
+- **Reuse it.** Once saved, your agent is one message away in every chat, forever.
 
 **See also:** [Agents Overview](/agents/overview) · [Managing Agents](/agents/managing-agents) · [Knowledge Packs](/agents/knowledge-packs) (share agents across the team)

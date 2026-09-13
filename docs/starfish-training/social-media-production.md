@@ -25,8 +25,8 @@ Image generation is **brilliant for the creative and the look**: backgrounds, mo
 
 ## Two ways to generate
 
-- **Image Gen studio** — click **Image Gen** in the left sidebar. Best for focused post-making with reference images. *We'll use this for the walkthroughs.*
-- **In chat** — turn on the **Media → Image** toggle in the chat box. Best when image-making is part of a bigger conversation. ([Details](/media/image-generation).)
+- **Image studio** — open **Media** in the left sidebar, then the **Images** tab, and open an image. Best for focused post-making with reference images. *We'll use this for the walkthroughs.*
+- **In chat** — open the **+** menu at the bottom-left of the composer, choose the **Create** tab, then **Create an image**. Best when image-making is part of a bigger conversation. ([Details](/media/image-generation).)
 
 ### Which model?
 
@@ -35,9 +35,12 @@ In the studio there's a model dropdown. Quick guide:
 | Model | Use it for |
 |-------|-----------|
 | **Nano Banana 2** *(default)* | Most social posts — fast, follows instructions well |
-| **Nano Banana** | Quick rough explorations (cheaper) |
+| **Nano Banana 2 Lite** | Fast drafts, variations, and quick edits |
+| **Nano Banana Pro** | Highest-detail Gemini option for polished assets |
 | **Seedream 4.5** | Photorealistic product shots, fine detail |
+| **GPT Image 2.5 Flare / Sunburst** | Sharp detail and typography; Sunburst for the most polished, precise edits |
 | **GPT Image 2** | When you need clearer text or illustrative/poster styles |
+| **Nano Banana** | Quick rough explorations (legacy, cheaper) |
 
 Start with **Nano Banana 2** unless you have a reason not to.
 
@@ -47,7 +50,7 @@ Start with **Nano Banana 2** unless you have a reason not to.
 
 **Goal:** get a usable first draft from a written idea.
 
-1. Click **Image Gen** in the sidebar.
+1. Open your image studio (via **Media → Images**, or start one from the chat **+ → Create → Create an image** flow).
 2. Type a clear description of the approved post. The more specific, the better:
 
    ```
@@ -67,9 +70,9 @@ Start with **Nano Banana 2** unless you have a reason not to.
 
 **Goal:** get the *style* you (or the client) already have in mind.
 
-You can drag in **up to 4 reference images** — a moodboard, a past post you liked, a brand style sample.
+You can drag in reference images — **up to 14** with Nano Banana 2 (Seedream and the GPT Image models cap at 4).
 
-1. In the Image Gen studio, **drag a reference image** into the prompt area.
+1. In the image studio, **drag a reference image** into the prompt area.
 2. Then describe what to make *in that style*:
 
    ```
@@ -125,8 +128,8 @@ Give me 3 variations of this so I can pick one.
 
 **Save the image:**
 
-- Click **Save to folder** on the session to pick a folder on your computer. From then on, every image in that session auto-saves there.
-- Generated images also collect in the **Media** library (the **Designs** area) so you can find them later.
+- Click **Save folder** on the session to pick a folder on your computer. From then on, every image in that session auto-saves there (under `generated/`, with references under `references/`).
+- Generated images also collect in the **Media** area so you can find them later.
 
 **Write the caption** — hover the image and click **Continue in chat**. This opens a normal chat with the image attached, so the assistant can *see* it:
 
@@ -136,7 +139,7 @@ Friendly tone, one short line each, include 3 relevant hashtags.
 ```
 
 ::: tip Caption not landing? Try another model.
-Captions are pure writing — exactly where the different AIs have different voices. Run the same caption prompt on **Claude**, then **GPT**, then **Gemini** (switch the **model dropdown** at the bottom of the chat) and keep the best lines from each. No copy-pasting between three apps.
+Captions are pure writing — exactly where the different AIs have different voices. Run the same caption prompt on **Claude**, then **GPT**, then **Gemini** and keep the best lines from each. (Exact model names live in **Developer** mode — toggle **Chat / Developer** near the top of the left sidebar; in **Chat** mode pick **Quick**, **Balanced**, or **Best**.)
 :::
 
 ---
@@ -149,7 +152,7 @@ Take a **real approved brief** you'd normally build in Canva and run it through:
 - [ ] Re-generate it using a moodboard/reference image for the style
 - [ ] Bring the client logo in as a reference
 - [ ] Refine it down (warmer, reposition, etc.) and ask for **3 variations**
-- [ ] Pick one, **Save to folder**, and **Continue in chat** to write 3 captions
+- [ ] Pick one, **Save folder**, and **Continue in chat** to write 3 captions
 - [ ] Finish the chosen post in Canva: real logo + final copy on top
 
 ## Tips & gotchas
@@ -158,6 +161,6 @@ Take a **real approved brief** you'd normally build in Canva and run it through:
 - **Show, don't tell.** A reference image beats paragraphs of description.
 - **Don't fight the text/logo.** Let AI do the creative; finalize exact words and logos in Canva.
 - **Generation costs money** (it's a real per-image cost), so explore with the cheaper model and switch to the better one for finals.
-- **Lost an image?** Check the **Designs / Media** library — everything you generate lands there.
+- **Lost an image?** Check the **Media** area — everything you generate lands there.
 
 **See also:** [Image Generation](/media/image-generation) · [Video Generation](/media/video-generation) · [Canva](/integrations/canva)

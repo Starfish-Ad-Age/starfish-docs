@@ -6,7 +6,41 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.36 — 2026-09-08 — current
+## 0.6.9-beta.37 — 2026-09-13 — current
+
+Starfish now **checks your spelling and grammar as you type**, **rewrites what you have written** on demand, and **types with your voice** using a cloud speech model of your choice. Generated images and video appear where the finished result will land, Simple mode picks up the Developer layout, and switching between Chat and Developer leaves the chat running. The rest of the release is fixes.
+
+### New
+
+**Spelling and grammar as you type.** Starfish checks your message as you write it with **Harper**, running entirely on your Mac. Problems are underlined in the message box; click one to fix it, ignore it, or add it to your dictionary. **Settings → Spelling & grammar** has a master switch plus per-category controls — spelling, grammar, punctuation, capitalization and style — and a dialect to choose. Nothing leaves the machine.
+
+**Polish.** Select some text — or nothing at all — and press the pen, or **⌘⇧P**, to rewrite it for grammar, clarity and tone. Read the result and accept it or discard it.
+
+**Voice typing with the model you choose.** Starfish transcribes your voice with a cloud speech model, **GPT-4o Transcribe** by default; **Whisper**, **GPT-4o Mini Transcribe**, **Fish Audio** and **xAI** are also selectable through the AI Gateway. The on-device **Parakeet** engine remains an option and is never downloaded automatically.
+
+**Images and video, revealed in place.** A generated image or video now appears in a live grid-reveal placeholder that resolves into the result in the same spot, with a note while it runs. A single image, a batch, and video are all supported.
+
+**Simple mode takes after Developer mode.** Simple mode now uses the Developer layout — your message on the right, the reply on the left — shows the site logo before links, and renders `@app` mentions inline as text with the app's logo instead of a chip.
+
+**Switch modes without losing the chat.** The Chat/Developer switch now opens that mode's chat — your last one, or a new one — and leaves the chat running in the background. Switching back returns to your last chat.
+
+**A rail, and actions in replies.** Long chats get a proximity conversation rail that grows as the pointer approaches, and replies carry selection actions — **Ask Starfish**, **Explain** and **Copy**.
+
+### Fixed
+
+**Chat**
+
+- The action reviewer no longer denies a safe step for being incomplete — a request for several images now generates them.
+- Every completed turn shows a response and its diff.
+- A step you declined no longer reads as a success.
+- Reading a streaming reply no longer loses your scroll position.
+- The **+** on a folder binds the new chat in one click.
+
+**Correctness**
+
+- A batch of fixes: replace-all undo, persisted tool failures, partial MultiEdit, notebook edits, edit verification and honest image reads.
+
+## 0.6.9-beta.36 — 2026-09-08
 
 Starfish can **read a reply out loud** in a voice you choose. **Scheduled work** is now set up by talking to it rather than filling in a form. You can connect **more than one GoHighLevel account**, the browser panel has grown into **a full browser**, and **the files on your Mac** can be browsed, opened and attached from inside a chat. The rest of the release is fixes.
 

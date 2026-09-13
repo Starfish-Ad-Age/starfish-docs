@@ -52,7 +52,11 @@ The terminal automatically resizes when you resize the panel (drag the left edge
 
 ## AI Command Execution
 
-The AI agent can execute terminal commands on your behalf. Every command triggers a permission prompt before running -- you always approve or deny before anything executes.
+The AI agent can execute terminal commands on your behalf once Local Access is set to **Full**. Every command is classified before it runs:
+
+- Read-only commands (git log, ls, grep, and similar) run without a prompt.
+- Commands that change your system follow the current permission mode — **Ask for approval** prompts you, while **Approve for me** and **Full access** let them run.
+- Destructive commands (`rm`, `git reset --hard`, `git clean -f`, overwriting redirects, and more) are hard-blocked in **Approve for me** mode and always require explicit approval in **Ask for approval** mode.
 
 This enables workflows like:
 
