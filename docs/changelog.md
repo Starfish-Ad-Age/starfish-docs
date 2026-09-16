@@ -12,6 +12,22 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 
 **Auto does more thinking.** **Smart Auto** in Chat mode and **Auto** in Developer mode now run **GPT-5.6 Luna** at its **extra-high** reasoning setting in both modes, so a request that needs judgement gets the deeper pass instead of the cheapest one. Previously Auto inherited the turn's default effort, which Chat mode deliberately kept low to stay cheap, so Auto could answer a question that needed judgement with the shallowest pass. Choosing a level — **Light**, **Balanced** or **Deep** — or a named model still wins over Auto.
 
+**An edit keeps your picture.** Editing an image now goes back to the image engine on the **same canvas as the original**, so "add a blue glow to this photo" adjusts that photograph instead of returning a redrawn version of it. The reference image is handed to the engine, and the source's own proportions are preserved.
+
+**Thinking where it earns its keep.** **GPT Image 2.5** decides how hard to think per request — its own **automatic** level for everyday pictures, and the **top** level when the image has to render readable words or a laid-out design. An explicit level still wins.
+
+**The mid-priced engine, by default.** **Automatic** prefers the **newest mid-priced** image and video engine rather than the most expensive one, and a **new chat starts on Automatic** for images and video as well as for text. The legacy **Nano Banana** and **Seedream 4.5** have been retired from the picker.
+
+### Fixed
+
+**A connected tool stops asking you to reconnect.** A tool that answers a notification with an **empty reply** was read as a failure, which left a perfectly healthy connection stuck on "Needs reconnecting". Starfish now treats an empty reply as an empty reply.
+
+**A picture never fails for want of an engine.** If the image engine you picked cannot finish the job, Starfish finishes it on another capable engine with the **same prompt, references and settings** instead of handing you an error.
+
+**Asking for a page action is an action.** Requests like "click Open indexing report" are no longer misread as an analysis-only turn that hides the browser controls. On a turn that genuinely is read-only, the browser page can still be inspected and reported on.
+
+**"Yes" counts as approval.** Confirming a step Starfish proposed is now accepted instead of being refused as an unconfirmed change.
+
 ## 0.6.9-beta.38 — 2026-09-16
 
 Starfish now sends **every reply through the fastest available provider** for its model, which cut a typical answer from 8–50 seconds to 4–8. The three Chat-mode levels are renamed **Light**, **Balanced** and **Deep**. Starfish **starts work while you are still typing**, reads **video on Gemini 3.8 Flash**, loads a connected app's **complete toolset** instead of claiming it is unavailable, and only asks permission for **deleting**. The rest of the release is fixes.
