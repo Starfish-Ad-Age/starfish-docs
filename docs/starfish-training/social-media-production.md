@@ -139,7 +139,7 @@ Friendly tone, one short line each, include 3 relevant hashtags.
 ```
 
 ::: tip Caption not landing? Try another model.
-Captions are pure writing — exactly where the different AIs have different voices. Run the same caption prompt on **Claude**, then **GPT**, then **Gemini** and keep the best lines from each. (Exact model names live in **Developer** mode — toggle **Chat / Developer** near the top of the left sidebar; in **Chat** mode pick **Quick**, **Balanced**, or **Best**.)
+Captions are pure writing — exactly where the different AIs have different voices. Run the same caption prompt on **Claude**, then **GPT**, then **Gemini** and keep the best lines from each. (Exact model names live in **Developer** mode — toggle **Chat / Developer** near the top of the left sidebar; in **Chat** mode pick **Light**, **Balanced**, or **Deep**.)
 :::
 
 ---

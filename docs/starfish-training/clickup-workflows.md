@@ -152,6 +152,6 @@ Use your own real tasks (these are safe, reversible actions):
 - **Read the prompt before allowing.** Especially for batch updates — confirm the plan first.
 - **It only sees what you see.** Your ClickUp permissions still apply.
 - **Bundle your day.** One message can fetch, comment, and log time across several tasks — much faster than doing each by hand.
-- **Tone too stiff?** Different AI models word updates differently. If a status comment reads too formal or too casual, switch the **model** and regenerate it before posting. (Exact models: **Developer** mode; outcomes: **Quick / Balanced / Best** in **Chat** mode.)
+- **Tone too stiff?** Different AI models word updates differently. If a status comment reads too formal or too casual, switch the **model** and regenerate it before posting. (Exact models: **Developer** mode; outcomes: **Light / Balanced / Deep** in **Chat** mode.)
 
 **See also:** [ClickUp integration](/integrations/clickup) · [Permissions & Safety](/chat/permissions) · [Using Chat](/chat/using-chat)

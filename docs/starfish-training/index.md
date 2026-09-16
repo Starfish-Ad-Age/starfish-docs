@@ -68,7 +68,7 @@ Quick guide to who's good at what:
 | **DeepSeek** | V4 Pro | A strong all-rounder — a solid default for most tasks |
 | **Others** | Grok · Kimi · GLM-5 · Qwen | A second opinion / specialty takes |
 
-You'll find the **model dropdown** at the bottom of the chat box. It remembers your choice per conversation. In **Chat** mode the dropdown offers **Smart Auto** plus **Quick / Balanced / Best**; flip the **Chat / Developer** toggle near the top of the left sidebar to pick exact models. *(Full lineup: [Models & Providers](/chat/models) · how Auto chooses: [Auto Model Routing](/chat/auto-routing).)*
+You'll find the **model dropdown** at the bottom of the chat box. It remembers your choice per conversation. In **Chat** mode the dropdown offers **Smart Auto** plus **Light / Balanced / Deep**; flip the **Chat / Developer** toggle near the top of the left sidebar to pick exact models. *(Full lineup: [Models & Providers](/chat/models) · how Auto chooses: [Auto Model Routing](/chat/auto-routing).)*
 
 ::: tip This shows up in every track
 Any time an answer isn't quite right, your first move is: **switch the model and try again** — right there, no new tab. We'll point this out as you go.

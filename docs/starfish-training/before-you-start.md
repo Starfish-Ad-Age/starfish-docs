@@ -46,7 +46,7 @@ If something isn't connected, click **Connect** next to it and follow the prompt
 
 Along the bottom of the composer there are a few controls. You'll use them in the tracks, so find them now:
 
-- **Model selector** — in **Chat** mode it shows **Smart Auto** plus three outcome choices: **Quick**, **Balanced**, and **Best**. Leave it on **Smart Auto** to let Starfish pick the best model for each message. *(Switch to **Developer** mode with the **Chat / Developer** toggle near the top of the left sidebar to pick exact models — Claude, GPT, Gemini and more.)* *This is the one to remember: if an answer isn't great, switch the model and ask again.*
+- **Model selector** — in **Chat** mode it shows **Smart Auto** plus three outcome choices: **Light**, **Balanced**, and **Deep**. Leave it on **Smart Auto** to let Starfish pick the best model for each message. *(Switch to **Developer** mode with the **Chat / Developer** toggle near the top of the left sidebar to pick exact models — Claude, GPT, Gemini and more.)* *This is the one to remember: if an answer isn't great, switch the model and ask again.*
 - **Agents** — in **Chat** mode you run a saved assistant by naming it in your message; it then shows as a pill above the box. The **Agents** dropdown and the Agents page live in **Developer** mode. (We'll build one in the Ideation track.)
 - **+ (Create / Files / Apps)** — click the **+** button at the bottom-left of the composer. **Create** makes an image or video or builds a Timeline, **Files** attaches files, and **Apps** switches on which connected tools the assistant is allowed to use this conversation (e.g. turn **ClickUp** on before asking about tasks).
 - **Polish (⌘⇧P)** — rewrite the selected text, or your whole draft, before you send it.

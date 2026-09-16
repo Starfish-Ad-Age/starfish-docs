@@ -110,7 +110,7 @@ Because we left the agent's model on **Auto**, it uses whatever your **chat's mo
 1. Run your brief once (you just did in Walkthrough 4).
 2. Open the **model dropdown** at the bottom of the chat and switch to a different model — e.g. **Claude → GPT**.
 3. Send the *exact same brief* again.
-4. Repeat for **Gemini**, then compare. *(In **Chat** mode you compare outcomes instead: **Quick**, **Balanced**, or **Best**.)*
+4. Repeat for **Gemini**, then compare. *(In **Chat** mode you compare outcomes instead: **Light**, **Balanced**, or **Deep**.)*
 
 A simple way to capture the comparison:
 

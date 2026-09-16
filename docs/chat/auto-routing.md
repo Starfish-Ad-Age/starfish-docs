@@ -4,23 +4,23 @@ outline: deep
 
 # Auto Model Routing
 
-When you select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode), Starfish takes care of the model choice. You don't need to think about which model to use -- Starfish reads each request and picks the model and the way to answer it.
+When you select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode), Starfish takes care of the model choice. You don't need to think about which model to use -- Starfish reads each request and picks the model and the way to answer it. In both Chat and Developer mode, **Auto runs GPT-5.6 Luna at extra-high reasoning**; a level or a named model you choose overrides it.
 
 ## How It Works
 
 1. You send a message with the model set to **Auto**.
 2. A lightweight LLM classifier reads your message, the conversation context, the number of active agents, available MCP tools, and attachment types. It runs on GPT-5.6 Luna and has a short timeout so it never holds up a reply.
-3. The classifier works out what the turn owes: an answer in chat, a saved file, an external change, or a fresh read, plus which methodology skills to load and whether the request needs research. It also suggests the best-fit model for the task.
-4. In Chat and Developer mode, **Auto resolves to GPT-5.6 Luna** for the turn. Simple mode's classifier pick is advisory: the deterministic router keeps Auto on one predictable model to avoid cache churn and surprise cost.
+3. The classifier works out what the turn owes: an answer in chat, a saved file, an external change, or a fresh read, plus which methodology skills to load and whether the request needs research.
+4. In Chat and Developer mode, **Auto resolves to GPT-5.6 Luna at extra-high reasoning** for the turn, so a request that needs judgement gets the deeper pass rather than the cheapest one.
 5. In Developer mode, a brief "Assigning to best model…" indicator appears while routing completes. Chat mode shows "Preparing your request…".
 
-If the classifier fails or times out, the system falls back to heuristic rules based on message length, attachment presence, and tool count. A turn that requests image or video generation is routed to **Best** for reliability.
+If the classifier fails or times out, the system falls back to heuristic rules based on message length, attachment presence, and tool count. A turn that requests image or video generation is routed to **Deep** for reliability.
 
 ## Picking a Model Yourself
 
 You are never forced onto Auto:
 
-- **Chat mode** offers outcome-based tiers -- **Quick**, **Balanced**, and **Best** -- plus up to five named models you choose under **Settings → Models**. **Best** runs the same Sonnet-class model as Balanced at a higher reasoning effort.
+- **Chat mode** offers outcome-based levels -- **Light**, **Balanced**, and **Deep** -- plus up to five named models you choose under **Settings → Models**. **Light** is the cheapest, on DeepSeek V4.1 Flash. **Balanced** runs GPT-5.6 Luna at high reasoning, and **Deep** runs the same Luna at its maximum reasoning -- a step up in effort, not a different model.
 - **Developer mode** lists the full catalog, grouped by provider, with a **Thinking effort** control (low / medium / high) for models that support it.
 
 A model you pick always wins over Auto.

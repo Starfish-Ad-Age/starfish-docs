@@ -6,7 +6,45 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.37 — 2026-09-13 — current
+## 0.6.9-beta.39 — 2026-09-16 — current
+
+### Improved
+
+**Auto does more thinking.** **Smart Auto** in Chat mode and **Auto** in Developer mode now run **GPT-5.6 Luna** at its **extra-high** reasoning setting in both modes, so a request that needs judgement gets the deeper pass instead of the cheapest one. Previously Auto inherited the turn's default effort, which Chat mode deliberately kept low to stay cheap, so Auto could answer a question that needed judgement with the shallowest pass. Choosing a level — **Light**, **Balanced** or **Deep** — or a named model still wins over Auto.
+
+## 0.6.9-beta.38 — 2026-09-16
+
+Starfish now sends **every reply through the fastest available provider** for its model, which cut a typical answer from 8–50 seconds to 4–8. The three Chat-mode levels are renamed **Light**, **Balanced** and **Deep**. Starfish **starts work while you are still typing**, reads **video on Gemini 3.8 Flash**, loads a connected app's **complete toolset** instead of claiming it is unavailable, and only asks permission for **deleting**. The rest of the release is fixes.
+
+### Improved
+
+**Answers start much sooner.** Every request is routed to the **highest-throughput provider** available for its model, ranked from live measurements and re-evaluated on each request. A slow provider is skipped automatically, and if one fails the next is tried — the same model throughout. Typical answers now begin in a few seconds instead of tens of seconds.
+
+**The three levels, renamed.** Quick, Balanced and Best are now **Light**, **Balanced** and **Deep**. **Light** is the cheapest, on **DeepSeek V4.1 Flash**. **Balanced** runs **GPT-5.6 Luna** at high reasoning, and **Deep** runs the **same Luna at its maximum reasoning** — a step up in effort rather than a second, pricier model. The names describe effort and cost honestly; none of them promises a speed it cannot keep. The names changed; your existing choice did not.
+
+**Starfish prepares while you type.** The next reply is classified and the connected apps are checked while you are still writing, so the work begins the moment you send.
+
+### New
+
+**Ask for one app, get all of it.** When a reply needs a connected app whose tools are not loaded yet, Starfish loads that app's **complete toolset** and keeps working — every tool the app offers, not a subset.
+
+**Video reading on Gemini 3.8 Flash.** Scenes, speech, on-screen text, funny moments and timestamps are read by **Gemini 3.8 Flash**. A long or large video is prepared automatically first, so one request covers the whole file.
+
+### Fixed
+
+**The reviewer helps instead of blocking.** Creating, updating and overwriting run straight away. Only **deleting** asks first, on a card you can allow or deny — and a decline now says plainly that the action was not approved, never that a tool is unavailable.
+
+**Inspecting an action is not doing it.** Tools that only describe an operation — such as GoHighLevel's show and search — are treated as reads, so looking up how to do something can never be mistaken for doing it.
+
+**The question card waits for you.** Questions are asked one at a time and the card stays until every one is answered. Your earlier answers are kept if you go back, and the run no longer starts working while a question is still open.
+
+**Nothing claims a tool is missing.** Starfish no longer tells you a connected tool or app is "not loaded" or "not callable". If it needs the app, it loads it and carries on.
+
+**Clips and exports land in your folder.** Anything you keep — clips, stills, exports — is saved to **Desktop** or **Downloads** with a descriptive name, never a temporary folder Finder hides.
+
+**Recovered work does not look broken.** A step that failed and was retried inside the same turn no longer colours the whole summary red. Individual calls still show their own outcome in the detail.
+
+## 0.6.9-beta.37 — 2026-09-13
 
 Starfish now **checks your spelling and grammar as you type**, **rewrites what you have written** on demand, and **types with your voice** using a cloud speech model of your choice. Generated images and video appear where the finished result will land, Simple mode picks up the Developer layout, and switching between Chat and Developer leaves the chat running. The rest of the release is fixes.
 

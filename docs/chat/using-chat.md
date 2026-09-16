@@ -147,7 +147,7 @@ In Developer mode, type **/** in the composer to open the command menu. Commands
 The composer toolbar reflects your current work mode:
 
 - **Agent selector** -- in Chat mode, pick the agent this chat runs as.
-- **Model picker** -- Chat mode offers Smart Auto, Quick/Balanced/Best, and your named models; Developer mode lists the full catalog plus a **Thinking effort** control. See [Models & Providers](/chat/models).
+- **Model picker** -- Chat mode offers Smart Auto, Light/Balanced/Deep, and your named models; Developer mode lists the full catalog plus a **Thinking effort** control. See [Models & Providers](/chat/models).
 - **+ button** -- open the Create / Files / Apps picker (see [@Mentions](#mentions)).
 - **Approval selector** (Developer mode) -- choose Ask for approval, Approve for me, or Full access. See [Permissions](/chat/permissions).
 

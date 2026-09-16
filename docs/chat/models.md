@@ -70,10 +70,10 @@ Starfish connects to multiple AI providers through a unified AI Gateway. You pic
 
 ## Auto Mode
 
-Select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode) and Starfish chooses the model for the turn -- currently GPT-5.6 Luna. It also classifies what the request needs (an answer, a saved file, an external change, research). This is the default. See [Auto Model Routing](/chat/auto-routing).
+Select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode) and Starfish chooses the model for the turn -- currently GPT-5.6 Luna at extra-high reasoning. It also classifies what the request needs (an answer, a saved file, an external change, research). This is the default. See [Auto Model Routing](/chat/auto-routing).
 
 ## Changing Models
 
-Open the model dropdown in the composer area. Your selection is remembered across chats and app restarts, and every new message uses the model currently shown. In Chat mode you pick an outcome (Quick, Balanced, Best) or one of your named models; in Developer mode you pick from the full catalog and can set a thinking effort for models that support it.
+Open the model dropdown in the composer area. Your selection is remembered across chats and app restarts, and every new message uses the model currently shown. In Chat mode you pick an outcome (Light, Balanced, Deep) or one of your named models; in Developer mode you pick from the full catalog and can set a thinking effort for models that support it.
 
 ![Model selector dropdown](/images/model-selector.png)

@@ -41,7 +41,7 @@ flowchart LR
 ```
 
 ::: tip Stuck on a tricky change? Switch models.
-Most edits land first try. If one model keeps misreading a fiddly layout request, switch the **model** and ask again — same conversation, no new tab. (In **Chat** mode pick **Quick**, **Balanced**, or **Best**; flip to **Developer** mode to choose an exact model like Claude or GPT.) Different models are strong at different things.
+Most edits land first try. If one model keeps misreading a fiddly layout request, switch the **model** and ask again — same conversation, no new tab. (In **Chat** mode pick **Light**, **Balanced**, or **Deep**; flip to **Developer** mode to choose an exact model like Claude or GPT.) Different models are strong at different things.
 :::
 
 ---
