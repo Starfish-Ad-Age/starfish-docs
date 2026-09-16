@@ -12,7 +12,7 @@ When you select **Auto** in the model dropdown (labelled **Smart Auto** in Chat 
 2. A lightweight LLM classifier reads your message, the conversation context, the number of active agents, available MCP tools, and attachment types. It runs on GPT-5.6 Luna and has a short timeout so it never holds up a reply.
 3. The classifier works out what the turn owes: an answer in chat, a saved file, an external change, or a fresh read, plus which methodology skills to load and whether the request needs research.
 4. In Chat and Developer mode, **Auto resolves to GPT-5.6 Luna at extra-high reasoning** for the turn, so a request that needs judgement gets the deeper pass rather than the cheapest one.
-5. In Developer mode, a brief "Assigning to best model…" indicator appears while routing completes. Chat mode shows "Preparing your request…".
+5. In both Chat and Developer mode, a brief "Preparing your request…" indicator appears while routing completes.
 
 If the classifier fails or times out, the system falls back to heuristic rules based on message length, attachment presence, and tool count. A turn that requests image or video generation is routed to **Deep** for reliability.
 
@@ -27,7 +27,7 @@ A model you pick always wins over Auto.
 
 ## Model Stickiness
 
-Where the router is choosing the model, it considers the previously resolved model. This prevents unnecessary model switching mid-conversation, which would otherwise force a cold prompt cache and pay full input price again. It still switches when a turn needs a capability the current model lacks (for example, vision for an image or PDF).
+Auto does not consider or continue a previously resolved model. In both Chat and Developer mode it always runs GPT-5.6 Luna at extra-high reasoning. What is remembered across chats is your own choice: a level (**Light**, **Balanced**, **Deep**) or a named model, which overrides Auto.
 
 ## Cost
 
