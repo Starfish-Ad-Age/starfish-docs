@@ -32,7 +32,7 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 
 **"Yes" counts as approval.** Confirming a step Starfish proposed is now accepted instead of being refused as an unconfirmed change.
 
-**A picture keeps the shape you asked for.** Asking for a wide image used to come back at **3:2** whatever you said, because the app left the shape to the provider. Wide, square and portrait are now requested **exactly** — which also means an edit of one of those pictures stays on its own canvas instead of being reframed.
+**The shape you ask for is the shape you get.** Asking for a wide image used to come back at **3:2** whatever you said, because the app left the shape to the provider. What you say now decides: **vertical**, **square**, **wide** or a named ratio — **9:16**, **4:5**, **16:9** — is honoured exactly, on an **edit** as well as a new picture, and the model's own suggestion is accepted only when it agrees with what you asked for. Ask for no shape — "add a dog on the left", "add a blueish glow" — and your picture keeps its own frame instead of being reframed. A "**portrait of**" someone is a subject, not a format. The reply also states the size it actually produced, so it can no longer announce a shape it did not make.
 
 **An ordinary photograph stays off the typography engine.** A prompt ending in "no text or logos" was read as a request for **legible words**, which sent everyday photographs to the slow typography engine. A **negated mention** is no longer a request, and an image engine that fails twice is **replaced instead of retried** four times.
 
