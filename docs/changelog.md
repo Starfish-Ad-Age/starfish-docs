@@ -18,6 +18,10 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 
 **The mid-priced engine, by default.** **Automatic** prefers the **newest mid-priced** image and video engine rather than the most expensive one, and a **new chat starts on Automatic** for images and video as well as for text. The legacy **Nano Banana** and **Seedream 4.5** have been retired from the picker.
 
+**Every engine's real options.** The image engines now offer what they actually support: **true 16:9**, **4:3**, **9:16**, **square**, **3:2** and **2:3** output sizes, and the Gemini engines take **1K**, **2K** or **4K** — measured at 5504×3072 on a 4K ask. Video engines take a resolution too: **720p**, **1080p** or **4K** on Veo, Kling and Seedance, **2K** or **768p** on MiniMax, each with its own durations and shapes. Ask for any of it in your own words.
+
+**Veo 3.1.** Video generation runs on **Veo 3.1**, which adds **first-and-last-frame** control on top of the previous Veo 3 behaviour.
+
 ### Fixed
 
 **A connected tool stops asking you to reconnect.** A tool that answers a notification with an **empty reply** was read as a failure, which left a perfectly healthy connection stuck on "Needs reconnecting". Starfish now treats an empty reply as an empty reply.
@@ -27,6 +31,10 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 **Asking for a page action is an action.** Requests like "click Open indexing report" are no longer misread as an analysis-only turn that hides the browser controls. On a turn that genuinely is read-only, the browser page can still be inspected and reported on.
 
 **"Yes" counts as approval.** Confirming a step Starfish proposed is now accepted instead of being refused as an unconfirmed change.
+
+**A picture keeps the shape you asked for.** Asking for a wide image used to come back at **3:2** whatever you said, because the app left the shape to the provider. Wide, square and portrait are now requested **exactly** — which also means an edit of one of those pictures stays on its own canvas instead of being reframed.
+
+**An ordinary photograph stays off the typography engine.** A prompt ending in "no text or logos" was read as a request for **legible words**, which sent everyday photographs to the slow typography engine. A **negated mention** is no longer a request, and an image engine that fails twice is **replaced instead of retried** four times.
 
 ## 0.6.9-beta.38 — 2026-09-16
 
