@@ -56,7 +56,7 @@ Working out who spoke is the most demanding part of the pipeline, and it scales 
 Being explicit, because the alternative is you finding out mid-call:
 
 - **It does not photograph your screen.** Earlier versions captured the whole display every 1.5 seconds to read participant names off the meeting window. That was removed — it exposed everything else on your screen during a client call, and it could only ever guess at names.
-- **It cannot record one browser tab.** System audio is captured for the whole machine. Music, notification chimes and other tabs are recorded along with the meeting, so mute what you do not want captured.
+- **It cannot record one browser tab.** System audio is captured for the whole machine. Whatever else is playing — notification chimes, other tabs — is recorded along with the meeting, so mute what you do not want captured.
 - **It does not identify people by voice.** Voices are grouped, and names come from you or from a suggestion you accept. Starfish never claims to know who someone is.
 
 ## Audio and privacy

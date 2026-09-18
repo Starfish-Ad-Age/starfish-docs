@@ -72,7 +72,3 @@ The bytes are saved as an Artifact (in SQLite), and the chat message references 
 ## Discuss a Clip in Chat
 
 On a generated clip, click **Discuss in chat** to open a fresh chat with the clip attached and a starter prompt based on the original. The chat agent can reason about the attached clip (and use `read_video` to watch it), so you can ask for edits, variations, or pair the clip with other work. The raw bytes never enter chat history — chat keeps a compact local video memo.
-
-## After Generation — Video Editor
-
-Generated (or any imported) videos can be opened in the [Video Editor](/media/starcut) for trimming, conversational edits, smart reframing for vertical, captions, background music, and AI-driven pan/zoom.

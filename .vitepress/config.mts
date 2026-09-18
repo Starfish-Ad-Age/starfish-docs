@@ -107,8 +107,6 @@ export default withMermaid({
         items: [
           { text: "Image Generation", link: "/media/image-generation" },
           { text: "Video Generation", link: "/media/video-generation" },
-          { text: "Video Editor", link: "/media/starcut" },
-          { text: "Soundtrack Library", link: "/media/soundtrack" },
         ],
       },
       {

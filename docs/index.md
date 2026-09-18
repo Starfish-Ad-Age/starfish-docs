@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Starfish
   text: The AI workspace that <em>actually does the work</em>.
-  tagline: One interface. Every tool. An AI agent that can read your inbox, ship code, run scheduled jobs, generate media, and edit video — without you switching tabs.
+  tagline: One interface. Every tool. An AI agent that can read your inbox, ship code, run scheduled jobs, and generate media — without you switching tabs.
   actions:
     - theme: brand
       text: Get Started
@@ -44,12 +44,6 @@ features:
       height: 28
     title: Image &amp; video generation
     details: A dedicated studio, or inline from chat. Multi-turn refinement on the latest Nano Banana, Seedream, Veo, and Kling models.
-  - icon:
-      src: /icons/scissors.svg
-      width: 28
-      height: 28
-    title: Video editor
-    details: Trim, reframe for vertical, burn captions, mix background music. Smart-pan lets AI follow the subject through the shot. ffmpeg bundled, runs on-device.
   - icon:
       src: /icons/terminal.svg
       width: 28
