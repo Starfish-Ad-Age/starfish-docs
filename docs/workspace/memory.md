@@ -49,7 +49,7 @@ After a chat turn, once the conversation goes idle, Starfish updates the knowled
 When the rebuild runs:
 
 1. Starfish loads the existing knowledge document.
-2. Sends the document AND the latest chat transcript to Claude Haiku 4.5.
+2. Sends the document AND the latest chat transcript to a fast AI model.
 3. The model is instructed to **merge** new information into the document — *never overwrite, never lose prior facts*.
 4. The result is saved back to the workspace. When the chat is in a folder, each new fact is routed to where it belongs: details specific to that folder stay in the folder, while information useful across the whole project is saved at the project level — so the same fact is never duplicated in both.
 

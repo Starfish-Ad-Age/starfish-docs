@@ -71,6 +71,7 @@ export default withMermaid({
         text: "Agents",
         items: [
           { text: "Overview", link: "/agents/overview" },
+          { text: "Teams at Work", link: "/agents/teams-at-work" },
           { text: "Managing Agents", link: "/agents/managing-agents" },
           { text: "Knowledge Packs", link: "/agents/knowledge-packs" },
         ],
@@ -100,6 +101,8 @@ export default withMermaid({
           { text: "Terminal", link: "/tools/terminal" },
           { text: "Browser", link: "/tools/browser" },
           { text: "File Management", link: "/tools/files" },
+          { text: "Designer", link: "/tools/designer" },
+          { text: "Search Studio", link: "/tools/search-studio" },
         ],
       },
       {

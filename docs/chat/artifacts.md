@@ -24,6 +24,8 @@ When an artifact is created, the right panel automatically switches to the **Art
 
 HTML files get special treatment. Starfish renders them in a sandboxed iframe within the Artifacts tab, so you can preview landing pages, reports, dashboards, and interactive content without leaving the conversation.
 
+Previews show the page as it's meant to look, with its images and styles in place.
+
 The sandbox allows scripts, so JavaScript within the artifact runs normally, but it deliberately does **not** allow same-origin access: the frame has an opaque origin, so artifact code cannot reach the Starfish app or call its API. Element selection, comment pins, and fit-to-width still work -- the frame and the app talk by message rather than direct access.
 
 ## Previewing Artifacts
@@ -33,6 +35,14 @@ Click an artifact in the chat to open a preview. The preview method depends on t
 - **HTML** -- renders live in the Artifacts tab with full JavaScript support
 - **Code files** -- syntax-highlighted preview
 - **Other files** -- opens in your system's default application
+
+## Reports and PDFs
+
+Reports and PDFs stick to the facts Starfish actually found. They don't include made-up figures. When you ask for a PDF, Starfish saves it straight away and never stops to ask where to put it.
+
+## File Links
+
+When Starfish mentions a file on your Mac, the link shows just the file name, not a long folder path. Click it to open the file, or hover it and click the folder button (**Show in Finder**) to see where it lives.
 
 ## Saving Artifacts
 

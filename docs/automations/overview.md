@@ -6,7 +6,7 @@ outline: deep
 
 Automations run a saved instruction on a schedule. Same chat agent you'd talk to interactively, except it fires at a time you pick — daily standup digest, weekly client report, recurring campaign check — and writes its output into a chat session you can review later.
 
-Open the Automations page from the **Automations** link in the sidebar, between Marketplace and Media. In Simple mode the same page is labelled **Scheduled work**.
+Open the Automations page from the **Automations** link in the sidebar, between Marketplace and Media. In Chat mode the same page is labelled **Scheduled work**.
 
 ## What an automation is
 

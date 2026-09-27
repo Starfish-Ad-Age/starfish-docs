@@ -57,11 +57,7 @@ Search tools skip dependency and build output — `node_modules`, `.next`, `.git
 
 ## Saving AI Artifacts
 
-When the AI generates code, data, or other files during a conversation, you can save them to any local directory:
-
-1. The AI generates a file artifact
-2. You approve the save location
-3. The file is written to your filesystem
+When the AI generates code, data, or other files during a conversation, it saves them for you. PDFs and reports never stop to ask where to save. In Developer mode, your approval setting still applies. The chat shows a clean link with just the file name; hover it and click the folder button (**Show in Finder**) to see where the file lives.
 
 This works for any file type -- source code, configuration files, data exports, images, and more.
 

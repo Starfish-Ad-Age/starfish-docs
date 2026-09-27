@@ -19,7 +19,7 @@ features:
       width: 28
       height: 28
     title: 25+ language models
-    details: Claude, GPT, Gemini, Grok, Kimi, DeepSeek, GLM and Qwen — all routed through one Gateway with a single key. Auto mode picks the best one for each message.
+    details: Leading AI models from every major provider, all routed through one Gateway with a single key. Auto mode picks the best one for each message.
   - icon:
       src: /icons/cable.svg
       width: 28
@@ -43,7 +43,7 @@ features:
       width: 28
       height: 28
     title: Image &amp; video generation
-    details: A dedicated studio, or inline from chat. Multi-turn refinement on the latest Nano Banana, Seedream, Veo, and Kling models.
+    details: A dedicated studio, or inline from chat. Multi-turn refinement on the latest image and video engines.
   - icon:
       src: /icons/terminal.svg
       width: 28

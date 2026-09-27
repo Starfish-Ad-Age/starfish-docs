@@ -17,7 +17,7 @@ The archive must be under 50 MB, and it must contain at least one agent `.md` fi
 
 ## How to Import
 
-Agents live on the **Agents** page (Developer mode). There are two ways to bring in pre-built agents:
+Your agent library is on the **Agents** page under **Rooms → Manage agents** (Developer mode). There are two ways to bring in pre-built agents:
 
 ### Upload a single agent file
 
@@ -32,7 +32,7 @@ Either way, a notification confirms how many agents were added.
 ## Where to Get Knowledge Packs
 
 - **Your team** -- shared packs with agents tailored to your workflows.
-- **The template directory** -- click **Browse templates** on the Agents page to install ready-made agents one at a time.
+- **The template directory** -- click **Browse templates** in **Rooms → Manage agents** to install ready-made agents one at a time.
 - **Create your own** -- build custom packs for your use cases (see below).
 
 ## Creating Your Own

@@ -16,17 +16,15 @@ Create images from text descriptions directly within Starfish. The fastest path 
 | **GPT Image 2.5 Flare** | OpenAI `gpt-image-2.5-flare` | Fast everyday images with sharp detail and typography |
 | **GPT Image 2.5 Sunburst** | OpenAI `gpt-image-2.5-sunburst` | Highest fidelity for polished work and precise edits |
 | **GPT Image 2** | OpenAI `gpt-image-2` | Strong for typography, layouts, and illustrations |
-| **Seedream 4.5** | ByteDance `seedream-4.5` | Realistic marketing visuals |
-| **Nano Banana** | Google `gemini-2.5-flash-image` | Legacy fast option for familiar results |
 
 All models route through the Vercel AI Gateway with a single key — no per-provider account needed.
 
 ### Capabilities
 
-- **Reference images** — up to **14** on Nano Banana 2 / 2 Lite / Pro, and up to **4** on the legacy Nano Banana, the GPT Image models, and Seedream.
+- **Reference images** — up to **14** on Nano Banana 2 / 2 Lite / Pro, and up to **4** on the GPT Image models.
 - **Multiple images per request** — the GPT Image 2 family can return up to **10** images in a single call. Every other model returns one.
 - **Extra controls** — size, quality, background, and output format are exposed by the GPT Image 2 family only. The in-chat tool can pass them; the studio uses the model's defaults.
-- **Aspect ratios** — the Gemini models and Nano Banana cover 1:1, 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, and 21:9. GPT Image and Seedream 4.5 support 1:1, 9:16, and 16:9.
+- **Aspect ratios** — the picker shows the sizes each engine supports.
 
 ## Generating in Chat
 

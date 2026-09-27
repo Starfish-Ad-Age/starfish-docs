@@ -4,65 +4,61 @@ outline: deep
 
 # Managing Agents
 
-The **Agents** page is your library for creating, installing, arranging, and removing agents. It's in the sidebar in Developer mode; Simple mode hides the page and picks agents by name in the message instead.
+This page covers the controls that keep your agents safe, affordable and easy to share: the daily budget, write actions, stopping and starting over, export and import, and your agent library. The **Agents** page is in the sidebar in Developer mode.
 
-## The Agents page
+## The Agents page tabs
 
-Open **Agents** in the sidebar. The page shows your whole library with two tabs:
+- **Org** — your teams as an org chart. Add, arrange and edit agents here.
+- **Work** — every task, from queued to finished. See [Teams at Work](/agents/teams-at-work).
+- **Decisions** — questions and approvals waiting for you.
+- **Activity** — every run your agents made, with its steps and cost.
+- **Rooms** — conversations where you and your agents talk together.
+- **Deliverables** — every file your agents have made.
 
-- **All agents** — everything you have, both templates and your own.
-- **Built by me** — only the agents you created or uploaded.
+## Daily budget
 
-Each card shows the agent's name, avatar or icon, color, description, and the apps it expects.
+All your teams share one daily budget, **$5.00** to start. The chip at the top of the Agents page shows today's spend. Click it to change the budget to anything from $1 to $100 a day.
 
-The header actions are **Create agent**, **Browse templates**, and **Upload agent**. With more than one agent, **Reorder** lets you drag the cards into the order you want; the saved order is mirrored in the in-chat agent picker.
+When the budget is reached, work stops and picks up again after local midnight. Each team frame shows its own spend, and each card shows that agent's share.
 
-## Selecting an agent
+## Write actions
 
-In Developer mode, use the **Agents** dropdown in the composer. **Main agent** is single-select:
+Agents only **read** by default. They can look at your connected apps and the web, but they can't send, publish or change anything outside Starfish. Anything like that comes to you as a recommendation.
 
-- Pick an agent to make it the one this chat runs as.
-- **None (generic assistant)** clears the selection.
-- Picking the selected agent again turns it off.
+To let a team act, open its lead's profile and turn on **Allow write actions (each one needs your approval)**. Even then, nothing runs until you approve that exact action in **Decisions**. You can turn it off again at any time.
 
-When an agent is active:
+## Connected apps
 
-- Its system instructions are included in every message you send.
-- Its tool access applies.
-- Its preferred model is used, unless it's set to Auto.
+Each agent's profile has a **Connected apps** list. Pick only the apps that agent needs. If you leave it empty, the agent can read all your connected apps. An app you picked but haven't connected yet shows **connect to use**. Connect it in the **Marketplace**.
 
-In Simple mode there is no picker. Name the agent in your message — `@marketing`, or a phrase like "use the marketing agent" — and it sticks for that chat; a chip above the composer shows the active agent, with an **×** to stop using it.
+## Pause, stop and start over
 
-## Choosing connected apps
+- **Pause one agent** from its profile.
+- **Stop everything**, at the top of the Agents page, ends any running steps and pauses every team. Queued work waits until you click **Resume**.
+- **Remove from team**, in an agent's profile (or select a card and press Delete), takes the agent off the org chart. It stays installed and still works in chat. Its reports and open work move up to its lead.
+- **Start over**, on the Org tab, clears every team. Running steps stop, and open work is cancelled but kept as history. Your agents stay installed.
 
-The coverage of a chat (or an agent) also depends on which apps are switched on. Use the **Apps** dropdown beside the composer to turn connected apps on or off for the current chat. An agent's own tool access is set when you build or edit it.
+## Export and import
 
-## Creating an agent
+- **Export agent** or **Export team**, from an agent's or lead's profile, saves a file you can share.
+- **Export all teams**, on the Org tab, saves every team in one file.
+- **Import agent** or **Import team** brings a shared file back in. You choose whether to add it as a new team or put it under an existing lead. Each team in the file keeps its own name.
 
-Click **Create agent** and describe the role you want. Starfish drafts the agent, then opens it in the builder where you can set:
+## Your agent library
 
-- Name and description
-- Avatar, icon, and color
-- Model — **Auto** to match the chat, or a specific model
-- System prompt
-- Tool access — which integrations it may use
+Your full list of agents lives under **Rooms → Manage agents**. It has two tabs, **All agents** and **Built by me**, and these actions:
 
-Click **Save** to add it to your library. Newly saved agents appear under **Built by me**.
+- **Create agent** — describe the role and Starfish drafts the agent for you to review and save.
+- **Browse templates** — install ready-made agents one at a time.
+- **Upload agent** — add an agent from a single `.md` file. See [Knowledge Packs](/agents/knowledge-packs).
+- **Reorder** — drag cards into the order you want. The same order shows in the chat agent picker.
 
-In Simple mode the builder keeps the essentials and hides the model, system prompt, and tool controls.
+Hover a card to **Edit** it or **Delete** it. Editing a template you haven't changed makes your own copy first. Deleting an agent you built also removes its memory and files, and can't be undone. Removing a template just uninstalls it, so you can add it again later.
 
-## Installing and uploading
+## Using an agent in chat
 
-- **Browse templates** opens the template directory. Installing one adds a ready-made agent to your library; it's marked **Template**.
-- **Upload agent** accepts a single `.md` file. Its body becomes the agent's instructions, and optional frontmatter can set the name, description, tools, color, icon, and model. You review everything in the builder before saving.
+In Developer mode, type `/agents` followed by the agent's name (for example `/agents marketing`) and the chat runs as that agent. Type `/agents` on its own to open the Agents page.
 
-## Editing and deleting
+In Chat mode there's no picker. Name the agent in your message (`@marketing`, or "use the marketing agent") and it sticks for that chat. A chip above the composer shows the active agent, with an **×** to stop using it.
 
-- **Edit** — hover a card and click the pencil. Only agents you built can be edited in place; editing a pristine template forks it first. Once an agent is saved, the builder also carries its **memory** (what it has learned about how you like to work) and its uploaded resources. Memory opens in a roomy pop-up editor, so you can read and tidy it comfortably.
-- **Delete** — hover a card and click the trash button, then confirm. Deleting an agent you built also removes its memory and uploaded files, and can't be undone. Removing a template simply uninstalls it — you can re-install it from **Browse templates** at any time.
-
-A chat that was using an agent you delete falls back to the generic assistant.
-
-## Persistence
-
-Agent selections, tool access, memory, and your saved order persist across sessions and app restarts. Your configuration is always waiting when you come back.
+Your agents, teams, settings and saved order are kept across app restarts.

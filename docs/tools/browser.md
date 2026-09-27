@@ -63,6 +63,9 @@ When **Browser Use** is enabled in Settings, the agent can drive the embedded br
 | Action | Description |
 |--------|-------------|
 | Navigate | Open a URL in the browser panel |
+| List tabs | See which tabs are open and which one is active |
+| Switch tab | Move to another open tab before reading or acting on it |
+| Close tab | Close a tab you asked it to close |
 | Read | Take a numbered snapshot of the page's interactive elements and text |
 | Wait | Wait for the page to settle, or for a condition |
 | Click | Click an element from the most recent snapshot |
@@ -71,7 +74,7 @@ When **Browser Use** is enabled in Settings, the agent can drive the embedded br
 | Press a key | Send a keyboard key to the page |
 | Screenshot | Capture the current page state |
 
-Read-only actions (navigate, read, wait, scroll, screenshot) run without a prompt. Clicking and typing follow the app's permission mode, and any click whose visible label reads as publishing, sending, paying, or deleting is escalated so it needs your explicit approval. Page content is always treated as untrusted data — the agent ignores any instructions it finds on a page.
+Read-only actions (navigate, list or switch tabs, read, wait, scroll, screenshot) run without a prompt. Clicking and typing follow the app's permission mode, and any click whose visible label reads as publishing, sending, paying, or deleting is escalated so it needs your explicit approval. Page content is always treated as untrusted data — the agent ignores any instructions it finds on a page.
 
 ## HTML Artifact Preview
 

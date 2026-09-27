@@ -23,7 +23,6 @@ Starfish connects to multiple AI providers through a unified AI Gateway. You pic
 | GPT-5.6 Luna | Standard | Yes | Yes | Yes |
 | GPT-5.6 Sol | Standard | Yes | Yes | Yes |
 | GPT-5.6 Terra | Standard | Yes | Yes | Yes |
-| GPT-5.3 Codex | Standard | Yes | Yes | No |
 
 ### Google
 
@@ -38,19 +37,11 @@ Starfish connects to multiple AI providers through a unified AI Gateway. You pic
 
 | Model | Provider | Tier | Thinking | Tools | Vision |
 |-------|----------|------|----------|-------|--------|
-| GLM-5 | Z.AI | Standard | Yes | Yes | No |
-| GLM-5.2 | Z.AI | Standard | Yes | Yes | No |
 | GLM-5.3 | Z.AI | Standard | Yes | Yes | No |
 | GLM-5.3 Flash | Z.AI | Ultra Cheap | Yes | Yes | Yes |
-| Grok 4.5 | xAI | Standard | Yes | Yes | Yes |
-| Kimi K2.6 | Moonshot | Standard | Yes | Yes | Yes |
 | Kimi K3 | Moonshot | Standard | Yes | Yes | Yes |
 | Qwen 3.8 Max | Alibaba | Standard | Yes | Yes | Yes |
-| DeepSeek V4 Pro | DeepSeek | Standard | Yes | Yes | No |
 | DeepSeek V4 Pro 0813 | DeepSeek | Standard | Yes | Yes | No |
-| DeepSeek V4 Flash | DeepSeek | Fast & Cheap | Yes | Yes | No |
-| DeepSeek V4 Flash 0731 | DeepSeek | Fast & Cheap | Yes | Yes | No |
-| DeepSeek V4 Flash Vision Exp | DeepSeek | Fast & Cheap | Yes | Yes | Yes |
 | DeepSeek V4.1 Flash | DeepSeek | Fast & Cheap | Yes | Yes | Yes |
 
 ## Model Capabilities
@@ -70,7 +61,7 @@ Starfish connects to multiple AI providers through a unified AI Gateway. You pic
 
 ## Auto Mode
 
-Select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode) and Starfish chooses the model for the turn -- currently GPT-5.6 Luna at extra-high reasoning. It also classifies what the request needs (an answer, a saved file, an external change, research). This is the default. See [Auto Model Routing](/chat/auto-routing).
+Select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode) and Starfish chooses a strong model for the turn and gives it room to think. It also classifies what the request needs (an answer, a saved file, an external change, research). This is the default. See [Auto Model Routing](/chat/auto-routing).
 
 ## Changing Models
 

@@ -74,7 +74,7 @@ You don't need to connect everything now. Apps can be added or removed at any ti
 
 ## Step 5 — Ready
 
-Setup is complete. Click **Start working** to enter the main workspace. Starfish starts in Simple mode; switch to Developer mode from the model menu whenever you want the fuller layout.
+Setup is complete. Click **Start working** to enter the main workspace. Starfish starts in Chat mode; switch to Developer mode with the switch at the top of the sidebar whenever you want the fuller layout.
 
 **What to do next:**
 

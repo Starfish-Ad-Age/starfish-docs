@@ -30,7 +30,7 @@ Multiple files can upload in parallel. Each row appears immediately with an **An
 
 ## What happens during analysis
 
-For every uploaded file, Starfish runs a single Claude Haiku 4.5 call that produces:
+For every uploaded file, Starfish runs a single quick AI call that produces:
 
 - **A 1–2 sentence description** — concrete and specific. *"Acme Inc brand guidelines — logo, colour palette (#5B2C6F primary, #F4D03F accent), typography. 12 pages."*
 - **A suggested filename** when the original looks meaningless.
@@ -86,7 +86,7 @@ Editing a description here marks it as user-edited. Future re-analysis runs **wi
 | Action | What it does |
 |--------|--------------|
 | **Download** | Opens the file in a new tab with its native MIME type. PDFs preview, images render. |
-| **Re-analyze** | Reruns Haiku for fresh description + rename suggestion. Use when you find the description wrong or after a soft failure. |
+| **Re-analyze** | Reruns the analysis for a fresh description + rename suggestion. Use when you find the description wrong or after a soft failure. |
 | **Delete** | Removes the row from the database AND the bytes from disk. **Your original file in Downloads (or wherever you uploaded from) is never touched.** |
 
 ## How the AI uses these files
@@ -113,7 +113,7 @@ When you delete a file, the bytes are removed immediately. When you delete a fol
 
 ## Privacy
 
-The analyzer sends file content to the Vercel AI Gateway (and from there to Anthropic for Haiku). This is the same network path as your normal chats — the same provider, the same endpoint, no different. No file content leaves your machine *except* during analysis or when the agent reads it via `readWorkspaceFile`.
+The analyzer sends file content to the Vercel AI Gateway (and from there to the AI provider). This is the same network path as your normal chats — the same provider, the same endpoint, no different. No file content leaves your machine *except* during analysis or when the agent reads it via `readWorkspaceFile`.
 
 ## Tips
 

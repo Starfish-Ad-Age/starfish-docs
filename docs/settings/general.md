@@ -41,6 +41,15 @@ Shows that your API key is stored encrypted on this device, and provides **Sign 
 
 **Reset app** clears cached data and relaunches Starfish. You stay signed in and keep your connected apps, chats, meetings, and agents.
 
+## Chat wallpaper
+
+Give your chats a backdrop in **Settings → Appearance → Wallpaper**. It shows behind a new chat.
+
+- Pick one of **thirteen artworks**.
+- Click **Upload your own** to use your own picture (PNG, JPEG, WebP or AVIF, under 5 MB).
+- Pick **None** for a plain background.
+- Turn the gentle **Line effect** on or off.
+
 ## Where other settings live
 
 A few settings people expect under General now have their own categories:

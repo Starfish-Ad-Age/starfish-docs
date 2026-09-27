@@ -15,7 +15,7 @@ Plan Mode — **Plan Together** — is a structured planning workflow that separ
 
 ## The Plan Panel
 
-The Plan Together panel lives in the right-side panel alongside Terminal, Browser, Files, Artifacts, Servers, and Activity. It shows:
+The Plan Together panel lives in the right-side panel alongside Terminal, Browser, Files, Artifacts, and Servers. It shows:
 
 - **Progress count** -- how many items are done out of the total.
 - **Saved indicator** -- confirms your edits have persisted.

@@ -49,6 +49,16 @@ The steer is delivered to the model as your new direction at its next step, so t
 
 If the AI appears to have stopped mid-task (e.g., it says "let me do that now" but doesn't follow through), Starfish automatically sends a continuation prompt and merges the accumulated text and tool results into a single response to keep the conversation clean. The number of continuations allowed depends on the turn's inferred profile -- typically once, with more headroom on research, technical, and Developer work.
 
+### Long tasks keep going after a connection drop
+
+If your connection drops partway through a long task, Starfish picks the task back up on its own when it can. You don't need to type "Continue".
+
+## A Second Opinion on Hard Calls
+
+For a tough decision, Starfish can quietly ask a stronger advisor to double-check its thinking before it answers. You don't need to do anything; it happens when a call is hard enough to be worth it.
+
+You can also ask for it yourself, for example "ask the advisor before you decide" or "get the advisor's opinion on this plan."
+
 ## Sessions
 
 Each conversation is a **session**. Sessions are listed in the sidebar and persist across app restarts.
@@ -103,6 +113,8 @@ The **pen** button beside the mic is **Polish** (**Cmd + Shift + P**). It rewrit
 
 Click the **microphone button** in the composer toolbar to start dictating. Words appear as you speak, and **Enter** (or the send button) transcribes and sends; the **X** discards the recording.
 
+Dictation writes down exactly what you said, word for word, without the "um"s and "uh"s.
+
 Voice input uses your system microphone. On first use, macOS may prompt you to grant microphone access.
 
 You choose the engine in **Settings → Voice**:
@@ -119,6 +131,14 @@ Attach files to your message using the toolbar buttons or by dragging files onto
 - **PDFs** -- uploaded and processed for the AI to read. A small cloud badge indicates the PDF has been uploaded for persistence.
 
 Attachments appear as inline previews below the composer with a remove button on each.
+
+### Big documents
+
+Very large documents and files are read reliably, in parts, so Starfish can work through the whole thing instead of just the start.
+
+### Videos
+
+Upload a video and ask about it. Stills and moments Starfish pulls from a video keep the video's true colours. You can work with two videos at once, and Starfish finds every video you uploaded in the chat, including in chats you branched off from.
 
 ## @Mentions
 
@@ -146,7 +166,7 @@ In Developer mode, type **/** in the composer to open the command menu. Commands
 
 The composer toolbar reflects your current work mode:
 
-- **Agent selector** -- in Chat mode, pick the agent this chat runs as.
+- **Agent chip** -- in Chat mode, when you name an agent in your message, a chip shows which agent the chat runs as, with an **×** to stop using it.
 - **Model picker** -- Chat mode offers Smart Auto, Light/Balanced/Deep, and your named models; Developer mode lists the full catalog plus a **Thinking effort** control. See [Models & Providers](/chat/models).
 - **+ button** -- open the Create / Files / Apps picker (see [@Mentions](#mentions)).
 - **Approval selector** (Developer mode) -- choose Ask for approval, Approve for me, or Full access. See [Permissions](/chat/permissions).
@@ -167,7 +187,7 @@ On a long chat, a thin rail appears down the left edge with one tick per message
 
 ### Thinking Blocks
 
-When a reasoning model is active (Claude Sonnet 5, GPT-5.6 Luna, etc.), thinking blocks appear as expandable sections. They show the model's step-by-step reasoning process. Click to expand or collapse.
+When a model that reasons step by step is active, thinking blocks appear as expandable sections. They show the model's step-by-step reasoning process. Click to expand or collapse.
 
 ### Tool Call Cards
 

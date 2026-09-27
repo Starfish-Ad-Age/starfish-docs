@@ -53,8 +53,8 @@ flowchart LR
     dd --> claude["Claude"]
     dd --> gpt["GPT"]
     dd --> gemini["Gemini"]
-    dd --> deepseek["DeepSeek V4 Pro"]
-    dd --> others["Grok · Kimi · GLM-5 · Qwen"]
+    dd --> deepseek["DeepSeek"]
+    dd --> others["Kimi · GLM · Qwen"]
     dd --> auto[["Auto — Starfish picks the best one for you"]]
 ```
 
@@ -65,8 +65,8 @@ Quick guide to who's good at what:
 | **Claude** (Anthropic) | Sonnet 5 · Haiku 4.5 | Writing, tone, careful reasoning |
 | **GPT** (OpenAI) | 5.6 Luna · Sol · Terra | General tasks, structured output |
 | **Gemini** (Google) | 3.8 Flash · 3.5 Flash Lite | Fast answers, big documents, images |
-| **DeepSeek** | V4 Pro | A strong all-rounder — a solid default for most tasks |
-| **Others** | Grok · Kimi · GLM-5 · Qwen | A second opinion / specialty takes |
+| **DeepSeek** | V4 Pro 0813 · V4.1 Flash | A strong all-rounder — a solid default for most tasks |
+| **Others** | Kimi · GLM · Qwen | A second opinion / specialty takes |
 
 You'll find the **model dropdown** at the bottom of the chat box. It remembers your choice per conversation. In **Chat** mode the dropdown offers **Smart Auto** plus **Light / Balanced / Deep**; flip the **Chat / Developer** toggle near the top of the left sidebar to pick exact models. *(Full lineup: [Models & Providers](/chat/models) · how Auto chooses: [Auto Model Routing](/chat/auto-routing).)*
 

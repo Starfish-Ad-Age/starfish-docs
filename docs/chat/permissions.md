@@ -10,7 +10,7 @@ Starfish AI can take real actions -- delete files, modify accounts, send message
 
 ## Permission Modes
 
-Starfish has three approval modes, chosen with the approval selector in the Developer-mode composer toolbar. Simple mode always runs in **Approve for me** with a quiet, per-action safety check, so it has no selector.
+Starfish has three approval modes, chosen with the approval selector in the Developer-mode composer toolbar. Chat mode always runs in **Approve for me** with a quiet, per-action safety check, so it has no selector.
 
 ### Ask for approval (Recommended)
 

@@ -36,7 +36,7 @@ Notice how generic the answer is. Now imagine an assistant that first searched "
 
 **Goal:** create a "Social Trend Ideator" agent.
 
-1. Switch to **Developer** mode (the **Chat / Developer** toggle near the top of the left sidebar), then click **Agents** to open the Agents page.
+1. Switch to **Developer** mode (the **Chat / Developer** toggle near the top of the left sidebar), then click **Agents** in the sidebar, open the **Rooms** tab, and click **Manage agents**.
 2. Click **Create agent** (the button on the big colored card at the top).
 3. The **Build a custom agent** box opens. In the description, paste something like this — edit it for how *you* work:
 

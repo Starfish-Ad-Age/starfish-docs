@@ -12,23 +12,19 @@ Create short video clips (seconds, not minutes) from text descriptions or starti
 |--------|---------|-------|
 | **Kling 2.6** | Kling `kling-v2.6` (t2v / i2v) | Best value for everyday clips. 5s or 10s. Accepts a first frame and a last frame. |
 | **Kling v3** | Kling `kling-v3.0` (t2v / i2v) | Higher-end control with both first and last frames. 5s or 10s. |
-| **Veo 3** | Google `veo-3.0-generate-001` | Cinematic motion and prompt following, with audio. 4s, 6s, or 8s. First frame optional. |
-| **Grok Imagine 1.5** | xAI `grok-imagine-video-1.5` | Animates a still image with synchronized sound. **Requires a starting image.** Up to 15s; 480p / 720p / 1080p. |
-| **MiniMax H3** | MiniMax `minimax-h3` | Multimodal 2K video with sound, up to 15s. The only engine that accepts reference images and reference videos. |
+| **Veo 3.1** | Google `veo-3.1` | Cinematic motion and prompt following, with audio. 4s, 6s, or 8s. Accepts a first frame and a last frame. |
+| **Grok Imagine 1.5** | xAI `grok-imagine-video-1.5` | Brings a still image to life with synchronized sound, or works from text alone. Up to 15s; 480p / 720p / 1080p. |
+| **MiniMax H3** | MiniMax `minimax-h3` | Multimodal 2K video with sound, up to 15s. Accepts reference images and reference videos. |
 | **Seedance 2** | ByteDance `seedance-2.0` | Stylized movement and social-first visuals. 5s or 10s. |
 
 All engines route through the Vercel AI Gateway. A "premium" badge in the picker flags engines with a higher per-clip cost, and the same picker calls out whether an engine generates sound.
 
 ## Video Settings
 
-Duration, aspect ratio, and resolution are engine-dependent:
+Duration, aspect ratio, resolution, first and last frames, and reference images or videos all depend on the engine. The picker only offers the options the engine you chose supports.
 
-- **Duration** — fixed choices on most engines (Kling 5s/10s, Veo 4s/6s/8s, Seedance 5s/10s); free ranges on Grok Imagine (1–15s) and MiniMax H3 (5–15s).
-- **Aspect ratio** — 9:16, 16:9, and 1:1 on the Kling and Seedance engines, and 16:9 / 9:16 on Veo 3. Grok Imagine and MiniMax H3 support the widest range (also 4:3, 3:4, 3:2, and 2:3).
-- **Resolution** — Grok Imagine and MiniMax H3 expose 480p / 720p / 1080p. The other engines have no resolution input.
-- **First frame** *(optional)* — upload or paste an image to use as the first frame. **Required** by Grok Imagine 1.5.
-- **Last frame** *(optional)* — Kling engines only; greyed out everywhere else.
-- **Reference images / reference videos** — MiniMax H3 only, and only through the in-chat tool (see below).
+- **First frame** *(optional)* — upload or paste an image to use as the first frame.
+- **Last frame** *(optional)* — on engines that support it.
 
 ## Generating in Chat
 
@@ -44,8 +40,8 @@ Once armed, the agent has access to a `generate_video` tool it can invoke when y
 
 The in-chat tool can base a new clip on media already in the conversation:
 
-- **Reference images** — up to 9, and **reference videos** — up to 3 (MP4, 2–15 seconds, 50 MB each).
-- Only **MiniMax H3** accepts references. If you ask for one while a different engine is selected, Starfish automatically runs that generation on MiniMax H3 rather than asking you to switch engines.
+- **Reference images and reference videos** — how many you can use depends on the engine.
+- Engines that accept references show it in the picker.
 - References can't be combined with a starting or ending frame.
 
 ### How it shows up

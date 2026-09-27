@@ -37,10 +37,8 @@ In the studio there's a model dropdown. Quick guide:
 | **Nano Banana 2** *(default)* | Most social posts — fast, follows instructions well |
 | **Nano Banana 2 Lite** | Fast drafts, variations, and quick edits |
 | **Nano Banana Pro** | Highest-detail Gemini option for polished assets |
-| **Seedream 4.5** | Photorealistic product shots, fine detail |
 | **GPT Image 2.5 Flare / Sunburst** | Sharp detail and typography; Sunburst for the most polished, precise edits |
 | **GPT Image 2** | When you need clearer text or illustrative/poster styles |
-| **Nano Banana** | Quick rough explorations (legacy, cheaper) |
 
 Start with **Nano Banana 2** unless you have a reason not to.
 
@@ -70,7 +68,7 @@ Start with **Nano Banana 2** unless you have a reason not to.
 
 **Goal:** get the *style* you (or the client) already have in mind.
 
-You can drag in reference images — **up to 14** with Nano Banana 2 (Seedream and the GPT Image models cap at 4).
+You can drag in reference images — **up to 14** with Nano Banana 2 (the GPT Image models cap at 4).
 
 1. In the image studio, **drag a reference image** into the prompt area.
 2. Then describe what to make *in that style*:

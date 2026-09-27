@@ -6,7 +6,55 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.40 — 2026-09-18 — current
+## 0.6.9-beta.41 — 2026-09-27 — current
+
+This is a big update. Give your chats a wallpaper, build teams of agents that work together, fine-tune a website right on the page, and run SEO site audits in the chat. Reports and PDFs are more trustworthy, long tasks keep going on their own, and the app starts and switches chats faster.
+
+### New
+
+**Chat wallpapers.** Pick a wallpaper for a new chat in **Settings → Appearance → Wallpaper**. Choose one of thirteen artworks, upload your own image, or pick None, and turn the gentle **line effect** on or off.
+
+**Designer (Developer mode).** Preview your site at real desktop, tablet and phone sizes, or pop the preview into its own window. Select, comment on or edit text right on the page, and send it to the chat so Starfish makes the change.
+
+**Agents (Developer mode).** Build teams of agents, a lead with specialists, shown as an org chart. Give the lead a goal and it splits the work. Watch the team talk live, answer their questions in one questionnaire, and collect finished reports, PDFs and web pages in **Deliverables**. Start fast from a template. All teams share a daily budget you can change, and write actions are off until you turn them on; even then, you approve each one.
+
+**Search Studio.** Built-in SEO site audits: Starfish checks a public site page by page, lists the issues by how much they matter, and adds page-speed scores using your Google connection.
+
+**A second opinion on hard calls.** For a tough decision, Starfish can quietly ask a stronger advisor to double-check its thinking before it answers.
+
+### Improved
+
+**Reports and PDFs you can trust.** Reports and PDFs no longer include made-up figures, and a PDF never stops to ask where to save it.
+
+**Web page previews look right.** An HTML preview now shows its images and styles.
+
+**Clean file links.** Links to your files show just the file, not a long folder path.
+
+**Long tasks keep going.** If the connection drops partway through, Starfish picks the task back up on its own. No more typing "Continue".
+
+**Faster start, smoother switching.** The app opens faster, and moving between chats no longer flickers or goes blank.
+
+**Better video stills.** Stills and moments keep the video's true colours, work across two videos at once, and find every video you uploaded, in branched chats too.
+
+**Word-for-word dictation.** Dictation writes exactly what you said, without the "um"s.
+
+**Real browser tabs.** Starfish can list the open tabs and switch between them.
+
+**Big documents.** Very large documents and files are read reliably, in parts.
+
+**Safer by design.** The app's local connection now only talks to the Starfish window, and web pages made by agents open in a safe sandbox.
+
+**Developer mode.** Servers Starfish starts no longer clash with your project, clear Allow and Reject cards ask before a step runs, files are tidied when saved, you can drag and drop into the terminal, and GitHub uses the account you connected.
+
+**Small touches.** Progress notes fold away when you come back to a chat, and the task-steps card now sits to the side.
+
+### Fixed
+
+**Dictation keeps your last words.** The end of what you said is no longer cut off.
+
+**Video saves never clash.** Saving a still or a clip no longer fails because a file with that name already exists.
+
+## 0.6.9-beta.40 — 2026-09-18
 
 A long conversation now shows its own housekeeping: when Starfish compresses the history it says so, in the open, and lets you keep typing. A long research answer arrives as a document with a short written summary. The browser only opens when you ask, connected apps load only when the work needs them, and a run that stops making progress ends instead of looping. The browser can also keep several pages open at once, each in its own tab; watching a video says so while it runs; and a question that needs a fresh look at the video gets one. Media gains a real cleanup path, PDFs have to pass a quality check before they count as done, and GitHub connects without the Terminal.
 
