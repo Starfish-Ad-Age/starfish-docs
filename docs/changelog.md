@@ -6,7 +6,85 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.41 — 2026-09-27 — current
+## 0.6.9-beta.42 — 2026-10-04 — current
+
+Long chats are faster and cost less, and you can keep several chats going in tabs. The whole app has a cleaner look and a darker dark mode. The browser is faster, works in background chats, and shows you where it clicks. Developer mode can now commit, push and open pull requests, show every change, and undo a turn.
+
+### Faster and cheaper long chats
+
+**Long chats cost less.** Starfish reuses more of what it has already sent, so each new reply in a long chat starts sooner and costs less.
+
+**Steadier replies.** A chat stays with the same AI service while it works, and moves to a backup only if that service fails.
+
+### Chat tabs and several chats at once
+
+**Chat tabs.** Your open chats sit as tabs in a row along the top. A dot on each tab shows whether it is still working, has finished, or needs your answer. Turn tabs off or on in **Settings → Appearance → Chat tabs**.
+
+**Each chat keeps its own settings.** The model and approval choice you pick stay with that chat.
+
+**Switch without losing work.** Moving to another chat or starting a new one never stops a chat that is still running, and your message is saved the moment you send it.
+
+### The new look
+
+**A cleaner sidebar.** Chats and projects sit in one tidy list with status dots and actions on hover. Search shows your recent chats and quick actions before you type.
+
+**Menus that match.** Right-click menus and the chat menu look and work the same everywhere. Rename a chat from the menu at the top, and deleting a chat asks first.
+
+**One card for approvals and questions.** Approvals and questions share one clear design, and a risky step is clearly marked.
+
+**A darker dark mode.** Dark mode is deeper, and text is easier to read in every theme.
+
+**Simpler Settings.** Settings share one clean layout with a search box. The light and dark switch lives in **Settings → Appearance**, and notifications are in the sidebar.
+
+**Calmer answers.** Each answer shows how long Starfish worked in one place, the answer actions are simple icons, and a stopped reply says when you stopped it. Animations are quicker, and Reduce motion is respected everywhere.
+
+### The browser
+
+**A faster browser.** Clicks and typing no longer wait on fixed pauses, so browser tasks finish much sooner.
+
+**Works in background chats.** A chat you are not looking at can still use the browser, and each chat keeps its own browser tabs.
+
+**A small live preview.** A floating picture-in-picture preview shows the browser while Starfish works, with controls when you hover. Close it and it stays closed for that task.
+
+**See where it clicks.** A cursor moves across the page, so you can follow every click and what Starfish types.
+
+**Uses the browser when you ask.** Ask Starfish to use the browser for research and it does. If a site asks for your camera or microphone, Starfish stops and asks you first.
+
+### Developer mode
+
+**Commit, push and pull request.** Commit, Commit and push, or Push and create PR right from the app, using your GitHub connection. A button that cannot be used tells you why.
+
+**The Changes view.** See every changed file in your project, tick the ones you want, and read their changes together in colour. The Edited files card has a View changes button.
+
+**Undo a turn.** The undo icon next to Copy puts your files back to how they were before that turn and every later one. New files and the chat stay.
+
+**Clearer runs.** Commands show as their own rows, a finished run opens into a list of its steps, and you can set the effort in the model menu.
+
+### More to try
+
+**Import from other AI.** **Settings → Import from other AI** gives you prompts to copy into ChatGPT and other assistants. Paste their replies or upload files, a zip too, to bring your memory and projects into Starfish. The import runs in the background, and you can review and undo it.
+
+**Your profile.** Open your profile from the sidebar to see your usage on this device: tokens used, your longest task, your streaks and a daily activity map.
+
+**Better PDFs from web pages.** A web page saved as a PDF now looks exactly like the page. If the page is interactive, Starfish asks first.
+
+**New image and video models.** A new image model and a new default video model. Starfish can also remove a background, make an image square, resize, compress or convert it.
+
+**Files open in Starfish.** File links in the chat open inside Starfish.
+
+### Fixed
+
+**Stopped replies keep their steps.** After you stop a reply, its steps and the stop notice are still there after a reload.
+
+**No stray Checking card.** A finished file no longer shows a Checking card, and asking for a file no longer goes round in a loop.
+
+**Your own servers are left alone.** Starfish no longer takes over a server that another program is already running.
+
+**Copy prompt works.** Copy prompt in Import from other AI now copies the prompt.
+
+**Diagrams.** A diagram that cannot be drawn no longer leaves an error message on the page.
+
+## 0.6.9-beta.41 — 2026-09-27
 
 This is a big update. Give your chats a wallpaper, build teams of agents that work together, fine-tune a website right on the page, and run SEO site audits in the chat. Reports and PDFs are more trustworthy, long tasks keep going on their own, and the app starts and switches chats faster.
 
