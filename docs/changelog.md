@@ -60,7 +60,21 @@ Long chats are faster and cost less, and you can keep several chats going in tab
 
 **Clearer runs.** Commands show as their own rows, a finished run opens into a list of its steps, and you can set the effort in the model menu.
 
+### Memory
+
+**No more 50-item limit.** A short core is always used, and any number of notes are found when they matter. Imports from other AIs no longer hit a limit.
+
+**Learns how you work.** Starfish learns how you work, including with each client. Facts about a client go to that workspace's memory, not your personal memory. Secrets and account numbers are never saved.
+
+**Memory summary.** **Settings → Personalization → Memory summary → Manage** shows a readable summary of what Starfish knows. Use **Dive deeper** to explore a topic, or **Ask or update** to ask or change your memory in plain words.
+
+**Workspace and folder memory.** A short Core is always used and the rest is found when needed, so long workspace memory costs less per message. Updates never delete facts: old detail moves to an Archive, and a safety check rejects any update that would lose facts.
+
+**Smarter recall in Developer mode.** Developer mode finds the right memory more often, even when you word things differently.
+
 ### More to try
+
+**Create a workspace from a chat.** In Chat mode, open **+ → Files → Create a workspace from this chat**. In Developer mode, type **/workspace**. Starfish drafts the name, main instructions, folders with their own instructions, and starting memory. Review and edit everything, click **Create**, and the chat moves into the new workspace. With no chat open, it first asks what the workspace is for.
 
 **Import from other AI.** **Settings → Import from other AI** gives you prompts to copy into ChatGPT and other assistants. Paste their replies or upload files, a zip too, to bring your memory and projects into Starfish. The import runs in the background, and you can review and undo it.
 
