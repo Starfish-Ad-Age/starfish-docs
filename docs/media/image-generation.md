@@ -42,6 +42,12 @@ While the agent works, the reply shows a **grid-reveal placeholder** — a mosai
 
 The image is also saved as an **Artifact**, so it shows up in the **Media** library (`/designs`) under the **Images** tab. HTML/PDF/CSV artifacts the agent produces live alongside it under the **Designs** tab.
 
+### Editing an image in chat
+
+Hover an image in the chat and click **Edit this image** to open the image editor. Click **Add region** to mark an area and describe what should change there, or describe a change across the whole image, then send it. While the editor is open, its messages appear inside the editor, so they never cover its buttons. On the phone, the region panel is tall enough to type your change.
+
+Several edits of one image in the same reply show as one picture. Use the arrows to step through them; the label shows which one you are on, for example **Version 2 of 3**. The newest version shows first.
+
 ## Image Sessions
 
 Each image generation is a conversational turn. Open a session from the **Images** tab of the Media library to view it full-size and continue from there:

@@ -65,6 +65,7 @@ export default withMermaid({
           { text: "Folders", link: "/workspace/folders" },
           { text: "Knowledge Files", link: "/workspace/knowledge-files" },
           { text: "Project & Folder Memory", link: "/workspace/memory" },
+          { text: "Teams", link: "/workspace/teams" },
         ],
       },
       {

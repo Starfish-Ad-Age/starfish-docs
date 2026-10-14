@@ -40,6 +40,22 @@ Click an artifact in the chat to open a preview. The preview method depends on t
 
 Reports and PDFs stick to the facts Starfish actually found. They don't include made-up figures. When you ask for a PDF, Starfish saves it straight away and never stops to ask where to put it.
 
+- **Long tables** continue on the next page, and their header row repeats.
+- **Coloured pages** are coloured right to the edge, with no white bands.
+- **The PDF viewer** opens at full width, so nothing is cut off on the right.
+
+### Interactive pages
+
+Some pages have parts that only work on screen, such as tabs, closed sections or slides you click through. Before making the PDF, Starfish asks in plain words what the PDF should show:
+
+- **Page as it looks now** -- exactly what is on screen. Hidden tabs and closed sections stay hidden.
+- **Open all sections** -- every slide, tab and closed section, one slide per page. Pick this to save every slide of a deck.
+- **Cancel** -- don't make the PDF.
+
+## Slide Decks
+
+Ask for a slide deck in the chat and Starfish builds it from one tested design, so every deck looks consistent and its text stays readable. Each slide prints on its own page. On the phone, the live preview shows a **Read-only live draft** bar under it while Starfish works.
+
 ## File Links
 
 When Starfish mentions a file on your Mac, the link shows just the file name, not a long folder path. Click it to open the file, or hover it and click the folder button (**Show in Finder**) to see where it lives.

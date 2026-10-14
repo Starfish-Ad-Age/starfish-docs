@@ -39,7 +39,7 @@ From there you can:
 
 ## What's persisted
 
-Everything in the workspace lives in your local Starfish database — same place your chats already live (`~/Library/Application Support/Starfish/starfish.db` on macOS). Knowledge files are stored as actual bytes on disk under `workspace-files/<projectId>/`. Nothing leaves your machine except for the AI calls you would make anyway.
+Everything in the workspace lives in your local Starfish database — same place your chats already live (`~/Library/Application Support/Starfish/starfish.db` on macOS). Knowledge files are stored as actual bytes on disk under `workspace-files/<projectId>/`. Nothing leaves your machine except for the AI calls you would make anyway, unless you share a workspace with a [team](/workspace/teams). Then its files, folders and instructions sync to your teammates. Chats always stay private.
 
 When you delete a project, its folders cascade out and the on-disk file bytes are cleaned up. Chats survive — they just lose their workspace assignment.
 
@@ -49,3 +49,4 @@ When you delete a project, its folders cascade out and the on-disk file bytes ar
 - [Folders](/workspace/folders) — sub-grouping inside a project.
 - [Knowledge files](/workspace/knowledge-files) — uploading documents the AI can read.
 - [Project & folder memory](/workspace/memory) — how the AI accumulates knowledge from your chats.
+- [Teams](/workspace/teams) — sharing a workspace with the people you work with.

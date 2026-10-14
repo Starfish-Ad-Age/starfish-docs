@@ -20,6 +20,8 @@ Every tool call that can create or modify data shows a permission prompt before 
 
 Reads and lookups run freely. Each operation that creates or modifies data is sent to a fast pre-execution safety reviewer, which answers **allow**, **ask**, or **deny**. If the reviewer is unsure, you get a prompt. Destructive operations are hard-blocked in this mode -- Starfish never runs them, even with your approval. Switch to **Ask for approval** if you need one to go through.
 
+Only certain deletes and overwrites count as destructive, so Starfish stops less often for safe steps. When a step is blocked, Starfish does not keep trying the same step.
+
 ### Full access
 
 Read, create, and modify operations run with no prompt and no reviewer. Destructive operations are still hard-blocked, unclassifiable operations are still refused, and path guards and OS limits still apply.
@@ -27,6 +29,10 @@ Read, create, and modify operations run with no prompt and no reviewer. Destruct
 ::: warning
 Full access lets the AI take actions without asking. Only enable it when you trust the current task and want maximum speed. You can switch back at any time.
 :::
+
+### No folder chosen (Developer mode)
+
+If you ask Starfish to work on files in Developer mode and no folder is chosen, it asks you to type **/project** in the message box, pick the folder, and send your message again.
 
 ## Permission Levels
 
@@ -77,13 +83,15 @@ Certain locations are always blocked, regardless of permissions or mode. The AI 
 - `~/.ssh`, `~/.aws`, `.gnupg` directories
 - `/System/` and `/Applications/` (application internals)
 - Shell commands that reference `node_modules`
+- Keychains, browser password and cookie files, and saved sign-ins for command-line tools
+- Starfish's own data -- its database, settings and saved connections
 - Credential and environment files -- `.env` files, `id_rsa`/`id_ed25519`, `.npmrc`, `.netrc`, `.git-credentials`, `credentials.json`, `service-account*.json`, and `.pem`/`.key`/`.p12`/`.pfx` files -- unless you turn on **Allow reading credential and environment files** in Settings → Local Access.
 
 These guards operate at the path level -- the AI never even gets a permission prompt for these locations. The request is refused before it runs.
 
 ## Read-Only Tools
 
-Tools that cannot modify anything run without permission prompts in every mode:
+Tools that cannot modify anything run without permission prompts in every mode, whatever your Local Access setting. Starfish can read your files even when Local Access is off; writing files and running commands still follow your settings.
 
 - **LS** -- listing files
 - **Read** -- reading file contents

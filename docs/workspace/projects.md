@@ -21,7 +21,7 @@ The project page is a two-column layout. The left column is *navigation* (folder
 - **Project name** with its colour swatch.
 - **+ New chat in project** — starts a fresh chat already attached to this project at root level.
 - **Export** (download icon) — saves this workspace to a portable file. See [Exporting and importing a workspace](#exporting-and-importing-a-workspace).
-- **Delete project** (trash icon) — removes the project and its folders. Chats keep existing but lose their workspace link. Knowledge files attached to the project (bytes on disk) are cleaned up.
+- **Delete project** (trash icon) — removes the project and its folders. Chats keep existing but lose their workspace link. Knowledge files attached to the project (bytes on disk) are cleaned up. If the workspace is shared with a [team](/workspace/teams), deleting it removes it for everyone in the team; only the person who shared it, or a team owner or admin, can delete it.
 
 ### Left column — folders and chats
 

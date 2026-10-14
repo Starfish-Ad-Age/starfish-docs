@@ -37,6 +37,10 @@ Shows the installed Starfish version and lets you **Check for Updates**. When a 
 
 Shows that your API key is stored encrypted on this device, and provides **Sign out**.
 
+## Team and Sync
+
+**Settings → Team** is where you create or join a team and manage who is in it. See [Teams](/workspace/teams). **Settings → Sync** shows the account your workspaces sync with. If you are signed out, both show a **Sign in** button, and you come straight back to Settings afterwards.
+
 ## Troubleshooting
 
 **Reset app** clears cached data and relaunches Starfish. You stay signed in and keep your connected apps, chats, meetings, and agents.

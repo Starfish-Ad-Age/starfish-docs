@@ -100,7 +100,7 @@ When you connect later, Google will show a screen saying "Google hasn't verified
 ### Calendar
 
 - List upcoming events across calendars
-- Create and update events
+- Create and update events (new events use your Mac's time zone)
 - Check availability and schedule meetings
 
 ### Drive

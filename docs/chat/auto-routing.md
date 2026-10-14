@@ -35,7 +35,9 @@ The model you chose handles the whole turn. Starfish deliberately does not swap 
 
 ## Context Compaction
 
-When a conversation grows large, the system automatically compacts older messages into a summary to stay within model context limits. Compaction triggers at roughly 75% of the model's context window. You'll see an amber "Context Compacted" banner in the chat when this happens.
+When a chat gets very long, Starfish trims older messages into a summary so each reply costs less and stays within the model's limits. Nothing is lost: when you ask about something from earlier in the chat, Starfish can still look up the exact details.
+
+When this happens, the chat shows **Trimmed older messages to save space. Starfish can still look them up.** In Developer mode it is a banner you can close. After the third trim, a notice says **This chat is very long. For the best answers, start a new chat.**
 
 ## Token Usage
 

@@ -6,7 +6,61 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.42 — 2026-10-04 — current
+## 0.6.9-beta.43 — 2026-10-13 — current
+
+Work together in Teams and share a workspace with the people you work with. PDFs come out right the first time, slide decks look consistent, and the image editor keeps every version together. Long chats cost less, Starfish can read your files without asking, and it stops for safety checks less often.
+
+### Teams
+
+**Create a team.** Create a team in **Settings → Team** and invite people with a code. They paste the code in **Settings → Team → Join**. Invite links and email invites are coming soon.
+
+**Share a workspace.** Share a workspace with your team and choose **Can edit** or **Can view**. Your chats stay private: only the workspace's files, folders and instructions are shared.
+
+**Manage who is in.** Remove someone and they lose access to everything the team shares. You can add them again later with a new code. Deleting a shared workspace removes it for everyone in the team, and Starfish warns you first.
+
+**Your team on the phone.** See who is in your team and what it shares from your phone.
+
+**Sign in from Settings.** Team and Sync have a **Sign in** button, and you come straight back to Settings afterwards.
+
+See [Teams](/workspace/teams).
+
+### PDFs
+
+**Tables across pages.** Long tables continue on the next page, and their header row repeats.
+
+**Coloured pages.** A page with a coloured background is coloured right to the edge.
+
+**Every slide of a deck.** Turn a slide deck into a PDF, choose **Open all sections**, and every slide is in it, one slide per page, not only the one on screen.
+
+**A plain question first.** When Starfish needs to ask what a PDF of an interactive page should show, the question is in plain words.
+
+**The viewer fits the page.** A PDF opens at full width, so nothing is cut off on the right.
+
+**PDFs in Developer mode.** Developer mode makes a PDF in one step instead of going round in circles.
+
+### Images and slide decks
+
+**Every version in one place.** Several edits of one image in a reply show as one picture. Step through them with the arrows.
+
+**A clearer image editor.** Messages in the image editor no longer cover its buttons, and choosing an area to edit works on the phone.
+
+**Slide decks that look consistent.** Slide decks made in the chat share one tested design, and each slide prints on its own page.
+
+### Faster and smoother
+
+**Faster, smarter tool choice.** Starfish picks the right tools for a task faster and more precisely.
+
+**Long chats cost less.** When a chat gets very long, Starfish trims older messages so each reply costs less. It can still look up details from earlier in the chat when you ask. After the third trim, Starfish suggests you start a new chat for the best answers.
+
+**Reading files needs no permission.** Starfish can list, read and search your files in every mode, whatever your Local Access setting. Secret files, such as SSH keys, keychains, `.env` files, browser passwords and Starfish's own data, stay off limits. Writing files and running commands still follow your settings.
+
+**Fewer safety holds.** Starfish stops to ask you less often for safe steps, and it no longer repeats a step that was already blocked.
+
+**Choose a folder with /project.** In Developer mode with no folder chosen, Starfish asks you to type **/project**, pick the folder and send your message again.
+
+**Your time zone.** New calendar events use your Mac's time zone.
+
+## 0.6.9-beta.42 — 2026-10-04
 
 Long chats are faster and cost less, and you can keep several chats going in tabs. The whole app has a cleaner look and a darker dark mode. The browser is faster, works in background chats, and shows you where it clicks. Developer mode can now commit, push and open pull requests, show every change, and undo a turn.
 

@@ -205,4 +205,4 @@ Status messages appear as small pills in the conversation:
 
 - **Error** -- something went wrong during the response
 - **Interrupted** -- the response was stopped by the user
-- **Context Compacted** -- older messages were summarized to save token space (amber banner)
+- **Trimmed older messages** -- older messages were trimmed to save cost; Starfish can still look them up. See [Context Compaction](/chat/auto-routing#context-compaction).
