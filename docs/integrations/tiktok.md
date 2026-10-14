@@ -43,7 +43,7 @@ The accounts list shows each account with its name, @username, the date you conn
 
 Commenting, replying, hiding comments and publishing act publicly as the account. Your approval setting (**Ask for approval**, **Approve for me** or **Full access**) decides whether Starfish waits for your OK before each one.
 
-Deleting a comment always asks first.
+Starfish never deletes a comment unless you ask it to or say yes.
 
 ### Choosing the Account in Chat
 

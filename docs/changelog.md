@@ -50,7 +50,7 @@ See [Teams](/workspace/teams).
 
 **TikTok Organic for every client.** Connect each client's TikTok account in **Marketplace > TikTok Organic > Connect account** and sign in once. Starfish keeps every sign-in encrypted on your Mac and renews it automatically. Rename or disconnect an account at any time.
 
-**Work with posts and comments.** See profile and video statistics, read and answer comments, hide comments, and publish videos and photos. Publishing and commenting follow your approval setting, and deleting a comment always asks first.
+**Work with posts and comments.** See profile and video statistics, read and answer comments, hide comments, and publish videos and photos. Publishing and commenting follow your approval setting, and Starfish never deletes a comment unless you ask it to or say yes.
 
 **The right account every time.** Name one client and Starfish uses only that account. Say "all" or "compare A and B" and it uses those accounts without asking. A misspelled name gets one "Did you mean ...?" question.
 
