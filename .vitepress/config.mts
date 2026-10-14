@@ -88,6 +88,7 @@ export default withMermaid({
           { text: "Figma", link: "/integrations/figma" },
           { text: "Vercel", link: "/integrations/vercel" },
           { text: "Facebook Ads", link: "/integrations/facebook-ads" },
+          { text: "TikTok", link: "/integrations/tiktok" },
           { text: "Zapier", link: "/integrations/zapier" },
           { text: "Canva", link: "/integrations/canva" },
           { text: "GoHighLevel", link: "/integrations/gohighlevel" },

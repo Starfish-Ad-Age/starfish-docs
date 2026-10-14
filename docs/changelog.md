@@ -46,6 +46,18 @@ See [Teams](/workspace/teams).
 
 **Slide decks that look consistent.** Slide decks made in the chat share one tested design, and each slide prints on its own page.
 
+### TikTok
+
+**TikTok Organic for every client.** Connect each client's TikTok account in **Marketplace > TikTok Organic > Connect account** and sign in once. Starfish keeps every sign-in encrypted on your Mac and renews it automatically. Rename or disconnect an account at any time.
+
+**Work with posts and comments.** See profile and video statistics, read and answer comments, hide comments, and publish videos and photos. Publishing and commenting follow your approval setting, and deleting a comment always asks first.
+
+**The right account every time.** Name one client and Starfish uses only that account. Say "all" or "compare A and B" and it uses those accounts without asking. A misspelled name gets one "Did you mean ...?" question.
+
+**TikTok Ads reports per client.** A TikTok Ads report covers only the client you name, "all" compares every advertiser, and Starfish asks one short question only when it is unclear. Automations must name the account or advertiser in the prompt.
+
+See [TikTok](/integrations/tiktok).
+
 ### Faster and smoother
 
 **Faster, smarter tool choice.** Starfish picks the right tools for a task faster and more precisely.
