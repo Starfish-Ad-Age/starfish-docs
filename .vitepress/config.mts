@@ -37,6 +37,7 @@ export default withMermaid({
           { text: "Installation", link: "/getting-started/installation" },
           { text: "Quick Start", link: "/getting-started/quick-start" },
           { text: "Setup Wizard", link: "/getting-started/setup-wizard" },
+          { text: "AI Key & Model Levels", link: "/getting-started/ai-key-and-model-levels" },
         ],
       },
       {
@@ -132,7 +133,9 @@ export default withMermaid({
       {
         text: "Legal",
         items: [
-          { text: "Terms & Conditions", link: "/legal/terms" },
+          { text: "Terms of Service", link: "/legal/terms" },
+          { text: "Privacy Policy", link: "/legal/privacy" },
+          { text: "Open-source licences", link: "/legal/open-source" },
         ],
       },
     ],

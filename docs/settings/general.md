@@ -15,7 +15,7 @@ Settings for voice typing and read-aloud:
 - **Speech-to-text model** -- the engine behind the composer mic. Cloud models run through the AI Gateway and send audio off-device: GPT-4o Transcribe (best accuracy, the default), GPT-4o Mini Transcribe (fastest), Whisper 1, and Fish Audio Transcribe 1. The optional **On-device (Parakeet)** engine keeps audio on your Mac and needs a one-time ~460 MB download.
 - **Microphone** -- choose the input device used for voice typing.
 - **Read-aloud voice** -- pick the speech model, its voice, and the speed used when you play an assistant reply aloud. A **Preview** button lets you hear it first.
-- **Meeting transcription** -- managed securely by Starfish with AssemblyAI. No download or provider API key is required. The **Test Voice** button records a short clip and confirms transcription works.
+- **Meeting transcription** -- live captions and the final transcript with speaker labels run on your Vercel AI Gateway key. No download or extra provider key is required. The **Test Voice** button records a short clip and confirms transcription works.
 
 ## AI Gateway
 
@@ -36,6 +36,11 @@ Shows the installed Starfish version and lets you **Check for Updates**. When a 
 ## Account
 
 Shows that your API key is stored encrypted on this device, and provides **Sign out**.
+
+When you are signed in on your Mac, two more rows appear:
+
+- **Download my cloud data** -- downloads a zip of everything Starfish stores online for you: one JSON file per type of synced data, plus your synced files. See [Getting a copy of your data](/legal/privacy#getting-a-copy-of-your-data).
+- **Delete Starfish account** -- deletes your account and everything Starfish stores for it online. Your work on this Mac stays, and you are signed out. You sign in again to confirm, and if you own a team with other people in it, hand it to a teammate in **Settings → Team**, or delete it, first. This cannot be undone. See [Deleting your data](/legal/privacy#deleting-your-data).
 
 ## Team and Sync
 

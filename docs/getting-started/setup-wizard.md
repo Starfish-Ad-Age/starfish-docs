@@ -33,6 +33,8 @@ Starfish connects to language models (Claude, GPT, Gemini, and others) through [
 
 Your key is stored securely on your Mac — protected by the Keychain when available, with encrypted local storage as the fallback — and is never shown again.
 
+The key is yours: Vercel bills you directly for AI usage, separately from your Starfish subscription. For detailed steps, model access levels and example costs, see [Your AI Key and Model Access Levels](/getting-started/ai-key-and-model-levels).
+
 ![Setup wizard API key step](/images/setup-wizard-api-key.png)
 
 ## Step 3 — Make it yours

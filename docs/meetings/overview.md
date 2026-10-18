@@ -8,7 +8,7 @@ outline: deep
 Recording, transcription and notes are ready for everyday use. Voice grouping still improves over time, and names Starfish suggests from the transcript and meeting roster stay visibly unconfirmed until you accept them — treat the labels as a helpful draft rather than a guarantee.
 :::
 
-Starfish can sit in on a call, write the transcript as people speak, and turn it into notes when you stop. Transcription can run entirely on-device with NVIDIA's Parakeet model, or — by default — through managed AssemblyAI processing: live captions, then an accurate final pass with punctuation, missing words, and speaker diarization. Switch between them in **Settings → Meetings**.
+Starfish can sit in on a call, write the transcript as people speak, and turn it into notes when you stop. Transcription runs on your own Vercel AI Gateway key, with no extra provider key or download: live captions as people speak, then an accurate final pass with punctuation, missing words, and speaker labels. You can turn the final pass off in **Settings → Meetings → Transcript & notes**. If you have installed the on-device Parakeet voice model (Settings → General), Starfish also uses it on your Mac to fill live captions whenever the cloud stream is not connected.
 
 ## Recording a meeting
 
@@ -33,7 +33,7 @@ If the notes cannot be written the first time, it retries automatically after a 
 
 Once a recording ends, Starfish works out how many distinct voices are in it and groups the lines accordingly. This is **voice grouping**, not recognition: it can prove that the same person spoke on thirty different lines, but it has no way of knowing that person is called Sarah.
 
-You supply that last part, so it only has to be supplied once. With managed processing on, Starfish can also **suggest** a name for a voice using the transcript evidence and the meeting roster. A suggestion is never treated as fact — it stays visibly unconfirmed until you accept or reject it.
+You supply that last part, so it only has to be supplied once. Using an AI model on your Vercel AI Gateway key, Starfish can also **suggest** a name for a voice using the transcript evidence and the meeting roster. A suggestion is never treated as fact — it stays visibly unconfirmed until you accept or reject it.
 
 Above the transcript is a **legend** with one chip per voice:
 
@@ -61,9 +61,9 @@ Being explicit, because the alternative is you finding out mid-call:
 
 ## Audio and privacy
 
-Audio is kept on disk only while the accurate transcript is being produced, then deleted automatically. If processing fails, it is kept locally so you can safely retry, and leftover audio from a quit or crash is cleaned up on the next launch. Transcripts and notes stay in your local Starfish database.
+Audio is kept on disk only while the accurate transcript is being produced, then deleted automatically. If processing fails, it is kept locally so you can safely retry, and leftover audio from a quit or crash is cleaned up on the next launch. Transcripts and notes stay in your local Starfish database, and are copied to your Starfish account only if you turn on cloud sync.
 
-Speech recognition can run on-device with NVIDIA's Parakeet model, or — by default — through managed AssemblyAI processing, which streams the audio for live captions and sends the retained audio off-device for the final transcript. Notes are written by an AI model, so the transcript text is sent to it for summarising when notes are generated.
+Speech recognition runs through Vercel AI Gateway on your own key: the audio is streamed for live captions, and the retained audio is sent off-device for the final transcript. Vercel and the model provider handle it under your agreements with them. The optional on-device Parakeet model only fills live captions when the cloud stream is not connected. Notes are written by an AI model, so the transcript text is sent to it for summarising when notes are generated.
 
 ## Permissions
 

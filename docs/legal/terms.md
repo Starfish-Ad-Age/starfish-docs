@@ -1,176 +1,369 @@
 ---
-outline: deep
+outline: [2, 3]
 ---
 
-# Terms and Conditions of Use (Demo / Beta Access)
+# Terms of Service
 
-**Last Updated:** May 10, 2026
+::: danger Draft for legal review
+These terms are a draft. They have not yet been approved by a lawyer and may change before they take effect. Items in square brackets, such as [CONTACT EMAIL], are placeholders that still need to be filled in.
 
-::: warning Please read these terms carefully.
-By downloading, installing, accessing, or using **Starfish** (the "App"), you agree to be bound by these Terms and Conditions (the "Terms"). If you do not agree, do not install or use the App.
-
-Starfish is provided on an **"AS-IS"** and **"AS-AVAILABLE"** basis as a demo / beta product. It uses artificial intelligence and connects to third-party services. AI outputs may be inaccurate, incomplete, or harmful. Agent actions may produce irreversible results. By using the App, you accept these risks.
+**Changed 2026-10-17:** added the Vercel relationship and plan-level sections (§7.1–7.3), the sensitive-data prohibition in acceptable use (§10), the missing-IP-warranty statement for AI output (§11), the Google shared-client disclosure (§12), and a data-processing section (§26). The training statement in §11 was corrected because the previous wording claimed something the software could not guarantee.
 :::
 
-## 1. Definitions
+**Last updated: 2026-10-17**
 
-- **"Company," "We," "Us," "Our"** — Starfish Solutions, an affiliate of Starfish Ad Age LLC, located at 140 E Tyler Street, Longview, Texas 75601.
-- **"App" or "Starfish"** — the Starfish desktop application, including all related documentation, updates, integrations, and supporting websites.
-- **"You" or "User"** — the individual or legal entity accessing the App.
-- **"AI Models"** — third-party large language models routed through the App, including but not limited to Anthropic Claude, OpenAI GPT, and Google Gemini, accessed via the Vercel AI Gateway or other providers.
-- **"Integrated Services"** — third-party platforms the App connects to, including but not limited to Google Workspace, Google Marketing Suite, ClickUp, GitHub, Figma, Vercel, Canva, Zapier, Apify, GoHighLevel, Facebook Ads, and any future integrations.
-- **"Agent Actions"** — any operation the App takes on your behalf using AI Models or Integrated Services, including but not limited to sending messages, modifying files, executing terminal commands, deploying code, browsing the web, and creating or deleting records.
-- **"Demo" or "Beta"** — the current pre-release access tier offered free of charge with usage caps on tokens, actions, or other resources defined by the Company.
+## The short version
 
-## 2. Eligibility and Acknowledgment
+- **You pay Starfish for the software, not for AI.** Your subscription (Solo, Team or Agency, monthly or yearly) covers the Starfish Mac app, your account, sync, Teams and maintenance. **Starfish is not a reseller, agent or distributor of Vercel or any AI Provider.**
+- **AI usage is between you, Vercel and the AI providers.** You create your own Vercel AI Gateway key and enter it in Starfish. Vercel and the providers bill you directly for every model you use. Starfish never resells AI usage and is not responsible for those charges.
+- **Your Vercel plan level matters, and you choose it.** On Vercel's Hobby and Pro plans, Vercel may use your content to train its models and share it with third parties. Vercel's no-training warranty applies only to Enterprise plans. If you handle client or confidential data, you need Enterprise. See [Section 7](#7-bring-your-own-ai-key).
+- **Do not put sensitive data into AI prompts.** No health records, government identifiers, or financial account numbers. This is a hard limit in Vercel's terms, not a preference. See [Section 10](#10-acceptable-use).
+- **Your model access level** (Economy, Balanced or Premium) only decides which models Starfish offers you. You can change it. What you spend depends on what you use.
+- **You own your content and the results.** AI can be wrong. Check results before you rely on them.
+- **Starfish acts in your connected accounts when you tell it to.** You choose the approval settings, and you are responsible for what you allow.
+- **The software is provided "as is".** Our total liability is limited (see [Section 21](#21-limitation-of-liability)).
+- **Texas law applies.**
 
-You represent that you are at least 18 years old and have the legal authority to enter into these Terms on your own behalf or on behalf of any entity you represent.
+Please also read our [Privacy Policy](/legal/privacy), which explains what data goes where.
 
-You acknowledge that Starfish is an **experimental, pre-release product**. Features may change, break, or be removed without notice. The App is offered solely for evaluation purposes during the Demo period.
+## 1. Agreement
 
-## 3. Demo Access and Usage Caps
+These Terms of Service ("Terms") are an agreement between you and **Starfish Ad Age LLC**, trading as Starfish Solutions, 140 E Tyler Street, Longview, Texas 75601, USA ("Starfish", "we", "us"). [CONFIRM: "Starfish Solutions" is a trading name of Starfish Ad Age LLC, not a separate entity.]
 
-During the Demo period, the Company grants you a limited, non-exclusive, non-transferable, revocable license to use the App for evaluation purposes only, subject to:
+By creating an account, downloading, installing or using Starfish, or by paying for a subscription, you agree to these Terms. If you accept them for a company or other organisation, you confirm you have authority to bind it, and "you" means that organisation.
 
-- Token, message, action, or session caps as set and modified by the Company at its sole discretion;
-- Fair-use limitations that prohibit automated abuse, scraping, resale, or commercial redistribution of the App or its outputs;
-- The Company's right to throttle, suspend, or terminate Demo access at any time, with or without notice, and with or without cause.
+If you do not agree, do not use Starfish.
 
-The Company makes no commitment that Demo access will remain free, that current usage caps will continue, or that any Demo features will be available in a future paid tier.
+## 2. Definitions
 
-## 4. Third-Party AI Models and Integrated Services
+- **App:** the Starfish desktop application for macOS, including updates, bundled tools and connectors, and its documentation.
+- **Services:** the App together with our cloud services: account sign-in, sync, Teams, Starfish Anywhere, published sites and shares, feedback and support.
+- **Subscription:** your paid plan for the Services.
+- **Seat:** the right for one named person to use the Services under a Subscription.
+- **Your AI Key:** the Vercel AI Gateway API key that you create in your own Vercel account and enter in the App.
+- **AI Providers:** Vercel and the companies whose models are reached through Vercel AI Gateway (for example OpenAI, Anthropic, Google, DeepSeek, Alibaba, Z.AI, MiniMax and others).
+- **Connected Apps:** third-party services you connect to Starfish, such as Google Workspace, Google Ads, Google Analytics 4, Search Console, Tag Manager, TikTok Ads and Organic, Facebook/Meta, ClickUp, GoHighLevel, QuickBooks, GitHub, Figma, Canva, Vercel, Apify, Zapier and Stitch.
+- **Your Content:** everything you or your users put into the Services (prompts, files, chats, client data, recordings, settings) and everything the App produces for you (**Output**).
+- **Agent Actions:** actions the App takes for you on your Mac, in Connected Apps or on the web, such as sending emails, editing files, running commands, publishing posts or changing ad campaigns.
+- **Model Access Level:** the Economy, Balanced or Premium setting that controls which AI models the App offers you.
+- **End User:** anyone who uses or accesses the Services through your account, including your employees, contractors, and — where you are an agency — your clients.
+- **Sensitive Personal Information:** health or medical information; financial account numbers or payment card numbers; government-issued identifiers such as Social Security, passport, driver's licence or tax identifiers; biometric identifiers; precise geolocation; and any other category that applicable law treats as sensitive.
+- **Vercel Terms:** Vercel's Terms of Service, Acceptable Use Policy, AI Product Terms, and the terms of any AI Provider whose models you reach through Vercel AI Gateway.
 
-### 4.1 Mixed Credential Model
+## 3. Eligibility and accounts
 
-The App operates on a mixed-credential model. Some AI Model access and Integrated Service access may be provided by the Company during the Demo; other access requires you to supply your own API keys, OAuth credentials, or paid accounts (**"Your Credentials"**).
+- You must be at least 18 and able to form a binding contract. Starfish is meant for business and professional use.
+- Give accurate account information and keep it current.
+- Keep your password, your Mac, and Your AI Key secure. You are responsible for everything done through your account and your Seats.
+- Tell us promptly at [CONTACT EMAIL] if you think your account has been used without permission.
+- You may not use Starfish if you are barred from doing so under US law or the law of your country, including sanctions and export rules.
 
-You are solely responsible for:
+## 4. Licence to use the App
 
-- Obtaining, maintaining, and securing Your Credentials;
-- All charges, fees, overages, and consequences associated with Your Credentials, including API usage charges, ad spend, subscription fees, and any costs incurred by Agent Actions;
-- Compliance with the terms of service of every Integrated Service and AI Model provider you connect to the App.
+Subject to these Terms and an active Subscription, we give you a limited, non-exclusive, non-transferable, non-sublicensable licence to:
 
-### 4.2 No Endorsement, No Control
+- download, install and use the App on Macs you own or control, for your internal business purposes;
+- allow the number of people covered by your Seats to use it.
 
-AI Models and Integrated Services are operated by independent third parties. The Company does not control them, does not endorse their outputs, and is not responsible for their availability, accuracy, content, security, pricing, or policies.
+**Seats.** Each Seat is for one named person. A person may install the App on more than one of their own Macs. Seats may not be shared between people, but you may reassign a Seat to a new person, for example when someone leaves [CONFIRM: any limit on how often].
 
-### 4.3 Provider Outages and Data Loss
+**You may not:**
 
-AI Models and Integrated Services may experience outages, latency, rate limits, deprecation, data corruption, or data loss. The Company has no obligation to remedy any such event and bears no liability for any resulting harm to you or your data.
+- sell, resell, rent, lease, sublicense or distribute the App, or offer it to others as a hosted or managed service;
+- copy the App except as needed to install and back it up;
+- reverse engineer, decompile or disassemble the App, except where the law allows despite this limit;
+- remove or change notices of ownership;
+- get around licensing, Seat limits, security or access controls;
+- use the App to build a competing product.
 
-## 5. AI Output Disclaimer
+**Agencies and client access.** If you are an agency or otherwise provide services to clients, you may use the App to do work for your clients. You may **not**, however, give your clients their own logins and operate the App as a service for them on your account. Each client organisation that uses the Services must hold its own Subscription and its own Vercel account. Providing access to third parties through your Vercel account may breach Vercel's terms and is a breach of these Terms.
 
-The App generates outputs using AI Models. AI outputs may be incorrect, biased, fabricated ("hallucinated"), offensive, infringing, or otherwise unsuitable for any purpose. AI output should not be relied upon for legal, financial, medical, safety-critical, or other consequential decisions without independent verification by a qualified human professional.
+Open-source parts of the App are licensed under their own licences, listed on our [Open-source licences](/legal/open-source) page. The App uses FFmpeg under the GNU Lesser General Public License version 2.1 or later; Starfish does not own FFmpeg. We ship a third-party notices file with the App; if you cannot find it, ask us and we will send it. Nothing in these Terms limits your rights under those licences.
 
-::: danger You alone are responsible for reviewing, verifying, and accepting any AI output before using or acting on it.
-The Company makes no warranty that AI output is accurate, current, complete, non-infringing, or fit for any particular purpose.
-:::
+We may update the App. Some updates may be required to keep using the Services.
 
-## 6. Agent Actions and User Responsibility
+## 5. Plans
 
-The App is an agentic system. It can take actions on your behalf across your computer and your connected accounts, including but not limited to:
+| Plan | Who it is for | What you get |
+|---|---|---|
+| **Solo** | One person | One Seat |
+| **Team** | Small teams | Priced per Seat; Teams features for sharing projects |
+| **Agency** | Agencies and larger teams | A bundle of Seats [NUMBER OF SEATS — CONFIRM]; Teams features |
 
-- Reading, sending, deleting, or modifying emails, messages, and calendar events;
-- Creating, editing, or deleting files, tasks, projects, designs, and code repositories;
-- Executing terminal commands and modifying your local file system;
-- Deploying, publishing, or rolling back code and infrastructure;
-- Browsing the web, submitting forms, and interacting with third-party websites;
-- Generating media, posting content, launching ad campaigns, and incurring spend.
+Current prices and plan details are shown on our pricing page and at checkout [PRICING PAGE URL]. Every plan covers the App, your account, sync, maintenance and updates. **No plan includes AI usage.** See Section 8.
 
-You acknowledge that **Agent Actions may be irreversible**, may produce unintended consequences, and may result in financial loss, data loss, security exposure, or reputational harm. You are solely responsible for any Agent Action initiated through your account, regardless of whether you reviewed it before execution, and for configuring appropriate permissions, approval gates, and backups.
+## 6. Billing, renewal, trials, cancellation and refunds
 
-The Company strongly recommends running Starfish only against non-production data, sandbox environments, or test accounts during the Demo period.
+**Payment.** Subscriptions are billed in advance, monthly or yearly, through our payment processor **Stripe**. You authorise us and Stripe to charge your payment method for each period, plus any taxes.
 
-## 7. Your Data and Local Operation
+**Automatic renewal.** Your Subscription renews automatically at the end of each period for the same length, at the then-current price, until you cancel. We will tell you about a price change at least [30] days before it applies to you. If you do not agree, cancel before the renewal.
 
-Starfish runs as a desktop application on your machine. Most of your data remains on your device unless you explicitly connect or transmit it to an AI Model or Integrated Service.
+**Trials.** We may offer a free trial of [TRIAL LENGTH — CONFIRM]. Unless you cancel before the trial ends, your Subscription starts and you will be charged [CONFIRM: whether a payment method is required to start a trial]. We may limit trials to one per customer.
 
-When you direct the App to use an AI Model or Integrated Service, your data is transmitted to that third party and is governed by that third party's terms and privacy policy. The Company is not responsible for how third parties handle, retain, or disclose your data.
+**Plan and Seat changes.**
 
-You are responsible for backing up your data. The Company has no obligation to recover, restore, or preserve any data lost or corrupted through use of the App.
+- Adding Seats or upgrading takes effect right away. You pay a prorated amount for the rest of the current period [CONFIRM proration].
+- Removing Seats or downgrading takes effect at the next renewal.
+- On a downgrade, features or Seats you no longer pay for stop working at the next renewal.
 
-## 8. Acceptable Use
+**Cancellation.** You can cancel at any time from the billing page in the App or by emailing [CONTACT EMAIL]. If you subscribed online, you can also cancel online: you will never be required to call or email us to stop a recurring charge. Cancellation takes effect at the end of the current paid period, and you keep access until then.
 
-You agree not to use the App to:
+**Refunds.** Payments are non-refundable, including for partly used periods and unused Seats, except where the law requires otherwise or we state otherwise in writing. [REFUND POLICY — CONFIRM, for example a money-back window for new annual plans.]
 
-- Violate any applicable law, regulation, or third-party right;
-- Generate or distribute unlawful, infringing, defamatory, fraudulent, harassing, or harmful content;
-- Attempt to reverse engineer, decompile, or extract source code, model weights, prompts, or proprietary configurations from the App;
-- Circumvent usage caps, security measures, authentication, or rate limits;
-- Resell, sublicense, or commercially redistribute the App or its outputs without written permission;
-- Use the App to compete directly with the Company or to train competing AI products.
+**Failed payments.** If a payment fails, we may retry it and may suspend paid features after [GRACE PERIOD — CONFIRM] days until it is paid.
 
-## 9. Disclaimers of Warranty
+**Taxes.** Prices do not include taxes unless stated. You pay any sales, use, VAT, GST or similar taxes, other than taxes on our income. Stripe may calculate taxes based on the billing address you give.
 
-**THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE," WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND.** TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COMPANY DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+**AI charges are separate.** Our invoices never include AI usage. See Section 8.
 
-Without limiting the foregoing, the Company does not warrant that:
+## 7. Bring your own AI key {#7-bring-your-own-ai-key}
 
-- The App will be uninterrupted, secure, or error-free;
-- AI outputs will be accurate, complete, or fit for any purpose;
-- Agent Actions will execute as intended or without unintended side effects;
-- Integrated Services or AI Models will remain available or compatible;
-- Defects, bugs, or vulnerabilities will be corrected;
-- The App is suitable for production, regulated, or safety-critical use.
+To use AI features you must:
 
-## 10. Limitation of Liability
+1. create your own account with **Vercel** and accept Vercel's Terms of Service, Acceptable Use Policy and **Vercel AI Product Terms**;
+2. create an **AI Gateway API key** in your own Vercel account;
+3. enter it in Starfish (during setup, or later in **Settings → General**, in the field labelled "Vercel AI Gateway key").
 
-**TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, OFFICERS, EMPLOYEES, OR PARTNERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES**, including but not limited to damages for: lost profits, lost revenue, lost data, loss of goodwill, business interruption, cost of substitute services, or any other intangible loss arising from or related to your use of the App, even if the Company has been advised of the possibility of such damages.
+See [Your AI key and model access levels](/getting-started/ai-key-and-model-levels) for step-by-step help.
 
-**WITHOUT LIMITING THE FOREGOING, THE COMPANY SHALL HAVE NO LIABILITY WHATSOEVER FOR:**
+### 7.1 Starfish is not a party to your Vercel agreement
 
-- Any output, action, error, or omission of an AI Model, including hallucinations, false statements, biased content, or infringing content;
-- Any Agent Action you authorized, configured, or permitted, including deleted files, sent messages, deployed code, posted content, launched campaigns, or modified third-party records;
-- Any outage, latency, deprecation, change, data loss, data exposure, or security incident affecting any AI Model or Integrated Service;
-- Any charge, overage, fee, or financial loss incurred through Your Credentials, Integrated Services, or AI Model providers, including API usage charges and ad spend;
-- Any harm caused by your failure to back up data, configure permissions, review outputs, or test in a sandbox environment;
-- Any claim brought by a third party arising from your use of the App or your content.
+Starfish provides software. Vercel provides the AI infrastructure. These are separate relationships:
 
-**IF, NOTWITHSTANDING THE FOREGOING, THE COMPANY IS FOUND LIABLE TO YOU FOR ANY REASON, THE COMPANY'S TOTAL AGGREGATE LIABILITY SHALL NOT EXCEED THE GREATER OF (A) THE TOTAL AMOUNT YOU PAID TO THE COMPANY FOR THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) ONE HUNDRED U.S. DOLLARS ($100.00).** During the Demo period, where no fees are paid, this cap is one hundred U.S. dollars ($100.00).
+- **The contract for AI is between you and Vercel.** Starfish is not a party to it, is not a reseller, agent, distributor or partner of Vercel, and has no authority to bind Vercel or to make commitments on its behalf.
+- **You pay Vercel directly.** Starfish never takes payment for AI usage, never holds a balance of AI credits, and never marks anything up.
+- **Starfish has no visibility into your Vercel account, usage, spend or logs.** We cannot see your bills, cannot raise your limits, and cannot reverse a charge.
+- **Starfish provides no support for Vercel**, including model availability, rate limits, billing disputes, account suspension or API changes.
 
-Some jurisdictions do not allow the exclusion or limitation of certain damages. In those jurisdictions, the Company's liability shall be limited to the maximum extent permitted by law.
+Nothing in these Terms creates an agency, partnership, joint venture or employment relationship between Starfish and Vercel, or between Starfish and you.
 
-## 11. Indemnification
+### 7.2 Your plan level is your responsibility, and it has legal consequences {#plan-level}
 
-You agree to defend, indemnify, and hold harmless the Company, its affiliates, officers, employees, contractors, and partners from and against any claim, demand, loss, liability, damage, cost, or expense (including reasonable attorneys' fees) arising out of or related to:
+Vercel's terms differ by plan. In particular, Vercel's AI Product Terms provide that on **Hobby and Pro** plans your content may be used by Vercel to train and improve its models and may be shared with third parties. A contractual commitment not to train on your content applies only to **Enterprise** subscriptions.
 
-- (a) Your use or misuse of the App;
-- (b) Any Agent Action initiated through your account;
-- (c) Your violation of these Terms;
-- (d) Your violation of any law or third-party right, including the terms of any AI Model or Integrated Service;
-- (e) Any content, prompt, credential, or instruction you provide to the App.
+| Your Vercel plan | What Vercel's terms say about your content |
+|---|---|
+| **Hobby** | Vercel may use it for model training and share it with third parties. Commercial use is not permitted. |
+| **Pro** | Same training and sharing terms by default. |
+| **Enterprise** | Vercel warrants it will not use your content to train or improve its models. |
 
-## 12. Suspension and Termination
+**If you handle client data, confidential information, or any regulated data, you must use an Enterprise plan.** Starfish does not select, verify or monitor your plan level, and is not responsible for the consequences of the plan you choose.
 
-The Company may suspend or terminate your access to the App at any time, with or without notice, for any reason, including but not limited to violation of these Terms, abuse, security risk, or discontinuation of the Demo program. Upon termination, your right to use the App ends immediately. Sections that by their nature should survive termination (including Disclaimers, Limitation of Liability, Indemnification, and Governing Law) will survive.
+### 7.3 Your responsibilities
 
-## 13. Changes to the Terms
+- **You are the customer of Vercel and of the AI Providers.** Your use of AI through Starfish is governed by your agreements with them, including their terms, usage policies and pricing. You must comply with the Vercel Terms and with the terms of every AI Provider whose models you use.
+- **You must not submit Sensitive Personal Information as AI input.** Vercel's AI Product Terms prohibit including health information, financial account numbers, or government-issued identifiers in prompts, regardless of plan. See [Section 10](#10-acceptable-use). Before text reaches an AI model, Starfish checks the messages you send, attached plain-text files and automation instructions for: US Social Security numbers; payment card numbers that pass the Luhn check; passport and driver's licence numbers next to those words; bank account numbers next to an account keyword; routing (ABA) numbers next to a routing keyword that pass the routing checksum; IBANs that pass the IBAN checksum; and a short list of clear health terms in a sentence about a person. When you send from the chat composer, Starfish names the kinds it found and redacts them by default, replacing each with a placeholder; the App checks your messages again before every AI model call and redacts anything it finds. This is assistance, not a guarantee: it does not read images, PDF, Word or spreadsheet files, audio or video; it does not check saved instructions or memory, prompts for image or video generation, or content that tools fetch for the AI (for example emails, web pages or connected-app data); and it can miss information that does not match these patterns. You remain responsible for not submitting Sensitive Personal Information.
+- **Preview and pre-release models.** Some models offered in the App are marked preview, beta, experimental or similar. Under Vercel's terms, pre-release and stealth models may not be used to process personal data and Vercel's content protections do not apply to them. Do not use them on personal or client data.
+- **Keep Your AI Key secret.** Anyone with it can spend money on your Vercel account. If you think it has leaked, revoke it in Vercel and create a new one. Starfish is not liable for spend caused by a key that leaked from your device or environment.
+- **Set spend controls.** Configure budgets, spending limits or alerts in your Vercel account. Starfish cannot enforce a spend cap for you.
 
-The Company may modify these Terms at any time by posting an updated version. Your continued use of the App after the effective date of any change constitutes acceptance of the revised Terms. If you do not agree, you must stop using the App.
+**Only API keys work.** Consumer AI subscriptions such as ChatGPT Plus, ChatGPT Pro, Claude Pro, Claude Max or Gemini Advanced cannot be used with Starfish.
 
-## 14. Governing Law and Dispute Resolution
+## 8. AI costs are yours
 
-These Terms are governed by the laws of the State of Texas, without regard to its conflict-of-laws principles. Any dispute arising out of or related to the App or these Terms shall be resolved exclusively in the state or federal courts located in Gregg County, Texas, and you consent to the personal jurisdiction of those courts.
+- **All AI usage is billed by Vercel and the AI Providers directly to you.** This includes chat, agent work, image, video, speech, transcription, embeddings, web search, and the helper and checking models the App uses in the background (for example to name chats, summarise long chats, pick tools or check results).
+- **Starfish does not resell, mark up, proxy or pay for AI usage**, and does not control AI prices. For the avoidance of doubt, Starfish is not acting as a reseller or service bureau of Vercel or any AI Provider, and the AI features are provided to you as software that connects your own account — not as a hosted AI service.
+- **Some auxiliary services are included.** Search Studio (SEO data) runs on Starfish's own provider account and is included in your Subscription, subject to the fair-use limits shown in the App (a daily and a monthly number of lookups per account). Where this is the case, no separate charge is made and no AI usage of yours is routed through our accounts.
+- **Costs depend on how you use the App:** which models you pick, how long your chats are, how many files and tools are involved, how often automations run, and how many images and videos you make. Agent tasks can make many model calls for a single request.
+- The App may show cost estimates or usage counters. These are estimates only. **Your Vercel bill is the authoritative record.**
+- **We are not liable for AI charges**, including charges caused by long tasks, automations, retries, mistakes by an AI model, a leaked key, or price changes by Vercel or AI Providers. Disputes about those charges are between you and Vercel or the AI Provider.
 
-**Class Action Waiver.** You agree to bring claims against the Company only in your individual capacity and not as a plaintiff or class member in any class, collective, or representative action.
+## 9. Model access levels
 
-## 15. Miscellaneous
+On any plan you choose one Model Access Level to match how much you want to spend on AI:
 
-- **Entire Agreement.** These Terms constitute the entire agreement between you and the Company regarding the App and supersede any prior agreements.
-- **Severability.** If any provision is held unenforceable, the remaining provisions shall remain in full force.
-- **No Waiver.** The Company's failure to enforce any provision is not a waiver of its right to do so later.
-- **Assignment.** You may not assign these Terms. The Company may assign them freely.
-- **Headings.** Headings are for convenience only and do not affect interpretation.
+| Level | What it offers (examples) |
+|---|---|
+| **Economy** | Low-cost models, such as GPT Luna, Gemini Flash, DeepSeek, Qwen, GLM and MiniMax |
+| **Balanced** | Everything in Economy plus mid-tier models |
+| **Premium** | Everything in Balanced plus top models such as Claude Sonnet and Claude Opus, and premium image and video engines |
 
-## 16. Contact
+- The level **only controls which models Starfish offers you** in the App. It does not buy AI usage. You pay Vercel and the AI Providers for what you actually use.
+- You can change your level at any time [CONFIRM where: in Settings or by contacting us].
+- Which models belong to each level may change as models are released, retired or re-priced. We will try to keep each level's purpose and cost range similar.
+- Some features (for example automatic model choice, or background helper calls) may use a lower-cost model even on a higher level.
+- AI Providers can change, rate-limit or withdraw models at any time. We cannot guarantee any specific model stays available.
 
-Questions about these Terms can be directed to:
+**Model routing and data location.** Some models in the catalogue are hosted outside the United States, including models operated by providers based in China. Routing to a model sends your input to that provider in that location. Where this matters to you — because of client confidentiality, sector rules, export controls or data-residency obligations — select models whose providers you have approved, and do not rely on the App to make that decision for you. Economy includes lower-cost models from a range of providers; Premium does not mean "US-hosted".
 
-**Starfish Solutions** — a division of Starfish Ad Age LLC<br>
-140 E Tyler Street, Longview, Texas 75601<br>
-Phone: (903) 508-2576<br>
-Web: [https://docs.starfishsolutions.ai](https://docs.starfishsolutions.ai)
+For current price examples, see [Your AI key and model access levels](/getting-started/ai-key-and-model-levels). Always check Vercel's live pricing.
+
+## 10. Acceptable use {#10-acceptable-use}
+
+You must not use the Services, or let others use them, to:
+
+- break any law or regulation, or infringe anyone's rights (including privacy, publicity, copyright and trademark);
+- **submit Sensitive Personal Information as input to any AI model**, or otherwise process it through the Services. Vercel's AI Product Terms prohibit this regardless of your plan, and these Terms prohibit it too. Our redaction features are assistance, not a guarantee, and do not shift this responsibility to us;
+- **process protected health information (PHI)** through the Services, or use the Services in a way that would make Starfish or Vercel a business associate under HIPAA. Starfish is not a HIPAA business associate and does not sign business associate agreements;
+- create, store or share illegal content, including child sexual abuse material, content that sexually exploits anyone, or non-consensual intimate images;
+- harass, threaten, defame, or promote violence or hatred against anyone;
+- create malware, attack or probe systems without permission, or get around security;
+- send spam or bulk unsolicited messages, or run deceptive ads or scams;
+- impersonate people, or create deceptive deepfakes of real people without their consent;
+- make decisions with legal or similarly significant effects on people (for example credit, jobs, housing, insurance) solely by AI without proper human review and the notices the law requires;
+- collect personal data you have no right to collect, or scrape websites against their terms;
+- break the usage policies of any AI Provider or the terms of any Connected App;
+- misuse Connected Apps, for example by accessing accounts you are not authorised to use, exceeding the permissions an account owner gave you, or breaking platform rules on advertising, messaging, posting or data use;
+- record or transcribe anyone without the notice and consent the law requires. **Starfish does not notify participants, does not join your calls, and does not verify that consent was obtained.** Recording captures other people's voices; several US states, including California, require the consent of every participant to a confidential communication. You are solely responsible for obtaining it and for complying with the rules that apply to you;
+- overload, disrupt or abuse our servers, sync, published sites or Starfish Anywhere, or use them to host content unrelated to your use of Starfish;
+- resell or share access to the Services or Seats.
+
+We may remove content from our servers or published sites, or suspend features, if we reasonably believe it breaks this section.
+
+## 11. Your Content and Output
+
+- **You own Your Content and Output**, as far as the law allows. We claim no ownership.
+- **You give us permission** to store, copy, sync, process, display and send Your Content only as needed to run the Services for you: for example to sync it to your Macs, share it with your Team when you choose, publish it when you or your settings publish it, and send it to services you choose.
+- **We do not sell Your Content and we do not use it to train our own models.** Whether an AI Provider may use your content to train *its* models depends on your Vercel plan and that Provider's terms, not on us. See [Section 7.2](#plan-level). Starfish cannot override a Provider's terms.
+- **The App uses artificial intelligence.** Output is generated by third-party models. Where the App acts as an agent, it may take actions you did not individually review, within the settings you chose.
+- **You are responsible for Your Content**, including having the rights and consents needed to use it in Starfish and to send it to AI Providers and Connected Apps.
+- **AI Output can be wrong.** It may be inaccurate, incomplete, out of date, biased, offensive, or similar to other people's content. It may "make things up". **You must review and check Output before you use or rely on it**, especially for legal, financial, medical, tax, safety, employment or advertising decisions, and before you send, publish or act on it.
+- **Output is not professional advice.** Starfish is not a law firm, accountant, financial adviser or medical provider, and Output is not a substitute for one. Where the law requires a licensed professional or human review, the App does not satisfy that requirement.
+- **We make no warranty about the intellectual property status of Output.** We do not promise that Output is original, non-infringing, or free of third-party rights, and **we provide no indemnity for Output**. Vercel and the AI Providers give us none, and we pass none on. If intellectual-property clearance matters for your use, obtain it yourself before you publish or commercialise Output.
+- Output may not be unique. Others may receive similar output. Whether Output can be protected by copyright depends on the law where you are, and purely machine-generated material may not be protectable at all.
+- AI Providers may have their own rules about Output. Those rules apply to you.
+
+## 12. Connected Apps and Agent Actions
+
+- When you connect an app, you **authorise Starfish to act in that account for you**, within the permissions you grant, including reading data and taking actions such as sending emails, editing documents and calendars, changing ad campaigns and budgets, posting or replying on social media, updating CRM records or invoices, and changing code repositories.
+- **Approval settings.** You choose how much the App may do without asking:
+  - **Ask for approval**: the App asks before every create, change or delete.
+  - **Approve for me** (the default): creates and changes run without asking; deletes still ask.
+  - **Full access**: like "Approve for me" but with a more lenient safety check that stops only clearly dangerous actions.
+  - **Scheduled automations** cannot delete, and their sending and publishing actions are restricted.
+  - Some Connected Apps (for example GoHighLevel and TikTok Ads) also let you choose read-only or read-and-write access.
+- **You are responsible for Agent Actions** taken under the settings you chose, whether or not you reviewed each one. Agent Actions can cost money (for example ad spend) and may not be reversible. This includes actions taken in accounts you do not own, if you connected them.
+- **Automations** run on your Mac while the App is running (including when its window is closed), and missed runs may run when the App next starts. You are responsible for what you schedule.
+- **Your Mac.** The assistant can read files on your Mac (except protected locations), and with Local Access on can write files and run commands. Keep backups.
+- Connected Apps are run by third parties under their own terms. We do not control them and are not responsible for their availability, changes, data handling or charges. They may change or withdraw their APIs, which can break a connector.
+- Some Connected Apps use Starfish's own developer app to sign you in (for example Google, ClickUp and TikTok). The platform may review, limit or revoke that app, which may stop the connector working — potentially for all customers at once, and without notice to us.
+- **Google Workspace.** Our Google integration currently uses a shared OAuth client that has not completed Google's verification process. Google will show a warning screen before you connect. If your organisation requires a verified integration, use the "own client" option in Settings so that access runs through your own Google Cloud project, or do not connect Google. Google may restrict scopes, require verification, or suspend the shared client, and the Google connector may stop working as a result.
+- You may disconnect a Connected App at any time in the App, and revoke access in that service's settings.
+
+We strongly recommend starting with **Ask for approval**, testing on non-critical accounts, and setting spend limits in ad platforms.
+
+## 13. Sync, sharing and publishing
+
+- When you turn on cloud sync (off by default), the App syncs your workspace to our cloud as described in the [Privacy Policy](/legal/privacy).
+- Artifacts the assistant creates may be published automatically to a Starfish site that only people you invite can open. You are responsible for who you invite and for any page you make public.
+- Keep your own backups of important work. Sync is not a backup service.
+
+## 14. Teams
+
+- A Team has one **owner**, and may have **admins** and **members**.
+- The owner and admins can invite and remove members, set shared-project access to view or edit, and delete content in shared projects. Only the owner can remove an admin or delete the Team.
+- Only projects you choose to share are visible to the Team. Your chats, memories, meetings, agents and automations stay private to you.
+- **When a member leaves or is removed,** the projects they shared to the Team pass to the Team owner, and the member loses access to the Team's content.
+- If the Team is paid for by an organisation, that organisation controls the Team and the shared content. Members should not share personal content in Team projects.
+- The organisation that pays for Seats is responsible for its members' compliance with these Terms.
+
+## 15. Beta and preview features
+
+We may offer features marked beta, preview, experimental or similar. They are provided for evaluation, may be incomplete, may change or be removed at any time, and are excluded from any support commitments. Use them at your own risk.
+
+## 16. Availability, support and maintenance
+
+- The App runs on your Mac and works with our cloud services, Vercel, AI Providers and Connected Apps. We do our best to keep our services available, but we do not promise they will be uninterrupted or error-free, and we do not offer a service-level agreement unless we agree one in writing.
+- We may carry out maintenance, which can briefly interrupt sync, Teams or Starfish Anywhere.
+- **Maintenance** included in your Subscription means bug fixes, security fixes, compatibility updates and improvements we release for the App.
+- **Support** is provided by [SUPPORT CHANNEL AND HOURS — CONFIRM]. We do not support problems caused by Vercel, AI Providers, Connected Apps, your Mac or your network, but we will try to help.
+- We support the current version of the App on [SUPPORTED macOS VERSIONS — CONFIRM]. Older versions may stop working with our services.
+- We may change or remove features. If we remove a major paid feature, we will give reasonable notice.
+
+## 17. Suspension and termination
+
+**By you.** You may stop using Starfish and cancel your Subscription at any time (see Section 6).
+
+**By us.** We may suspend or end your access, in whole or in part, if:
+
+- you seriously or repeatedly break these Terms, including Section 10;
+- you do not pay;
+- your use creates a security risk or legal exposure, or harms other users or our services;
+- the law or a court or authority requires it; or
+- we stop offering the Services, in which case we will give at least [30] days' notice and refund any prepaid fees for the period after the end date.
+
+Where reasonable, we will warn you first and give you a chance to fix the problem.
+
+**After termination,** your licence ends and you must stop using the App. Data on your Macs stays with you. You may ask for a copy of your cloud data within [30] days: download it in **Settings → Account → Download my cloud data** while you can still sign in, or email [CONTACT EMAIL] and we will send you the same file. After that we may delete it, as described in the [Privacy Policy](/legal/privacy). Sections that by their nature should continue (including 8, 11, 18 to 27) continue after termination.
+
+## 18. Our intellectual property
+
+The App, the Services, our documentation, our brand, and all related software and content are owned by Starfish or our licensors and are protected by law. These Terms give you only the licence in Section 4. All other rights are reserved.
+
+## 19. Feedback
+
+If you send us ideas, suggestions or bug reports, we may use them freely without paying you or giving you credit. This does not give us ownership of Your Content included in a report; we use that only to investigate and fix the issue.
+
+## 20. Disclaimers
+
+TO THE FULLEST EXTENT THE LAW ALLOWS:
+
+- THE SERVICES AND ALL OUTPUT ARE PROVIDED **"AS IS" AND "AS AVAILABLE"**, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT AND ACCURACY.
+- WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE OR ERROR-FREE, THAT DATA WILL NOT BE LOST, THAT OUTPUT WILL BE ACCURATE OR SUITABLE, OR THAT AGENT ACTIONS WILL HAPPEN AS INTENDED.
+- WE ARE NOT RESPONSIBLE FOR VERCEL, AI PROVIDERS, CONNECTED APPS, OR ANY OTHER THIRD-PARTY SERVICE, INCLUDING THEIR AVAILABILITY, OUTPUT, DATA HANDLING OR CHARGES.
+
+Some places do not allow some of these disclaimers, so some may not apply to you.
+
+## 21. Limitation of liability {#21-limitation-of-liability}
+
+TO THE FULLEST EXTENT THE LAW ALLOWS:
+
+- **NO INDIRECT DAMAGES.** NEITHER STARFISH NOR ITS AFFILIATES, OFFICERS, EMPLOYEES OR SUPPLIERS WILL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, REVENUE, DATA, GOODWILL OR BUSINESS OPPORTUNITIES, EVEN IF TOLD THEY WERE POSSIBLE.
+- **NO LIABILITY FOR THIRD-PARTY CHARGES OR ACTIONS.** WE ARE NOT LIABLE FOR AI USAGE CHARGES, AD SPEND OR OTHER CHARGES FROM VERCEL, AI PROVIDERS OR CONNECTED APPS; FOR OUTPUT; FOR AGENT ACTIONS ALLOWED BY YOUR SETTINGS OR INSTRUCTIONS; OR FOR LOSS CAUSED BY A LEAKED KEY OR ACCOUNT THAT WE DID NOT CAUSE.
+- **CAP.** OUR TOTAL LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICES OR THESE TERMS IS LIMITED TO THE GREATER OF **(A) THE AMOUNT YOU PAID US FOR THE SERVICES IN THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM**, OR **(B) ONE HUNDRED US DOLLARS (US$100)**.
+
+These limits apply to every type of claim (contract, tort including negligence, or otherwise), but do not limit liability that the law does not allow to be limited, such as for fraud or, where applicable, death or personal injury caused by negligence.
+
+## 22. Indemnity
+
+You will defend, indemnify and hold harmless Starfish and its affiliates, officers, employees and contractors from claims, losses, damages, fines and costs (including reasonable lawyers' fees) brought by third parties that arise from:
+
+- Your Content, including client data you put into the Services;
+- your use of AI Providers or Connected Apps through Starfish, and Agent Actions taken under your settings or instructions;
+- your breach of these Terms, of the law, or of any third party's terms or rights.
+
+We will tell you promptly about the claim, let you control the defence, and help reasonably at your cost. You may not settle a claim that admits fault by us without our consent.
+
+## 23. Governing law and disputes
+
+- These Terms and any dispute about the Services are governed by the laws of the **State of Texas** and applicable US federal law, without regard to conflict-of-laws rules.
+- Disputes will be resolved only in the state or federal courts located in **Gregg County, Texas**, and both parties consent to those courts' jurisdiction.
+- Before going to court, please contact us at [CONTACT EMAIL] so we can try to resolve the issue informally within 30 days.
+- **Class action waiver.** Claims may be brought only individually, not as a plaintiff or class member in any class, collective or representative action.
+- If you are a consumer in a country whose laws give you rights that cannot be changed by contract, nothing here removes those rights. [CONFIRM: whether consumers or EU/UK customers are in scope.]
+
+## 24. Changes to these Terms
+
+We may update these Terms. We will change the "Last updated" date and, for significant changes, tell you in the App or by email at least [30] days before they take effect. Changes do not apply to disputes that arose before them. If you do not agree, cancel before the change takes effect; continuing to use the Services after that means you accept the new Terms.
+
+## 25. General
+
+- **Entire agreement.** These Terms, the Privacy Policy, any order form, and any signed Data Processing Agreement are the whole agreement about the Services.
+- **Order of precedence.** If they conflict, a signed agreement wins, then these Terms, then the Privacy Policy.
+- **Severability.** If any part is found unenforceable, the rest still applies.
+- **No waiver.** Not enforcing a right now does not give it up.
+- **Assignment.** You may not transfer these Terms without our written consent. We may transfer them as part of a merger, acquisition or sale of assets, with notice.
+- **Force majeure.** Neither of us is liable for delays caused by events beyond reasonable control, including outages at AI Providers, Connected Apps or cloud providers.
+- **Export.** You will follow US and other applicable export and sanctions laws.
+- **Notices.** We send notices to your account email or in the App. You send notices to the contact below.
+- **Independent parties.** Nothing here creates a partnership, employment or agency relationship.
+- **US Government users.** The App is "commercial computer software" provided with only the rights in these Terms.
+
+## 26. Data protection and processing roles
+
+- **Your data.** For the content you put into the Services, you are the controller and Starfish acts as your processor when it stores or syncs that content. For your account, billing and support data, Starfish acts as a controller. Our [Privacy Policy](/legal/privacy) describes this in detail.
+- **Data Processing Agreement.** If you need a DPA — for example because you handle personal data on behalf of clients, or you are subject to the GDPR — ask us at [CONTACT EMAIL] and we will provide one for signature. The DPA covers processor obligations, sub-processors, security measures, breach notification and deletion.
+- **Sub-processors.** We use cloud infrastructure (AWS, Supabase, Cloudflare) and a few other services listed in the DPA, which we provide on request. Vercel and the AI Providers are not our sub-processors: you contract with them directly through Your AI Key.
+- **No sale.** We do not sell personal information and we do not share it for cross-context behavioural advertising.
+- **Requests from individuals.** If you are an agency or otherwise hold End Users, you are responsible for responding to their privacy requests. We will assist you on request, within the limits of what we can see — which, for AI usage, is nothing.
+- **If you provide the Services to End Users**, you must give them your own terms and privacy notice that accurately describe how their data is handled, and you must tell them in advance that the tool uses AI. You may not rely on these Terms as their notice.
+
+## 27. Contact
+
+**Starfish Ad Age LLC** [CONFIRM ENTITY], 140 E Tyler Street, Longview, Texas 75601, USA
+Email: [CONTACT EMAIL]
+Phone: (903) 508-2576
 
 ---
 
-© 2026 Starfish Ad Age LLC. All Rights Reserved.
+© 2026 Starfish Ad Age LLC. All rights reserved.
