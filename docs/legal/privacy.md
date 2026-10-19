@@ -191,7 +191,6 @@ A few features currently use services that **Starfish** pays for and holds the k
 
 | Feature | Service | What is sent | How long it is kept |
 |---|---|---|---|
-| Search Studio (SEO research), included in your subscription under fair-use limits | **DataForSEO**, on Starfish's own provider account, via our Supabase function | Keywords, domains, market and language you search. No AI usage of yours goes through this account. To apply the fair-use limits, our function keeps a count of your lookups per day, linked to your account ID; it does not store what you searched. | Kept by DataForSEO under its terms; results are saved in your workspace. The daily count stays in Supabase until you delete your account |
 | "Connect with Google" sign-in | Google, via our Supabase function | Google's one-time sign-in code and refresh token pass through our function so Google can issue your tokens. Our function does not store them. | Not stored by us |
 | ClickUp and TikTok sign-in | ClickUp and TikTok, via our Supabase functions | The one-time sign-in code and resulting tokens pass through our function | Not stored by us [CONFIRM for ClickUp and TikTok Ads functions, whose code is kept outside the App] |
 | QuickBooks change alerts | Intuit, via our Supabase function | Notices from QuickBooks that an invoice or customer changed (company ID, record ID, type of change) | Kept in a queue until your App collects them [CONFIRM retention] |
@@ -341,7 +340,7 @@ Many Starfish customers are agencies that handle their clients' data (for exampl
 
 A signed Data Processing Agreement is available on request: [DPA REQUEST PROCESS — CONFIRM].
 
-**Recording meetings:** laws in many places require all participants to agree before a call is recorded or transcribed. You are responsible for telling participants and getting their consent.
+**Recording meetings:** laws in many places require all participants to agree before a call is recorded or transcribed. You are responsible for telling participants and getting their consent. When you start taking notes, Starfish reminds you to tell the people in the call and stores with the meeting that the reminder was shown, the time and your account; it does not record whether participants agreed.
 
 ## 15. Subprocessors {#15-subprocessors}
 
@@ -353,7 +352,6 @@ Services that store or process data **for Starfish** (paid for by us):
 | Supabase | Sign-in, App settings, helper functions, Studio shares, feedback | [SUPABASE REGION] |
 | Cloudflare | Starfish Anywhere tunnels and device records | Global network, USA |
 | Resend | Team invite emails | USA |
-| DataForSEO | Search Studio keyword and competitor data | [LOCATION — CONFIRM] |
 | Notion | Feedback and bug report tracking | USA |
 | Stripe | Subscription billing | USA |
 | GitHub | App update downloads | USA |

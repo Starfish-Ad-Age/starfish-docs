@@ -6,7 +6,111 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.43 — 2026-10-13 — current
+## 0.6.9-beta.44 — 2026-10-19 — current
+
+Studio is back and makes slide decks. Describe the deck, answer a question or two, then edit, tweak and share every slide. A long chat can continue in Studio, and a finished deck goes to Google Drive or ClickUp. Meetings remind you to tell the people in the call, and a meeting can belong to a workspace. Automations tell you when they finish or need you. Videos show their cost before they are made.
+
+### Studio
+
+**Slide decks from a few words.** Studio is back in the sidebar with a new icon, in Chat mode and Developer mode. Describe the deck and Studio asks only the questions it needs, skipping anything you already said. Choose Quick, Polished or Deep reasoning.
+
+**Steer while it builds.** Send more instructions while the deck is building. Studio adds them to the slides it has not written yet.
+
+**Edit any slide.** Select, comment on a slide and apply the comments, edit text in place, and drag or resize any element. Undo and redo work, and every change saves a version you can preview and restore.
+
+**Tweaks.** Change the deck's accent colour, text size, spacing and corners for the whole deck. One button resets the original look.
+
+**Pictures.** Studio adds icons, brand logos and illustrations in one matching style per deck. Comment on a picture to redraw it, or add your own photo from your Mac. Say "no illustrations" and Studio does not ask about them.
+
+**Interactive decks.** Reveal, tabs, steps, quizzes, polls, flip cards, timers and more work the same in the editor, in Present, in a shared link and in the downloaded file. Training decks get knowledge checks with a score at the end.
+
+**Export, share and present.** Export to PDF, PowerPoint (exact or editable), PNG slides and an offline HTML file. Share a deck with a link, or present it full screen.
+
+**Remembers your brand.** Studio remembers your brand, tone and choices per client and uses them next time. It can read brand colours and logos from your chat or your uploads.
+
+**From a chat to Studio.** In a long chat, asking for a deck offers to continue in Studio. Studio takes the whole chat along and asks only what the chat did not answer.
+
+**Send to Google Drive or ClickUp.** When a deck is done, Save this to Google Drive and Send to ClickUp ask you where to put it before they upload. If a step needs your OK, the approval card shows right in Studio.
+
+**Told when it is ready.** The bell and a Mac notification tell you when a deck needs answers, is ready or has paused.
+
+**Studio on the phone.** Open a deck on your phone, edit its text and use Tweaks.
+
+**Decks only.** Studio now makes slide decks. Website concepts you made earlier stay in Studio to view, download or delete.
+
+### Meetings
+
+**A reminder at the top of the screen.** Every time a recording starts, a short notice at the top of your screen reminds you to tell the people in the call that you are taking notes, and the Mac plays a short sound. The meeting keeps when the reminder was shown.
+
+**Take notes starts at once.** Take notes in the "In a meeting?" prompt starts recording straight away. The recording pill and the prompt show reliably again, also after you dismiss one.
+
+**Meetings in workspaces.** Add a meeting to a client or project workspace. Its notes are then available in that workspace's chats, and the workspace page lists its meetings. In a team workspace, Starfish asks first, because teammates will see the notes and transcript.
+
+**A meeting player.** Play, pause, skip 15 seconds, seek and change the speed of a recorded meeting. Recordings are kept for 180 days.
+
+**Transcription on your key.** Transcription and live captions run on your own Vercel AI Gateway key, or on this Mac.
+
+See [Meetings](/meetings/overview).
+
+### Automations
+
+**Simpler setup.** Setup asks its questions in plain words, all at once, and picks sensible defaults. It knows what is in the automation's workspace, and an app that is not connected gets one plain message with a link to Marketplace.
+
+**Told when it matters.** The bell and a Mac notification tell you when a run finishes, needs you or fails. Click it to open the run.
+
+**Clear states.** A run that is waiting for you says Needs you on the run card, the detail page and the bell. Failures are in plain words, such as "Reconnect Google in Settings to continue."
+
+**Does the whole task.** Repeating automations do the whole task every run. Run chats have plain titles and show your request. Finished one-time automations show Run again, and turning one on is faster.
+
+See [Automations](/automations/overview).
+
+### Video and media
+
+**The cost before you make it.** Before a video is made, Starfish shows its length, size, engine and about how much it will cost. The video page shows the price for more engines, and engines without a published price say so.
+
+**Sensible defaults.** Videos made from a chat are 720p and about 10 seconds unless you ask for more. Video Auto starts on Kling 2.6.
+
+**Videos open.** The Videos tab on the Media page opens, and clicking a video opens it in its chat or in a viewer. Stabilise gives much steadier video.
+
+See [Video generation](/media/video-generation).
+
+### Privacy and your data
+
+**Your Vercel plan.** Starfish asks which Vercel plan your key is on and shows what that means for your data. New users answer it in setup. Everyone else sees a small banner until they choose, in Settings → General.
+
+**Preview models are never automatic.** Starfish no longer picks preview models by itself and shows a warning when you choose one. Read aloud now starts on OpenAI TTS 1.
+
+**Remove sensitive information.** Starfish removes things like social security numbers, card numbers, bank accounts and ID numbers before your message goes to the AI. On by default; turn it off in Settings.
+
+**Private providers only.** A new switch in Settings → Models sends your requests only to providers that do not train on your data and keep no copy. Off by default. Some models are not available while it is on.
+
+**Sync is your choice.** New installs do not sync until you turn it on. A Mac that already synced asks once: "Keep syncing this Mac?"
+
+**Your account, your data.** Download my cloud data gives you a zip of everything Starfish keeps for you in the cloud, and you can delete your Starfish account in Settings.
+
+**Plain names.** Your AI key is called Vercel AI Gateway key everywhere. Settings has an Open-source licenses list.
+
+### Chat and phone
+
+**Fewer questions.** Starfish still asks for facts only you know, such as names, prices and dates. It decides tone and structure itself and tells you what it picked.
+
+**Nothing lost.** Long plans and reports are no longer cut short, the same answer no longer shows twice, and new chats get their real name without a click.
+
+**Models.** Light now uses DeepSeek V4.1 Flash 1017. Claude Opus 5.5 is gone, and chats, automations and decks that used it now use Claude Sonnet 5.5.
+
+**Artifacts on the phone.** Artifacts open full screen on the phone and Back closes them. Pinch and double-tap zoom the artifact, slide decks show one slide per screen with swipe, and the phone no longer shows "Do this on your Mac" for things you did not tap.
+
+### Fixes
+
+**TikTok second account.** Add another account in TikTok Organic now shows TikTok's sign-in page, so you can add a second account.
+
+**More project folders.** Adding a project folder no longer fails after 20 folders.
+
+**Small things.** Chat tabs that do not fit get scroll arrows, sign-in pop-ups work in the in-app browser, side sheets close from their X, cut-off texts show in full, and Studio share explains a lost connection in plain words. Cancelling a switch to your own Google app no longer breaks Marketing Suite or Google Ads, and "Keep syncing this Mac?" is readable in dark mode.
+
+**Figma.** Figma is no longer in Marketplace, and an existing Figma connection is removed from this Mac.
+
+## 0.6.9-beta.43 — 2026-10-13
 
 Work together in Teams and share a workspace with the people you work with. PDFs come out right the first time, slide decks look consistent, and the image editor keeps every version together. Long chats cost less, Starfish can read your files without asking, and it stops for safety checks less often.
 
