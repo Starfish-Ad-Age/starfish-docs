@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Your AI Key and Model Access Levels
+# Your AI Key and Model Levels
 
 Your Starfish subscription pays for the app. **AI usage is separate:** you use your own Vercel AI Gateway key, and Vercel bills you directly for the models you use. Starfish never resells or marks up AI usage.
 
@@ -11,7 +11,7 @@ Your Starfish subscription pays for the app. **AI usage is separate:** you use y
 2. Add billing or credits to AI Gateway.
 3. Create an AI Gateway API key.
 4. Paste it into Starfish.
-5. Pick a model access level that matches your budget.
+5. Pick a model level in the chat: Light, Balanced or Deep.
 :::
 
 ## Get a Vercel AI Gateway key
@@ -50,17 +50,20 @@ Everything AI in Starfish runs on your key:
 - embeddings for searching your knowledge files;
 - web search and video understanding.
 
-## Model access levels
+## Model levels
 
-On any plan you choose one of three levels. **The level only decides which models Starfish offers you.** It does not buy usage. You pay Vercel for what you actually use, and you can change your level at any time.
+Every model and every image and video engine in Starfish is available to everyone. Nothing is locked behind a plan or a level. You pay Vercel for what you actually use, so your cost depends on which models you use and how much.
 
-| Level | Good for | Example models |
+In Chat mode, the model picker in the composer offers:
+
+| Choice | What it is for | Model it uses |
 |---|---|---|
-| **Economy** | Everyday questions, drafts, summaries, high volume | GPT-5.6 Luna, GPT-6 Luna, Gemini Flash Lite, DeepSeek V4.1 Flash, Qwen 3.8 Flash, GLM-5.3 Flash, MiniMax M3 |
-| **Balanced** | Most business work: research, reports, analysis | Everything in Economy, plus mid-tier models such as Gemini 3.8 Flash, GPT-5.6 Terra, DeepSeek V4 Pro, GLM-5.3, Qwen 3.8 Max, Kimi K3 |
-| **Premium** | The hardest work, long agent tasks, best writing and code | Everything in Balanced, plus Claude Sonnet 5.5, Claude Opus 5.5, GPT-5.6 Sol and premium image and video engines |
+| **Smart Auto** | The default. Starfish handles the choice for you. | GPT-5.6 Luna |
+| **Light** | Brief reasoning for everyday asks | DeepSeek V4.1 Flash 1017 (DeepSeek V4.1 Flash if 1017 is unavailable) |
+| **Balanced** | Thinks harder for demanding work, the all-rounder | Claude Sonnet 5.5 (GPT-5.6 Luna if Claude stops working on your key for billing reasons, until the next month) |
+| **Deep** | Thinks hardest for the most complex work | GPT-5.6 Luna, thinking as hard as it can |
 
-The exact models in each level change as new models are released and old ones retire.
+You can also pick a named model. Developer mode lists every model and lets you set the thinking effort. See [Models & Providers](/chat/models). The models behind each choice change as new models are released and old ones retire.
 
 ## Indicative costs
 
@@ -70,58 +73,52 @@ These examples use Vercel AI Gateway list prices read on **2026-10-15** from `ht
 
 Assumes about 10,000 tokens in (your message, chat history and Starfish's instructions) and 1,000 tokens out. Long chats, attached files and tool results make the input bigger. Prompt caching often makes repeated turns cheaper.
 
-| Level | Example model | Price per million tokens (in / out) | About per reply |
-|---|---|---|---|
-| Economy | GPT-6 Luna | $0.10 / $0.50 | $0.002 |
-| Economy | GPT-5.6 Luna | $0.20 / $1.20 | $0.003 |
-| Economy | DeepSeek V4.1 Flash | $0.30 / $1.20 | $0.004 |
-| Economy | Gemini 3.5 Flash Lite | $0.30 / $2.50 | $0.006 |
-| Balanced | DeepSeek V4 Pro | $0.66 / $1.98 | $0.009 |
-| Balanced | Gemini 3.8 Flash | $0.75 / $3.75 | $0.011 |
-| Balanced | GPT-5.6 Terra | $2.00 / $12.00 | $0.032 |
-| Premium | Claude Sonnet 5.5 | $2.00 / $10.00 | $0.03 |
-| Premium | Claude Opus 5.5 | $4.00 / $20.00 | $0.06 |
-| Premium | GPT-5.6 Sol | $4.00 / $20.00 | $0.06 |
+| Example model | Price per million tokens (in / out) | About per reply |
+|---|---|---|
+| GPT-6 Luna | $0.10 / $0.50 | $0.002 |
+| GPT-5.6 Luna | $0.20 / $1.20 | $0.003 |
+| DeepSeek V4.1 Flash | $0.30 / $1.20 | $0.004 |
+| Gemini 3.5 Flash Lite | $0.30 / $2.50 | $0.006 |
+| DeepSeek V4 Pro | $0.66 / $1.98 | $0.009 |
+| Gemini 3.8 Flash | $0.75 / $3.75 | $0.011 |
+| GPT-5.6 Terra | $2.00 / $12.00 | $0.032 |
+| Claude Sonnet 5.5 | $2.00 / $10.00 | $0.03 |
+| GPT-5.6 Sol | $4.00 / $20.00 | $0.06 |
 
-**Rough ranges per reply:** Economy under 1 cent; Balanced about 1 to 5 cents; Premium about 3 to 8 cents.
+**Rough range per reply:** under 1 cent on the cheapest models, up to about 6 cents on the most expensive.
 
 ### Text: a longer agent task
 
 Assumes about 20 model steps, each reading about 30,000 tokens and writing about 1,000 (roughly 600,000 in and 20,000 out in total), before any caching discount.
 
-| Level | Example model | About per task |
-|---|---|---|
-| Economy | GPT-5.6 Luna | $0.15 |
-| Balanced | Gemini 3.8 Flash | $0.50 |
-| Premium | Claude Sonnet 5.5 | $1.40 |
-| Premium | Claude Opus 5.5 | $2.80 |
+| Example model | About per task |
+|---|---|
+| GPT-5.6 Luna | $0.15 |
+| Gemini 3.8 Flash | $0.50 |
+| Claude Sonnet 5.5 | $1.40 |
 
 Automations that run on a schedule repeat these costs every time they run.
 
 ### Images: one image
 
-| Level | Example model | About per image |
-|---|---|---|
-| Economy | Recraft V4.1 Flash, Meta Muse Image | $0.01 |
-| Economy | Seedream 4.0 | $0.03 |
-| Balanced | Gemini 3.1 Flash Image (1K) | $0.07 |
-| Premium | Gemini 3.1 Flash Image (4K), GPT Image 2, Recraft V4.1 Pro | $0.15 to $0.25 (GPT Image is priced by tokens, so cost varies with size and quality) |
+| Example model | About per image |
+|---|---|
+| Muse Image 1.0 | $0.01 |
+| GPT Image 2 | $0.15 or more (GPT Image is priced by tokens, so cost varies with size and quality) |
 
 ### Video: one 8-second clip
 
-| Level | Example model | About per clip |
-|---|---|---|
-| Economy / Balanced | Veo 3.1 Lite, 720p with sound | $0.40 |
-| Balanced | Veo 3.1 Lite, 1080p with sound | $0.64 |
-| Premium | Kling 3.0 standard, with sound | $2.00 |
-| Premium | Veo 3.1, 1080p with sound | $3.20 |
-| Premium | Veo 3.1, 4K with sound | $4.80 |
+| Example model | About per clip |
+|---|---|
+| Veo 3.1 Lite, 720p with sound | $0.40 |
+| Veo 3.1 Lite, 1080p with sound | $0.64 |
+| Kling v3, with sound | $2.00 |
+| Veo 3.1, 1080p with sound | $3.20 |
+| Veo 3.1, 4K with sound | $4.80 |
 
 ::: warning Veo 3.1 Lite is a preview model
 Starfish never chooses Veo 3.1 Lite automatically; video Auto starts on Kling 2.6. Use Veo 3.1 Lite only if you pick it yourself, and never with personal or client data: Vercel's protections do not apply to preview models.
 :::
-
-[CONFIRM: whether video generation is offered at the Economy level.]
 
 ### Other
 
@@ -133,7 +130,7 @@ Starfish never chooses Veo 3.1 Lite automatically; video Auto starts on Kling 2.
 
 ## Keeping costs under control
 
-- Start on **Economy** or **Balanced** and move up only for work that needs it.
+- Use **Smart Auto**, **Light** or **Balanced** for most work, and pick a more expensive model only for work that needs it.
 - Start a new chat for a new topic. Long chats send more history with every reply.
 - Attach only the files you need.
 - Set a budget or alert in your Vercel account.

@@ -33,7 +33,9 @@ Starfish connects to language models (Claude, GPT, Gemini, and others) through [
 
 Your key is stored securely on your Mac — protected by the Keychain when available, with encrypted local storage as the fallback — and is never shown again.
 
-The key is yours: Vercel bills you directly for AI usage, separately from your Starfish subscription. For detailed steps, model access levels and example costs, see [Your AI Key and Model Access Levels](/getting-started/ai-key-and-model-levels).
+Below the key, choose which Vercel plan the key belongs to (**Hobby**, **Pro** or **Enterprise**) and tick **I confirm this is my Vercel plan and I have read what it means for my data**. You cannot continue until you do. See [Vercel plan](/settings/general#vercel-plan).
+
+The key is yours: Vercel bills you directly for AI usage, separately from your Starfish subscription. For detailed steps, model levels and example costs, see [Your AI key and model levels](/getting-started/ai-key-and-model-levels).
 
 ![Setup wizard API key step](/images/setup-wizard-api-key.png)
 
@@ -59,7 +61,6 @@ Available integrations include:
 - **ClickUp** — Tasks, projects, docs, team workflows
 - **QuickBooks Online** — invoices, customers, items, accounts
 - **GitHub** — Repositories, pull requests, issues, code reviews
-- **Figma** — Design inspection, component reading, code generation
 - **Vercel** — Deployments, builds, runtime logs
 - **Canva** — Designs, presentations, marketing materials
 - **Zapier** — Workflow automation across thousands of apps

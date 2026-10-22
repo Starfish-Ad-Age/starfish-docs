@@ -54,7 +54,7 @@ Some pages have parts that only work on screen, such as tabs, closed sections or
 
 ## Slide Decks
 
-Ask for a slide deck in the chat and Starfish builds it from one tested design, so every deck looks consistent and its text stays readable. Each slide prints on its own page. On the phone, the live preview shows a **Read-only live draft** bar under it while Starfish works.
+Ask for a slide deck in the chat and Starfish builds it from one tested design, so every deck looks consistent and its text stays readable. Each slide prints on its own page. On the phone, the live preview shows a **Read-only live draft** bar under it while Starfish works. To edit, comment on, present and export every slide, make the deck in [Studio](/studio/overview).
 
 ## File Links
 

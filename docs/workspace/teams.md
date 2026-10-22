@@ -54,6 +54,10 @@ Only the person who shared the workspace, or a team owner or admin, can change i
 
 Changes reach your team on their next sync, usually within a few minutes.
 
+Studio decks are not shared with the team. Editing a deck together is not available yet.
+
+Meetings you add to a shared workspace are shared too. Starfish asks first, because everyone in the team will see the meeting's notes and full transcript. See [Meetings in a workspace](/meetings/overview#meetings-in-a-workspace).
+
 ## Remove and re-add someone
 
 Open the team, find the person under **Members**, and choose **Remove from team**.

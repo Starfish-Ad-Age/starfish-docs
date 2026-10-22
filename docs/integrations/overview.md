@@ -15,7 +15,6 @@ Starfish connects to the tools your team already uses. Each integration connects
 | [Google Workspace](./google-workspace) | Productivity | Stream / CLI setup | Gmail, Calendar, Drive, Docs, Sheets, Slides, Chat |
 | [Zapier](./zapier) | Productivity | OAuth PKCE | Run app actions and automate across thousands of apps |
 | [GoHighLevel](./gohighlevel) | Productivity | PIT / Agency OAuth | CRM contacts, pipelines, conversations, and social media |
-| [Figma](./figma) | Design | OAuth PKCE | Read designs, inspect components, generate code |
 | [Canva](./canva) | Design | OAuth PKCE | Create and edit designs, presentations, and marketing materials |
 | [Stitch](./stitch) | Design | Google API key | Generate UI screens, design systems, and app prototypes |
 | [GitHub](./github) | Development | Stream / CLI setup | Repos, pull requests, issues, and code reviews |
@@ -40,7 +39,6 @@ Manage your work, automate workflows, and keep your CRM in sync.
 
 Create, inspect, and iterate on designs without leaving Starfish.
 
-- **[Figma](./figma)** -- Read designs, generate code, Code Connect
 - **[Canva](./canva)** -- Designs, presentations, marketing materials
 - **[Stitch](./stitch)** -- UI screens, design systems, app prototypes
 

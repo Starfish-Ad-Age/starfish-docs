@@ -67,11 +67,10 @@ Each conversation is a **session**. Sessions are listed in the sidebar and persi
 
 Click the **New Chat** button at the top of the sidebar, or press **Cmd + N**. The sidebar also has links for:
 
-- **Meetings** -- record a call and get notes.
+- **Meetings** -- record a call and get notes. See [Meetings](/meetings/overview).
 - **Timeline** -- reconstruct a client's history.
-- **Media** -- image and video generation sessions.
-
-The sidebar's session list changes to match the section you're in (chats, generations, or video clips).
+- **Media** -- the designs, images and videos Starfish made. See [Media page](/media/overview).
+- **Studio** -- make slide decks. See [Studio](/studio/overview).
 
 ### Pinning sessions
 
@@ -122,6 +121,14 @@ You choose the engine in **Settings → Voice**:
 - **Cloud transcription** (the default) sends audio off-device to the AI Gateway. Pick from GPT-4o Transcribe (best accuracy), GPT-4o Mini Transcribe (fastest), Whisper 1, or Fish Audio Transcribe 1.
 - **On-device (Parakeet)** keeps audio on your Mac and runs offline. It needs a one-time ~460 MB model download, which starts from Settings or the first time you click the mic.
 
+## Sensitive Information
+
+Before your message goes to the AI, Starfish looks for card numbers, Social Security numbers, passport and driver's licence numbers, bank account and routing numbers, IBANs, and sentences about a person's health. The check runs on your Mac.
+
+If it finds any, the composer says **This message contains sensitive personal information.** Click **Redact and send** to send it with a placeholder in place of each item, such as "[card number removed]", or **Edit message** to change it yourself.
+
+The check is on by default. Turn it off with **Remove sensitive information before sending** in **Settings → Models → Data privacy**. It does not check pictures, PDF or Office files, audio or video.
+
 ## Attachments
 
 Attach files to your message using the toolbar buttons or by dragging files onto the composer:
@@ -146,7 +153,7 @@ Type **@** in the composer to open the picker, or click the **+** button. The pi
 
 - **Files** -- choose a file from this Mac to attach to the message.
 - **Apps** -- reference a connected integration to direct the AI to use it. Selecting an app activates it if it isn't already active.
-- **Create** (Chat mode) -- start an image, video, or Timeline.
+- **Create** (Chat mode) -- start an image, video, or Timeline. See [Image Generation](/media/image-generation) and [Video Generation](/media/video-generation).
 
 Select an item to insert it as a mention at the cursor position. In a sent message, @app mentions render inline as the app's name with its logo.
 
@@ -175,7 +182,7 @@ The composer toolbar reflects your current work mode:
 
 ### AI Responses
 
-AI responses render full markdown with syntax-highlighted code blocks, tables, lists, diagrams, charts, and inline formatting. Links show the destination site's icon beside the text. In Chat mode, clicking a link opens a dialog to choose your default browser or the built-in browser panel; in Developer mode links open in your default browser directly.
+AI responses render full markdown with syntax-highlighted code blocks, tables, lists, diagrams, charts, and inline formatting. Reports, comparisons, rankings and plans come with charts, stat tiles and tables. Choose how often in **Settings → Personalization → Layout and visuals**. Links show the destination site's icon beside the text. In Chat mode, clicking a link opens a dialog to choose your default browser or the built-in browser panel; in Developer mode links open in your default browser directly.
 
 ### Selecting Text in a Reply
 

@@ -25,7 +25,7 @@ features:
       width: 28
       height: 28
     title: 13+ live integrations
-    details: Google Workspace, ClickUp, Figma, GitHub, Facebook Ads, Vercel. Your AI can actually use these tools — not just talk about them.
+    details: Google Workspace, ClickUp, GitHub, Facebook Ads, Vercel. Your AI can actually use these tools — not just talk about them.
   - icon:
       src: /icons/folder-tree.svg
       width: 28
@@ -42,8 +42,8 @@ features:
       src: /icons/sparkles.svg
       width: 28
       height: 28
-    title: Image &amp; video generation
-    details: A dedicated studio, or inline from chat. Multi-turn refinement on the latest image and video engines.
+    title: Studio, images &amp; video
+    details: Slide decks in Studio that you edit, present and share. Images and videos made right in the chat.
   - icon:
       src: /icons/terminal.svg
       width: 28

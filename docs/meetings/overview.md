@@ -12,9 +12,7 @@ Starfish can sit in on a call, write the transcript as people speak, and turn it
 
 ## Recording a meeting
 
-Open **Meetings** in the sidebar and press **Record a meeting**, then **Start recording**.
-
-Before it will start you have to confirm that you will tell the other people on the call that you are taking recorded notes. This is deliberate and it blocks recording until you tick it: recording rules differ by country and by US state, and many require everyone's agreement. Complying is your responsibility, not the app's.
+Open **Meetings** in the sidebar and click **Record** (or **Record a meeting** the first time). When a calendar meeting is on, the calendar bar offers **Join & record** (or **Record** if the event has no call link).
 
 Starfish records two things at once:
 
@@ -22,6 +20,29 @@ Starfish records two things at once:
 - **Your microphone** — captured separately, so "you said" and "they said" stay apart.
 
 The transcript builds live as people speak. You can leave the Meetings screen and carry on using the rest of the app; the recording keeps running.
+
+While recording, the Meetings header has buttons to mark a moment in your notes, turn your microphone off or on, pause for a private moment, and stop.
+
+### The reminder to tell people
+
+Every time a recording starts, a short notice at the top of your screen says **Make sure you tell the people in this call that you are taking notes**, and the Mac plays a short sound. The meeting keeps when the reminder was shown.
+
+Recording rules differ by country and by US state, and many require everyone's agreement. Telling the people in the call, and getting their agreement where the law asks for it, is your responsibility, not the app's.
+
+### The recording pill
+
+During any recording, a small pill sits at the top centre of your screen, around the notch on Macs that have one. It shows the time recorded and a stop button. It shows however the recording started.
+
+### "In a meeting?"
+
+When another app uses your microphone, Starfish offers to take notes. The pill shows **In a meeting?** with the app's name, **Take notes** and **×**.
+
+- It shows after a couple of seconds when your camera is on or the app is a meeting app such as Zoom, Teams, Webex, FaceTime, Discord or Skype. Otherwise it waits about 15 seconds.
+- **Take notes** starts recording straight away.
+- **×** hides the prompt for that call.
+- Nothing is recorded until you click **Take notes**.
+
+Turn the prompt off with **Offer to take notes in a meeting** in **Settings → Meetings**.
 
 ## Notes
 
@@ -59,11 +80,25 @@ Being explicit, because the alternative is you finding out mid-call:
 - **It cannot record one browser tab.** System audio is captured for the whole machine. Whatever else is playing — notification chimes, other tabs — is recorded along with the meeting, so mute what you do not want captured.
 - **It does not identify people by voice.** Voices are grouped, and names come from you or from a suggestion you accept. Starfish never claims to know who someone is.
 
+## Play a recording
+
+Open a finished meeting to play it. Play, pause, skip back or forward 15 seconds, seek, and choose a speed from 0.75× to 2×.
+
+## Meetings in a workspace
+
+Add a meeting to a client or project workspace, so its notes and transcript become part of that workspace.
+
+- On the meeting, click **Add to workspace** and pick one. You can also use **Add to workspace** or **Move to workspace** in the meeting's **…** menu, or choose **No workspace** to take it out.
+- Every chat in that workspace can then read the meeting's notes and transcript.
+- The workspace page lists its meetings. **Remove from this workspace** takes one out.
+
+If the workspace is shared with a team, Starfish asks first, because everyone in the team will see the meeting's notes and full transcript. When you share a workspace that already has meetings, Starfish asks whether to include them.
+
 ## Audio and privacy
 
-Audio is kept on disk only while the accurate transcript is being produced, then deleted automatically. If processing fails, it is kept locally so you can safely retry, and leftover audio from a quit or crash is cleaned up on the next launch. Transcripts and notes stay in your local Starfish database, and are copied to your Starfish account only if you turn on cloud sync.
+Starfish keeps each meeting's recording on your Mac for **180 days** after the meeting, so you can play it and transcribe it again. The meeting page shows how many days are left. Transcripts and notes stay in your local Starfish database, and are copied to your Starfish account only if you turn on cloud sync.
 
-Speech recognition runs through Vercel AI Gateway on your own key: the audio is streamed for live captions, and the retained audio is sent off-device for the final transcript. Vercel and the model provider handle it under your agreements with them. The optional on-device Parakeet model only fills live captions when the cloud stream is not connected. Notes are written by an AI model, so the transcript text is sent to it for summarising when notes are generated.
+Transcription runs on your own Vercel AI Gateway key: the audio is streamed for live captions, and the recording is sent off-device for the final transcript. Vercel and the model provider handle it under your agreements with them. Working out who spoke runs on your Mac. The optional on-device Parakeet model only fills live captions when the cloud stream is not connected. Notes are written by an AI model, so the transcript text is sent to it for summarising when notes are generated.
 
 ## Permissions
 

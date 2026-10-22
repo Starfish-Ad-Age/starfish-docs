@@ -21,6 +21,7 @@ export default withMermaid({
 
     nav: [
       { text: "Guide", link: "/getting-started/introduction" },
+      { text: "Studio", link: "/studio/overview" },
       { text: "Meetings", link: "/meetings/overview" },
       { text: "Workspace", link: "/workspace/overview" },
       { text: "Integrations", link: "/integrations/overview" },
@@ -50,6 +51,12 @@ export default withMermaid({
           { text: "Prompt Builder", link: "/chat/prompt-builder" },
           { text: "Permissions & Safety", link: "/chat/permissions" },
           { text: "Artifacts", link: "/chat/artifacts" },
+        ],
+      },
+      {
+        text: "Studio",
+        items: [
+          { text: "Slide decks", link: "/studio/overview" },
         ],
       },
       {
@@ -86,7 +93,6 @@ export default withMermaid({
           { text: "Google Marketing Suite", link: "/integrations/google-marketing" },
           { text: "ClickUp", link: "/integrations/clickup" },
           { text: "GitHub", link: "/integrations/github" },
-          { text: "Figma", link: "/integrations/figma" },
           { text: "Vercel", link: "/integrations/vercel" },
           { text: "Facebook Ads", link: "/integrations/facebook-ads" },
           { text: "TikTok", link: "/integrations/tiktok" },
@@ -111,6 +117,7 @@ export default withMermaid({
       {
         text: "Media",
         items: [
+          { text: "Media page", link: "/media/overview" },
           { text: "Image Generation", link: "/media/image-generation" },
           { text: "Video Generation", link: "/media/video-generation" },
         ],
@@ -119,6 +126,12 @@ export default withMermaid({
         text: "Automations",
         items: [
           { text: "Overview", link: "/automations/overview" },
+        ],
+      },
+      {
+        text: "Phone",
+        items: [
+          { text: "Starfish on your phone", link: "/phone/overview" },
         ],
       },
       {
@@ -138,10 +151,6 @@ export default withMermaid({
           { text: "Open-source licences", link: "/legal/open-source" },
         ],
       },
-    ],
-
-    socialLinks: [
-      { icon: "github", link: "https://github.com/cainandanton/starfish-releases/releases" },
     ],
 
     search: {

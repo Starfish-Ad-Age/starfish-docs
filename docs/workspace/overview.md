@@ -12,12 +12,12 @@ The hierarchy is four levels deep:
 Workspace
 └── Project           e.g. "Acme Inc"
     ├── Folder        e.g. "Brand"   (optional)
-    │   └── Chats, image generations, video generations
-    └── Chats, image generations, video generations
+    │   └── Chats
+    └── Chats, meetings
         (project-level — no folder)
 ```
 
-Folders are optional. A chat can live directly under a project, or inside a folder for tighter scoping. The same applies to image-gen and video-gen sessions.
+Folders are optional. A chat can live directly under a project, or inside a folder for tighter scoping. A meeting can belong to a project too; see [Meetings in a workspace](/meetings/overview#meetings-in-a-workspace).
 
 ## Why use a workspace?
 

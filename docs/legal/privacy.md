@@ -160,7 +160,7 @@ The App checks **GitHub Releases** for updates when it starts and every few hour
 
 ## 5. AI requests: Vercel AI Gateway and model providers {#5-ai-requests-vercel-ai-gateway-and-model-providers}
 
-Starfish does not include AI usage. You create your own **Vercel** account and **AI Gateway API key** and enter it in Starfish (see [Your AI key and model access levels](/getting-started/ai-key-and-model-levels)). Then:
+Starfish does not include AI usage. You create your own **Vercel** account and **AI Gateway API key** and enter it in Starfish (see [Your AI key and model levels](/getting-started/ai-key-and-model-levels)). Then:
 
 - Every AI request goes **from your Mac directly to Vercel AI Gateway**, signed with **your** key. Starfish's servers are not in the middle.
 - Vercel passes the request to the model provider (for example OpenAI, Anthropic, Google, DeepSeek, Alibaba (Qwen), Z.AI (GLM), MiniMax, Moonshot, Mistral, xAI, Black Forest Labs, Kling, ByteDance, Fish Audio, Morph, Perplexity, Voyage).

@@ -23,24 +23,13 @@ With Starfish, you **describe the post** (or hand it a rough sketch), give it th
 Image generation is **brilliant for the creative and the look**: backgrounds, mood, composition, scenes, styling. It's **unreliable for exact text and exact logos** — it may misspell words or redraw your logo slightly wrong. So the workflow is: **generate the creative in Starfish → drop the *real* logo and final copy on top in Canva** for the last 10%. You'll still save most of the time.
 :::
 
-## Two ways to generate
+## Where to generate
 
-- **Image studio** — open **Media** in the left sidebar, then the **Images** tab, and open an image. Best for focused post-making with reference images. *We'll use this for the walkthroughs.*
-- **In chat** — open the **+** menu at the bottom-left of the composer, choose the **Create** tab, then **Create an image**. Best when image-making is part of a bigger conversation. ([Details](/media/image-generation).)
+Images are made in a chat. Open the **+** menu at the bottom-left of the composer, choose the **Create** tab, then **Create an image**. In Developer mode, turn on **Image generation** in the composer's **Image** menu, or type **/image**. ([Details](/media/image-generation).)
 
 ### Which model?
 
-In the studio there's a model dropdown. Quick guide:
-
-| Model | Use it for |
-|-------|-----------|
-| **Nano Banana 2** *(default)* | Most social posts — fast, follows instructions well |
-| **Nano Banana 2 Lite** | Fast drafts, variations, and quick edits |
-| **Nano Banana Pro** | Highest-detail Gemini option for polished assets |
-| **GPT Image 2.5 Flare / Sunburst** | Sharp detail and typography; Sunburst for the most polished, precise edits |
-| **GPT Image 2** | When you need clearer text or illustrative/poster styles |
-
-Start with **Nano Banana 2** unless you have a reason not to.
+Leave the image engine on **Auto** unless you have a reason not to. Auto picks the best engine for each request. If you want to choose, open the engine menu: each engine is marked **$**, **$$** or **$$$**, from cheapest to most expensive. Try a cheaper one for drafts and a **Premium** one for finals.
 
 ---
 
@@ -48,7 +37,7 @@ Start with **Nano Banana 2** unless you have a reason not to.
 
 **Goal:** get a usable first draft from a written idea.
 
-1. Open your image studio (via **Media → Images**, or start one from the chat **+ → Create → Create an image** flow).
+1. Start a new chat and choose **+ → Create → Create an image**.
 2. Type a clear description of the approved post. The more specific, the better:
 
    ```
@@ -58,7 +47,7 @@ Start with **Nano Banana 2** unless you have a reason not to.
    for a headline. Square format.
    ```
 
-3. Make sure **Nano Banana 2** is selected. Click **Generate**.
+3. Send the message.
 
 **Tip:** mention the **format** ("square", "vertical story 9:16", "landscape") and where to **leave space for text** so the layout fits your copy later.
 
@@ -68,9 +57,9 @@ Start with **Nano Banana 2** unless you have a reason not to.
 
 **Goal:** get the *style* you (or the client) already have in mind.
 
-You can drag in reference images — **up to 14** with Nano Banana 2 (the GPT Image models cap at 4).
+You can drag reference images into the message. How many you can use depends on the engine.
 
-1. In the image studio, **drag a reference image** into the prompt area.
+1. **Drag a reference image** into the message box.
 2. Then describe what to make *in that style*:
 
    ```
@@ -78,7 +67,7 @@ You can drag in reference images — **up to 14** with Nano Banana 2 (the GPT Im
    and color palette. Make a new flat-lay of an iced coffee with fresh mint.
    ```
 
-3. Click **Generate**.
+3. Send the message.
 
 **This is the big unlock:** instead of describing a vibe in words, you *show* it. Great for staying on-brand across a whole campaign.
 
@@ -88,7 +77,7 @@ You can drag in reference images — **up to 14** with Nano Banana 2 (the GPT Im
 
 **Goal:** get the logo into the composition as a guide — knowing you'll finalize it in Canva.
 
-1. Drag the **client's logo file** into the prompt as a reference.
+1. Drag the **client's logo file** into the message box as a reference.
 2. Ask it to place the brand in the scene:
 
    ```
@@ -106,7 +95,7 @@ Use the generated image for **placement and composition**. For the published pos
 
 **Goal:** dial it in without starting over.
 
-The studio remembers your previous image, so you can refine step by step:
+Keep going in the same chat. Starfish sees the image it just made, so you can refine step by step. You can also hover the image and click **Edit this image** to mark an area and change only that part:
 
 ```
 Make the background a little warmer and brighter.
@@ -126,10 +115,9 @@ Give me 3 variations of this so I can pick one.
 
 **Save the image:**
 
-- Click **Save folder** on the session to pick a folder on your computer. From then on, every image in that session auto-saves there (under `generated/`, with references under `references/`).
-- Generated images also collect in the **Media** area so you can find them later.
+- Every image you make is kept on the **Media** page under **Images**, so you can find it later.
 
-**Write the caption** — hover the image and click **Continue in chat**. This opens a normal chat with the image attached, so the assistant can *see* it:
+**Write the caption** — ask in the same chat. Starfish can *see* the image:
 
 ```
 Write 3 Instagram caption options for this image for a local coffee brand.
@@ -146,11 +134,11 @@ Captions are pure writing — exactly where the different AIs have different voi
 
 Take a **real approved brief** you'd normally build in Canva and run it through:
 
-- [ ] Generate a first draft from the written idea (Nano Banana 2)
+- [ ] Generate a first draft from the written idea
 - [ ] Re-generate it using a moodboard/reference image for the style
 - [ ] Bring the client logo in as a reference
 - [ ] Refine it down (warmer, reposition, etc.) and ask for **3 variations**
-- [ ] Pick one, **Save folder**, and **Continue in chat** to write 3 captions
+- [ ] Pick one and ask in the same chat for 3 captions
 - [ ] Finish the chosen post in Canva: real logo + final copy on top
 
 ## Tips & gotchas
@@ -158,7 +146,7 @@ Take a **real approved brief** you'd normally build in Canva and run it through:
 - **Describe the composition, not just the subject.** Format, lighting, mood, color palette, and *where to leave space for text* all help.
 - **Show, don't tell.** A reference image beats paragraphs of description.
 - **Don't fight the text/logo.** Let AI do the creative; finalize exact words and logos in Canva.
-- **Generation costs money** (it's a real per-image cost), so explore with the cheaper model and switch to the better one for finals.
+- **Generation costs money** on your AI key, so explore with a cheaper engine and switch to a better one for finals. Starfish asks before it uses an expensive engine.
 - **Lost an image?** Check the **Media** area — everything you generate lands there.
 
 **See also:** [Image Generation](/media/image-generation) · [Video Generation](/media/video-generation) · [Canva](/integrations/canva)

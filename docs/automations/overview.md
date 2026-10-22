@@ -33,24 +33,45 @@ Anything you'd type into chat and want to fire on a clock.
 
 ## Creating an automation
 
-1. Click **New** on the Automations page. (You can also pick one of the ready-made **Suggestions**, which opens the setup conversation with the request already written.)
-2. Describe the outcome in your own words, or tap the mic to say it.
-3. If anything is unclear, Starfish asks you about it and offers real choices — which client, which list, which time.
-4. Review the summary: **when it runs**, **what it does**, **what it may touch**, and **where the result goes**, plus the exact facts it will use.
+1. Click **New** on the Automations page. (You can also pick one of the ready-made **Suggestions**, which opens setup with the request already written.)
+2. Describe what Starfish should do, and when, in your own words, or tap the mic to say it. Click **Set it up**.
+3. If anything is missing, Starfish asks its questions in plain words, all at once, up to five. You answer them one by one. It picks sensible defaults for the rest, for example "morning" means 8:00 AM.
+4. Review **Here is what I set up**: **When it runs**, **What it does**, **What it may touch** and **Where the result goes**. Nothing is turned on until you say so.
 5. In Developer mode, choose **who runs it** — a specialist agent or Starfish itself.
-6. Decide what it may change. The actions the task needs are listed and pre-selected; untick the box to make it read and report only.
+6. Under **How much it is allowed to do**, decide what it may change. The actions the task needs are listed; untick **Let it do these things when it runs** to make it read and report only. See also [Paid images and videos](#paid-images-and-videos).
 7. Choose what happens next:
-   - **Test it now** — runs once against the real task (a granted action really happens).
-   - **Just turn it on** — activates it on its schedule without a test.
+   - **Yes, test it now** — runs once against the real task (when it can act, the button says **Test it now — it really acts**). After the test you see the real result and can **Turn it on**, **Adjust it** or **Throw it away**.
+   - **No, just turn it on** — activates it on its schedule without a test.
    - **Keep it, leave it off** — saves it without turning it on.
 
-The automation starts firing on its schedule. The Automations page lists every saved automation with its next-fire time.
+The Automations page lists every saved automation with its next-fire time.
+
+### The setup check
+
+Before an automation turns on, Starfish checks that it can really run. It knows what is in the automation's workspace, so a task that only uses workspace notes or meetings does not ask for an app.
+
+- An app the task needs that is not connected gets one plain message, such as "ClickUp isn't connected. Connect ClickUp in the Marketplace, then re-check."
+- If a specialist works best with an app you have not connected, setup says so with a **Connect it in Marketplace** link. Your setup is kept while you go there.
+
+### Paid images and videos
+
+An automation that makes images or videos only uses cheaper engines unless you allow more. Tick **Allow paid images and videos** under **How much it is allowed to do** to let it make expensive images and videos, and ones with no published price. It is off for new automations.
 
 ## Run history
 
-Each fire is recorded with a status — `running`, `completed`, `delivered`, `failed`, `cancelled`, or `missed` — plus cost, token count, duration, and a link to the underlying chat session. Open an automation to see **Recent activity**, where each run explains in plain language what happened, what it produced, and which steps it was not allowed to do.
+Open an automation to see **Recent activity**. Each run explains in plain words what happened, what it produced, and which steps it was not allowed to do. **Open the chat** opens the run's chat, which is named after the automation and the date, for example "Weekly recap, Oct 19".
 
-If a run stops to ask one question, a prompt appears on the automation row so you can answer it and let the work continue.
+Each run shows one of these states:
+
+- **Running** — it is working now.
+- **Finished** — it did the work.
+- **Needs you** — it is waiting for you, for example to answer one question or to reconnect an app. The run card, the detail page and the bell all say **Needs you**.
+- **Failed** — it could not do the work. The reason is in plain words, such as "Reconnect Google in Settings to continue." or "ClickUp hit a usage limit for now. Run it again later."
+- **Missed** — it did not run at its time.
+
+If a run stops to ask one question, answer it on the automation and the work continues.
+
+Repeating automations do the whole task on every run. A finished one-time automation shows **Run again**.
 
 ## Concurrency
 
@@ -72,11 +93,13 @@ Folder context overrides project context inside its folder, same as interactive 
 
 ## Notifications
 
-Open **Settings → Automations** to configure per-event notifications (success, failure, cost cap, missed catch-up) and quiet hours. Notifications during quiet hours are queued and delivered when the window ends; automations still fire — only the desktop notifications wait.
+The bell and a Mac notification tell you when a run finishes, needs you or did not finish. Click one to open the run's chat.
+
+In Developer mode, open **Settings → Automations** to choose which events notify you (**Notify on success**, **Notify on failure**, **Notify on cost-cap hit**, **Notify on missed catch-up**) and to set quiet hours. A run that needs you follows the failure setting. Notifications during quiet hours are queued and delivered when the window ends; automations still fire — only the desktop notifications wait.
 
 ## Limits
 
-- Hard cap of **15 automations** per workspace. Delete one before creating a 16th.
+- Up to **15 automations** in total. Delete one before creating a 16th.
 - Minimum interval between fires: **10 minutes**.
 - A single unattended run is stopped after **30 minutes** if it has not finished.
 - Run history is trimmed to the most recent **50** fires per automation.

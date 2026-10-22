@@ -4,78 +4,36 @@ outline: deep
 
 # Image Generation
 
-Create images from text descriptions directly within Starfish. The fastest path is the **in-chat image tool** — ask for an image in a conversation and it renders inline — and each generation is also kept in the **Media** library alongside your other work.
+Ask for an image in a chat and Starfish makes it right there in the conversation. Every image is also kept on the [Media page](/media/overview) under **Images**.
 
-## Available Models
+## Turn it on
 
-| Model | Backend | Notes |
-|-------|---------|-------|
-| **Nano Banana 2** | Google `gemini-3.1-flash-image` | The default — best balance of quality, speed, and cost |
-| **Nano Banana 2 Lite** | Google `gemini-3.1-flash-lite-image` | Fastest for drafts, variations, and quick edits |
-| **Nano Banana Pro** | Google `gemini-3-pro-image` | Highest-detail Gemini option for polished assets |
-| **GPT Image 2.5 Flare** | OpenAI `gpt-image-2.5-flare` | Fast everyday images with sharp detail and typography |
-| **GPT Image 2.5 Sunburst** | OpenAI `gpt-image-2.5-sunburst` | Highest fidelity for polished work and precise edits |
-| **GPT Image 2** | OpenAI `gpt-image-2` | Strong for typography, layouts, and illustrations |
+- **Chat mode:** open the **+** menu in the composer, choose the **Create** tab, then **Create an image**.
+- **Developer mode:** turn on **Image generation** in the **Image** menu of the composer.
+- **Either mode:** type **/image** to make the next message create an image.
 
-All models route through the Vercel AI Gateway with a single key — no per-provider account needed.
+Leave the engine on **Auto**, or open the menu to pick one. Nothing is made until you turn this on, because every image costs money on your AI key.
 
-### Capabilities
+## Engines
 
-- **Reference images** — up to **14** on Nano Banana 2 / 2 Lite / Pro, and up to **4** on the GPT Image models.
-- **Multiple images per request** — the GPT Image 2 family can return up to **10** images in a single call. Every other model returns one.
-- **Extra controls** — size, quality, background, and output format are exposed by the GPT Image 2 family only. The in-chat tool can pass them; the studio uses the model's defaults.
-- **Aspect ratios** — the picker shows the sizes each engine supports.
+**Auto** picks the best engine for each request and starts on GPT Image 2.5 Flare. You can also choose Nano Banana Pro, Nano Banana 2.1, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Muse Image 1.0, FLUX 3 Image, MAI-Image-2.6 Flash or MAI-Image-2.6.
 
-## Generating in Chat
+The picker marks each engine **$**, **$$** or **$$$**, from cheapest to most expensive, and flags **Recommended** and **Premium** engines. Auto never picks a preview engine.
 
-The agent can generate images directly in a conversation. This is useful when image creation is part of a bigger task — "summarize this email thread, then design a banner for the campaign" works in one chat.
+## Before an expensive request
 
-### Enabling it
+Before Starfish uses an expensive engine, an engine with no published price, or makes a large batch of images, it asks first. The card says what it is about to make, such as "Make 4 images?". Click **Make it** to go ahead or **Cancel** to make nothing.
 
-Open the **+** menu in the chat composer (the same menu you use to add files or apps) and choose **Create an image**. The composer switches into image-creation mode for that message; leave the model on **Automatic** or open the submenu to pick a specific one. Nothing is generated without this — images have a real per-image cost.
+## How it shows up
 
-Once armed, the agent has access to a `generate_image` tool it can call when your message clearly asks for an image.
+While the picture is being made, the reply shows a mosaic that fills in as the image arrives. Ask for several images on an engine that supports it and they show as one grid. If a job runs long, you can switch away and come back.
 
-### How it shows up
+## Edit an image in chat
 
-While the agent works, the reply shows a **grid-reveal placeholder** — a mosaic that fills in as the picture arrives, resolving into the real image in the same slot. Ask for several images (on a model that supports multiple per request) and they render as one grid, with a placeholder cell for each image still in flight. If a job runs long, the frame shows a note that it can take a few minutes and that you can switch away and come back.
-
-The image is also saved as an **Artifact**, so it shows up in the **Media** library (`/designs`) under the **Images** tab. HTML/PDF/CSV artifacts the agent produces live alongside it under the **Designs** tab.
-
-### Editing an image in chat
-
-Hover an image in the chat and click **Edit this image** to open the image editor. Click **Add region** to mark an area and describe what should change there, or describe a change across the whole image, then send it. While the editor is open, its messages appear inside the editor, so they never cover its buttons. On the phone, the region panel is tall enough to type your change.
+Hover an image in the chat and click **Edit this image** to open the image editor. Click **Add region** to mark an area and describe what should change there, or describe a change across the whole image, then send it. On the phone, the region panel is tall enough to type your change.
 
 Several edits of one image in the same reply show as one picture. Use the arrows to step through them; the label shows which one you are on, for example **Version 2 of 3**. The newest version shows first.
 
-## Image Sessions
-
-Each image generation is a conversational turn. Open a session from the **Images** tab of the Media library to view it full-size and continue from there:
-
-### Multi-Turn Refinement
-
-Image sessions are conversational. After generating, you can:
-
-- Describe specific changes ("make the background darker")
-- Request variations ("same composition but in watercolor style")
-- Adjust details ("remove the text in the top-left corner")
-
-The model sees the prior turns' images and prompts as context, so you refine without starting over.
-
-### Save to a Folder
-
-Click **Save folder** in the composer toolbar to pick a destination on your disk (uses the macOS File System Access API). Every subsequent generation in that session is auto-saved to a `generated/` subfolder, and uploaded references to a `references/` subfolder.
-
-### Continue in Chat
-
-Hover any generated image and click **Continue in chat**. Starfish opens a fresh chat session with the image pre-attached as a multimodal input — the chat agent can see the image and reason about it (suggest edits, write copy that pairs with it, etc.). A **Continue in chat** image can also be reused as a reference for the next prompt via **Edit this**.
-
 ## Automations
 
-If you've added image creation to an [Automation](/automations/overview), the scheduled agent run can generate images on its own (e.g. "every Monday, draft a social card for this week's announcement").
-
-## Storage
-
-- Generated bytes are saved to a local IndexedDB store keyed by session — survives reloads, no network round-trip on re-view.
-- When the agent generates an image in chat, the bytes are written to the local artifacts table (SQLite) and the image is reachable from the Media library at `/designs`.
-- Nothing leaves your machine after generation except the round-trip to the Gateway during creation.
+An automation can make images on its own when you allow it in setup. See [Automations](/automations/overview#paid-images-and-videos).

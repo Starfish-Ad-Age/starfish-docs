@@ -4,53 +4,57 @@ outline: deep
 
 # Video Generation
 
-Create short video clips (seconds, not minutes) from text descriptions or starting images within Starfish. Video generation runs in chat — ask for a clip and it renders inline — and every clip is kept in the **Media** library alongside your other work.
+Ask for a short clip in a chat and Starfish makes it right there in the conversation. Every clip is also kept on the [Media page](/media/overview) under **Videos**.
 
-## Available Engines
+## Turn it on
 
-| Engine | Backend | Notes |
-|--------|---------|-------|
-| **Kling 2.6** | Kling `kling-v2.6` (t2v / i2v) | Best value for everyday clips. 5s or 10s. Accepts a first frame and a last frame. |
-| **Kling v3** | Kling `kling-v3.0` (t2v / i2v) | Higher-end control with both first and last frames. 5s or 10s. |
-| **Veo 3.1** | Google `veo-3.1` | Cinematic motion and prompt following, with audio. 4s, 6s, or 8s. Accepts a first frame and a last frame. |
-| **Grok Imagine 1.5** | xAI `grok-imagine-video-1.5` | Brings a still image to life with synchronized sound, or works from text alone. Up to 15s; 480p / 720p / 1080p. |
-| **MiniMax H3** | MiniMax `minimax-h3` | Multimodal 2K video with sound, up to 15s. Accepts reference images and reference videos. |
-| **Seedance 2** | ByteDance `seedance-2.0` | Stylized movement and social-first visuals. 5s or 10s. |
+- **Chat mode:** open the **+** menu in the composer, choose the **Create** tab, then **Create a video**.
+- **Developer mode:** turn on **Video generation** in the **Video** menu of the composer.
+- **Either mode:** type **/video** to make the next message create a video.
 
-All engines route through the Vercel AI Gateway. A "premium" badge in the picker flags engines with a higher per-clip cost, and the same picker calls out whether an engine generates sound.
+Leave the engine on **Auto**, or open the menu to pick one. Videos are slower and cost more than images, so nothing is made until you turn this on.
 
-## Video Settings
+## Engines
 
-Duration, aspect ratio, resolution, first and last frames, and reference images or videos all depend on the engine. The picker only offers the options the engine you chose supports.
+**Auto** picks the best engine for each request and starts on Kling 2.6. You can also choose Grok Imagine 1.5, Veo 3.1, Veo 3.1 Lite, Kling v3, MiniMax H3, Seedance 2, Wan 3.0 Video or Flux 3.
 
-- **First frame** *(optional)* — upload or paste an image to use as the first frame.
-- **Last frame** *(optional)* — on engines that support it.
+The picker marks each engine **$**, **$$** or **$$$**, from cheapest to most expensive, and says whether an engine makes sound.
 
-## Generating in Chat
+::: warning Preview engines
+Veo 3.1 Lite is a preview engine. Auto never picks it. If you choose it yourself, Starfish warns you: do not use it with personal or client data, because Vercel's protections do not apply to preview models.
+:::
 
-The agent can generate clips inline. This is useful when the clip is part of a bigger task.
+## Length and size
 
-### Enabling it
+A video made from a chat is **720p** and about **10 seconds** long unless you ask for something else. Ask for a longer clip or a higher resolution in your message when you need one. Veo makes 8-second clips.
 
-Open the **+** menu in the chat composer (the same menu you use to add files or apps) and choose **Create a video**. The composer switches into video-creation mode for that message; leave the engine on **Automatic** or open the submenu to pick a specific one. Videos are slower and pricier than images, so nothing runs without this.
+Duration, aspect ratio, resolution, first and last frames, and reference images or videos depend on the engine. Starfish only uses options the engine supports.
 
-Once armed, the agent has access to a `generate_video` tool it can invoke when your message asks for a clip.
+## Before an expensive video
 
-### Reference media
+Before Starfish uses an expensive engine, or one with no published price, it asks first. The card reads, for example:
 
-The in-chat tool can base a new clip on media already in the conversation:
+> Grok Imagine 1.5 is an expensive video engine ($$). Make a 10-second 720p clip?
 
-- **Reference images and reference videos** — how many you can use depends on the engine.
-- Engines that accept references show it in the picker.
-- References can't be combined with a starting or ending frame.
+Click **Make it** to go ahead or **Cancel** to make nothing. While the clip is made, the chat says what it is making, such as "Making a 10-second 720p Kling 2.6 clip."
 
-### How it shows up
+## Reference media
 
-While the clip renders, the reply shows a **grid-reveal placeholder** — a mosaic that resolves into the video in the same slot. If the job runs long, the frame shows a note that it can take a few minutes and that you can switch away and come back. The finished clip then plays inline as a `<video>` element.
+Starfish can base a new clip on pictures or videos already in the chat:
 
-The bytes are saved as an Artifact (in SQLite), and the chat message references them via `/api/artifacts/<id>` so the conversation timeline doesn't carry multi-MB data URLs in store state.
+- A first frame, and a last frame on engines that support it.
+- Reference images and reference videos. How many you can use depends on the engine.
+- References can't be combined with a first or last frame.
 
-## Aspect Ratio Guide
+## How it shows up
+
+While the clip renders, the reply shows a mosaic that turns into the video in the same place. If the job runs long, you can switch away and come back. The finished clip plays in the chat.
+
+## Steadier video
+
+Ask Starfish to stabilise a shaky video you uploaded, for example "Stabilise this clip". This works on your Mac.
+
+## Aspect ratio guide
 
 | Aspect Ratio | Format | Common Uses |
 |--------------|--------|-------------|
@@ -58,13 +62,6 @@ The bytes are saved as an Artifact (in SQLite), and the chat message references 
 | 9:16 | Portrait | Instagram Stories, TikTok, YouTube Shorts |
 | 1:1 | Square | Instagram feed, social ads |
 
-## Use Cases
+## Automations
 
-- **Social media content** — short-form clips for Stories, Reels, TikTok.
-- **Product demos** — quick walkthroughs and feature highlights.
-- **Ad creatives** — generate video ads for testing and iteration.
-- **B-roll** — establishing shots, lifestyle footage, motion backgrounds.
-
-## Discuss a Clip in Chat
-
-On a generated clip, click **Discuss in chat** to open a fresh chat with the clip attached and a starter prompt based on the original. The chat agent can reason about the attached clip (and use `read_video` to watch it), so you can ask for edits, variations, or pair the clip with other work. The raw bytes never enter chat history — chat keeps a compact local video memo.
+An automation can make videos on its own when you allow it in setup. See [Automations](/automations/overview#paid-images-and-videos).

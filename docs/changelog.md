@@ -8,7 +8,7 @@ What's new in Starfish, newest first. The in-app **Settings → Changelog** show
 
 ## 0.6.9-beta.44 — 2026-10-19 — current
 
-Studio is back and makes slide decks. Describe the deck, answer a question or two, then edit, tweak and share every slide. A long chat can continue in Studio, and a finished deck goes to Google Drive or ClickUp. Meetings remind you to tell the people in the call, and a meeting can belong to a workspace. Automations tell you when they finish or need you. Videos show their cost before they are made.
+Studio is back and makes slide decks. Describe the deck, answer a question or two, then edit, tweak and share every slide. A long chat can continue in Studio, and a finished deck goes to Google Drive or ClickUp. Meetings remind you to tell the people in the call, and a meeting can belong to a workspace. Automations tell you when they finish or need you. Starfish asks before it makes an expensive video.
 
 ### Studio
 
@@ -66,7 +66,7 @@ See [Automations](/automations/overview).
 
 ### Video and media
 
-**The cost before you make it.** Before a video is made, Starfish shows its length, size, engine and about how much it will cost. The video page shows the price for more engines, and engines without a published price say so.
+**Asks before an expensive video.** Before a video is made, Starfish shows its length, size and engine. It asks before it makes an expensive video, or one on an engine with no published price.
 
 **Sensible defaults.** Videos made from a chat are 720p and about 10 seconds unless you ask for more. Video Auto starts on Kling 2.6.
 
@@ -82,7 +82,7 @@ See [Video generation](/media/video-generation).
 
 **Remove sensitive information.** Starfish removes things like social security numbers, card numbers, bank accounts and ID numbers before your message goes to the AI. On by default; turn it off in Settings.
 
-**Private providers only.** A new switch in Settings → Models sends your requests only to providers that do not train on your data and keep no copy. Off by default. Some models are not available while it is on.
+**Private providers only.** A new switch in Settings → Models sends your chat requests only to providers that do not train on your data and keep no copy. Off by default. Some chat models are not available while it is on. Images, video, dictation and read aloud use their normal providers.
 
 **Sync is your choice.** New installs do not sync until you turn it on. A Mac that already synced asks once: "Keep syncing this Mac?"
 
@@ -97,6 +97,8 @@ See [Video generation](/media/video-generation).
 **Nothing lost.** Long plans and reports are no longer cut short, the same answer no longer shows twice, and new chats get their real name without a click.
 
 **Models.** Light now uses DeepSeek V4.1 Flash 1017. Claude Opus 5.5 is gone, and chats, automations and decks that used it now use Claude Sonnet 5.5.
+
+**A sharper second opinion.** On a hard or high-stakes step, Starfish asks its advisor. The advice is now shorter and clearer, says so when the plan is already right, and keeps to the facts it was given.
 
 **Artifacts on the phone.** Artifacts open full screen on the phone and Back closes them. Pinch and double-tap zoom the artifact, slide decks show one slide per screen with swipe, and the phone no longer shows "Do this on your Mac" for things you did not tap.
 

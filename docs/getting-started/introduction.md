@@ -4,7 +4,7 @@ outline: deep
 
 # Introduction
 
-Starfish is an AI workspace that connects your team's tools to powerful language models in a single desktop interface. Instead of switching between Gmail, ClickUp, Figma, GitHub, and a dozen other tabs, you talk to one assistant that can act across all of them.
+Starfish is an AI workspace that connects your team's tools to powerful language models in a single desktop interface. Instead of switching between Gmail, ClickUp, GitHub, and a dozen other tabs, you talk to one assistant that can act across all of them.
 
 ## What Starfish does
 
@@ -12,7 +12,7 @@ Starfish is not a chatbot. It is a full working environment. From a single conve
 
 - Read and reply to emails
 - Create and manage tasks
-- Inspect and generate designs
+- Make slide decks in Studio
 - Deploy code and review pull requests
 - Analyze ad performance and SEO data
 - Generate images and video
@@ -31,9 +31,9 @@ Starfish is built for anyone who uses multiple SaaS tools daily:
 
 ## What makes it different
 
-Most AI tools are chat-only. Starfish ships with an embedded terminal, a built-in browser, image and video generation, and a growing set of integrations that take real actions — not just talk about them.
+Most AI tools are chat-only. Starfish ships with an embedded terminal, a built-in browser, image and video generation, Studio for slide decks, meeting notes, use from your phone, and a growing set of integrations that take real actions — not just talk about them.
 
-Supported integrations include Google Workspace, Google Marketing Suite, Google Ads, ClickUp, QuickBooks Online, GitHub, Figma, Vercel, Canva, Zapier, Apify, GoHighLevel, Facebook Ads, TikTok Ads, Playwright, and Stitch.
+Supported integrations include Google Workspace, Google Marketing Suite, Google Ads, ClickUp, QuickBooks Online, GitHub, Vercel, Canva, Zapier, Apify, GoHighLevel, Facebook Ads, TikTok Ads, Playwright, and Stitch.
 
 ## Architecture
 
