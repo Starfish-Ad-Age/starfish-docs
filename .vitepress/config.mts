@@ -82,6 +82,7 @@ export default withMermaid({
           { text: "Overview", link: "/agents/overview" },
           { text: "Teams at Work", link: "/agents/teams-at-work" },
           { text: "Managing Agents", link: "/agents/managing-agents" },
+          { text: "Subagents", link: "/agents/subagents" },
           { text: "Knowledge Packs", link: "/agents/knowledge-packs" },
         ],
       },
@@ -129,9 +130,17 @@ export default withMermaid({
         ],
       },
       {
+        text: "Voice",
+        items: [
+          { text: "Voice assistant", link: "/voice/voice-assistant" },
+          { text: "Ask about this screen", link: "/voice/ask-about-this-screen" },
+        ],
+      },
+      {
         text: "Phone",
         items: [
           { text: "Starfish on your phone", link: "/phone/overview" },
+          { text: "Work on your other Mac", link: "/phone/other-mac" },
         ],
       },
       {

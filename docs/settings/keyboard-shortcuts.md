@@ -6,6 +6,15 @@ outline: deep
 
 Quick reference for all keyboard shortcuts available in Starfish. `Cmd` is the macOS Command key; `Ctrl` works too.
 
+## Anywhere on your Mac
+
+These work in any app, also when Starfish is in the background. Change or turn them off in **Settings → Voice & shortcuts**.
+
+| Shortcut | Action |
+|----------|--------|
+| `⇧⌘ Space` | [Talk to Starfish](/voice/voice-assistant). Press again to stop. |
+| `⌥ Space` | [Ask about this screen](/voice/ask-about-this-screen) |
+
 ## Chat
 
 | Shortcut | Action |

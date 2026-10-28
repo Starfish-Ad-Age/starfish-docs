@@ -93,3 +93,5 @@ Starfish never picks a preview model by itself. If you choose one, Starfish warn
 
 - **Private providers only** -- sends chat requests only to AI providers that keep no copy of your prompts or answers and never train on them. Off by default. While it is on, some chat models or providers may be unavailable or cost more, and a request stops with a clear message if no such provider exists. It applies to chats only (including agents, subagents and automations): images, video, cloud dictation and read aloud keep using their normal providers.
 - **Remove sensitive information before sending** -- on by default. See [Sensitive Information](/chat/using-chat#sensitive-information).
+
+In Developer mode, **Settings → Models** also has a **Subagents** section. See [Subagents](/agents/subagents#settings).

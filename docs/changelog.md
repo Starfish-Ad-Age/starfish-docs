@@ -6,7 +6,149 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.44 — 2026-10-19 — current
+## 0.6.9-beta.45 — 2026-10-27 — current
+
+Talk to Starfish with your voice, on your Mac or your phone. Select part of your screen and ask about it. Change a finished Studio deck by asking. In Developer mode, make skills, agents and teams by talking, and work in folders on your other Mac. Long chats stay fast, answers are shorter, and Starfish checks more before it acts.
+
+### Voice and your screen
+
+**Talk to Starfish.** Press ⇧⌘ Space, choose Talk to Starfish… in the menu bar, or click New voice chat under New Chat. A small voice window listens, starts and steers chats, tells you what is running, and tells you when the chats it started finish, fail or need you. Choose a full or compact voice window.
+
+**Approvals by voice.** Say yes out loud to a simple step. A step that deletes, spends money or cannot be undone still needs a click.
+
+**One voice chat.** What you and Starfish say is kept in one voice chat. Start again within 5 minutes and it continues the same chat. Stopping before you say anything leaves no empty chat.
+
+**Voice on your phone.** Open your phone link and tap New voice chat. The sound goes through your Mac, and your AI key never leaves it. Voice runs on one device at a time.
+
+**Ask about this screen.** Press ⌥ Space, or choose Ask about this screen in the menu bar or the + menu, then drag over part of your screen in any app. Space picks a whole window and Esc cancels. Ask in the bar that appears: the answer shows there, you can ask a follow-up, and the chat is saved in Starfish. Starfish needs Screen Recording permission and shows how to allow it.
+
+**Voice & shortcuts.** A new Settings page in Chat mode and Developer mode. Change both shortcuts, the voice window style and position, the ask bar size and position, and the voice model (GPT-Live or Gemini Live). Voice can be used for 30 minutes a day, shared by your Mac and your phone.
+
+**Voice is in preview.** New voice chat shows a Preview pill while voice is still new.
+
+See [Voice assistant](/voice/voice-assistant) and [Ask about this screen](/voice/ask-about-this-screen).
+
+### Studio
+
+**Change a finished deck by asking.** Ask to add, remove, move or copy slides, replace a word everywhere, or switch the brand colour and fonts. Only the slides you name change, and interactive slides keep working.
+
+**New slides match the deck.** Added slides use the deck's own layouts and style. Ask Starfish to look something up and it finds the facts on the web. New slides go before the score and closing slides unless you say "at the end".
+
+**Undo.** Say "undo" to go back to the deck before the last change.
+
+See [Studio](/studio/overview).
+
+### Developer mode
+
+**Skills by talking.** Type /skill or /create-skill, or just ask for a skill in plain words. Starfish asks what the skill should do and a few short questions (Skip uses the recommended answer), writes it, runs a test and saves it when you agree, for you or for this project. Skills are SKILL.md folders.
+
+**Your skills in one place.** /skills opens the Skills tab: turn a skill on or off, run it, or edit it by talking. Skills from Claude Code and Codex folders show there too. A skill you did not make in Starfish asks before its first run.
+
+**Agents by talking.** Type /agent new and describe the agent. Starfish drafts it, tests it on a real task and saves it. The Agents tab in the side panel lists your agents.
+
+**Teams from chat.** Say "create a team for …", or on the Teams page click New team, then Create from chat. Starfish drafts the team and shows it on a card to save. New agent on the Teams page starts a new agent the same way. See [Agents Overview](/agents/overview#create-teams-and-agents-from-chat).
+
+**Teams.** The Agents page is now Teams. Put agents in a team, then say "use my Launch team" or @Launch team in a chat. The members start at once and you get one combined answer. Teams you made before are there with their members; the old work board, decisions and results are no longer shown.
+
+**Better subagents.** Subagents get the tools they need to do the work, use the custom agent that fits each part, and can hand their results to each other. A subagent only gets the apps its agent needs. When more start than your limit, the rest wait for a free slot. Settings → Models → Subagents can notify you when they need you or finish; it is off by default.
+
+**Chats without a folder.** A Developer chat with no project folder can work on the files and folders you name.
+
+**Only deletes wait.** With Local access set to Full Access, in Approve for me or Full access, the steps you asked for run without a card. Deletes and a few risky steps wait and are listed once at the end. Type "go" to run them. See [Permissions](/chat/permissions#local-access-set-to-full-access-developer-mode).
+
+**Studio offer in Developer.** Ask for a deck in a long Developer chat and Starfish offers to continue in Studio, the same card Chat shows.
+
+**The right skills for a site.** When you change a site already in the project folder, Starfish picks the website and design skills first, and a carousel on a site no longer starts a social post.
+
+See [Subagents](/agents/subagents).
+
+### Your other Mac
+
+**Work in folders on your other Mac.** In Developer mode, work in folders on another Mac signed in to the same account with Starfish open. Read, change and create files and run commands there, with the same approval cards. The files stay on that Mac.
+
+**Pair once.** On the Mac with the folders, open Settings → Remote, turn on Share folders and click Let another computer connect. On this Mac, click Connect to a computer, type the code and check that both screens show the same number.
+
+**You choose what is shared.** Share only the folders you pick, or all project folders. While another Mac works there, a bar says so, and Stop sharing ends it at any time.
+
+**Dots, push and pull.** Each shared folder shows a dot: green when connected, red when offline. Push and pull run on the other Mac with its own sign-ins.
+
+See [Work on your other Mac](/phone/other-mac).
+
+### Chat
+
+**Tabs grouped by project.** Open chats from the same project fold into one tab with a count. Click it to see the list. On by default; turn it off in Settings → Appearance → Group tabs by project.
+
+**Smart Auto.** In Chat mode, Auto hands hard work to a stronger model and keeps everyday questions on a fast one.
+
+**Pages and small apps as a file.** A web page, calculator or small app Starfish makes shows in the chat as its file name. Click it to open the preview, comments and versions. Studio is unchanged.
+
+**Your writing rules in your apps.** Comments, messages and emails Starfish writes into your apps are checked against your saved writing preferences before they go out.
+
+**Emails ask first.** In Auto, sending an email always shows one card first. Drafts do not.
+
+**Shorter, easier answers.** The first line is the answer, paragraphs are short, bold marks what to look at, and a table appears only for a comparison. Your concise setting is followed more closely. Studio is unchanged.
+
+**Answer an approval card by typing.** With a card waiting, type "go", "no" or "do 1 and 3" in the chat. It works for every kind of card, and text after "go" carries on as your next instruction.
+
+**Business facts from the web.** Starfish can look up a business's name, address, website and public reviews, even when they appear in your files. A person's name, personal phone or email, and secrets from your files still stay in.
+
+**Quieter steps.** Starfish's own steps, such as checking the guide, a skill or memory, show one line with no details. Connected apps, the web, files and commands keep theirs.
+
+**Attachments are not instructions.** Text in an attached or pasted file no longer changes the shape of the answer. For example, a list in a file no longer turns the reply into a long list.
+
+### Long chats
+
+**Compact when idle.** After about an hour away from a long chat, Starfish condenses what it carries forward, so your next reply is faster and cheaper. The whole chat stays visible. On by default, in Settings → Personalization.
+
+**Compaction on time.** Long chats now compact based on what is really sent, keep exact numbers, codes, dates and names, and no longer carry too much in the first reply after an update or restart.
+
+**Stays fast.** Finished replies now free their memory, so Starfish no longer slows down after many long chats.
+
+**Resume keeps your answers.** When Starfish restarts in the middle of a long task, it carries on with the facts it found and the answers you gave, and does not ask again.
+
+**App results fit.** Big results from connected apps are shortened like other results, so a new chat no longer compacts on its first reply.
+
+### Notifications and meetings
+
+**Notification settings in both modes.** Notifications and Do not disturb are at the top of Settings → General, and the bell's Notification settings link goes there in Chat mode and Developer mode.
+
+**Live captions on Grok.** Live captions use Grok. Words show as people speak, and lines are saved after a pause. The final transcript is unchanged.
+
+**A quieter meeting prompt.** "In a meeting?" now shows for real calls, not for dictation tools or Starfish's own voice. Never for this app turns it off for that app; remove an app again in Settings → Meetings. Closing the prompt keeps the app you were using in front.
+
+### Security
+
+**Pictures and links.** Pictures from the web in an answer show as links you click, so a page cannot send your data out through an image. Links to other programs on this Mac open in your browser, not in Starfish.
+
+**Web addresses checked.** Before Starfish opens a web address that did not come from you, a search or a connected app, it checks that the address does not carry your data out.
+
+**Commands that change things ask.** In Developer mode with Ask, commands such as npm test, or ones that write a file, show an approval card. Plain reads such as ls and git status do not.
+
+**The whole message is checked.** The safety check reads the whole message or email before it is sent, however long, and automations that send go through it too.
+
+**A harder app.** Your AI key stays out of the built-in terminal, only one copy of Starfish runs at a time, and the app checks its own files when it starts.
+
+### Apps and speed
+
+**Sites on the new service.** Sites now run on Starfish's new Sites service, live since 26 October. Your existing site links keep working.
+
+**More GoHighLevel actions.** Starfish can use 1,486 GoHighLevel operations, up from 1,203. Approvals work as before.
+
+**A faster in-app browser.** Clicks and typing no longer wait for the cursor, pages stop loading as soon as they are ready, and safe steps skip the screenshot check.
+
+**Public links open.** The in-app browser opens public links, such as a Google Form you found, without an extra check.
+
+**Starfish Server.** The server Starfish runs in the background now shows as Starfish Server in Activity Monitor.
+
+### Fixes
+
+**Questions and builds.** A quick answer to a question card no longer builds the same thing twice.
+
+**Developer chats.** A background server started from a Developer chat no longer stalls it, and deleting a file you named in a project folder asks once and works.
+
+**Small things.** Links to a fetched logo open again, one page no longer shows two file chips, a missing project folder is explained in plain words, and a finished compaction line stops moving.
+
+## 0.6.9-beta.44 — 2026-10-19
 
 Studio is back and makes slide decks. Describe the deck, answer a question or two, then edit, tweak and share every slide. A long chat can continue in Studio, and a finished deck goes to Google Drive or ClickUp. Meetings remind you to tell the people in the call, and a meeting can belong to a workspace. Automations tell you when they finish or need you. Starfish asks before it makes an expensive video.
 

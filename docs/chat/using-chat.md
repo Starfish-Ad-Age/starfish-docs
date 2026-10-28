@@ -22,6 +22,12 @@ The switch at the top of the sidebar toggles between **Chat** (formerly Simple) 
 
 Switching modes opens that mode's chat -- the last one you were in, or a new one. It does not convert the chat you are currently in.
 
+### Chat tabs grouped by project
+
+The chats you have open sit as tabs along the top. When two or more open chats belong to the same project or folder, they fold into one tab with the project's name and a count. A dot shows when one of them is working, finished or needs you. Click the tab to see the list, then open or close a chat from it. The chat you are in keeps its own tab next to the group.
+
+Grouping is on by default. Turn it off with **Group tabs by project** in **Settings → Appearance**, next to **Chat tabs**.
+
 ## Sending Messages
 
 Type your message in the composer and press **Enter** to send. You can also use **Cmd + Enter**. Responses stream in real-time -- you see tokens appear word-by-word as the model generates them.
@@ -52,6 +58,8 @@ If the AI appears to have stopped mid-task (e.g., it says "let me do that now" b
 ### Long tasks keep going after a connection drop
 
 If your connection drops partway through a long task, Starfish picks the task back up on its own when it can. You don't need to type "Continue".
+
+If Starfish restarts in the middle of a long task, for example after an update, the task carries on with the facts it had found and the answers you had given. It does not ask you the same question again.
 
 ## A Second Opinion on Hard Calls
 
@@ -127,6 +135,8 @@ Before your message goes to the AI, Starfish looks for card numbers, Social Secu
 
 If it finds any, the composer says **This message contains sensitive personal information.** Click **Redact and send** to send it with a placeholder in place of each item, such as "[card number removed]", or **Edit message** to change it yourself.
 
+Starfish's AI knows that a placeholder such as "[SSN removed]" means the item was removed on your Mac and never reached it. It carries on with the task without asking you for the value.
+
 The check is on by default. Turn it off with **Remove sensitive information before sending** in **Settings → Models → Data privacy**. It does not check pictures, PDF or Office files, audio or video.
 
 ## Attachments
@@ -151,7 +161,7 @@ Upload a video and ask about it. Stills and moments Starfish pulls from a video 
 
 Type **@** in the composer to open the picker, or click the **+** button. The picker has tabs:
 
-- **Files** -- choose a file from this Mac to attach to the message.
+- **Files** -- choose a file from this Mac to attach to the message. On the Mac, **Ask about this screen** is here too. See [Ask about this screen](/voice/ask-about-this-screen).
 - **Apps** -- reference a connected integration to direct the AI to use it. Selecting an app activates it if it isn't already active.
 - **Create** (Chat mode) -- start an image, video, or Timeline. See [Image Generation](/media/image-generation) and [Video Generation](/media/video-generation).
 
@@ -205,6 +215,8 @@ When the AI invokes a tool, a collapsible card shows:
 - Result (once complete)
 - Spinner while pending, green check when done, red indicator on error
 - **Undo** button for file-write tools -- prefills the chat input with an undo instruction
+
+Starfish's own steps, such as checking the guide, reading a skill, searching memory or updating its plan, show one line only, with no details to open. Connected apps, web lookups, files and commands keep their details.
 
 ### System Messages
 

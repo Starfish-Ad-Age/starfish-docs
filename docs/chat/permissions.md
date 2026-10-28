@@ -18,21 +18,29 @@ Every tool call that can create or modify data shows a permission prompt before 
 
 ### Approve for me
 
-Reads and lookups run freely. Each operation that creates or modifies data is sent to a fast pre-execution safety reviewer, which answers **allow**, **ask**, or **deny**. If the reviewer is unsure, you get a prompt. Destructive operations are hard-blocked in this mode -- Starfish never runs them, even with your approval. Switch to **Ask for approval** if you need one to go through.
+Reads and lookups run freely. Each operation that creates or modifies data is sent to a fast pre-execution safety reviewer, which answers **allow**, **ask**, or **deny**. In Developer mode, a delete you asked for shows a card. Other deletes, and steps the reviewer does not allow, do not stop the work: they are listed once at the end of the reply under **Needs your go-ahead**. Reply **go** to run them, **no** to skip them, or say which ones. A few steps Starfish never runs, even with your approval; it tells you so.
 
-Only certain deletes and overwrites count as destructive, so Starfish stops less often for safe steps. When a step is blocked, Starfish does not keep trying the same step.
+Only deletes, including emptying a file, count as destructive. Replacing a file counts as an edit, so Starfish stops less often for safe steps. When a step is blocked, Starfish does not keep trying the same step.
 
 ### Full access
 
-Read, create, and modify operations run with no prompt and no reviewer. Destructive operations are still hard-blocked, unclassifiable operations are still refused, and path guards and OS limits still apply.
+Like **Approve for me**, with a more lenient reviewer that stops only clearly dangerous steps. Deletes still wait for you, and path guards and OS limits still apply.
 
 ::: warning
 Full access lets the AI take actions without asking. Only enable it when you trust the current task and want maximum speed. You can switch back at any time.
 :::
 
+### Local Access set to Full Access (Developer mode)
+
+With **Approve for me** or **Full access**, and **Settings → Local Access** set to **Full Access**, Starfish does not ask again for what you already asked for. The steps you asked for run without a card, also outside the project folder.
+
+- Only deletes and a few risky steps wait. They are listed once at the end of the reply under **Needs your go-ahead**. Reply **go** to run them, **no** to skip them, or say which ones.
+- A step the reviewer refuses is not run. Ask for it again in a new message if you want it.
+- **Ask for approval** and a scoped Local Access work as before.
+
 ### No folder chosen (Developer mode)
 
-If you ask Starfish to work on files in Developer mode and no folder is chosen, it asks you to type **/project** in the message box, pick the folder, and send your message again.
+A Developer mode chat works without a project folder. Starfish works on the files and folders you name, wherever they are, with the same tools and approvals as in a project folder. Name them by path, or with words such as Downloads, Desktop or Documents. It does not ask you to choose a project folder first.
 
 ## Permission Levels
 
@@ -41,7 +49,7 @@ If you ask Starfish to work on files in Developer mode and no folder is chosen, 
 Destructive or irreversible operations. These include:
 
 - Deleting files, records, or resources
-- Overwriting existing data
+- Emptying existing files
 - Sending messages on your behalf (email, chat)
 - Modifying critical account settings
 

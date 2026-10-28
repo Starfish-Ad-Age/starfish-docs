@@ -35,14 +35,21 @@ During any recording, a small pill sits at the top centre of your screen, around
 
 ### "In a meeting?"
 
-When another app uses your microphone, Starfish offers to take notes. The pill shows **In a meeting?** with the app's name, **Take notes** and **×**.
+When you seem to be in a call, Starfish offers to take notes. The pill shows **In a meeting?** with the app's name, **Take notes**, **Never for this app** and **×**.
 
-- It shows after a couple of seconds when your camera is on or the app is a meeting app such as Zoom, Teams, Webex, FaceTime, Discord or Skype. Otherwise it waits about 15 seconds.
+It shows only on strong signs of a meeting. While another app uses your microphone:
+
+- It shows after a couple of seconds if the app is a meeting app such as Zoom, Teams, Webex, FaceTime, Slack, Discord, Skype, Around or Whereby, if your camera is on, or if a calendar meeting with a link is happening.
+- It shows after 90 seconds if the app is a browser.
+
+Other apps that use the microphone do not bring it up. Dictation and voice tools, such as macOS Dictation and Siri, never do.
+
 - **Take notes** starts recording straight away.
 - **×** hides the prompt for that call.
+- **Never for this app** stops the prompt for that app from now on.
 - Nothing is recorded until you click **Take notes**.
 
-Turn the prompt off with **Offer to take notes in a meeting** in **Settings → Meetings**.
+Turn the prompt off with **Offer to take notes in a meeting** in **Settings → Meetings**. Apps you chose **Never for this app** on are listed under **Never offer for these apps**. Remove one to be asked again.
 
 ## Notes
 

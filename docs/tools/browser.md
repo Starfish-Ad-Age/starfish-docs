@@ -76,6 +76,8 @@ When **Browser Use** is enabled in Settings, the agent can drive the embedded br
 
 Read-only actions (navigate, list or switch tabs, read, wait, scroll, screenshot) run without a prompt. Clicking and typing follow the app's permission mode, and any click whose visible label reads as publishing, sending, paying, or deleting is escalated so it needs your explicit approval. Page content is always treated as untrusted data — the agent ignores any instructions it finds on a page.
 
+The agent opens public links, such as a Google Form it found in a search, without an extra check. Before it opens an address that would carry your private information to a site you did not ask for, a safety check reviews it first.
+
 ## HTML Artifact Preview
 
 When the AI generates HTML, CSS, or JavaScript artifacts during a conversation, they automatically render in the Artifacts tab of the browser panel. This creates a tight feedback loop:

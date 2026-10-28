@@ -14,6 +14,10 @@ When the AI creates a file, it shows up in the message stream with:
 - File name and size
 - File type label
 
+An HTML page shows in the chat as a small link with its file name. Click it to open the page. The chat no longer shows the page being built; it appears when it is finished.
+
+When Starfish changes the page in a later message, the change gets its own link at that point in the chat.
+
 Artifacts are also detected automatically when the AI writes a file to the artifacts directory or produces a file via a shell command.
 
 ## Auto-Preview
@@ -32,7 +36,7 @@ The sandbox allows scripts, so JavaScript within the artifact runs normally, but
 
 Click an artifact in the chat to open a preview. The preview method depends on the file type:
 
-- **HTML** -- renders live in the Artifacts tab with full JavaScript support
+- **HTML** -- renders in the Artifacts tab with full JavaScript support
 - **Code files** -- syntax-highlighted preview
 - **Other files** -- opens in your system's default application
 
@@ -54,7 +58,7 @@ Some pages have parts that only work on screen, such as tabs, closed sections or
 
 ## Slide Decks
 
-Ask for a slide deck in the chat and Starfish builds it from one tested design, so every deck looks consistent and its text stays readable. Each slide prints on its own page. On the phone, the live preview shows a **Read-only live draft** bar under it while Starfish works. To edit, comment on, present and export every slide, make the deck in [Studio](/studio/overview).
+Ask for a slide deck in the chat and Starfish builds it from one tested design, so every deck looks consistent and its text stays readable. Each slide prints on its own page. To edit, comment on, present and export every slide, make the deck in [Studio](/studio/overview).
 
 ## File Links
 

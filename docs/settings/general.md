@@ -6,7 +6,7 @@ outline: deep
 
 Configure Starfish to match your workflow. Open **Settings** from the sidebar footer.
 
-The **General** category covers voice, the AI Gateway key, updates, your account, and troubleshooting. Other areas have their own categories in the settings sidebar -- **Personalization**, **Import from other AI**, **Appearance**, **Models**, **Workspace**, **Sync**, **Team**, **Automations** (Developer mode), **Meetings**, **Local Access**, **Browser Use**, **Storage**, **Remote** and **What's new**.
+The **General** category covers voice, the AI Gateway key, updates, your account, and troubleshooting. Other areas have their own categories in the settings sidebar -- **Personalization**, **Import from other AI**, **Appearance**, **Voice & shortcuts**, **Models**, **Workspace**, **Sync**, **Team**, **Automations** (Developer mode), **Meetings**, **Local Access**, **Browser Use**, **Storage**, **Remote** and **What's new**.
 
 ## Voice
 
@@ -16,6 +16,8 @@ Settings for voice typing and read-aloud:
 - **Microphone** -- choose the input device used for voice typing.
 - **Read-aloud voice** -- pick the speech model, its voice, and the speed used when you play an assistant reply aloud. The speech model starts on **OpenAI TTS 1**. A **Preview** button lets you hear it first.
 - **Meeting transcription** -- live captions and the final transcript with speaker labels run on your Vercel AI Gateway key. No download or extra provider key is required. The **Test Voice** button records a short clip and confirms transcription works.
+
+The voice assistant and Ask about this screen have their own category, **Voice & shortcuts**. See [Voice assistant](/voice/voice-assistant) and [Ask about this screen](/voice/ask-about-this-screen).
 
 ## AI Gateway
 

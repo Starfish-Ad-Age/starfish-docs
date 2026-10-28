@@ -57,7 +57,9 @@ Hover a card to **Edit** it or **Delete** it. Editing a template you haven't cha
 
 ## Using an agent in chat
 
-In Developer mode, type `/agents` followed by the agent's name (for example `/agents marketing`) and the chat runs as that agent. Type `/agents` on its own to open the Agents page.
+In Developer mode, type `/agents` followed by the agent's name (for example `/agents marketing`) and the chat runs as that agent. Type `/agents` on its own to open the Teams page.
+
+In Developer mode with **Use subagents** on, `@marketing` in your message makes the chat itself answer as that agent. Naming it in plain words, such as "ask the marketing agent to…", starts it as a subagent instead. See [Subagents](/agents/subagents).
 
 In Chat mode there's no picker. Name the agent in your message (`@marketing`, or "use the marketing agent") and it sticks for that chat. A chip above the composer shows the active agent, with an **×** to stop using it.
 

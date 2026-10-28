@@ -6,7 +6,18 @@ outline: deep
 
 Agents are AI teammates with a job. Each one has a role, the apps it needs, and the skills it uses. Put them in a team, give the team a goal, and they split the work, check in with each other, and hand you a finished result. You only step in for the decisions.
 
-Agents live on the **Agents** page in the sidebar. It's available in Developer mode.
+Agents live on the **Teams** page in the sidebar (it used to be called **Agents**). It's available in Developer mode.
+
+## Create teams and agents from chat
+
+At the top of the Teams page:
+
+- **New team** offers **Create from chat**, where Starfish asks what the team should do and designs it with you, or **Manual**, where you name the team and pick its agents yourself.
+- **New agent** opens a chat that starts the agent creator (`/agent new`). Describe the agent and Starfish drafts, tests and saves it.
+
+You can also create a team in any Developer chat: say "create a team for …". Starfish shows the team on a card with its name, purpose and agents. Click **Save team** to keep it, **Change something** to adjust it, or **Cancel**. Once saved, click **Give it work**, or **Open in Teams** to see it.
+
+Use a saved team in a chat by saying "use my Launch team" or typing `@Launch team`. The members work at the same time and you get one combined answer.
 
 ## Teams, leads and specialists
 
@@ -66,3 +77,5 @@ Click the **?** button at the top of the Agents page to open **How to get the be
 ## Agents in chat
 
 You can also chat with one agent directly. In Developer mode, type `/agents` followed by the agent's name. In Chat mode, name it in your message (for example `@marketing`), and a chip above the composer shows which agent is active. See [Managing Agents](/agents/managing-agents).
+
+In Developer mode, Starfish can also run agents as [subagents](/agents/subagents) that work in the background and report back.
