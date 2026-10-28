@@ -138,6 +138,8 @@ See [Work on your other Mac](/phone/other-mac).
 
 **Public links open.** The in-app browser opens public links, such as a Google Form you found, without an extra check.
 
+**ClickUp Docs.** ClickUp documents are now real ClickUp Docs you can edit.
+
 **Starfish Server.** The server Starfish runs in the background now shows as Starfish Server in Activity Monitor.
 
 ### Fixes
