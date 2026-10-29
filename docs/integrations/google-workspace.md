@@ -64,10 +64,6 @@ This is the most important step. Skip it and your connection will break every 7 
 If your app is in **Testing** status, Google expires your tokens every 7 days and you will have to reconnect constantly. Publishing to **Production** is free, requires no verification for personal use, and makes your connection permanent.
 :::
 
-::: tip "Unverified app" warning
-When you connect later, Google will show a screen saying "Google hasn't verified this app." This is normal for personal-use Cloud projects. Click **Advanced → Go to Starfish (unsafe)** to continue. You are the developer of this app, so it is safe.
-:::
-
 ## Step 4 — Create OAuth Credentials
 
 1. In the left sidebar, go to **APIs & Services → Credentials**.
@@ -84,10 +80,9 @@ When you connect later, Google will show a screen saying "Google hasn't verified
 3. Paste your **Client ID** and **Client Secret** when prompted.
 4. Click **Save**.
 5. A browser window opens. Sign in with the same Google account you used in Step 1.
-6. If you see the "unverified app" warning, click **Advanced → Go to Starfish (unsafe)**.
-7. Review the requested permissions and click **Allow**.
-8. The browser will say "You can close this tab." Return to Starfish.
-9. The integration status will show **Connected**.
+6. Review the requested permissions and click **Allow**.
+7. The browser will say "You can close this tab." Return to Starfish.
+8. The integration status will show **Connected**.
 
 ## What You Can Do
 
@@ -170,7 +165,7 @@ In Starfish, go to **Settings → Integrations → Google Workspace**, click **D
 
 ## Notes
 
-- **Your data stays with you.** Starfish never sees your Client ID, Client Secret, or access tokens — they are encrypted on your device using your operating system's keychain.
+- **Your data stays with you.** Your Client ID and Client Secret are encrypted on your Mac with your operating system's keychain, and your access tokens are stored on your Mac, readable only by your macOS user account. None of them are sent to Starfish's servers.
 - **You control access.** Because the Cloud project is yours, you can revoke access anytime at [myaccount.google.com/permissions](https://myaccount.google.com/permissions) or by deleting the OAuth client in Google Cloud Console.
 - **No usage limits from Starfish.** You are calling Google's APIs directly with your own credentials, so your usage is subject only to Google's standard API quotas (very generous for personal use).
 - **Re-authenticating.** If you ever see a "reconnect needed" prompt, just click **Reconnect** — no need to re-paste your credentials.
