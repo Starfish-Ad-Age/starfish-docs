@@ -4,7 +4,7 @@ outline: deep
 
 # Auto Model Routing
 
-When you select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode), Starfish takes care of the model choice. You don't need to think about which model to use -- Starfish picks a model for each message. In Chat mode, Smart Auto moves hard work to a stronger model. A level or a named model you choose overrides it.
+When you select **Auto** in the model dropdown (labelled **Smart Auto** in Chat mode), Starfish takes care of the model choice. You don't need to think about which model to use -- Starfish picks a model for each message. In Chat mode, Smart Auto gives hard work to a model suited to it. A level or a named model you choose overrides it.
 
 ## How It Works
 
