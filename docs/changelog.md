@@ -6,7 +6,45 @@ outline: deep
 
 What's new in Starfish, newest first. The in-app **Settings → Changelog** shows a short summary of the latest versions; this page carries the full history and detail.
 
-## 0.6.9-beta.45 — 2026-10-27 — current
+## 0.6.9-beta.46 — 2026-10-29 — current
+
+Send a picture while a task is running and Starfish uses it in that task when it can. Automations save their result in their own workspace and pick up after a restart. Projects are now called workspaces everywhere, and updates come to signed-in accounts.
+
+### Chat
+
+**Send a picture while Starfish works.** Add a picture to a message while a task is running. Starfish uses it in the running task when it can. Otherwise it goes with your next message.
+
+**Workspaces everywhere.** What was called a project is now called a workspace wherever it means a workspace. Project folders in Developer mode keep their name.
+
+**Long chats.** Long chats are condensed less often, and Starfish can still look back at earlier parts of a chat after it is condensed.
+
+### Automations
+
+**Saved in its workspace.** An automation in a workspace saves its result there as a note. Saving there is part of the task, so it works with Create and update connected work turned off.
+
+**Picks up after a restart.** If Starfish quits or your Mac sleeps during a run, the run continues where it stopped and does not repeat a step it already did, such as sending a message.
+
+**Clear reasons.** A step that a setting does not allow names that setting. A run that prepared its result is shown as finished, with a note on what it was not allowed to do.
+
+See [Automations](/automations/overview).
+
+### Developer mode
+
+**Folders on your other Mac in a new chat.** The folder picker of a new Developer chat lists the folders your other Mac shares. A folder on a Mac that is offline shows its state and cannot be picked.
+
+### Your account
+
+**Access checked while you work.** Starfish checks every few minutes that your account still has access. If access ends, Starfish signs you out and says so when you try to sign in again.
+
+**Updates for signed-in accounts.** Updates download for a signed-in account with access.
+
+### Security
+
+**Updated components.** Starfish's built-in components, including the PDF viewer, are updated with security fixes.
+
+**Sign-in pages stay on this Mac.** When you connect TikTok, GoHighLevel or ClickUp, the sign-in page Starfish opens can be reached only from this Mac.
+
+## 0.6.9-beta.45 — 2026-10-27
 
 Talk to Starfish with your voice, on your Mac or your phone. Select part of your screen and ask about it. Change a finished Studio deck by asking. In Developer mode, make skills, agents and teams by talking, and work in folders on your other Mac. Long chats stay fast, answers are shorter, and Starfish checks more before it acts.
 
@@ -80,7 +118,7 @@ See [Work on your other Mac](/phone/other-mac).
 
 **Tabs grouped by workspace.** Open chats from the same workspace fold into one tab with a count. Click it to see the list. On by default; turn it off in Settings → Appearance → Group tabs by workspace.
 
-**Smart Auto.** In Chat mode, Auto hands hard work to a stronger model and keeps everyday questions on a fast one.
+**Smart Auto.** In Chat mode, Auto picks a model for each message. Hard coding and reasoning work gets a model suited to it, and everyday questions stay on a fast one.
 
 **Pages and small apps as a file.** A web page, calculator or small app Starfish makes shows in the chat as its file name. Click it to open the preview, comments and versions. Studio is unchanged.
 
