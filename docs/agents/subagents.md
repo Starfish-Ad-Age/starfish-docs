@@ -12,7 +12,7 @@ Each subagent starts fresh. It does not see your chat, so Starfish gives it a co
 
 ## Naming an agent
 
-With **Use subagents** on, naming one of your agents in plain words starts it as a subagent. For example, "ask the marketing agent to draft three headlines" runs the marketing agent in the background and brings back its answer.
+With **Use subagents** on, naming one of your agents in plain words starts it as a subagent. For example, "ask the marketing agent to write three headlines" runs the marketing agent in the background and brings back its answer.
 
 To have the chat itself answer as an agent instead, type **@** and its name, for example `@marketing`. See [Managing Agents](/agents/managing-agents#using-an-agent-in-chat).
 

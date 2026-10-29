@@ -16,12 +16,12 @@ Leave the engine on **Auto**, or open the menu to pick one. Videos are slower an
 
 ## Engines
 
-**Auto** picks the best engine for each request and starts on Kling 2.6. You can also choose Grok Imagine 1.5, Veo 3.1, Veo 3.1 Lite, Kling v3, MiniMax H3, Seedance 2, Wan 3.0 Video or Flux 3.
+**Auto** picks an engine for each request. You can also choose an engine yourself from the engine picker, which lists the engines available in the App.
 
 The picker marks each engine **$**, **$$** or **$$$**, from cheapest to most expensive, and says whether an engine makes sound.
 
 ::: warning Preview engines
-Veo 3.1 Lite is a preview engine. Auto never picks it. If you choose it yourself, Starfish warns you: do not use it with personal or client data, because Vercel's protections do not apply to preview models.
+Auto never picks a preview engine. If you choose one yourself, Starfish warns you: do not use it with personal or client data, because Vercel's protections do not apply to preview models.
 :::
 
 ## Length and size

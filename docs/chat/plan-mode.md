@@ -25,15 +25,9 @@ The Plan Together panel lives in the right-side panel alongside Terminal, Browse
 
 Items you add yourself appear on the board immediately; the AI adds items with its `board_add_item` tool only after you confirm you want them locked in.
 
-## Plan Statuses
+## Plan Status
 
-A plan is stored with one of these statuses. The board itself shows the working ones as you go:
-
-| Status | Meaning |
-|--------|---------|
-| **Draft** | The board is being put together and has not been started. |
-| **In Progress** | The AI is actively working through the board. |
-| **Confirmed** / **Completed** | Reserved for a reviewed or finished plan. |
+Before work starts, the board shows **Start working**. Once the AI is working through it, the button says **Continue working**.
 
 ## What Changes During Plan Together
 

@@ -8,7 +8,7 @@ Starfish includes a full terminal emulator built into the workspace. Run shell c
 
 ## How It Works
 
-The terminal spawns real shell processes (zsh login shell) using xterm.js and node-pty. It behaves identically to your system terminal -- same shell config, same PATH, same environment variables.
+The terminal runs a real shell on your Mac. It behaves like to your system terminal -- same shell config, same PATH, same environment variables.
 
 The terminal lives in the right-side panel alongside the browser, artifacts, and plan tabs. It persists across tab switches -- switching to the browser tab and back does not kill your shell session.
 

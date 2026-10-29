@@ -4,25 +4,25 @@ outline: deep
 
 # Integrations Overview
 
-Starfish connects to the tools your team already uses. Each integration connects through MCP (Model Context Protocol), giving the AI workspace direct access to read and write data in your connected apps.
+Starfish connects to the tools your team already uses. Connect them in the **Marketplace** in the sidebar, and the AI can read and write data in your connected apps.
 
 
 ## All Integrations
 
-| Name | Category | Auth Type | What It Does |
-| --- | --- | --- | --- |
-| [ClickUp](./clickup) | Productivity | Direct OAuth | Manage tasks, projects, docs, and time tracking |
-| [Google Workspace](./google-workspace) | Productivity | Stream / CLI setup | Gmail, Calendar, Drive, Docs, Sheets, Slides, Chat |
-| [Zapier](./zapier) | Productivity | OAuth PKCE | Run app actions and automate across thousands of apps |
-| [GoHighLevel](./gohighlevel) | Productivity | PIT / Agency OAuth | CRM contacts, pipelines, conversations, and social media |
-| [Canva](./canva) | Design | OAuth PKCE | Create and edit designs, presentations, and marketing materials |
-| [Stitch](./stitch) | Design | Google API key | Generate UI screens, design systems, and app prototypes |
-| [GitHub](./github) | Development | Stream / CLI setup | Repos, pull requests, issues, and code reviews |
-| [Vercel](./vercel) | Development | OAuth PKCE | Deploy projects, check builds, read logs |
-| [Playwright](./playwright) | Development | None (local) | Browser automation, screenshots, and page interaction |
-| [Google Marketing Suite](./google-marketing) | Data & Analytics | Stream / CLI setup | GA4 analytics, Search Console, Tag Manager |
-| [Facebook Ads](./facebook-ads) | Data & Analytics | Team-proxy / PAT fallback | Ad campaigns, audiences, creatives, and performance insights |
-| [Apify](./apify) | Data & Analytics | OAuth PKCE | Web scraping, data extraction, and automation actors |
+| Name | Category | What It Does |
+| --- | --- | --- |
+| [ClickUp](./clickup) | Productivity | Manage tasks, projects, docs, and time tracking |
+| [Google Workspace](./google-workspace) | Productivity | Gmail, Calendar, Drive, Docs, Sheets, Slides, Chat |
+| [Zapier](./zapier) | Productivity | Run app actions and automate across thousands of apps |
+| [GoHighLevel](./gohighlevel) | Productivity | CRM contacts, pipelines, conversations, and social media |
+| [Canva](./canva) | Design | Create and edit designs, presentations, and marketing materials |
+| [Stitch](./stitch) | Design | Generate UI screens, design systems, and app prototypes |
+| [GitHub](./github) | Development | Repos, pull requests, issues, and code reviews |
+| [Vercel](./vercel) | Development | Deploy projects, check builds, read logs |
+| [Playwright](./playwright) | Development | Browser automation, screenshots, and page interaction |
+| [Google Marketing Suite](./google-marketing) | Data & Analytics | GA4 analytics, Search Console, Tag Manager |
+| [Facebook Ads](./facebook-ads) | Data & Analytics | Ad campaigns, audiences, creatives, and performance insights |
+| [Apify](./apify) | Data & Analytics | Web scraping, data extraction, and automation actors |
 
 ## By Category
 

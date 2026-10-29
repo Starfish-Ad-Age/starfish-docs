@@ -9,7 +9,7 @@ Zapier connects Starfish to thousands of apps through Zaps -- automated workflow
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Zapier** and click **Connect**.
 3. A browser window will open to Zapier's authorization page.
 4. Sign in to your Zapier account and approve the connection.

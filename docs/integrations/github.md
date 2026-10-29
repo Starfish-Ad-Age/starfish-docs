@@ -9,7 +9,7 @@ GitHub connects your repositories, pull requests, issues, and code reviews to St
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **GitHub** and click **Connect**.
 3. A setup stream will launch. Follow the prompts to authenticate with your GitHub account.
 4. Authorize Starfish to access your repositories.

@@ -45,23 +45,9 @@ In Developer mode, **Approve for me** sends each create/modify operation to a pr
 
 ## Blocked Paths
 
-Certain sensitive places are always denied, for reading and writing, regardless of approval:
+Credential and system locations are always blocked, for reading and writing, whatever your approval setting. Starfish's own data is blocked too. Credential and environment files are refused unless you turn on **Allow reading credential and environment files** in **Settings → Local Access**.
 
-| Path | Reason |
-|------|--------|
-| `.ssh` | SSH keys and config |
-| `.aws` | AWS credentials |
-| `.gnupg` | GPG keys |
-| `/Applications` | System applications |
-| `/System` | macOS system files |
-| Keychains | Saved passwords and keys |
-| Browser password and cookie files | Your saved logins |
-| Command-line tool sign-ins | Saved sign-ins for cloud and developer tools |
-| Starfish's own data | The app's database, settings and saved connections |
-
-Credential and environment files (`.env`, `id_rsa`, `.pem`, `.key`, `credentials.json`, service-account JSON, and similar) are also refused unless you turn on **Allow reading credential and environment files** in **Settings → Local Access**.
-
-Search tools skip dependency and build output — `node_modules`, `.next`, `.git`, `dist`, `build`, `coverage` — and honor your `.gitignore`, so results stay relevant.
+Search tools skip dependency and build output and honor your `.gitignore`, so results stay relevant.
 
 ## Saving AI Artifacts
 

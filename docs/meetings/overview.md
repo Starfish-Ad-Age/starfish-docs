@@ -5,7 +5,7 @@ outline: deep
 # Meetings
 
 ::: warning Speaker names are suggestions
-Recording, transcription and notes are ready for everyday use. Voice grouping still improves over time, and names Starfish suggests from the transcript and meeting roster stay visibly unconfirmed until you accept them — treat the labels as a helpful draft rather than a guarantee.
+Recording, transcription and notes are ready for everyday use. Voice grouping still improves over time, and names Starfish suggests from the transcript and meeting roster stay visibly unconfirmed until you accept them — treat the labels as helpful suggestions rather than a guarantee.
 :::
 
 Starfish can sit in on a call, write the transcript as people speak, and turn it into notes when you stop. Transcription runs on your own Vercel AI Gateway key, with no extra provider key or download: live captions as people speak, then an accurate final pass with punctuation, missing words, and speaker labels. You can turn the final pass off in **Settings → Meetings → Transcript & notes**. If you have installed the on-device Parakeet voice model (Settings → General), Starfish also uses it on your Mac to fill live captions whenever the cloud stream is not connected.
@@ -81,9 +81,9 @@ Working out who spoke is the most demanding part of the pipeline, and it scales 
 
 ## What Starfish does not do
 
-Being explicit, because the alternative is you finding out mid-call:
+Good to know before a call:
 
-- **It does not photograph your screen.** Earlier versions captured the whole display every 1.5 seconds to read participant names off the meeting window. That was removed — it exposed everything else on your screen during a client call, and it could only ever guess at names.
+- **It does not photograph your screen.**
 - **It cannot record one browser tab.** System audio is captured for the whole machine. Whatever else is playing — notification chimes, other tabs — is recorded along with the meeting, so mute what you do not want captured.
 - **It does not identify people by voice.** Voices are grouped, and names come from you or from a suggestion you accept. Starfish never claims to know who someone is.
 
@@ -93,7 +93,7 @@ Open a finished meeting to play it. Play, pause, skip back or forward 15 seconds
 
 ## Meetings in a workspace
 
-Add a meeting to a client or project workspace, so its notes and transcript become part of that workspace.
+Add a meeting to a workspace, so its notes and transcript become part of that workspace.
 
 - On the meeting, click **Add to workspace** and pick one. You can also use **Add to workspace** or **Move to workspace** in the meeting's **…** menu, or choose **No workspace** to take it out.
 - Every chat in that workspace can then read the meeting's notes and transcript.
@@ -111,6 +111,3 @@ Transcription runs on your own Vercel AI Gateway key: the audio is streamed for 
 
 Recording system audio needs macOS **Screen Recording** permission — that is the permission macOS uses for audio taps as well as screen capture.
 
-::: tip If you are asked for permission every time
-Local beta builds are ad-hoc signed, which means macOS treats each new build as a different application and cannot match the permission you granted to the previous one. Open **System Settings → Privacy & Security → Screen Recording**, remove Starfish, and add it again after installing a new build. A properly signed release does not have this problem.
-:::

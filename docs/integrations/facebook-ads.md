@@ -9,27 +9,12 @@ Facebook Ads connects your Meta advertising accounts to Starfish. Manage ad camp
 
 ## How to Connect
 
-Facebook Ads supports two authentication paths depending on your team membership.
-
-### Starfish Team Members (@starfishadage.com)
-
-If your account email ends in `@starfishadage.com`, you are automatically routed through the team proxy:
-
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Facebook Ads** and click **Connect**.
-3. The connection is established automatically. No tokens or manual setup required.
-
-### External Users (PAT Fallback)
-
-If you are not a Starfish team member, you will need to provide a System User token and Ad Account ID:
-
-1. Open **Settings > Integrations** in Starfish.
-2. Find **Facebook Ads** and click **Connect**.
-3. You will be prompted for two values:
+3. If Starfish asks for a token, enter two values:
    - **System User Access Token** -- Generate this in Meta Business Manager under **Settings > System Users > Generate Token**. Select the `ads_management` and `ads_read` permissions.
    - **Ad Account ID** -- Starts with `act_`. Find it in **Ads Manager > Account Settings**.
-4. Paste both values and click **Save**.
-5. The integration status will show **Connected**.
+4. Click **Save**. The integration status shows **Connected**.
 
 ## What You Can Do
 
@@ -51,7 +36,6 @@ If you are not a Starfish team member, you will need to provide a System User to
 
 ## Notes
 
-- Team-proxy authentication is automatic for `@starfishadage.com` email addresses. No configuration is needed.
-- External users must generate a System User token with appropriate permissions in Meta Business Manager. Regular user tokens are not supported.
+- Use a System User token with appropriate permissions in Meta Business Manager. Regular user tokens are not supported.
 - The Ad Account ID must include the `act_` prefix.
 - Performance insights support date ranges, breakdowns by age/gender/placement, and all standard Facebook Ads metrics.

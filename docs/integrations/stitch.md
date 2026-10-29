@@ -9,7 +9,7 @@ Stitch connects AI-powered UI generation to Starfish. Generate complete UI scree
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Stitch** and click **Connect**.
 3. You will be prompted for a **Google API Key**.
 4. To generate an API key:

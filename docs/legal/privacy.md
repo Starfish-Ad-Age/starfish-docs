@@ -48,8 +48,8 @@ The App keeps the following on your Mac. None of it leaves your Mac unless a lat
 
 | Data | How it is protected |
 |---|---|
-| Local database (chats, messages, projects, meetings, transcripts, memories, automations, artifacts, usage counters) | Your macOS user account and file permissions. We recommend turning on FileVault. |
-| Project files, uploaded videos, generated images and videos, and a temporary cache of Google Drive files you open | Same as above |
+| Local database (chats, messages, workspaces, meetings, transcripts, memories, automations, artifacts, usage counters) | Your macOS user account and file permissions. We recommend turning on FileVault. |
+| Workspace files, uploaded videos, generated images and videos, and a temporary cache of Google Drive files you open | Same as above |
 | Meeting audio recordings and meeting screenshots | Same as above. Meeting audio is kept on your Mac for up to 180 days after a meeting and then removed. |
 | **Your Vercel AI Gateway key**, and Google client credentials you enter yourself | Encrypted with your Mac's Keychain |
 | Connected-app sign-ins, including Google access and refresh tokens | Stored on your Mac and readable only by your macOS user account |
@@ -81,7 +81,7 @@ The App also receives small settings from us at launch (feature switches, announ
 
 **Cloud sync is off by default.** Nothing is uploaded for sync until you turn on **Settings → Sync → Cloud sync**. A Mac that synced before this setting existed keeps syncing until you make a choice there. While sync is on, the App copies your workspace to our cloud regularly. When you turn sync off, you can keep the cloud copy or delete it for good (**Delete my cloud data**).
 
-**What is synced:** chats and every message in them (including tool results, attachments and content the assistant read, which can include data from connected apps such as Google); artifacts and their versions; projects, folders and uploaded files; meetings, transcripts, speaker names and archived meeting audio; memories, personalization settings and preferences; automations and their run history; agents and agent rooms; Studio content; and your Teams membership and profile.
+**What is synced:** chats and every message in them (including tool results, attachments and content the assistant read, which can include data from connected apps such as Google); artifacts and their versions; workspaces, folders and uploaded files; meetings, transcripts, speaker names and archived meeting audio; memories, personalization settings and preferences; automations and their run history; agents and agent rooms; Studio content; and your Teams membership and profile.
 
 **What is never synced:** your AI key, your connected-app sign-ins and tokens, local usage and cost counters, tool logs, search indexes and local file checkpoints.
 
@@ -89,7 +89,7 @@ The App also receives small settings from us at launch (feature switches, announ
 
 ### 4.3 Teams {#4-3-teams}
 
-If you create or join a Team, we store the Team name, members, roles (owner, admin, member), invitations and shared-project permissions. **Invite emails** are sent through **Resend**, which receives the invitee's email, the Team name, the inviter's name, the role and the join link. Invitations expire after 7 days.
+If you create or join a Team, we store the Team name, members, roles (owner, admin, member), invitations and shared-workspace permissions. **Invite emails** are sent through **Resend**, which receives the invitee's email, the Team name, the inviter's name, the role and the join link. Invitations expire after 7 days.
 
 ### 4.4 Published pages ("Sites" and shared Studio pages)
 
@@ -139,7 +139,7 @@ When you connect an app, Starfish uses **your** account with that service to rea
 
 ## Google user data {#google-user-data}
 
-This section explains how Starfish accesses, uses, stores and shares data from your Google account. It applies when you choose **Continue with Google** or connect a Google service in **Settings → Integrations**.
+This section explains how Starfish accesses, uses, stores and shares data from your Google account. It applies when you choose **Continue with Google** or connect a Google service in the **Marketplace**.
 
 ### What Starfish accesses
 
@@ -173,7 +173,7 @@ Starfish uses Google user data only to provide the features you use in the App: 
 
 - **Your AI model provider.** To answer a request, Google content the assistant retrieved is sent with your request to Vercel AI Gateway and the model provider you use, on your own key (see [Section 5](#5-ai-requests-vercel-ai-gateway-and-model-providers)). This happens only to provide the feature you asked for.
 - **Our cloud service providers**, only if you turn on cloud sync, to store and sync your chats for you.
-- **People you choose.** For example, when you ask Starfish to send an email or share a file, or when you share a project with your Team.
+- **People you choose.** For example, when you ask Starfish to send an email or share a file, or when you share a workspace with your Team.
 - Otherwise only for security purposes, to comply with the law, or as part of a merger, acquisition or sale of assets after obtaining your explicit prior consent.
 
 Our staff do not read your Google user data unless you ask us to (for example in a support request), it is needed for security (for example investigating abuse), or the law requires it.
@@ -184,7 +184,7 @@ Starfish does not use Google user data to create, train or improve any AI or mac
 
 ### How to revoke access and delete your Google data
 
-- **Disconnect in Starfish:** **Disconnect** in **Settings → Integrations** deletes the stored Google tokens and credentials from your Mac.
+- **Disconnect in Starfish:** **Disconnect** in the **Marketplace** deletes the stored Google tokens and credentials from your Mac.
 - **Revoke at Google:** remove Starfish at [myaccount.google.com/permissions](https://myaccount.google.com/permissions) at any time.
 - **Delete Google content in Starfish:** delete the chats that contain it on your Mac. To erase synced copies, use **Settings → Sync → Delete my cloud data** or delete your account (see [Deleting your data](#deleting-your-data)), or email [communications@starfishadage.com](mailto:communications@starfishadage.com).
 
@@ -196,11 +196,11 @@ Starfish's use and transfer to any other app of information received from Google
 
 ## 8. Teams: what teammates can see {#8-teams-what-teammates-can-see}
 
-- **Shared:** only projects you choose to share with the Team, with their folders and files, and published sites you share. The person who shared a project, or the Team owner or an admin, chooses "view" or "edit" access.
+- **Shared:** only workspaces you choose to share with the Team, with their folders and files, and published sites you share. The person who shared a workspace, or the Team owner or an admin, chooses "view" or "edit" access.
 - **Not shared:** your chats, agents, agent rooms, memories, meetings, automations and personal settings.
 - **Visible to teammates:** your display name, email address and avatar link.
-- **Owner and admins** can invite and remove members, change shared-project access and delete content in shared projects. Only the owner can remove an admin or delete the Team.
-- **When a member leaves or is removed,** projects they shared to the Team pass to the Team owner so the Team keeps its work.
+- **Owner and admins** can invite and remove members, change shared-workspace access and delete content in shared workspaces. Only the owner can remove an admin or delete the Team.
+- **When a member leaves or is removed,** workspaces they shared to the Team pass to the Team owner so the Team keeps its work.
 
 ## 9. Starfish Anywhere: using Starfish from your phone {#9-starfish-anywhere-using-starfish-from-your-phone}
 
@@ -245,7 +245,7 @@ While you can sign in, use **Settings → Account → Download my cloud data** t
 
 - Encryption in transit and at rest for our services, with least-privilege access.
 - Every cloud request needs a valid sign-in token; sessions can be revoked.
-- Access to your synced data is limited to your account and, for shared projects, your Team.
+- Access to your synced data is limited to your account and, for shared workspaces, your Team.
 - Your AI key and Google client credentials are encrypted with your Mac's Keychain.
 - The AI assistant is blocked from credential and system locations.
 - Approval settings let you require your OK before the assistant changes or deletes anything in your connected apps.
@@ -271,7 +271,7 @@ For client data you put into Starfish:
 - We will help you respond to your clients' and data subjects' requests and notify you without undue delay of a breach affecting client data.
 - **You are responsible** for having the right to give us your clients' data, telling your clients and meeting participants that you use Starfish, and getting any consents needed.
 
-A Data Processing Agreement is available on request at [communications@starfishadage.com](mailto:communications@starfishadage.com).
+If you need a Data Processing Agreement, contact us at [communications@starfishadage.com](mailto:communications@starfishadage.com).
 
 **Recording meetings:** laws in many places require all participants to agree before a call is recorded or transcribed. You are responsible for telling participants and getting their consent. When you start taking notes, Starfish reminds you to tell the people in the call.
 

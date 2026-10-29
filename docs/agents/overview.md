@@ -4,78 +4,56 @@ outline: deep
 
 # Agents Overview
 
-Agents are AI teammates with a job. Each one has a role, the apps it needs, and the skills it uses. Put them in a team, give the team a goal, and they split the work, check in with each other, and hand you a finished result. You only step in for the decisions.
+Agents are helpers with their own instructions. Each one has a name, a short description of the work it takes, the connected apps it needs, and its instructions. A **team** groups agents that work well together, so one request can be shared between them.
 
-Agents live on the **Teams** page in the sidebar (it used to be called **Agents**). It's available in Developer mode.
+Agents and teams are part of Developer mode. Your agents are in the **Agents** panel next to **Skills** in the side panel, and your teams are on the **Teams** page in the sidebar.
 
-## Create teams and agents from chat
+## Create an agent from chat
 
-At the top of the Teams page:
+Type `/agent new` in a Developer chat, or click **New agent** on the Teams page or in the Agents panel. You can also say it in plain words, such as "I want an agent that writes our launch emails".
 
-- **New team** offers **Create from chat**, where Starfish asks what the team should do and designs it with you, or **Manual**, where you name the team and pick its agents yourself.
-- **New agent** opens a chat that starts the agent creator (`/agent new`). Describe the agent and Starfish drafts, tests and saves it.
+1. Starfish asks what the agent should do, then a few short questions: its role and scope, what good work looks like, and which connected apps it needs.
+2. Starfish writes the agent and tests it on a realistic sample task, then shows you the result.
+3. Click **Save agent** to keep it, **Change something** to adjust it, or **Cancel**.
+4. Once saved, click **Give it work**, or **Open in Agents** to see it in the panel.
+
+To change a saved agent later, type `/agent edit` and its name, or click **Edit by talking** in the agent's details.
+
+## Create a team
+
+On the Teams page, click **New team**:
+
+- **Create from chat** opens a chat where Starfish asks what the team is for, picks the agents that fit, and suggests new agents for any part of the work that none of yours covers.
+- **Manual** opens a form. Enter a **Name** and **What it is for**, tick the agents that belong in the team, and click **Create team**.
 
 You can also create a team in any Developer chat: say "create a team for …". Starfish shows the team on a card with its name, purpose and agents. Click **Save team** to keep it, **Change something** to adjust it, or **Cancel**. Once saved, click **Give it work**, or **Open in Teams** to see it.
 
-Use a saved team in a chat by saying "use my Launch team" or typing `@Launch team`. The members work at the same time and you get one combined answer.
+## Use a team
 
-## Teams, leads and specialists
+In a Developer chat, say "use my Launch team to …" or type `@Launch team`. The chat leads the team: it splits your request into one part per agent, the agents work at the same time as [subagents](/agents/subagents), and you get one combined answer. If an agent needs something only you can answer, Starfish asks you in the chat.
 
-Every team has one **lead** and a group of **specialists** who report to it.
+Each team card on the Teams page shows the name to type, such as `@Launch team`. Teams need **Use subagents** to be on, which it is by default.
 
-- **The lead** is the manager. It takes your goal, splits it into parts, and sends each part to the specialist that fits best. At the end it reviews the results and combines them into one deliverable.
-- **Specialists** each own one kind of work, such as the inbox, analytics, research, copy or ads. Each one gets only the apps its work needs.
+An agent that is turned off in the Agents panel is skipped when its team is called.
 
-If no specialist fits a part of the goal, the lead does that part itself and says why on the result.
+## The Teams page
 
-## The org chart
+The Teams page lists your teams. Each card shows the team's name, what it is for, and its agents. Use the **⋯** menu on a card to **Edit team** (rename it, change its purpose, add or remove agents) or **Delete team**. Deleting a team leaves its agents as they are.
 
-The **Org** tab draws your teams as an org chart, with **You** at the top. Each team sits in its own frame, with its lead and the specialists below. Cards show each agent's role, what it's working on, and its share of today's spend. Click a card to open the agent's profile and set its role, responsibilities, apps and skills.
+## Use one agent
 
-### Several teams
+- **Let Starfish choose.** Your chats hand matching work to an agent as a subagent, based on the agent's description.
+- **Name it.** Say "use my marketing agent to …" or "ask the marketing agent to …" to start it as a subagent.
+- **Run the chat as the agent.** Type `@marketing`, or `/agents marketing`, and the chat answers as that agent.
 
-You can run several teams side by side. Each team has its own lead, works on its own, and shows its own spend. An agent belongs to one team at a time.
-
-## Start from a template
-
-The fastest way to begin is **Start from a template** on the Org tab. Templates include **Client Success Desk**, **Sales and Lead Follow-up**, **Local Business Growth**, **Email and Proposals**, **Marketing Team**, **Content and SEO**, **Operations Desk** and **Dev Team**.
-
-Each one is a lead with specialists whose roles, apps and skills are already filled in, plus example tasks you can copy.
-
-- The preview marks any app you haven't connected yet as **Connect to use**.
-- **Add team** creates new agents. Your existing agents are never changed.
-- To grow a team you already have, choose **Put under an existing lead**.
-- Adding a template costs nothing, and every agent stays editable.
-
-### Starter agents
-
-To add a single agent, click **+** on a card and pick from **Starter agents**, ready-made agents with their role, apps and skills filled in. You can also pick one of your own agents, or create a new one by describing what you need.
-
-## Give the team a goal
-
-Open the **Work** tab and click **New task**. Write what should get done, then under **Assign to** pick a team's lead to hand the goal to the whole team, or pick one agent for a single job. You can add a priority and a due date.
-
-The lead takes it from there. See [Teams at Work](/agents/teams-at-work) for how you follow the work, answer questions and collect the results.
+See [Managing Agents](/agents/managing-agents) for the Agents panel, importing and exporting agents, and using agents in Chat mode.
 
 ## How to get good results
 
-- **Build the team around the work.** One specialist per kind of job, each with only the apps it needs. An inbox agent with Google Workspace, an analytics agent with Google Marketing Suite, a research agent for the web.
-- **Fill in Role and Responsibilities.** The lead uses them to decide who gets what. A card marked **role not set** needs this.
-- **Write a clear task.** Say the goal, the scope (which account, site or time period), the deliverable you want back, and when it's due.
+- **Build the team around the work.** One agent per kind of job, each with only the apps it needs: an inbox agent with Google Workspace, an analytics agent with Google Marketing Suite, a research agent for the web.
+- **Write a clear description for each agent.** The chat uses it to decide which agent gets which part.
+- **Write a clear request.** Say the goal, the scope (which account, site or time period), the result you want back, and when it's due.
 
 | Weak | Strong |
 |------|--------|
 | Check my latest emails and analytics | Morning brief for today: 1) unread emails from the last 24 hours that need a reply, 2) website users and conversions for the last 7 days vs the week before. One summary with a section for each part. |
-
-- **Copy an example task** from a template preview to see the style that works well.
-- **Put the deadline in the task itself.** The due date only marks the task on the Work board.
-
-## The in-app guide
-
-Click the **?** button at the top of the Agents page to open **How to get the best results**, a short guide to setting up a team, writing tasks, the budget, and the stop and export controls.
-
-## Agents in chat
-
-You can also chat with one agent directly. In Developer mode, type `/agents` followed by the agent's name. In Chat mode, name it in your message (for example `@marketing`), and a chip above the composer shows which agent is active. See [Managing Agents](/agents/managing-agents).
-
-In Developer mode, Starfish can also run agents as [subagents](/agents/subagents) that work in the background and report back.

@@ -215,10 +215,10 @@ We strongly recommend starting with **Ask for approval**, testing on non-critica
 ## 14. Teams
 
 - A Team has one **owner**, and may have **admins** and **members**.
-- The owner and admins can invite and remove members, set shared-project access to view or edit, and delete content in shared projects. Only the owner can remove an admin or delete the Team.
-- Only projects you choose to share are visible to the Team. Your chats, memories, meetings, agents and automations stay private to you.
-- **When a member leaves or is removed,** the projects they shared to the Team pass to the Team owner, and the member loses access to the Team's content.
-- If the Team is paid for by an organisation, that organisation controls the Team and the shared content. Members should not share personal content in Team projects.
+- The owner and admins can invite and remove members, set shared-workspace access to view or edit, and delete content in shared workspaces. Only the owner can remove an admin or delete the Team.
+- Only workspaces you choose to share are visible to the Team. Your chats, memories, meetings, agents and automations stay private to you.
+- **When a member leaves or is removed,** the workspaces they shared to the Team pass to the Team owner, and the member loses access to the Team's content.
+- If the Team is paid for by an organisation, that organisation controls the Team and the shared content. Members should not share personal content in Team workspaces.
 - The organisation that pays for Seats is responsible for its members' compliance with these Terms.
 
 ## 15. Beta and preview features
@@ -316,7 +316,7 @@ We may update these Terms. We will change the "Last updated" date and, for signi
 ## 26. Data protection and processing roles
 
 - **Your data.** For the content you put into the Services, you are the controller and Starfish acts as your processor when it stores or syncs that content. For your account, billing and support data, Starfish acts as a controller. Our [Privacy Policy](/legal/privacy) describes this in detail.
-- **Data Processing Agreement.** If you need a DPA — for example because you handle personal data on behalf of clients, or you are subject to the GDPR — ask us at [communications@starfishadage.com](mailto:communications@starfishadage.com) and we will provide one for signature. The DPA covers processor obligations, sub-processors, security measures, breach notification and deletion.
+- **Data Processing Agreement.** If you need a DPA — for example because you handle personal data on behalf of clients, or you are subject to the GDPR — contact us at [communications@starfishadage.com](mailto:communications@starfishadage.com) to discuss one.
 - **Sub-processors.** Our sub-processors are listed in our [Privacy Policy](/legal/privacy#15-subprocessors). Vercel and the AI Providers are not our sub-processors: you contract with them directly through Your AI Key.
 - **No sale.** We do not sell personal information and we do not share it for cross-context behavioural advertising.
 - **Requests from individuals.** If you are an agency or otherwise hold End Users, you are responsible for responding to their privacy requests. We will assist you on request, within the limits of what we can see — which, for AI usage, is nothing.

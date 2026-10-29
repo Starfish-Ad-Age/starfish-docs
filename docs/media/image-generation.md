@@ -16,7 +16,7 @@ Leave the engine on **Auto**, or open the menu to pick one. Nothing is made unti
 
 ## Engines
 
-**Auto** picks the best engine for each request and starts on GPT Image 2.5 Flare. You can also choose Nano Banana Pro, Nano Banana 2.1, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Muse Image 1.0, FLUX 3 Image, MAI-Image-2.6 Flash or MAI-Image-2.6.
+**Auto** picks an engine for each request. You can also choose an engine yourself from the engine picker, which lists the engines available in the App.
 
 The picker marks each engine **$**, **$$** or **$$$**, from cheapest to most expensive, and flags **Recommended** and **Premium** engines. Auto never picks a preview engine.
 

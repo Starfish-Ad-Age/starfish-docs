@@ -22,7 +22,7 @@ If you already have an active session, this step is skipped.
 
 ## Step 2 — AI access
 
-Starfish connects to language models (Claude, GPT, Gemini, and others) through [Vercel AI Gateway](https://vercel.com/docs/ai-gateway). The gateway provides unified routing across all supported models — you only need one key.
+Starfish connects to language models from many providers through [Vercel AI Gateway](https://vercel.com/docs/ai-gateway). You only need one key.
 
 **To get your key:**
 
@@ -31,7 +31,7 @@ Starfish connects to language models (Claude, GPT, Gemini, and others) through [
 3. Generate an API key.
 4. Copy the key and paste it into the input field.
 
-Your key is stored securely on your Mac — protected by the Keychain when available, with encrypted local storage as the fallback — and is never shown again.
+Your key is stored on your Mac, encrypted with your Mac's Keychain, and is never shown again.
 
 Below the key, choose which Vercel plan the key belongs to (**Hobby**, **Pro** or **Enterprise**) and tick **I confirm this is my Vercel plan and I have read what it means for my data**. You cannot continue until you do. See [Vercel plan](/settings/general#vercel-plan).
 

@@ -61,7 +61,7 @@ Operations that create or change existing work. These include:
 
 - Creating new files or records
 - Editing data in a connected service
-- Sending an email or message draft
+- Sending an email or message
 
 The prompt uses an **amber** indicator for these operations.
 
@@ -74,7 +74,7 @@ Each prompt displays:
 - **Account affected** -- which connected account the action touches.
 - **Can it be undone?** -- whether the change is reversible.
 - **Information used** -- what the action is based on.
-- For send/draft tools, a **preview of the actual message** (recipient, subject, and body) so you review what goes out.
+- For sending tools, a **preview of the actual message** (recipient, subject, and body) so you review what goes out.
 
 ## Accepting or Rejecting
 
@@ -82,20 +82,13 @@ Each prompt displays:
 - **Always allow** -- grants this exact call (targets, count, recipients) for future turns. Available in Developer mode.
 - **Don't allow** -- the operation is blocked. The AI is notified and adjusts its approach. In Developer mode you can add an optional reason the AI will see.
 
-If a permission prompt is missed (e.g., during navigation), Starfish re-checks the server every 2 seconds to re-surface it. Sessions with pending permission prompts show an "Needs input" indicator in the sidebar.
+If a permission prompt is missed (e.g., during navigation), Starfish shows it again. Sessions with pending permission prompts show an "Needs input" indicator in the sidebar.
 
 ## Path Guards
 
-Certain locations are always blocked, regardless of permissions or mode. The AI cannot read, write, or execute anything in:
+Credential and system locations are always blocked, whatever your permissions or mode. Starfish's own data is blocked too. Credential and environment files are refused unless you turn on **Allow reading credential and environment files** in **Settings → Local Access**.
 
-- `~/.ssh`, `~/.aws`, `.gnupg` directories
-- `/System/` and `/Applications/` (application internals)
-- Shell commands that reference `node_modules`
-- Keychains, browser password and cookie files, and saved sign-ins for command-line tools
-- Starfish's own data -- its database, settings and saved connections
-- Credential and environment files -- `.env` files, `id_rsa`/`id_ed25519`, `.npmrc`, `.netrc`, `.git-credentials`, `credentials.json`, `service-account*.json`, and `.pem`/`.key`/`.p12`/`.pfx` files -- unless you turn on **Allow reading credential and environment files** in Settings → Local Access.
-
-These guards operate at the path level -- the AI never even gets a permission prompt for these locations. The request is refused before it runs.
+These requests are refused before they run, without a permission prompt.
 
 ## Read-Only Tools
 

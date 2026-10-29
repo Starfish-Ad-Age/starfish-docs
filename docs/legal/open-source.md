@@ -14,7 +14,7 @@ FFmpeg is a separate program inside the app at Starfish.app/Contents/Resources/b
 
 It is built without changes from the official release https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz and the library archives listed below, with the configuration below.
 
-Written offer: for at least three years from the date you received this version of Starfish, we will give anyone who asks the complete corresponding source code of this FFmpeg build, including the build script, for no more than our cost of distributing it. Write to [contact email].
+Written offer: for at least three years from the date you received this version of Starfish, we will give anyone who asks the complete corresponding source code of this FFmpeg build, including the build script, for no more than our cost of distributing it. Write to Starfish Ad Age LLC, 140 E Tyler St, Suite 200, Longview, TX 75601, USA, or email communications@starfishadage.com.
 
 Source archives (SHA-256):
 

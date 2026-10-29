@@ -9,7 +9,7 @@ Apify connects web scraping and data extraction to Starfish. Run scraping actors
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Apify** and click **Connect**.
 3. A browser window will open to Apify's authorization page.
 4. Sign in to your Apify account and approve the connection.

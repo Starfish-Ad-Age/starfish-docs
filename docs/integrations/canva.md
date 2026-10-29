@@ -9,7 +9,7 @@ Canva connects your design workspace to Starfish. Create and edit designs, prese
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Canva** and click **Connect**.
 3. A browser window will open to Canva's authorization page.
 4. Sign in to your Canva account and approve the connection.

@@ -18,7 +18,7 @@ There are no separate image or video pages. You make images and videos in a chat
 
 - Click a design to open the chat it was made in, with the file shown.
 - Click an image or video to open it in its chat.
-- Images and videos from earlier versions of Starfish, made before generation moved into chat, open in a viewer on the Media page.
+- Older images and videos made outside a chat open in a viewer on the Media page.
 
 ## Free up space
 

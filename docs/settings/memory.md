@@ -8,8 +8,8 @@ Starfish keeps a short list of durable facts about how you like to work, and use
 
 This is deliberately a small, visible list rather than an invisible profile. A memory you cannot see is one you cannot correct, and a wrong one steers every future answer without ever explaining itself.
 
-::: tip Not the same as project memory
-This page is about **you** — how you want Starfish to work, across everything. For notes attached to a specific project or folder, see [Project & Folder Memory](/workspace/memory).
+::: tip Not the same as workspace memory
+This page is about **you** — how you want Starfish to work, across everything. For notes attached to a specific workspace or folder, see [Workspace & Folder Memory](/workspace/memory).
 :::
 
 ## What it remembers

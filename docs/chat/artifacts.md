@@ -26,11 +26,11 @@ When an artifact is created, the right panel automatically switches to the **Art
 
 ## HTML Artifacts
 
-HTML files get special treatment. Starfish renders them in a sandboxed iframe within the Artifacts tab, so you can preview landing pages, reports, dashboards, and interactive content without leaving the conversation.
+HTML files get special treatment. Starfish shows them in the Artifacts tab, so you can preview landing pages, reports, dashboards, and interactive content without leaving the conversation.
 
 Previews show the page as it's meant to look, with its images and styles in place.
 
-The sandbox allows scripts, so JavaScript within the artifact runs normally, but it deliberately does **not** allow same-origin access: the frame has an opaque origin, so artifact code cannot reach the Starfish app or call its API. Element selection, comment pins, and fit-to-width still work -- the frame and the app talk by message rather than direct access.
+JavaScript in the artifact runs normally, and the artifact is kept separate from the rest of the Starfish app. Element selection, comment pins, and fit-to-width still work.
 
 ## Previewing Artifacts
 
@@ -42,7 +42,7 @@ Click an artifact in the chat to open a preview. The preview method depends on t
 
 ## Reports and PDFs
 
-Reports and PDFs stick to the facts Starfish actually found. They don't include made-up figures. When you ask for a PDF, Starfish saves it straight away and never stops to ask where to put it.
+Reports and PDFs are based on the facts Starfish found. When you ask for a PDF, Starfish saves it straight away and never stops to ask where to put it.
 
 - **Long tables** continue on the next page, and their header row repeats.
 - **Coloured pages** are coloured right to the edge, with no white bands.

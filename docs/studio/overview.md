@@ -31,7 +31,7 @@ Studio also asks **Add illustrations to this deck?** The answer is **Yes, add il
 
 The build quality menu has three choices:
 
-- **Quick** -- a strong first draft with the shortest wait.
+- **Quick** -- a strong first version with the shortest wait.
 - **Polished** -- a more careful model. Slower.
 - **Deep reasoning** -- the longest thinking, for complex source material. Slowest.
 

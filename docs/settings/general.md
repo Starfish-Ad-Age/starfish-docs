@@ -12,9 +12,9 @@ The **General** category covers voice, the AI Gateway key, updates, your account
 
 Settings for voice typing and read-aloud:
 
-- **Speech-to-text model** -- the engine behind the composer mic. Cloud models run through the AI Gateway and send audio off-device: GPT-4o Transcribe (best accuracy, the default), GPT-4o Mini Transcribe (fastest), Whisper 1, and Fish Audio Transcribe 1. The optional **On-device (Parakeet)** engine keeps audio on your Mac and needs a one-time ~460 MB download.
+- **Speech-to-text model** -- the engine behind the composer mic. Cloud models send audio to your AI provider through your own key. The optional **On-device (Parakeet)** engine keeps audio on your Mac and needs a one-time download.
 - **Microphone** -- choose the input device used for voice typing.
-- **Read-aloud voice** -- pick the speech model, its voice, and the speed used when you play an assistant reply aloud. The speech model starts on **OpenAI TTS 1**. A **Preview** button lets you hear it first.
+- **Read-aloud voice** -- pick the speech model, its voice, and the speed used when you play an assistant reply aloud. A **Preview** button lets you hear it first.
 - **Meeting transcription** -- live captions and the final transcript with speaker labels run on your Vercel AI Gateway key. No download or extra provider key is required. The **Test Voice** button records a short clip and confirms transcription works.
 
 The voice assistant and Ask about this screen have their own category, **Voice & shortcuts**. See [Voice assistant](/voice/voice-assistant) and [Ask about this screen](/voice/ask-about-this-screen).
@@ -29,15 +29,11 @@ To update your key:
 2. Click **Replace key** and paste the new key (starts with `vck_…` or `sk_…`)
 3. Save
 
-The key is stored on your local machine (encrypted on this device) and is never sent to Starfish servers. Get a key at [vercel.com/ai-gateway](https://vercel.com/ai-gateway).
+The key is stored on your Mac, encrypted with your Mac's Keychain, and is not uploaded to Starfish's servers. Get a key at [vercel.com/ai-gateway](https://vercel.com/ai-gateway).
 
 ## Vercel plan
 
-Starfish asks which Vercel plan your key belongs to: **Hobby**, **Pro** or **Enterprise**. The plan decides what Vercel may do with your data:
-
-- Hobby is for non-commercial use only.
-- On Hobby and Pro, Vercel may use your content for training.
-- Use Enterprise for client, confidential or regulated data.
+Starfish asks which Vercel plan your key belongs to: **Hobby**, **Pro** or **Enterprise**. Your use of AI on your own key is subject to [Vercel's terms](https://vercel.com/legal/terms), which vary by plan.
 
 Pick your plan and tick **I confirm this is my Vercel plan and I have read what it means for my data**. New users answer this in setup. If you have not answered yet, a small banner shows until you do; click **Answer in Settings**. To change it later, click **Edit** in the **Vercel plan** section.
 
@@ -84,5 +80,5 @@ A few settings people expect under General now have their own categories:
 - **Show code changes** in Developer mode -- **Settings → Appearance → Developer**.
 - **Auto-rename uploaded files** -- **Settings → Workspace**.
 - **Connected services** -- the **Marketplace** in the sidebar, or per chat from the composer. See [Integrations](/integrations/overview).
-- **Agents and knowledge packs** -- the **Agents** page. See [Knowledge Packs](/agents/knowledge-packs).
+- **Agents and teams** -- the **Agents** panel next to **Skills**, and the **Teams** page. See [Managing Agents](/agents/managing-agents).
 - **What Starfish remembers about you** -- **Settings → Personalization**. See [Memory](/settings/memory).

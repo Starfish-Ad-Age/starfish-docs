@@ -9,9 +9,9 @@ Playwright adds local browser automation to Starfish. Browse the web, take scree
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Playwright** and click **Connect**.
-3. Starfish installs the Playwright browser engine and its Chromium build. This runs locally and can take a minute or two the first time.
+3. Starfish installs the Playwright browser engine. This runs on your Mac and can take a minute or two the first time.
 4. No sign-in or tokens are required. When the setup finishes, the integration status will show **Connected**.
 
 Playwright runs a local browser instance on your machine. There is no external service to authenticate with.
@@ -40,7 +40,7 @@ Playwright runs a local browser instance on your machine. There is no external s
 
 ## Notes
 
-- Playwright runs entirely on your local machine. No data is sent to external servers for browser automation.
+- Playwright runs the browser on your Mac. The pages it opens, and what it returns to the chat, are handled like any other chat content.
 - Playwright opens a browser on your machine and returns screenshots and page snapshots to the chat. For day-to-day browsing inside Starfish, the built-in [Browser panel](/tools/browser) does not need this integration.
 - Playwright is useful for testing, scraping authenticated pages, and automating repetitive browser tasks.
 - For large-scale public web scraping, consider using [Apify](./apify) instead.

@@ -9,7 +9,7 @@ Google Marketing Suite brings GA4 analytics, Search Console SEO data, and Google
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Google Marketing Suite** and click **Connect**.
 3. A setup stream will launch. Sign in with the Google account that has access to your analytics properties.
 4. Grant the requested permissions.

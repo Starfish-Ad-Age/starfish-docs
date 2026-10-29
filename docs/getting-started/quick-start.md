@@ -16,13 +16,13 @@ Launch Starfish. The setup wizard opens automatically. Continue with Google, or 
 
 ## 3. Connect your AI access
 
-Starfish uses [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) to connect to LLMs like Claude, GPT, Gemini, and other models through a unified routing layer.
+Starfish uses [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) to connect to language models from many providers with one key.
 
 1. Go to [vercel.com](https://vercel.com/) and create an account if you don't have one.
 2. Generate an API key from your AI Gateway settings.
 3. Paste it into the setup wizard.
 
-Your key is stored on your Mac — in the Keychain when available, with encrypted local storage as the fallback.
+Your key is stored on your Mac, encrypted with your Mac's Keychain.
 
 ## 4. Make it yours (optional)
 

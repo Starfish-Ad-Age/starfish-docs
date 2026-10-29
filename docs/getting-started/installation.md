@@ -26,18 +26,9 @@ The download is always the most recent version. After you install Starfish, it u
 2. Drag **Starfish** into your **Applications** folder.
 3. Eject the disk image.
 
-
 ## First launch
 
-macOS may block the app because it was downloaded from the internet. If you see a warning:
-
-1. Open **Finder** and navigate to **Applications**.
-2. Right-click (or Control-click) on **Starfish**.
-3. Select **Open** from the context menu.
-4. Click **Open** in the confirmation dialog.
-
-You only need to do this once. Subsequent launches work normally from the Dock or Spotlight.
-
+Open **Starfish** from **Applications**, Launchpad or Spotlight. The app is signed and notarized by Apple.
 
 ## What's next
 

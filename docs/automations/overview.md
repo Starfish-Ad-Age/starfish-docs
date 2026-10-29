@@ -26,7 +26,7 @@ Each fire creates a real chat session you can open and inspect. Sessions are lab
 
 - **Daily summaries** — "Every weekday at 8 AM, list my overdue ClickUp tasks, group by space, and email me a markdown summary."
 - **Campaign monitoring** — "Pull yesterday's Facebook Ads spend and ROAS by campaign, and alert me if any dropped more than 30%."
-- **Content pipelines** — "Every Monday, draft a LinkedIn post about last week's product update."
+- **Content pipelines** — "Every Monday, write a LinkedIn post about last week's product update."
 - **Workspace memory rebuild** — kick a folder's knowledge document into a refresh on a schedule.
 
 Anything you'd type into chat and want to fire on a clock.
@@ -83,13 +83,13 @@ When your Mac was asleep, or Starfish wasn't running, scheduled fires get skippe
 
 ## Workspace context
 
-When an automation carries a project (and optionally a folder) scope, each run picks up:
+When an automation carries a workspace (and optionally a folder) scope, each run picks up:
 
-- The project's [custom instructions](/workspace/projects)
-- The project's [memory document](/workspace/memory)
-- Any [knowledge files](/workspace/knowledge-files) attached to the project / folder
+- The workspace's [custom instructions](/workspace/projects)
+- The workspace's [memory document](/workspace/memory)
+- Any [knowledge files](/workspace/knowledge-files) attached to the workspace / folder
 
-Folder context overrides project context inside its folder, same as interactive chats.
+Folder context overrides workspace context inside its folder, same as interactive chats.
 
 ## Notifications
 

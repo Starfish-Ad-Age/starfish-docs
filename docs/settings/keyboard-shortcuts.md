@@ -24,7 +24,7 @@ These work in any app, also when Starfish is in the background. Change or turn t
 | `Arrow Up` | Previous message in prompt history |
 | `Arrow Down` | Next message in prompt history |
 | `Cmd + N` | New chat session |
-| `Cmd + Shift + P` | Polish writing -- rewrites the selection or the whole draft |
+| `Cmd + Shift + P` | Polish writing -- rewrites the selection or the whole message |
 | `Cmd + K` | Developer mode: open the command palette |
 | `Cmd + F` | Developer mode: find text in the conversation |
 
@@ -59,4 +59,4 @@ In Developer mode, type `/` to open the command menu. See [Using Chat](/chat/usi
 |----------|--------|
 | `Escape` | Close modal / cancel operation |
 | `Cmd + N` | New session |
-| `Cmd + K` | Deep search across chats, documents, images, and projects |
+| `Cmd + K` | Deep search across chats, documents, images, and workspaces |

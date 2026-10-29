@@ -18,8 +18,8 @@ features:
       src: /icons/bot.svg
       width: 28
       height: 28
-    title: 25+ language models
-    details: Leading AI models from every major provider, all routed through one Gateway with a single key. Auto mode picks the best one for each message.
+    title: Leading language models
+    details: Models from many providers on your own Vercel AI Gateway key. Auto mode picks a model for each message.
   - icon:
       src: /icons/cable.svg
       width: 28
@@ -31,7 +31,7 @@ features:
       width: 28
       height: 28
     title: Workspaces with memory
-    details: Group chats into projects and folders. Custom instructions, knowledge files, and a self-maintaining memory document the AI reads on every turn.
+    details: Group chats into workspaces and folders. Custom instructions, knowledge files, and a self-maintaining memory document the AI reads on every turn.
   - icon:
       src: /icons/clock.svg
       width: 28
@@ -49,17 +49,17 @@ features:
       width: 28
       height: 28
     title: Built-in terminal &amp; browser
-    details: Full xterm.js emulator and a Chromium browser embedded in the workspace. Run commands, browse the web, test generated code — without leaving the app.
+    details: A terminal and a web browser built into the app. Run commands, browse the web, test generated code — without leaving the app.
   - icon:
       src: /icons/shield.svg
       width: 28
       height: 28
     title: Permissions you control
-    details: Every destructive action asks first. Path guards block access to sensitive directories. Full Access mode is one toggle away when you trust the agent.
+    details: Starfish asks before risky actions, and credential and system locations are always blocked. You choose how much the assistant may do on its own.
   - icon:
       src: /icons/package.svg
       width: 28
       height: 28
-    title: Agent templates
-    details: A growing catalog of pre-built agents — Chief of Staff, Paid Ads Analyst, Client Reporting Analyst — installable with one click and forkable on edit.
+    title: Agents and teams
+    details: Create agents by describing them in a chat, group them into teams, and let one request be shared between them.
 ---

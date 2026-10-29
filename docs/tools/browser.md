@@ -87,10 +87,6 @@ When the AI generates HTML, CSS, or JavaScript artifacts during a conversation, 
 3. Use the element selector to point at specific parts
 4. Request changes and see updates immediately
 
-## Electron vs Web
-
-In the desktop app (Electron), the browser uses a `webview` tag that can load any URL, including sites that block iframes (like Google, Twitter, etc.). In the web version, the browser falls back to an `iframe` with sandbox restrictions, which limits which sites can be loaded.
-
 ## Use Cases
 
 - **Research**: Look up documentation, reference material, or competitor sites without leaving Starfish

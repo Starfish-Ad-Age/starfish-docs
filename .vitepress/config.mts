@@ -1,7 +1,3 @@
-// withMermaid wraps the standard VitePress config and enables ```mermaid code
-// blocks to render as diagrams. Added for the (temporary) /starfish-training book.
-// To fully remove later: revert this wrapper back to defineConfig and run
-//   npm uninstall mermaid vitepress-plugin-mermaid
 import { withMermaid } from "vitepress-plugin-mermaid";
 
 export default withMermaid({
@@ -69,10 +65,10 @@ export default withMermaid({
         text: "Workspace",
         items: [
           { text: "Overview", link: "/workspace/overview" },
-          { text: "Projects", link: "/workspace/projects" },
+          { text: "Workspaces", link: "/workspace/projects" },
           { text: "Folders", link: "/workspace/folders" },
           { text: "Knowledge Files", link: "/workspace/knowledge-files" },
-          { text: "Project & Folder Memory", link: "/workspace/memory" },
+          { text: "Workspace & Folder Memory", link: "/workspace/memory" },
           { text: "Teams", link: "/workspace/teams" },
         ],
       },
@@ -80,10 +76,8 @@ export default withMermaid({
         text: "Agents",
         items: [
           { text: "Overview", link: "/agents/overview" },
-          { text: "Teams at Work", link: "/agents/teams-at-work" },
           { text: "Managing Agents", link: "/agents/managing-agents" },
           { text: "Subagents", link: "/agents/subagents" },
-          { text: "Knowledge Packs", link: "/agents/knowledge-packs" },
         ],
       },
       {

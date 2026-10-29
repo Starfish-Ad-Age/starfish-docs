@@ -9,7 +9,7 @@ Vercel connects your deployment platform to Starfish. Deploy projects, monitor b
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **Vercel** and click **Connect**.
 3. A browser window will open to Vercel's authorization page.
 4. Sign in to your Vercel account and approve the connection.

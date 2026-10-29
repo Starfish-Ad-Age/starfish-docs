@@ -35,13 +35,6 @@ Most AI tools are chat-only. Starfish ships with an embedded terminal, a built-i
 
 Supported integrations include Google Workspace, Google Marketing Suite, Google Ads, ClickUp, QuickBooks Online, GitHub, Vercel, Canva, Zapier, Apify, GoHighLevel, Facebook Ads, TikTok Ads, Playwright, and Stitch.
 
-## Architecture
+## Where your work lives
 
-Starfish is a desktop application for macOS. Under the hood:
-
-- **Electron** provides the native shell and system-level access.
-- **Next.js** runs locally to power the UI.
-- **Vercel AI Gateway** connects to LLMs (Claude, GPT, Gemini, and other models) through a unified routing layer.
-- **MCP (Model Context Protocol)** servers handle communication with each integration.
-
-The app runs on your machine. Your work is stored locally and leaves only through the services you connect — the AI Gateway you configure, and any integrations you add.
+Starfish is a desktop app for macOS. Your work is stored on your Mac. It goes to the AI provider you use through your own key, to the apps you connect, and to Starfish's servers for your account and for features you turn on, such as cloud sync, sharing and publishing. See the [Privacy Policy](/legal/privacy).

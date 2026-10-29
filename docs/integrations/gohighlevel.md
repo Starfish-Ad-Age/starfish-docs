@@ -9,7 +9,7 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
 
 ## How to Connect
 
-1. Open **Settings > Integrations** in Starfish.
+1. Open **Marketplace** in the Starfish sidebar.
 2. Find **GoHighLevel** and click **Connect**.
 3. Choose how to connect:
    - **Private Integration Token (PIT)** -- connects a single sub-account. Generate a token in GoHighLevel under **Settings > Integrations > Private Integrations**, then paste it into Starfish.
@@ -40,11 +40,10 @@ GoHighLevel connects your CRM and marketing platform to Starfish. Manage contact
 - "Create a new contact with name 'John Smith' and email 'john@example.com'"
 - "What opportunities are in the 'Negotiation' stage of the Sales pipeline?"
 - "Send a message to the conversation with contact 'Jane Doe' saying 'Your appointment is confirmed'"
-- "Create a blog post titled 'Top 10 Marketing Tips' with a draft status"
+- "Create an unpublished blog post titled 'Top 10 Marketing Tips'"
 
 ## Notes
 
-- The integration covers both the v2 and v3 GoHighLevel APIs, so newer capabilities (such as email campaigns) are available alongside the established ones.
 - With a **Private Integration Token**, the assistant works with the single sub-account that token belongs to; to cover several sub-accounts this way you need a separate token for each.
-- **Agency OAuth** reaches every sub-account from one connection. It requires a GoHighLevel Marketplace app configured with the redirect URL `http://localhost:8094/oauth/callback`, which you authorize once in your browser.
+- **Agency OAuth** reaches every sub-account from one connection. It requires a GoHighLevel Marketplace app with the redirect URL that Starfish shows in the connect window (a local callback on your Mac). You authorize it once in your browser.
 - Social media posting requires that your GoHighLevel account has connected social accounts.

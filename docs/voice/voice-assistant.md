@@ -85,7 +85,7 @@ Open **Settings → Voice & shortcuts**. The **Voice assistant** section has:
 | **Talk to Starfish** | The shortcut that starts and stops voice. Click it and press new keys to change it. **Reset** brings back **⇧⌘ Space**. **Turn off** removes the shortcut. |
 | **Voice window** | **Full** shows the live conversation and controls. **Compact** shows a small circle that opens its controls when you point at it or click it. |
 | **Voice window position** | **Reset position** moves the window back to the top of the screen. |
-| **Voice model** | **GPT-Live** answers faster and stops by itself when you interrupt. **Gemini Live** is a little slower and uses less of your AI budget. |
+| **Voice model** | Choose the voice model. One answers faster and stops by itself when you interrupt; the other is a little slower and uses less of your AI budget. |
 | **Daily voice limit** | 30 minutes a day. The row shows how many minutes you used today. It cannot be changed. |
 
 A shortcut needs at least one of Command, Control or Option plus a key. Starfish refuses shortcuts that macOS or most apps already use, and tells you if another app has taken it. Press Esc to cancel while you change it.

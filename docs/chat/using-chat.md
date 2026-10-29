@@ -18,15 +18,15 @@ The chat screen has three areas:
 
 ### Chat and Developer modes
 
-The switch at the top of the sidebar toggles between **Chat** (formerly Simple) and **Developer**. Chat keeps the day-to-day experience simple -- outcome-based model picks, a quiet safety check before changes. Developer exposes the full model catalog, thinking effort, the command menu, the right-side panel, and the approval selector.
+The switch at the top of the sidebar toggles between **Chat** and **Developer**. Chat keeps the day-to-day experience simple -- outcome-based model picks, a quiet safety check before changes. Developer shows every model, thinking effort, the command menu, the right-side panel, and the approval selector.
 
 Switching modes opens that mode's chat -- the last one you were in, or a new one. It does not convert the chat you are currently in.
 
-### Chat tabs grouped by project
+### Chat tabs grouped by workspace
 
-The chats you have open sit as tabs along the top. When two or more open chats belong to the same project or folder, they fold into one tab with the project's name and a count. A dot shows when one of them is working, finished or needs you. Click the tab to see the list, then open or close a chat from it. The chat you are in keeps its own tab next to the group.
+The chats you have open sit as tabs along the top. When two or more open chats belong to the same workspace or folder, they fold into one tab with the workspace's name and a count. A dot shows when one of them is working, finished or needs you. Click the tab to see the list, then open or close a chat from it. The chat you are in keeps its own tab next to the group.
 
-Grouping is on by default. Turn it off with **Group tabs by project** in **Settings → Appearance**, next to **Chat tabs**.
+Grouping is on by default. Turn it off with **Group tabs by workspace** in **Settings → Appearance**, next to **Chat tabs**.
 
 ## Sending Messages
 
@@ -98,13 +98,13 @@ If you navigate away from a session that is still running, it continues on the s
 
 Sessions with pending permission prompts show an amber left border and "Needs input" label in the sidebar.
 
-### Attaching a chat to a project or folder
+### Attaching a chat to a workspace or folder
 
-The chat input has a **Workspace picker** chip above it. Click it to choose a project (and optionally a folder) for the next chat you start. The picker is sticky — once you pick a target, follow-up new-chats default to it until you clear the chip.
+The chat input has a **Workspace picker** chip above it. Click it to choose a workspace (and optionally a folder) for the next chat you start. The picker is sticky — once you pick a target, follow-up new-chats default to it until you clear the chip.
 
-For an existing chat, hover its row in the sidebar, click the three-dot menu, and choose **Move to… → \<Project\>** or **\<Project\> → \<Folder\>**.
+For an existing chat, hover its row in the sidebar, click the three-dot menu, and choose **Move to… → \<Workspace\>** or **\<Workspace\> → \<Folder\>**.
 
-When a chat is attached to a project, the system prompt picks up the project's instructions, knowledge document, and uploaded knowledge files. See [Workspace](/workspace/overview) for the full feature.
+When a chat is attached to a workspace, it uses the workspace's instructions, knowledge document, and uploaded knowledge files. See [Workspace](/workspace/overview) for the full feature.
 
 ## Prompt History
 
@@ -114,7 +114,7 @@ Press **Arrow Up** in the composer to scroll through your previous messages in t
 
 The composer checks your writing as you type. Mistakes get an underline; click one to fix it, ignore it, or add the word to your dictionary. Checking runs on your Mac -- your text never leaves it. Open **Settings → Appearance → Spelling & grammar** to turn checking on or off, choose which categories run (spelling, grammar, punctuation, capitalization, style), and set your English dialect.
 
-The **pen** button beside the mic is **Polish** (**Cmd + Shift + P**). It rewrites either the text you have selected or, if nothing is selected, the whole draft, then shows a preview you can accept or discard.
+The **pen** button beside the mic is **Polish** (**Cmd + Shift + P**). It rewrites either the text you have selected or, if nothing is selected, the whole message, then shows a preview you can accept or discard.
 
 ## Voice Input
 
@@ -126,16 +126,14 @@ Voice input uses your system microphone. On first use, macOS may prompt you to g
 
 You choose the engine in **Settings → Voice**:
 
-- **Cloud transcription** (the default) sends audio off-device to the AI Gateway. Pick from GPT-4o Transcribe (best accuracy), GPT-4o Mini Transcribe (fastest), Whisper 1, or Fish Audio Transcribe 1.
-- **On-device (Parakeet)** keeps audio on your Mac and runs offline. It needs a one-time ~460 MB model download, which starts from Settings or the first time you click the mic.
+- **Cloud transcription** (the default) sends audio to your AI provider through your own key. You can pick the transcription model in Settings.
+- **On-device (Parakeet)** keeps audio on your Mac and runs offline. It needs a one-time model download, which starts from Settings or the first time you click the mic.
 
 ## Sensitive Information
 
-Before your message goes to the AI, Starfish looks for card numbers, Social Security numbers, passport and driver's licence numbers, bank account and routing numbers, IBANs, and sentences about a person's health. The check runs on your Mac.
+Before your message goes to the AI, Starfish checks it on your Mac for common categories of sensitive personal information. This is assistance, not a guarantee.
 
-If it finds any, the composer says **This message contains sensitive personal information.** Click **Redact and send** to send it with a placeholder in place of each item, such as "[card number removed]", or **Edit message** to change it yourself.
-
-Starfish's AI knows that a placeholder such as "[SSN removed]" means the item was removed on your Mac and never reached it. It carries on with the task without asking you for the value.
+If it finds any, the composer says **This message contains sensitive personal information.** Click **Redact and send** to send it with each item removed, or **Edit message** to change it yourself. The AI knows that a removed item was taken out on your Mac, and it carries on with the task without asking you for the value.
 
 The check is on by default. Turn it off with **Remove sensitive information before sending** in **Settings → Models → Data privacy**. It does not check pictures, PDF or Office files, audio or video.
 
@@ -175,7 +173,7 @@ In Developer mode, type **/** in the composer to open the command menu. Commands
 - **/builder** -- open the inline [Prompt Builder](/chat/prompt-builder) panel above the composer.
 - **/editor** -- toggle the right-side panel (browser, terminal, files, artifacts, plan).
 - **/permissions** and **/approve ask|auto|full** -- set how actions are approved.
-- **/compact [focus]** -- condense the conversation and keep going.
+- **/compact** (optionally followed by a focus) -- condense the conversation and keep going.
 - **/image** and **/video** -- make the next message generate media.
 - **/cost**, **/clear**, **/agents**, **/project**, **/timeline**, **/help** -- cost summary, new chat, agents, project directory, Timeline, and help.
 

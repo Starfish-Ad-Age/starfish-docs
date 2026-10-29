@@ -20,7 +20,7 @@ Connect as many client accounts as you need. Starfish works with one account at 
 3. TikTok opens in your browser. Sign in to the client's TikTok account and approve.
 4. Repeat for each client. You sign in to each account once.
 
-Starfish keeps every sign-in encrypted on your Mac and renews it automatically.
+Starfish keeps every sign-in on your Mac, readable only by your macOS user account, and renews it automatically.
 
 ### Your Accounts
 
