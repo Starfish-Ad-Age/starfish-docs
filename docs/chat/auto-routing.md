@@ -14,9 +14,9 @@ When you select **Auto** in the model dropdown (labelled **Smart Auto** in Chat 
 
 ## Smart Auto in Chat mode
 
-In Chat mode, Smart Auto answers most messages with one everyday model. When a message asks for hard coding or reasoning work, Smart Auto gives that turn to a stronger model. Follow-ups on the same hard task stay on the stronger model.
+In Chat mode, Smart Auto answers most messages with one everyday model. When a message asks for hard coding or reasoning work, Smart Auto gives that turn to a model suited to it. Follow-ups on the same hard task stay on that model.
 
-When the stronger model answered, its short name shows next to the reply.
+When that model answered, its short name shows next to the reply.
 
 ## Picking a Model Yourself
 
@@ -29,7 +29,7 @@ A model you pick always wins over Auto.
 
 ## Model Stickiness
 
-Auto does not continue a previously resolved model, except that Smart Auto in Chat mode keeps follow-ups on a hard task on the stronger model. What is remembered across chats is your own choice: a level (**Light**, **Balanced**, **Deep**) or a named model, which overrides Auto.
+Auto does not continue a previously resolved model, except that Smart Auto in Chat mode keeps follow-ups on a hard task on the same model. What is remembered across chats is your own choice: a level (**Light**, **Balanced**, **Deep**) or a named model, which overrides Auto.
 
 ## Context Compaction
 
